@@ -1,0 +1,980 @@
+header {
+    background-image: linear-gradient(to bottom, #2d2f7a, #4f52d6, #ffffff);
+    margin-right: -400px;
+}
+body{
+   overflow-x: hidden;
+}
+.titulo1 h1 {
+    /*estilo del titulo*/
+    /*justify-content: center;*/
+    font-family: chau;
+    text-align: center;
+    letter-spacing: 10px;
+    display: flex;
+    margin-left: 7%;
+    margin-top: -2em;
+    position: absolute;
+    font-size: 5em;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    color: #ffffff;
+    width: 0;
+    animation: animacionIntro 1s steps(16) 1s 1 normal both;
+}
+@keyframes animacionIntro {
+    /*animacion del titulo*/
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+        border-right: 2px solid;
+        border-right: none;
+    }
+}
+.logo1 img {
+    height: auto;
+    width: 10%; /* Hace que la imagen sea completamente receptiva */
+    margin: 0;
+    margin-top: -1em; /* Ajuste de margen superior */
+    margin-left: 1%; /* Ajuste de margen izquierdo */
+}
+.MenuHorizontal, .MenuVertical {
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 600px) {
+    .titulo1 h1 {
+        font-size: 2em;
+        margin-left: 2%; /* Ajuste de margen izquierdo para dispositivos móviles */
+    }
+
+    .MenuHorizontal {
+        flex-direction: column; /* Cambia la dirección del menú a vertical en dispositivos móviles */
+    }
+
+    .MenuHorizontal > li > a {
+        padding: 10px; /* Ajuste del espaciado en los enlaces del menú para dispositivos móviles */
+    }
+
+    .MenuVertical {
+        width: 100%; /* Ancho completo para dispositivos móviles */
+    }
+
+    .MenuVertical > li a {
+        padding: 10px; /* Ajuste del espaciado en las opciones del menú vertical para dispositivos móviles */
+    }
+
+    .container {
+        flex-direction: column; /* Cambia la dirección de la galería a vertical en dispositivos móviles */
+        align-items: center; /* Centra los elementos en dispositivos móviles */
+    }
+
+    ul.slider {
+        width: 100%; /* Ancho completo para dispositivos móviles */
+        height: auto; /* Altura automática para dispositivos móviles */
+    }
+
+    ul.slider li img {
+        width: 100%; /* Ancho completo para dispositivos móviles */
+        height: auto; /* Altura automática para dispositivos móviles */
+    }
+
+    .menu {
+        margin-left: 0; /* Ajuste de margen izquierdo para dispositivos móviles */
+        margin-bottom: 2em; /* Ajuste de margen inferior para dispositivos móviles */
+    }
+
+    .copy p, .copy a {
+        margin-left: 0; /* Ajuste de margen izquierdo para dispositivos móviles */
+        text-align: center; /* Centra el texto en dispositivos móviles */
+    }
+
+    .redes, .portfolio img, .instagram img, .facebook img {
+        margin-left: 0; /* Ajuste de margen izquierdo para dispositivos móviles */
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 2559.5px) {
+    header{         /*color de fondo*/
+        background-image:linear-gradient(to bottom, #2d2f7a, #4f52d6, #ffffff);
+    }
+    @font-face {
+        font-family: hola;
+        src: url(Imageneshistoria/Vogue.ttf);
+    }
+    @font-face {
+        font-family: chau;
+        src: url(imagenes/Buried\ Hopper.ttf);
+    }
+    .titulo1 h1 {
+        font-family: chau;
+        text-align: center;
+        letter-spacing: 10px;
+        display: flex;
+        margin-left: 27%;
+        margin-top: -1.5em;
+        position: absolute;
+        font-size: 5em;
+        font-weight: 700;
+        overflow: hidden;
+        white-space: nowrap;
+        color: #ffffff;
+        width: 0;
+        animation: animacionIntro 1s steps(16) 1s 1 normal both;
+    }
+    @keyframes animacionIntro {
+        /*animacion del titulo*/
+        from {
+            width: 0%;
+        }
+        to {
+            width: 80%;
+            border-right: 2px solid;
+            border-right: none;
+        }
+    }
+    button{       
+        background-color: transparent;
+        border: 0;
+    }
+    button img{        
+        transition-duration:0.5;
+        padding: 0px 0px;
+        display: inline-block;
+        border: 0;
+        margin:0;
+        cursor: pointer;
+        height: 15em;
+        width: 17em;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        margin-top: 3em;
+        margin-left: 20%;
+        margin-right: 3em;
+        position: relative;
+    }
+    .button:hover{             
+        color:#000000;
+        opacity: 0.5;
+    }
+    .BarraSeleccion{          
+        background-color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 7rem;
+    }
+    .li{
+        float:left;
+    }
+    nav a{       
+        width:100px;
+        display: block;
+        padding: 15px 20px;
+    }
+    .Materias{         
+        border: #31404b;
+        border-width: 10px;
+        float: left;
+        margin-left:2em;
+        background-color: #4f52d6;
+        text-align: center;
+        padding-top: 11px;
+        padding-bottom: 19px;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-left: 0%;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    .Materias{       
+        color: aliceblue;
+        text-decoration: none;
+        display: block;
+    }
+    .MenuHorizontal{            
+        list-style: none;
+        display: flex;
+    }
+    .MenuHorizontal{       
+        margin-top: 0%;
+        margin-bottom: 0%;
+        text-align: center;
+        padding-left: 0em;
+    }
+    .MenuHorizontal > li > a{           
+        display: block;
+        padding: 15px 20px;
+        color: aliceblue;
+        text-decoration: none;
+    }
+    .MenuHorizontal >li:hover{           
+        background-color: #4f52d6
+    }
+    .MenuVertical{             
+        position: absolute;
+        display: none;
+        list-style: none;
+        width: 200px;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .MenuHorizontal > li:hover .MenuVertical{         
+        display: block;
+    }
+    .MenuVertical > li:hover{          
+        background-color: #4f52d6
+    }
+    .MenuVertical > li a{  
+        text-align: left;
+        display: flex;
+        color: aliceblue;
+        padding: 15px 15px 15px 20px;
+        text-decoration: none;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        margin-top: 5em;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 800px;
+        padding: 30px;
+    }
+    ul, li {     
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+    ul.slider{       
+        position: relative;
+        width: 1000px;
+        height: 600px;
+    }
+    ul.slider li {     
+        position: absolute;
+        left:0px;
+        top: 0px;
+        opacity: 0;
+        width: inherit;
+        height: inherit;
+        transition: opacity .5s;
+        background:fff;
+    }
+    ul.slider li img{ 
+        width: 90%;
+        height: 90%;
+        object-fit: cover;
+    }
+    ul.slider li:first-child {          
+        opacity: 1;
+    }
+    ul.slider li:target {         
+        opacity: 1;
+    }
+    .menu{          
+        justify-content: center;
+        margin-top: -2em;
+        margin-left: 50%;
+        margin-bottom: 10rem;
+    }
+    .menu li{         
+        display: inline-block;
+        padding-right: 10px;
+        text-align: center;
+    }
+    .menu li a{           
+        display: inline-block;
+        color:white;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        width: 1px;
+        height: 1px;
+        font-size: 20px;
+        border-radius: 100%;
+    }
+    .menu li a:hover{           
+        background-color: red;
+    }
+    .slider{       
+        transition: .5s;
+        opacity: 60%;
+    }
+    .slider:hover{          
+        position: relative;
+        transition: .5s;
+        opacity: 100%;
+    }
+    footer{
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 400px;
+        margin-top: -3%;
+        position: relative;
+        border: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        width: 100%;
+    }
+    h1{
+        color: white;
+        font-size: 1.5em;
+        font-family:titulo;
+    }
+    @font-face{
+        font-family: titulo;
+        src: url(Imageneshistoria/Vogue.ttf);
+    }
+    .escuela{
+        width: 25%;
+        margin-left: 1%;
+    }
+    .escuela h1{
+        margin-top: 70px;
+    }
+    .escuela img{
+        height: 150px;
+        width: 150px;
+        margin-left: 23%;
+    }
+    h2{
+        color: white;
+        margin-bottom: -15%;
+        text-align: justify;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 1.4em;
+    } 
+    .clima{
+        width: 30%;
+    }
+    .clima h1{
+        margin-top:  50px;
+    }
+    .ubicacion{
+        width: 15%;
+    }
+    .ubicacion h1{
+        margin-top: 50px;
+    }
+    .ubicacion img{
+        height: 10px;
+        width: 10px;
+        margin-right: 10%;
+        display: flex;
+    } 
+    .datos{
+        width: 40%;
+    }
+    .datos h1{
+        margin-top:50px;  
+    }
+    .textoubi article{
+        color: white;
+        margin-left: 30%; 
+        position: relative; 
+        display: flex; 
+        top: -20px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    .imagenubi img{
+        height: 7%;
+        width: 7%;
+        margin-left: 20%;
+        display: flex;
+        position: relative;
+    }
+    .textotelefono article{
+        color: white;
+        margin-left: 30%;
+        position: relative;
+        display: flex;
+        top: -27px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    .imagentelefono img{
+        height: 7%;
+        width: 7%;
+        margin-left: 20%;
+        display: flex;
+        position: relative;
+    }
+    .textogmail article{
+        color: white;
+        margin-left: 30%;
+        position: relative;
+        display: flex;
+        top: -35px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    .imagengmail img{
+        height: 7%;
+        width: 7%;
+        margin-left: 20%;
+        display: flex;
+        position: relative;
+    }
+    h3{ 
+        color: white;
+        font-size: 1.5em;
+        font-family:titulo;  
+        margin-left: 23%;
+        top: 30%;
+        margin-top: -10%;
+    }
+    .copy p{
+        margin-top: -1%;
+        margin-left: 41%;
+        color: #ffffff;
+    }
+    .copy a{
+        margin-top: -1%;
+        margin-left: 29%;
+        color: #ffffff;
+        position:absolute;
+        display: flex;
+    }
+    .copy a:hover {
+        color: blue;
+    }
+    .copy{
+        background-color: #242120;
+        padding: 1.1em;
+        grid-template-columns: repeat(3, 1fr);
+        width: 97.4%;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        border: 0;
+        display: flex;
+        height: 25px;
+    }
+    hr{
+        margin-top: -5.8%;
+    }
+    .redes {
+        position: relative;
+        margin-top: 17px;
+        margin-left: 15em;
+    }
+    .portfolio img{
+        height: 2%;
+        width: 2%;
+        position: relative;
+        float: left;
+        left: 22em;
+        top: 0.3em;
+        padding: 10px 10px;
+    }
+    .instagram img{
+        height: 2%;
+        width: 2%;
+        position: relative;
+        float: left;
+        left: 22em;
+        top: 0.3em;
+        padding: 10px 10px;
+    }
+    .facebook img{
+        height: 2%;
+        width: 2%;
+        position: relative;
+        float: left;
+        left: 22em;
+        top: 0.3em;
+        padding: 10px 10px;
+    }
+}
+@media (min-width:800px) and (max-width:1023px) {
+    footer{
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 400px;
+        margin-top: -3%;
+        position: relative;
+        border: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer{
+        display: flex;
+        width: 100%;
+    }
+    h1{
+        color: white;
+        font-size: 1.5em;
+        font-family:titulo;
+    }
+    @font-face{
+        font-family: titulo;
+        src: url(Imageneshistoria/Vogue.ttf);
+    }
+    .escuela{
+        width: 25%;
+        margin-left: 1%;
+    }
+    .escuela h1{
+        margin-top: 70px;
+    }
+    .escuela img{
+        height: 150px;
+        width: 150px;
+        margin-left: 23%;
+    }
+    h2{
+        color: white;
+        margin-bottom: -15%;
+        text-align: justify;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 400;
+        font-size: 1.4em;
+    } 
+    .clima{
+        width: 30%;
+    }
+    .clima h1{
+        margin-top:  50px;
+    }
+    .ubicacion{
+        width: 15%;
+    }
+    .ubicacion h1{
+        margin-top: 50px;
+    }
+    .ubicacion img{
+        height: 10px;
+        width: 10px;
+        margin-right: 10%;
+        display: flex;
+    } 
+    .datos{
+        width: 40%;
+    }
+    .datos h1{
+        margin-top:50px;  
+    }
+    .textoubi article{
+        color: white;
+        margin-left: 30%; 
+        position: relative; 
+        display: flex; 
+        top: -20px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    .imagenubi img{
+        height: 7%;
+        width: 7%;
+        margin-left: 20%;
+        display: flex;
+        position: relative;
+    }
+    .textotelefono article{
+        color: white;
+        margin-left: 30%;
+        position: relative;
+        display: flex;
+        top: -27px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    .imagentelefono img{
+        height: 7%;
+        width: 7%;
+        margin-left: 20%;
+        display: flex;
+        position: relative;
+    }
+    .textogmail article{
+        color: white;
+        margin-left: 30%;
+        position: relative;
+        display: flex;
+        top: -35px;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: 100;
+        font-size: 1em;
+    }
+    .imagengmail img{
+        height: 7%;
+        width: 7%;
+        margin-left: 20%;
+        display: flex;
+        position: relative;
+    }
+    h3{ 
+        color: white;
+        font-size: 1.5em;
+        font-family:titulo;  
+        margin-left: 23%;
+        top: 30%;
+        margin-top: -10%;
+    }
+    .copy p{
+        margin-top: -1%;
+        margin-left: 41%;
+        color: #ffffff;
+    }
+    .copy a{
+        margin-top: -1%;
+        margin-left: 29%;
+        color: #ffffff;
+        position:absolute;
+        display: flex;
+    }
+    .copy a:hover {
+        color: blue;
+    }
+    .copy{
+        background-color: #242120;
+        padding: 1.1em;
+        grid-template-columns: repeat(3, 1fr);
+        width: 97.4%;
+        position: absolute;
+        bottom: 0;
+        margin: 0;
+        border: 0;
+        display: flex;
+        height: 25px;
+    }
+    hr{
+        margin-top: -5.8%;
+    }
+    .redes {
+        position: relative;
+        margin-top: 17px;
+        margin-left: 15em;
+    }
+    .portfolio img{
+        height: 2%;
+        width: 2%;
+        position: relative;
+        float: left;
+        left: 22em;
+        top: 0.3em;
+        padding: 10px 10px;
+    }
+    .instagram img{
+        height: 2%;
+        width: 2%;
+        position: relative;
+        float: left;
+        left: 22em;
+        top: 0.3em;
+        padding: 10px 10px;
+    }
+    .facebook img{
+        height: 2%;
+        width: 2%;
+        position: relative;
+        float: left;
+        left: 22em;
+        top: 0.3em;
+        padding: 10px 10px;
+    }
+}
+@media (min-width:500px) and (max-width:800px){
+    footer{
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 400px;
+        margin-top: -3%;
+        position: relative;
+        border: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: -1;
+    }
+    .footer{
+        display: flex;
+        width: 100%;
+    }
+    .escuela img {
+        margin-left: 6em;
+        margin-top: 1em;
+    }
+    h2 {
+        text-align: justify ;
+        font-size: 1.4em;
+        margin-left: 4em;
+        margin-right: -4em;
+    }
+    .clima{
+        display: none;
+    }
+    .clima h1 {
+        display: none;
+    }
+    .ubicacion {
+        display: none;
+    }
+    .ubicacion h1 {  
+        display: none;
+    }
+    .datos {
+        margin-left: 12em;
+        margin-top: -38em;
+    }
+    .datos h1{
+        margin-left: -3em;
+        margin-top: 27em;
+    }
+    .textoubi {
+        margin-left: -5em;
+        margin-top: -0.5em;
+        font-size: 1em;
+    }
+    .imagenubi img {
+        margin-left: -1em;
+        margin-top: 1em;
+        height: 10%;
+        width: 10%;
+    }
+    .textotelefono {
+        margin-left: -5em;
+        margin-top: 0.5em;
+        font-size: 1em;
+    }
+    .imagentelefono img {
+        margin-left: -1em;
+        margin-top: 0.5em;
+        height: 10%;
+        width: 10%;
+    }
+    .textogmail {
+        margin-left: -5em;
+        font-size: 1em;
+    }
+    .imagengmail img {
+        margin-left: -1em;
+        margin-top: -1em;
+        height: 10%;
+        width: 10%;
+    }
+    .contadortitulo{
+        margin-left: -2em;
+        margin-top: -2em;
+    }
+    .contador a img{
+        margin-left: -3em;
+        margin-top: -2em;
+    }
+    .copy{
+        margin-top: 15em;
+        z-index: -1;
+    }
+    .copy a {
+        margin-left: 10em;
+        margin-top: -0.5em;
+        z-index: -1em;
+    }
+    .copy .texto {
+        margin-left: 13em;
+        margin-top: -2em;
+        z-index: -1;
+        text-align: center;
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 3em;
+        top: 3em;
+        width: 6%;
+        height: 6%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 3em;
+        top: 3em;
+        width: 6%;
+        height: 6%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 3em;
+        top: 3em;
+        width: 6%;
+        height: 6%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+}
+@media (min-width:390px) and (max-width:499px) {
+    footer{
+        background-color: #333333;
+        margin: 0;
+        padding: 0;
+        width: 130%;
+        height: 500px;
+        margin-top: -3%;
+        position: relative;
+        border: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        z-index: -1;
+    }
+    .footer{
+        display: flex;
+        width: 100%;
+    }
+    .escuela img {
+        margin-left: 1em;
+        margin-top: 0.3em;
+        height: 20%;
+        width: 50%;
+    }
+    h2 {
+        text-align: justify;
+        font-size: 1em;
+        margin-left: 5.3em;
+        margin-right: -11.2em;
+        margin-top: -4em;
+    }
+    .clima{
+        display: none;
+    }
+    .clima h1 {
+        display: none;
+    }
+    .ubicacion {
+        display: none;
+    }
+    .ubicacion h1 {
+        display: none;   
+    }
+    .datos {
+        margin-left: 4em;
+        margin-top: -34em;
+    }
+    .datos h1{
+        margin-left: -8em;
+        margin-top: 27em;
+    }
+    .textoubi {
+        margin-left: -15em;
+        margin-top: -0.1em;
+        font-size: 0.8em;
+    }
+    .imagenubi img {
+        margin-left: -7em;
+        margin-top: 1em;
+        height: 15%;
+        width: 15%;
+    }
+    .textotelefono {
+        margin-left: -15em;
+        margin-top: 0.8em;
+        font-size: 0.8em;
+    }
+    .imagentelefono img {
+        margin-left: -7em;
+        margin-top: -0.2em;
+        height: 15%;
+        width: 15%;
+    }
+    .textogmail {
+        margin-left: -15em;
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+    .imagengmail img {
+        margin-left: -7em;
+        margin-top: -0.7em;
+        height: 15%;
+        width: 15%;
+    }
+    .contadortitulo{
+        margin-left: -11em;
+        margin-top: -4em;
+        font-size: 1em;
+    }
+    .contador a img{
+        margin-left: -10em;
+        margin-top: 2em;
+    }
+    .copy{
+        margin-top: 15em;
+        z-index: -1;
+        background-color: #242120;
+        padding: 2em;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin: 0 0 0 0;
+        border: 0;
+        display: flex;
+        height: 2em;
+    }
+    .copy a {
+        margin-left: 7em;
+        margin-top: -1.4em;
+        z-index: -1em;
+    }
+    .copy p {
+        margin-left: -1em;
+        margin-top: 0em;
+        z-index: -1;
+        text-align: center;
+        font-size: 15px;
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: -5em;
+        top: 6em;
+        width: 7%;
+        height: 4%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: -5em;
+        top: 6em;
+        width: 7%;
+        height: 4%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: -5em;
+        top: 6em;
+        width: 7%;
+        height: 4%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+}

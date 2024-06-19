@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+@font-face{
+    font-family:titulo;
+    src: url(Buried\ Hopper.ttf);
+}
+.loesc img{
+    display: flex;
+    position: absolute;
+    width: 7em;
+    top: 0.5em;
+}
+.titulo{
+    padding-top: 1em;
+    font-size: 60px;
+    font-family: titulo;
+}
+.logos{
+    float:left;
+    width: 50%;
+    padding-left: 190px;
+    padding-right: 4px;
+}
+.insta img{
+    display: flex;
+    position: relative;
+    width: 10%;
+}
+.gmail img{
+    display: flex;
+    position: relative;
+    width: 10%;
+}
+.what img{
+    display: flex;
+    position: relative;
+    width: 10%;
+}
+.tel img{
+    display: flex;
+    position: relative;
+    width: 10%;
+}
+.ubic{
+    display: flex;
+    position: relative;
+    width: 370px;
+    height: 350px;
+}
+.texto{
+    display: flex;
+    position: absolute;
+    font-size: 25px;
+}
+.instatext{
+    margin-top: -13.3em;
+    margin-left: 13em;
+}
+.gmailtext1{
+    margin-top: -10.3em;
+    margin-left: -3.1em; 
+}
+.gmailtext2{
+    margin-top: -9.3em;
+    margin-left: -12.5em;
+}
+.whattext{
+    margin-top: -6.1em;
+    margin-left: -13.3em;
+}
+.teltext{
+    margin-top: -2.7em;
+    margin-left: -7.6em;
+}

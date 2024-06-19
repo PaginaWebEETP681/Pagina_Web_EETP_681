@@ -1,0 +1,1636 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+/*.............................DISEÑO DE LA PÁGINA..............................*/  
+@font-face {
+    font-family: hola;
+    src: url(Imageneshistoria/Vogue.ttf);
+}
+@font-face {
+    font-family: chau;
+    src: url(imagenes/Buried\ Hopper.ttf);
+}
+header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 4em;
+    padding: 2em;
+    background-color:#2b2d9c ;
+    background-repeat: no-repeat;
+    height: 00px;
+    width: 100%;
+    display: flex;
+}
+.logo1{
+    background-color: transparent;
+    border: 0;
+}
+.logo1 a img{
+    transition-duration: 0.5;
+    display: flex;
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    position: absolute;
+    width: 5%;
+    height: 11%;
+    margin-top: -1.5em;
+    margin-left: -1.2em;
+}
+/*PONERLE QUE DIGA INICIO CON EL EFECTO*/
+.logo1 a img:hover{
+    color:#000000;
+    opacity: 0.5;
+}
+/*TITULO HISTORIA*/
+.titulo1 h1{
+    font-family: chau;
+    text-align: center;
+    letter-spacing: 10px;
+    /*z-index: 1;*/
+    display: flex;
+    margin-left: 2.6em;
+    margin-top: -0.6em;
+    position: absolute;
+    font-size: 3em;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;/*ubica el texto en una sola linea*/
+    color: #FFFFFF;
+    width: 0;
+    animation: animacionIntro 1s steps(8) 1s 1 normal both;
+}
+/*COMANDO DE ANIMACIÓN TIPO MÁQUINA DE ESCRIBIR*/
+@keyframes animacionIntro{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 80%;
+        border-right: 2px solid;
+        border-right: none;
+    }
+}
+/*MERCEDES*/
+h2{
+    font-family: hola;
+    font-size: 3em;
+    color: #1C1266;
+    margin-top: 1em;
+}
+h2:hover{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    overflow:hidden;
+    transition: 0.6s;
+}
+/*TEXTO MERCEDES*/
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 1em;
+    text-align: justify;
+    color: #000000;
+}
+/*TEXTO HISTORIA*/
+article{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    margin-right: 4em;
+    margin-left: 4em;
+    margin-top: 1em;
+    text-align: justify;
+    color: #787878;
+}
+/*IMAGEN MERCEDES*/
+.foto1 img{
+    width: 25%;
+    height: 25%;
+    margin-left: 43em;
+    margin-top: 1em;
+    background-repeat: no-repeat;
+    display: flex;
+}
+.foto1 img:hover{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    overflow:hidden;
+    transition: 0.6s;
+}
+/*NUESTROS INICIOS*/
+h3{
+    font-family: hola;
+    font-size: 3em;
+    margin-top: 0.5em;
+    color: #1C1266;
+}
+h3:hover{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    overflow:hidden;
+    transition: 0.6s;
+}
+/*IMAGEN EDIFICIO VIEJO*/
+.wrap{
+    width: 40%;
+    height: 40vh;
+    margin-left: 6em;
+    margin-top: 2.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,
+        rgb(0 0 0 / .2),
+        rgb(0 0 0 / .2)
+    )
+    ,url(Imageneshistoria/antiguoedificio.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: transparent;
+    border-radius: 2%;
+}
+.wrap-texto{
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+    font-family:'Times New Roman', Times, serif;
+}
+.wrap:hover {
+    opacity: 0.8;
+    color:#000000;
+}
+.wrap-texto:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    overflow:hidden;
+    transition: 0.6s;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/*IMAGEN EDIFICIO ACTUAL*/
+.eetp{
+    width: 40vw;
+    height: 40.5vh;
+    margin-left: 60em;
+    margin-top: -23.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,
+        rgb(0 0 0 / .2),
+        rgb(0 0 0 / .2)
+    )
+    ,url(Imageneshistoria/eetp.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: transparent;
+    border-radius: 2%;
+}
+.eetp-texto {
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+    font-family: 'Times New Roman', Times, serif;
+}
+.eetp:hover {
+    opacity: 0.8;
+    color:#000000;
+}
+.eetp-texto:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    overflow:hidden;
+    transition: 0.6s;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/*IMAGEN LOGO VIEJO*/
+.logoviejo{
+    width: 38%;
+    height: 60vh;
+    margin-left: 6em;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,
+        rgb(0 0 0 / .2),
+        rgb(0 0 0 / .2)
+    )
+    ,url(Imageneshistoria/Escudo.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: transparent;
+    border-radius: 2%;
+}
+.logoviejo-texto{
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+    font-family:'Times New Roman', Times, serif;
+}
+.logoviejo:hover {
+    opacity: 0.8;
+    color:#000000;
+}
+.logoviejo-texto:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    overflow:hidden;
+    transition: 0.6s;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/*IMAGEN LOGO NUEVO*/
+.logonuevo{
+    width: 41%;
+    height: 58vh;
+    margin-left: 60em;
+    margin-top: -35em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,
+        rgb(0 0 0 / .2),
+        rgb(0 0 0 / .2)
+    )
+    ,url(Imageneshistoria/logo4.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    color: transparent;
+    border-radius: 2%;
+}
+.logonuevo-texto{
+    text-align: center;
+    width: 50%;
+    font-size: 2em;
+    font-family:'Times New Roman', Times, serif;
+}
+.logonuevo:hover {
+    opacity: 0.8;
+    color:#000000;
+}
+.logonuevo-texto:hover{
+    -webkit-transform:scale(1.3);transform:scale(1.3);
+    overflow:hidden;
+    transition: 0.6s;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+/*VIDEO ESCUELA*/
+.videoescuela video{
+    margin-top: 2em;
+    margin-left: 15em;
+}
+h5{
+    font-family: hola;
+    font-size: 3em;
+    margin-top: 2em;
+    color:#1C1266;
+}
+h5:hover{
+    -webkit-transform:scale(1.1);transform:scale(1.1);
+    overflow:hidden;
+    transition: 0.6s;
+}
+li{
+    list-style: none ;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    color: #787878;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 1.5em;
+    text-align: justify;
+    line-height: 2%;
+    margin-bottom: 2em;
+}
+.pal1 {
+    font-size: 0.7em;
+    margin-left: 20em;
+    line-height: 0%;
+}
+body{
+    background-color: #FFFFFF;
+}
+.img1 img{
+    width: 50%;
+    height: 50%;
+    margin-left: 15em;
+    z-index: 1;
+}
+#popup-container {
+    display:none;    
+}
+.block-scroll {
+    overflow:hidden;
+}
+#popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color:rgba(255, 255, 255, 0.75);
+    padding: 10px 20px;
+}
+#popup-overlay{
+    background-color: rgba(0,0,0,0.8);
+    z-index: -1;
+}
+.full-layer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+/*ESCRITORIO*/
+/*----------------------------------FOOTER GENERAL--------------------------------*/
+footer{
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 350px;
+    position: absolute;
+    border: 0;
+    /*bottom: 0;*/
+    display: block;
+    flex-direction: column;
+}
+/*-------------------------------------------------------------------------------*/
+/*---------------------------------FOOTER contenedor*---------------------------*/
+.footer{
+    display: flex;
+    width: 100%;
+}
+/*-------------------------------------------------------------------------------*/
+/*-------------------------------------------H1----------------------------------*/
+h1{
+    color: white;
+    font-size: 1.5em;
+    font-family:titulo;
+}
+@font-face{
+    font-family: titulo;
+    src: url(Vogue.ttf);
+}
+/*-------------------------------------------------------------------------------*/
+/*.---------------------------------ESCUELA-------------------------------------*/
+.escuela{
+    width: 25%;
+    margin-left: 1%;
+    margin-top: -1em;
+}
+.escuela h1{
+    margin-top: 70px;
+}
+/*ESCUELA IMAGEN*/
+.escuela img{
+    height: 150px;
+    width: 150px;
+    margin-left: 38%;
+}
+h6{
+    color: white;
+    margin-bottom: -15%;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.4em;
+    margin-left: 2em;
+    text-align: center;
+} 
+/*------------------------------TERMINA ESCUELA--------------------------------*/
+/*----------------------------------UBICACION----------------------------------*/
+.ubicacion{
+    width: 15%;
+}  
+.ubicacion h1{
+    margin-top: 40px;
+    margin-left: -2em;
+}
+.ubicacion img{
+    height: 10px;
+    width: 10px;
+    margin-right: 10%;
+    display: flex;
+} 
+/*---------------------------TERMINA UBICACION--------------------------------*/
+/*-----------------------------------DATOS------------------------------------*/
+.datos{
+    width: 40%;
+}
+.datos h1{
+    margin-top: 35px;  
+    margin-left: 1.5em;
+}
+/*------------------------------datos ubicación---------------------------------*/
+.textoubi{
+    color: white;
+    margin-left: 30%; 
+    position: relative; 
+    display: flex; 
+    top: -15px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+.imagenubi img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*---------------------------termina datos ubicación----------------------------*/
+/*--------------------------datos telefono--------------------------------------*/
+.textotelefono {
+    color: white;
+    margin-left: 30%;
+    position: relative;
+    display: flex;
+    top: -27px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+.imagentelefono img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*-------------------------termina datos telefono-------------------------------*/
+/*-------------------------------------datos gmail------------------------------*/
+.textogmail {
+    color: white;
+    margin-left: 30%;
+    position: relative;
+    display: flex;
+    top: -35px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+.imagengmail img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*--------------------------termina datos  gmail--------------------------------*/
+/*------------------------------TERMINA DATOS-----------------------------------*/
+/*-----------------------------COMIENZA CONTADOR--------------------------------*/
+.contadortitulo{ 
+    color: white;
+    font-size: 1.5em;
+    font-family:titulo;  
+    top: 25%;
+    margin-top: 13%;
+    text-align: center;
+}
+.contador {
+    text-align: center;
+}
+/*----------------------------TERMINA CONTADOR----------------------------------*/
+.copy .texto{
+    margin-top: -1.5%;
+    margin-left: 42.5%;
+    color: #ffffff;
+}
+.copy a{
+    margin-top: -1.5%;
+    margin-left: 33%;
+    color: #ffffff;
+    position:absolute;
+    display: flex;
+}
+.copy a:hover {
+    color: blue;
+}
+.copy{
+    background-color: #242120;
+    padding: 2em;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 0 0;
+    border: 0;
+    display: flex;
+    height: 25px;
+}
+hr{
+    margin-top: -5.8%;
+}
+.redes {
+    background-color: #1C1266;
+} 
+.portfolio img{
+    height: 2.5%;
+    width: 2.5%;
+    position: relative;
+    float: left;
+    left: 50em;
+    top: 1.5em;
+    padding: 10px 10px;
+}
+.instagram img{
+    height: 2.5%;
+    width: 2.5%;
+    position: relative;
+    float: left;
+    left: 50em;
+    top: 1.5em;
+    padding: 10px 10px;
+}
+.facebook img{
+    height: 2.5%;
+    width: 2.5%;
+    position: relative;
+    float: left;
+    left: 50em;
+    top: 1.5em;
+    padding: 10px 10px;
+}
+/*------------------------------------------------------------------------------*/
+/*.............................DE 1024px A 2000px...............................*/
+/*------------------------------------------------------------------------------*/
+@media  screen and (min-width:1024px) and (max-width:1500px) {
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center; 
+        height: 400px;
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+        z-index: -1;
+    }
+    .titulo1 h1{
+        font-family: chau;
+        font-size: 3em;
+        letter-spacing: 10px;
+        /*z-index: -1;*/
+        display: flex;
+        margin-left: 2.5em;
+        position: relative;
+        color: #FFFFFF;
+        font-weight: 700;
+        overflow: hidden;
+        white-space: nowrap;/*ubica el texto en una sola linea*/
+        color: #FFFFFF;
+        width: 10em;
+        animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    }
+    /*boton*/
+    .logo1{
+        background-color: transparent;
+        border: 0;
+    }
+    .logo1 a img{
+        transition-duration: 0.5;
+        display: flex;
+        border: 0;
+        margin: 0;
+        cursor: pointer;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: absolute;
+        width: 10%;
+        height: 17%;
+        margin-top: -2em;
+        margin-left: -2em;
+    }
+    /*PONERLE QUE DIGA INICIO CON EL EFECTO*/
+    .logo1 a img:hover{
+        color:#000000;
+        opacity: 0.5;
+    }
+    h2{
+        font-size: 3em;
+        position: absolute center;
+        margin-left: -1em;
+    }
+    p{
+        font-size: 1.5em;
+        position: relative;
+        margin-left: 4em;
+        margin-right: 4em;
+    }
+    h3 {
+        margin-left: -1em;
+        position: absolute center;
+        margin-top: 1em;
+        font-size: 3em;
+    }
+    article{
+        font-size: 1.5em;
+        margin-right: 4.5em;
+        margin-left: 4em;
+    }
+    .foto1 img{
+        margin-left: 45em;
+        margin-top: 1em;
+    }
+    .wrap {
+        margin-left: 12em;
+        width: 50%;
+        height: 6s0vh;
+    }
+    .eetp {
+        margin-top: 2em;
+        margin-left: 45em;
+        width: 50%;
+        height: 60vh;
+    }
+    .logoviejo {
+        margin-left: 12em;
+        width: 50%;
+        height: 70vh;
+    }
+    .logonuevo {
+        margin-top: 2em;
+        margin-left: 45em;
+        width: 50%;
+        height: 60vh;
+    }
+    .videoescuela {
+        margin-left: 4em;
+    }
+    li li{
+        list-style: none;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1em;
+        color: #787878;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 1.5em;
+        text-align: justify;
+        line-height: 2%;
+        margin-bottom: 2em;
+    }
+    .pal1 {
+        margin-left: 14em;
+        font-size: 1em;
+    }
+    h5 {
+        margin-left: -1em;
+        font-size: 3em;
+    }
+    .denominaciones {
+        font-size: 1.3em;
+    }
+    .directivos {
+        font-size: 1.3em;
+    }
+    .img1 img{
+        width: 50%;
+        height: 50%;
+        margin-left: 9em;
+        z-index: 1;
+    }
+    #popup-container {
+        display:none;
+    }
+    .block-scroll {
+        overflow:hidden;
+    }
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:rgba(255, 255, 255, 0.75);
+        padding: 10px 20px;
+    }
+    #popup-overlay{
+        background-color: rgba(0,0,0,0.8);
+        z-index: -1;
+    }
+    .full-layer{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .escuela {
+        margin-left: 4em;
+    }
+    .clima {
+        margin-left: -5em;
+    }
+    .clima h1 {
+        margin-left: -0.4em;
+        margin-top: 1.3em;
+    }
+    .ubicacion {
+        margin-left: -2em;
+        margin-top: -0.5em;
+    }
+    .ubicacion h1 {
+        margin-left: -0.5em;
+    }
+    .datos {
+        margin-left: -3em;
+    }
+    .datos h1 {
+        margin-left: -2em;
+    }
+    .copy a {
+        margin-left:41em;
+    }
+    .copy .texto {
+        margin-left: 50em
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 50em;
+        height: 2.8%;
+        width: 2.8%;
+        top: 2.3em;
+        padding: 10px 10px;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 50em;
+        height: 2.8%;
+        width: 2.8%;
+        top: 2.3em;
+        padding: 10px 10px;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 50em;
+        height: 2.8%;
+        width: 2.8%;
+        top: 2.3em;
+        padding: 10px 10px;
+    }
+    
+}
+/*------------------------------------------------------------------------------*/
+/*............................DE 1024px A 800px.................................*/
+/*------------------------------------------------------------------------------*/
+@media screen and (min-width:800px) and (max-width:1024px){
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+        height: 2px;
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+    }
+    .titulo1 h1{
+        font-size: 2em;
+        font-family: chau;
+        z-index: 1;
+        letter-spacing: 10px;
+        display: flex;
+        margin-left: 1em;
+        margin-top: -0.5em;
+        position: flex;
+        color: #FFFFFF;
+        font-weight: 700;
+        overflow: hidden;
+        white-space: nowrap;/*ubica el texto en una sola linea*/
+        color: #FFFFFF;
+        width: 0;
+        animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    }
+    .logo1{
+        background-color: transparent;
+        border: 0;
+    }
+    .logo1 a img{
+        transition-duration: 0.5;
+        display: flex;
+        border: 0;
+        margin: 0;
+        cursor: pointer;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: absolute;
+        width: 16%;
+        height: 17%;
+        margin-top: -2em;
+        margin-left: -2em;
+    }
+    /*PONERLE QUE DIGA INICIO CON EL EFECTO*/
+    .logo1 a img:hover{
+        color:#000000;
+        opacity: 0.5;
+    }
+    h2{
+        margin-left: -1em;
+        font-size: 2.5em;
+    }
+    p{
+        position: relative;
+        margin-left: 2em;
+        margin-right: 3em;
+        font-size: 1.3em;
+    }
+    h3{
+        margin-left: -1em;
+        font-size: 2.5em;
+    }
+    article {
+        margin-left: 2em;
+        margin-right: 3em;
+    }
+    .foto1 img {
+        margin-top: 2em;
+        margin-left: 22em;
+        height: 30%;
+        width: 30%;
+    }
+    .wrap {
+        margin-left: 15em;
+        width: 50%;
+        height: 40vh;
+    }
+    .eetp{
+        margin-top: 3em;
+        margin-left: 15em;
+        width: 50%;
+        height: 40vh;
+    }
+    .logoviejo {
+        margin-left: 15em;
+        width: 50%;
+        height: 65vh;
+    }
+    .logonuevo {
+        margin-top: 3em;
+        margin-left: 15em;
+        width: 50%;
+        height: 60vh;
+    }
+    .videoescuela video {
+        margin-left: 12em;
+    }
+    li li{
+        list-style: none ;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 1.1em;
+        color: #787878;
+        margin-left: 4em;
+        margin-right: 4em;
+        margin-top: 1.5em;
+        text-align: justify;
+        line-height: 2%;
+        margin-bottom: 2em;
+    }
+    .img1 img{
+        width: 50%;
+        height: 50%;
+        margin-left: 9em;
+    }
+    #popup-container {
+        display:none;
+    }
+    .block-scroll {
+        overflow:hidden;
+    }
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:rgba(255, 255, 255, 0.75);
+        padding: 10px 20px;
+    }
+    #popup-overlay{
+        background-color: rgba(0,0,0,0.8);
+        z-index: -1;
+    }
+    .full-layer{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    .footer{
+        width: 100%;
+    }
+    .escuela {
+        margin-left: 1em;
+    }
+    .escuela img {
+        margin-left: 20%;
+    }
+    .escuela h1 {
+        margin-left: 5em;
+    }
+    h6 {
+       margin-left: 0.2em;
+    }
+    .clima{
+        margin-left: -0.5em;
+    }
+    .clima h1 {
+        margin-top: 1.2em;
+    }
+    .ubicacion {
+        margin-left: -0.5em;
+    }
+    .ubicacion h1 {
+        margin-top: 1.3em;
+        margin-left: 2em;
+    }
+    .datos {
+        margin-left: 0.5em;
+    }
+    .datos h1{
+        margin-left: 1em;
+        margin-top: 1em;
+    }
+    .textoubi {
+        margin-left: 7.5em;
+        margin-top: -0.5;
+    }
+    .imagenubi img {
+        margin-left: 5em;
+        margin-top: 0.5em;
+    }
+    .textotelefono {
+        margin-left: 7.5em;
+    }
+    .imagentelefono img {
+        margin-left: 5em;
+    }
+    .textogmail {
+        margin-left: 7.5em;
+    }
+    .imagengmail img {
+        margin-left: 5em;
+    }
+    .contadortitulo{
+        margin-left: 4.5em;
+    }
+    .copy a {
+        margin-left: 14em;
+        margin-top: -1.5em;
+    }
+    .copy .texto {
+        margin-left: 23em;
+        margin-top: -1.5em;
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top: 3.2em;
+        padding: 10px 10px;
+        width: 4%;
+        height: 4%;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top: 3.2em;
+        padding: 10px 10px;
+        width: 4%;
+        height: 4%;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 27em;
+        top: 3.2em;
+        padding: 10px 10px;
+        width: 4%;
+        height: 4%;
+    }
+}
+/*------------------------------------------------------------------------------*/
+/*.............................DE 800px A 500px..................................*/
+/*------------------------------------------------------------------------------*/
+@media screen and (min-width:500px) and (max-width:800px) {
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+        height: 2px;
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+    }
+    .titulo1 h1{
+        font-family: chau;
+        font-size: 1.5em;
+        z-index: 1;
+        letter-spacing: 10px;
+        display: flex;
+        margin-top: -0.5em;
+        margin-left: 1em;
+        position: relative;
+        color: #FFFFFF;
+        font-weight: 700;
+        overflow: hidden;
+        white-space: nowrap;/*ubica el texto en una sola linea*/
+        color: #FFFFFF;
+        width: 0;
+        animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    }
+    .logo1{
+        background-color: transparent;
+        border: 0;
+    }
+    .logo1 a img{
+        transition-duration: 0.5;
+        display: flex;
+        border: 0;
+        margin: 0;
+        cursor: pointer;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: absolute;
+        width: 20%;
+        height: 17%;
+        margin-top: -2em;
+        margin-left: -2em;
+    }
+    .logo1 a img:hover{
+        color:#000000;
+        opacity: 0.5;
+    }
+    h2{
+        font-size: 2em;
+    }
+    p{
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 1em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    article{
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 1em;
+    }
+    .foto1 img{
+        margin-left: 16em;
+        height: 30%;
+        width: 30%;
+        margin-top: 2em;
+    }
+    .wrap{
+        width: 90%;
+        height: 30vh;
+        margin-left: 2em;
+        margin-right: 2em;  
+    }
+    .eetp{
+        margin-top: 3em;
+        margin-left: 2em;
+        margin-right: 2em;
+        width: 90%;
+        height: 30vh;
+    }
+    .logoviejo{
+        width: 90%;
+        height: 40vh;
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 3em;
+    }
+    .logonuevo{
+        margin-left: 2em;
+        margin-right: 2em;
+        margin-top: 3em;
+        width: 90%;
+        height: 45vh;
+    }
+    .videoescuela video{
+        margin-left: 2em;
+        margin-right: 2em;
+        height: 90%;
+        width: 90%;
+    }
+    h5{
+        margin-top: 1em;
+        font-size: 2em;
+    }
+    .denominaciones {
+        font-size: 0.7em;
+    }
+    .directivos {
+        font-size: 0.7em;
+    }
+    .pal1 {
+        font-size: 0.7em;
+        margin-left: 4em;
+    }
+    .img1 img{
+        width: 50%;
+        height: 50%;
+        margin-left: 9em;
+    }
+    #popup-container {
+        display:none;
+    }
+    .block-scroll {
+        overflow:hidden;
+    }
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:rgba(255, 255, 255, 0.75);
+        padding: 10px 20px;
+    }
+    #popup-overlay{
+        background-color: rgba(0,0,0,0.8);
+        z-index: -1;
+    }
+    .full-layer{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    footer{
+        width: 100%;
+        height: 25em;
+        z-index: 1;
+        display: flex;
+        position: absolute;
+    }
+    .escuela img {
+        margin-left: 8em;
+    }
+    h6 {
+        text-align: center ;
+        font-size: 1.4em;
+        margin-left: 5em;
+        margin-right: -5em;
+    }
+    .clima{
+        z-index: 1;
+        margin-top: -5em;
+        margin-left: 12em;
+        display: none;
+    }
+    .clima h1 {
+        margin-top: 5em;
+        display: none;
+    }
+    .ubicacion {
+        margin-left: -32em;
+        display: none;
+    }
+    .ubicacion h1 {
+        margin-top: 15em;
+        margin-left: 1.8em;   
+        display: none;
+    }
+    .datos {
+        margin-left: 12em;
+        margin-top: -38em;
+    }
+    .datos h1{
+        margin-left: -3em;
+        margin-top: 27em;
+    }
+    .textoubi {
+        margin-left: 3em;
+        margin-top: -0.5em;
+        font-size: 1em;
+    }
+    .imagenubi img {
+        margin-left: -1em;
+        margin-top: 1em;
+        height: 10%;
+        width: 10%;
+    }
+    .textotelefono {
+        margin-left: 3em;
+        margin-top: 0.5em;
+        font-size: 1em;
+    }
+    .imagentelefono img {
+        margin-left: -1em;
+        margin-top: 0.5em;
+        height: 10%;
+        width: 10%;
+    }
+    .textogmail {
+        margin-left: 3em;
+        font-size: 1em;
+    }
+    .imagengmail img {
+        margin-left: -1em;
+        margin-top: -1em;
+        height: 10%;
+        width: 10%;
+    }
+    .contadortitulo{
+        margin-left: 1em;
+        margin-top: -3.5em;
+    }
+    .contador a img{
+        margin-left: -3em;
+        margin-top: 10em;
+    }
+    .copy{
+        margin-top: 15em;
+        z-index: -1;
+    }
+    .copy a {
+        margin-left: 4em;
+        margin-top: -2em;
+        z-index: -1em;
+    }
+    .copy .texto {
+        margin-left: 13em;
+        margin-top: -2em;
+        z-index: -1;
+        text-align: center;
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 20em;
+        top: 6.5em;
+        width: 6%;
+        height: 6%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 20em;
+        top: 6.5em;
+        width: 6%;
+        height: 6%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 20em;
+        top: 6.5em;
+        width: 6%;
+        height: 6%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+}
+/*------------------------------------------------------------------------------*/
+/*............................DE 500px A 200px.................................*/
+/*------------------------------------------------------------------------------*/
+@media screen and (min-width:320px) and (max-width:500px) {
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+        height: 2px;
+        margin: 0;
+        border: 0;
+        float: center;
+        object-fit: fill;
+    }
+    .titulo1 h1{
+        font-family: chau;
+        display: flex;
+        margin-top: -0.5em;
+        left: -2.8em;
+        position: relative;
+        color: #FFFFFF;
+        font-size: 50px;
+        overflow: hidden;
+        white-space: nowrap;/*ubica el texto en una sola linea*/
+        right: 20em;
+        animation: animacionIntro 1s steps(8) 1s 1 normal both;
+    }
+    .logo1{
+        background-color: transparent;
+        border: 0;
+    }
+    .logo1 a img{
+        transition-duration: 0.5;
+        display: flex;
+        border: 0;
+        margin: 0;
+        cursor: pointer;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: absolute;
+        width: 25%;
+        height: 20%;
+        margin-top: -2.2em;
+        margin-left: -2.1em;
+    }
+    /*PONERLE QUE DIGA INICIO CON EL EFECTO*/
+    .logo1 a img:hover{
+        color:#000000;
+        opacity: 0.5;
+    }
+    h2{
+        font-size: 2em;
+    }
+    p{
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 1em;
+    }
+    h3{
+        font-size: 2em;
+    }
+    article{
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 1em;
+    }
+    .foto1 img{
+        margin-left: 7.2em;
+        height: 30%;
+        width: 30%;
+        margin-top: 2em;
+    }
+    .wrap{
+        width: 90%;
+        height: 30vh;
+        margin-left: 1.5em;
+        margin-right: 3em;  
+    }
+    .eetp{
+        margin-top: 3em;
+        margin-left: 1.5em;
+        margin-right: 3em;
+        width: 90%;
+        height: 30vh;
+    }
+    .logoviejo{
+        width: 90%;
+        height: 40vh;
+        margin-left: 1.5em;
+        margin-right: 3em;
+        margin-top: 3em;
+    }
+    .logonuevo{
+        margin-left: 1.5em;
+        margin-right: 3em;
+        margin-top: 3em;
+        width: 90%;
+        height: 45vh;
+    }
+    .videoescuela video{
+        margin-left: 1.5em;
+        margin-right: 2em;
+        height: 90%;
+        width: 90%;
+    }
+    h5{
+        /*margin-top: 1em;
+        font-size: 2em;*/
+        display: none;
+    }
+    .denominaciones {
+        /*font-size: 0.6em;
+        margin-left: -4em;
+        margin-right: -4em;*/
+        display: none;
+    }
+    .directivos {
+        /*font-size: 0.5em;
+        margin-left: -4em;
+        margin-right: -4em;*/
+        display: none;
+    }
+    .pal1 {
+        /*font-size: 0.7em;
+        margin-left: -1em;
+        line-height: 0%;*/
+        display: none;
+    }
+    .img1 img{
+        width: 80%;
+        height: 80%;
+        margin-left: 1.5em;
+        z-index: 1;
+    }
+    #popup-container {
+        display:none;
+    }
+    .block-scroll {
+        overflow:hidden;
+    }
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:rgba(255, 255, 255, 0.75);
+        padding: 10px 20px;
+    }
+    #popup-overlay{
+        background-color: rgba(0,0,0,0.8);
+        z-index: -1;
+    }
+    .full-layer{
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    footer{
+        width: 100%;
+        height: 30em;
+        z-index: 1;
+        display: flex;
+        position: absolute;
+    }
+    .escuela img {
+        margin-left: 1em;
+        margin-top: 0.3em;
+        height: 20%;
+        width: 50%;
+    }
+    h6 {
+        text-align: justify;
+        font-size: 1em;
+        margin-left: 5.3em;
+        margin-right: -11.2em;
+        margin-top: -4em;
+    }
+    .ubicacion {
+        display: none;
+    }
+    .ubicacion h1 {
+        display: none;   
+    }
+    .datos {
+        margin-left: 4em;
+        margin-top: -34em;
+    }
+    .datos h1{
+        margin-left: -3em;
+        margin-top: 27em;
+    }
+    .textoubi {
+        margin-left: -4.6em;
+        margin-top: -0.1em;
+        font-size: 0.8em;
+    }
+    .imagenubi img {
+        margin-left: -7em;
+        margin-top: 1em;
+        height: 15%;
+        width: 15%;
+    }
+    .textotelefono {
+        margin-left: -4.6em;
+        margin-top: 0.8em;
+        font-size: 0.8em;
+    }
+    .imagentelefono img {
+        margin-left: -7em;
+        margin-top: -0.2em;
+        height: 15%;
+        width: 15%;
+    }
+    .textogmail {
+        margin-left: -4.6em;
+        font-size: 0.8em;
+        margin-top: 1em;
+    }
+    .imagengmail img {
+        margin-left: -7em;
+        margin-top: -0.7em;
+        height: 15%;
+        width: 15%;
+    }
+    .contadortitulo{
+        margin-left: -3.7em;
+        margin-top: -5.6em;
+        font-size: 1em;
+    }
+    .contador a img{
+        margin-left: -4em;
+        margin-top: 2em;
+    }
+    .copy{
+        margin-top: 15em;
+        z-index: -1;
+        background-color: #242120;
+        padding: 2em;
+        grid-template-columns: repeat(3, 1fr);
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        margin: 0 0 0 0;
+        border: 0;
+        display: flex;
+        height: 6em;
+    }
+    .copy a {
+        margin-left: 4em;
+        margin-top: -1.4em;
+        z-index: -1em;
+    }
+    .copy .texto {
+        margin-left: 0.4em;
+        margin-top: 3.8em;
+        z-index: -1;
+        text-align: center;
+        font-size: 10px;
+    }
+    .portfolio img {
+        position: relative;
+        float: left;
+        left: 6.9em;
+        top: 8.6em;
+        width: 13%;
+        height: 10%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .instagram img {
+        position: relative;
+        float: left;
+        left: 9.2em;
+        top: 8.6em;
+        width: 13%;
+        height: 10%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+    .facebook img {
+        position: relative;
+        float: left;
+        left: 3.7em;
+        top: 8.6em;
+        width: 13%;
+        height: 10%;
+        padding: 10px 10px;
+        z-index: 1;
+    }
+}

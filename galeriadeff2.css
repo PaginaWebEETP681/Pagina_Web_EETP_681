@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+}
+.thumbnail {margin-bottom:6px;}
+
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+body{
+    background-color: rgba(79, 187, 187, 0.747);
+}
+.buttonn{
+    width: 6%;
+    height: 10vh;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    border:0;
+    display: block;
+}
+
+.buttonn img{
+    transition-duration: 0.5;
+    height: 10em;
+    border: 0;
+    margin: -1.1em;
+    cursor: pointer;
+    width: 10em;     
+    background-color: transparent;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    position: fixed; 
+    margin-top: 2em;
+    margin-bottom: 1.8em;
+    display: block;
+
+}
+.buttonn{
+    width: 6%;
+    height: 10vh;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    border:0;
+    display: block;
+}
