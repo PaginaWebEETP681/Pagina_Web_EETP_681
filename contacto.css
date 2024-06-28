@@ -3,6 +3,9 @@
     padding: 0;
     border: 0;
 }
+header{
+    background-color: #2b2d9c;
+}
 @font-face{
     font-family:titulo;
     src: url(Buried\ Hopper.ttf);
@@ -17,12 +20,14 @@
     padding-top: 1em;
     font-size: 60px;
     font-family: titulo;
+    color: #FFFFFF;
 }
 .logos{
     float:left;
     width: 50%;
     padding-left: 190px;
     padding-right: 4px;
+    padding-top: 2em;
 }
 .insta img{
     display: flex;
@@ -49,6 +54,7 @@
     position: relative;
     width: 370px;
     height: 350px;
+    top: -2em;
 }
 .texto{
     display: flex;
@@ -56,11 +62,11 @@
     font-size: 25px;
 }
 .instatext{
-    margin-top: -13.3em;
+    margin-top: -12em;
     margin-left: 13em;
 }
 .gmailtext1{
-    margin-top: -10.3em;
+    margin-top: -8em;
     margin-left: -3.1em; 
 }
 .gmailtext2{
@@ -68,10 +74,10 @@
     margin-left: -12.5em;
 }
 .whattext{
-    margin-top: -6.1em;
+    margin-top: -5em;
     margin-left: -13.3em;
 }
 .teltext{
-    margin-top: -2.7em;
+    margin-top: -1.5em;
     margin-left: -7.6em;
 }
