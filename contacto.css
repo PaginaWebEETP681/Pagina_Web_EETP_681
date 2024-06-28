@@ -81,3 +81,82 @@ header{
     margin-top: -1.5em;
     margin-left: -7.6em;
 }
+footer {
+    background-color: #0055b6;
+}
+
+.columna{
+    padding-right: 15em;
+    float: left;
+    width: 25%;
+}
+.container::after{
+    content:" ";
+    clear: both;
+    display: table;
+
+}
+/*.columna{
+    width: 25%;
+    float: inline-start;
+    margin: 1em;
+    text-align: justify;
+    margin-top: 1em;
+}*/
+
+.img1 img{
+    margin-top: -1em;
+    padding-bottom: 1em;
+}
+.img2{
+    margin-top: -1.5em;
+}
+.img3{
+    margin-top: -0.5em;
+}
+.img4{
+    margin-top: -0.6em;
+    margin-left: -0.2em;
+}
+.img5{
+    margin-top: -1.5em;
+    margin-left: 0.15em;
+}
+.teximg{
+    bottom: 2.6em;
+    position: relative;
+    left: 4em;
+}
+.teximg1{
+    bottom: 1.8em;
+    position: relative;
+    left: 4em;
+}
+.teximg2{
+    bottom: 1.7em;
+    position: relative;
+    left: 4em;
+}
+.teximg3{
+    bottom: 2.3em;
+    position: relative;
+    left: 4.5em;
+}
+.teximg4{
+    bottom: 1.8em;
+    position: relative;
+    left: 4.2em;
+}
+.logoF{
+    text-align: center;
+}
+.logoF img{
+    width: 100px;
+    margin-top: 1.5em;
+}
+.copy{
+    text-align: center;
+}
+.tex{
+    text-align: center;
+}
