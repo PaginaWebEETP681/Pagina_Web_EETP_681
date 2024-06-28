@@ -8,7 +8,7 @@ header{
 }
 @font-face{
     font-family:titulo;
-    src: url(Buried\ Hopper.ttf);
+    src: url(imagenescontacto/Buried\ Hopper.ttf);
 }
 .loesc img{
     display: flex;
