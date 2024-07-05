@@ -16,7 +16,7 @@
 /* CELULAR VERTICAL */
 @media (max-width:750px) {
     .header{
-        background-color: rgba(1, 1, 1,); /* intertar arrlegar esa garcha*/
+        background-color: rgba(1, 1, 1, 0.5); /* intertar arrlegar esa garcha*/
         display: flex; 
         margin: 0 ;
         padding: 0; 
