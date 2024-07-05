@@ -590,12 +590,7 @@ footer {
 
 .columna {
     flex: 1;
-    margin: 0 150px;
-}
-
-.columna h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
+    margin: 0 50px;
 }
 
 .columna p {
