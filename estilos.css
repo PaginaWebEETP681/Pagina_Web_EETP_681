@@ -27,7 +27,6 @@
         left: 0;
         right: 0;
         padding: 0 3em;
-        display: flex; 
         align-items: center;
         justify-content: space-between;
         z-index: 1000;  
@@ -503,7 +502,7 @@
 .header label img{
     height: 30px;
     width: 30px;
-    color: rgb(255, 255, 255, 0.5);
+    color: rgb(1, 1, 1, 0.5);
 } 
 
 @media(max-width:1080px){
