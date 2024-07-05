@@ -593,6 +593,11 @@ footer {
     margin: 0 50px;
 }
 
+.columna h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
 .columna p {
     font-size: 0.9em;
 }
@@ -616,6 +621,12 @@ footer {
     bottom: 28px;
     left: 35px;
 }
+.copy{
+    text-align: center;
+    bottom: -1em;
+    position: relative;
+}
+
 .copy{
     text-align: center;
     bottom: -1em;
