@@ -49,114 +49,99 @@ header{
     position: relative;
     width: 10%;
 }
-.ubic{
-    display: flex;
-    position: relative;
-    width: 370px;
-    height: 350px;
-    top: 2em;
-}
 .texto{
     display: flex;
     position: absolute;
     font-size: 25px;
 }
 .instatext{
-    margin-top: -12em;
+    margin-top: 2.1em;
     margin-left: 13em;
 }
 .gmailtext1{
-    margin-top: -8em;
+    margin-top: 4.9em;
     margin-left: -3.1em; 
 }
 .gmailtext2{
-    margin-top: -9.3em;
+    margin-top: 6em;
     margin-left: -12.5em;
 }
 .whattext{
-    margin-top: -5em;
+    margin-top: 9em;
     margin-left: -13.3em;
 }
 .teltext{
-    margin-top: -1.5em;
+    margin-top: 12em;
     margin-left: -7.6em;
+}
+.ubic{
+    display: flex;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    top: 21em;
+    left: 54em;
+}
+.texubi{
+    display: flex;
+    position: absolute;
+    left: 60em;
+    top: 18.5em;
+    font-size: 15px;
 }
 footer {
     background-color: #0055b6;
-}
-
-.columna{
-    padding-right: 15em;
-    float: left;
-    width: 25%;
-}
-.container::after{
-    content:" ";
-    clear: both;
-    display: table;
-
-}
-/*.columna{
-    width: 25%;
-    float: inline-start;
-    margin: 1em;
-    text-align: justify;
-    margin-top: 1em;
-}*/
-
-.img1 img{
-    margin-top: -1em;
-    padding-bottom: 1em;
-}
-.img2{
-    margin-top: -1.5em;
-}
-.img3{
-    margin-top: -0.5em;
-}
-.img4{
-    margin-top: -0.6em;
-    margin-left: -0.2em;
-}
-.img5{
-    margin-top: -1.5em;
-    margin-left: 0.15em;
-}
-.teximg{
-    bottom: 2.6em;
-    position: relative;
-    left: 4em;
-}
-.teximg1{
-    bottom: 1.8em;
-    position: relative;
-    left: 4em;
-}
-.teximg2{
-    bottom: 1.7em;
-    position: relative;
-    left: 4em;
-}
-.teximg3{
-    bottom: 2.3em;
-    position: relative;
-    left: 4.5em;
-}
-.teximg4{
-    bottom: 1.8em;
-    position: relative;
-    left: 4.2em;
-}
-.logoF{
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
+    padding-bottom: -1em;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    bottom: -15em;
 }
-.logoF img{
-    width: 100px;
-    margin-top: 1.5em;
+
+.containerfoot {
+    display: flex;
+    justify-content: space-around;
+}
+
+.columna {
+    flex: 1;
+    margin: 0 50px;
+}
+
+.columna h1 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.columna p {
+    font-size: 0.9em;
+}
+.contactos{
+    text-align: left;
+}
+.imggmail{
+    bottom: -20px;
+    position: relative;
+}
+.aaaa{
+    left: 35px;
+    position: relative;
+}
+.tel{
+    bottom: -8px;
+    position: relative;
+}
+.eetptxt{
+    position: relative;
+    bottom: 28px;
+    left: 35px;
 }
 .copy{
     text-align: center;
+    bottom: -1em;
 }
-.tex{
-    text-align: center;
-}
+
+
