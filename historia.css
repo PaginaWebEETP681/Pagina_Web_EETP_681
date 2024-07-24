@@ -359,216 +359,65 @@ body{
 
 /*ESCRITORIO*/
 /*----------------------------------FOOTER GENERAL--------------------------------*/
-footer{
-    background-color: #333333;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 350px;
-    position: absolute;
-    border: 0;
-    /*bottom: 0;*/
-    display: block;
-    flex-direction: column;
-}
-/*-------------------------------------------------------------------------------*/
-/*---------------------------------FOOTER contenedor*---------------------------*/
-.footer{
-    display: flex;
-    width: 100%;
-}
-/*-------------------------------------------------------------------------------*/
-/*-------------------------------------------H1----------------------------------*/
-h1{
-    color: white;
-    font-size: 1.5em;
-    font-family:titulo;
-}
-@font-face{
-    font-family: titulo;
-    src: url(Vogue.ttf);
-}
-/*-------------------------------------------------------------------------------*/
-/*.---------------------------------ESCUELA-------------------------------------*/
-.escuela{
-    width: 25%;
-    margin-left: 1%;
-    margin-top: -1em;
-}
-.escuela h1{
-    margin-top: 70px;
-}
-/*ESCUELA IMAGEN*/
-.escuela img{
-    height: 150px;
-    width: 150px;
-    margin-left: 38%;
-}
-h6{
-    color: white;
-    margin-bottom: -15%;
-    text-align: justify;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 400;
-    font-size: 1.4em;
-    margin-left: 2em;
-    text-align: center;
-} 
-/*------------------------------TERMINA ESCUELA--------------------------------*/
-/*----------------------------------UBICACION----------------------------------*/
-.ubicacion{
-    width: 15%;
-}  
-.ubicacion h1{
-    margin-top: 40px;
-    margin-left: -2em;
-}
-.ubicacion img{
-    height: 10px;
-    width: 10px;
-    margin-right: 10%;
-    display: flex;
-} 
-/*---------------------------TERMINA UBICACION--------------------------------*/
-/*-----------------------------------DATOS------------------------------------*/
-.datos{
-    width: 40%;
-}
-.datos h1{
-    margin-top: 35px;  
-    margin-left: 1.5em;
-}
-/*------------------------------datos ubicación---------------------------------*/
-.textoubi{
-    color: white;
-    margin-left: 30%; 
-    position: relative; 
-    display: flex; 
-    top: -15px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 100;
-    font-size: 1em;
-}
-.imagenubi img{
-    height: 7%;
-    width: 7%;
-    margin-left: 20%;
-    display: flex;
-    position: relative;
-}
-/*---------------------------termina datos ubicación----------------------------*/
-/*--------------------------datos telefono--------------------------------------*/
-.textotelefono {
-    color: white;
-    margin-left: 30%;
-    position: relative;
-    display: flex;
-    top: -27px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 100;
-    font-size: 1em;
-}
-.imagentelefono img{
-    height: 7%;
-    width: 7%;
-    margin-left: 20%;
-    display: flex;
-    position: relative;
-}
-/*-------------------------termina datos telefono-------------------------------*/
-/*-------------------------------------datos gmail------------------------------*/
-.textogmail {
-    color: white;
-    margin-left: 30%;
-    position: relative;
-    display: flex;
-    top: -35px;
-    font-family:'Times New Roman', Times, serif;
-    font-weight: 100;
-    font-size: 1em;
-}
-.imagengmail img{
-    height: 7%;
-    width: 7%;
-    margin-left: 20%;
-    display: flex;
-    position: relative;
-}
-/*--------------------------termina datos  gmail--------------------------------*/
-/*------------------------------TERMINA DATOS-----------------------------------*/
-/*-----------------------------COMIENZA CONTADOR--------------------------------*/
-.contadortitulo{ 
-    color: white;
-    font-size: 1.5em;
-    font-family:titulo;  
-    top: 25%;
-    margin-top: 13%;
+footer {
+    background-color: #0055b6;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
 }
-.contador {
-    text-align: center;
-}
-/*----------------------------TERMINA CONTADOR----------------------------------*/
-.copy .texto{
-    margin-top: -1.5%;
-    margin-left: 42.5%;
-    color: #ffffff;
-}
-.copy a{
-    margin-top: -1.5%;
-    margin-left: 33%;
-    color: #ffffff;
-    position:absolute;
+
+.containerfoot {
     display: flex;
+    justify-content: space-around;
 }
-.copy a:hover {
-    color: blue;
+
+.columna {
+    flex: 1;
+    margin: 0 50px;
+}
+
+.columna h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.columna p {
+    font-size: 0.9em;
+}
+.contactos{
+    text-align: left;
+}
+.imggmail{
+    bottom: -20px;
+    position: relative;
+}
+.aaaa{
+    left: 35px;
+    position: relative;
+}
+.tel {
+    bottom: -8px;
+    position: relative;
+}
+.eetptxt{
+    position: relative;
+    bottom: 28px;
+    left: 35px;
 }
 .copy{
-    background-color: #242120;
-    padding: 2em;
-    grid-template-columns: repeat(3, 1fr);
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    margin: 0 0 0 0;
-    border: 0;
-    display: flex;
-    height: 25px;
-}
-hr{
-    margin-top: -5.8%;
-}
-.redes {
-    background-color: #1C1266;
-} 
-.portfolio img{
-    height: 2.5%;
-    width: 2.5%;
+    text-align: center;
+    bottom: -1em;
     position: relative;
-    float: left;
-    left: 50em;
-    top: 1.5em;
-    padding: 10px 10px;
 }
-.instagram img{
-    height: 2.5%;
-    width: 2.5%;
+
+.copy{
+    text-align: center;
+    bottom: -1em;
     position: relative;
-    float: left;
-    left: 50em;
-    top: 1.5em;
-    padding: 10px 10px;
 }
-.facebook img{
-    height: 2.5%;
-    width: 2.5%;
-    position: relative;
-    float: left;
-    left: 50em;
-    top: 1.5em;
-    padding: 10px 10px;
-}
+
+
+
 /*------------------------------------------------------------------------------*/
 /*.............................DE 1024px A 2000px...............................*/
 /*------------------------------------------------------------------------------*/
