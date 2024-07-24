@@ -433,63 +433,73 @@
     }
 }   
 /* menu de navegacion*/
-.nav ul{
-    list-style: none; 
-
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
-.header .nav ul li { 
+
+.header .nav ul li {
     float: left;
     position: relative;
 }
-.header .nav ul li a{ 
-    font-family: hola;
+
+.header .nav ul li a {
+    font-family: 'hola'; /* Asegúrate de que 'hola' es la fuente correcta y está disponible */
     font-size: 30px;
     color: #fff;
     text-decoration: none;
-    padding: 18px; /*  espaciado entre el menu fijo*/
+    padding: 18px;
     display: flex;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
 }
+
 .header .nav ul li a:hover {
-    background-color: #51829C; 
-}  
-/*SUBMENU */
+    background-color: #51829C;
+}
+
+/* SUBMENU */
 .header .nav ul li ul {
     width: 200px;
-    display: flex;
+    display: none; /* Ocultar el submenú por defecto */
     flex-direction: column;
     background-color: #2a6a7a;
     position: absolute;
-    left: -5px;
-    padding: 14px 0px;
+    left: 0;
+    top: 100%;
+    padding: 14px 0;
     visibility: hidden;
     opacity: 0;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);  
-    z-index: 10;   
-    transition: all 300ms ease;   
-} 
-.header .nav ul li:hover ul { 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: all 300ms ease;
+}
+
+.header .nav ul li:hover ul {
+    display: block; /* Mostrar el submenú cuando se hace hover en el elemento padre */
     visibility: visible;
     opacity: 1;
-    position: absolute; 
-
 }
+
 .nav ul li ul li a {
     display: block;
     color: #0099E9;
-    padding: 6px; 
-    padding-left: 14px;
+    padding: 10px 20px; /* Ajusta el padding según tus necesidades */
     margin-top: 10px;
-    font-size: 114px; 
+    font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+    text-decoration: none;
     transition: all 300ms ease;
-} 
-.nav ul li ul li a:hover{
+}
+
+.nav ul li ul li a:hover {
     background-color: #0099E9;
     color: #fff;
     transform: scale(1.1);
-    padding-left: 30px; 
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5); 
+    padding-left: 30px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
 }
+
+/*AAAAA*/
 
 #toggle,
 
