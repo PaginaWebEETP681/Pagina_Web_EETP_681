@@ -48,51 +48,51 @@ body{
 .instimg{
     position: relative;
     left: 150px;
-    top: 30px;
+    top: 50px;
 }
 .insttext{
     position: relative;
     left: 250px;
-    top: -19px;
+    top: -5px;
     font-size: 30px;
 }
 .whatsimg{
     position: relative;
     left: 150px;
-    top: 30px;
+    top: 50px;
 }
 .whatstext{
     position: relative;
     left: 250px;
-    top: -19px;
+    top: -5px;
     font-size: 30px;
 }
 .tellimg{
     position: relative;
     left: 150px;
-    top: 30px;
+    top: 50px;
 }
 .telltext{
     position: relative;
     left: 250px;
-    top: -19px;
+    top: -5px;
     font-size: 30px;
 }
 .mailimg{
     position: relative;
     left: 150px;
-    top: 30px;
+    top: 50px;
 }
 .mailtext1{
     position: relative;
     left: 250px;
-    top: -45px;
+    top: -25px;
     font-size: 30px;
 }
 .mailtext2{
     position: relative;
     left: 250px;
-    top: -45px;
+    top: -25px;
     font-size: 30px;
 }
 .ubic{
@@ -100,7 +100,7 @@ body{
     align-self: center;
     margin-left: 300px;
     margin-right: 1px;
-    margin-top: 50px;
+    margin-top: 75px;
     margin-bottom: 50px;
     
 
