@@ -437,6 +437,7 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    font-size:20px;
 }
 
 .header .nav ul li {
@@ -447,7 +448,7 @@
 
 .header .nav ul li a {
     font-family: 'hola'; /* Asegúrate de que 'hola' es la fuente correcta y está disponible */
-    font-size: 30px;
+    font-size: 20px;
     color: #fff;
     text-decoration: none;
     padding: 18px;
