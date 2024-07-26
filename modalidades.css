@@ -24,10 +24,6 @@ header{
     width: 100%;
     display: flex;
 }
-.logo{
-    background-color: transparent;
-    border: 0;
-}
 .logo1 a img{
     transition-duration: 0.5;
     display: flex;
