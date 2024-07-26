@@ -332,7 +332,8 @@ body{
     z-index: 1;
 }
 #popup-container {
-    display:none;    
+    display:none;  
+    overflow-x: hidden;
 }
 .block-scroll {
     overflow:hidden;
@@ -344,6 +345,7 @@ body{
     transform: translate(-50%, -50%);
     background-color:rgba(255, 255, 255, 0.75);
     padding: 10px 20px;
+    
 }
 #popup-overlay{
     background-color: rgba(0,0,0,0.8);
