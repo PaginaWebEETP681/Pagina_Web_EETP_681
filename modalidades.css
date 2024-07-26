@@ -1,8 +1,16 @@
-{
-    border: 0;
-    padding: 0;
+*{
     margin: 0;
-    overflow-x: hidden; 
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: hola;
+    src: url(Imageneshistoria/Vogue.ttf);
+}
+@font-face {
+    font-family: chau;
+    src: url(imagenes/Buried\ Hopper.ttf);
 }
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
@@ -12,26 +20,41 @@ header{
     padding: 2em;
     background-color:#2b2d9c ;
     background-repeat: no-repeat;
+    height: 00px;
+    width: 100%;
+    display: flex;
 }
 .logo{
     background-color: transparent;
     border: 0;
 }
 .logo a img{
+    transition-duration: 0.5;
+    display: flex;
+    border: 0;
+    margin: 0;
+    cursor: pointer;
     background-color: transparent;
     background-repeat: no-repeat;
+    object-fit: fill;
     position: absolute;
-    width: 1%;
-    height: 5%;
+    width: 5%;
+    height: 11%;
     margin-top: -1.5em;
     margin-left: -1.2em;
+}
+/*PONERLE QUE DIGA INICIO CON EL EFECTO*/
+.logo1 a img:hover{
+    color:#000000;
+    opacity: 0.5;
 }
 .titulo{
     font-family: chau;
     text-align: center;
-   letter-spacing: 10px;
+    letter-spacing: 10px;
+    /*z-index: 1;*/
     display: flex;
-    margin-left: 1em;
+    margin-left: 2.6em;
     margin-top: -0.6em;
     position: absolute;
     font-size: 3em;
