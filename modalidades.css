@@ -24,7 +24,7 @@ header{
     width: 100%;
     display: flex;
 }
-.logo1 a img{
+.logo a img{
     transition-duration: 0.5;
     display: flex;
     border: 0;
