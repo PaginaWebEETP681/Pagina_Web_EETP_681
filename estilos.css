@@ -21,7 +21,7 @@
         padding: 0; 
         box-sizing: inherit;
        /* position: fixed;*/
-        background-color: rgba(60, 117, 163, 0.5);
+        background-color: rgba(41, 88, 125);
         top: 0;
         left: 0;
         right: 0;
@@ -130,7 +130,7 @@
 @media (min-width:751px) and (max-width:1279px) {  
     .header {
        /* position: fixed;*/
-        background-color: rgba(60, 117, 163, 0.5);
+        background-color: rgba(41, 88, 125);
         top: 0;
         left: 0;
         right: 0;
@@ -280,7 +280,7 @@
 @media (min-width:1280px) {  
     .header{ 
        /* position: fixed;*/
-        background-color: rgba(60, 117, 163, 0.5);
+        background-color: rgba(41, 88, 125);
         top: 0;
         left: 0;
         right: 0;
