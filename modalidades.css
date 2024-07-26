@@ -38,10 +38,9 @@ header{
 .titulo{
     font-family: chau;
     text-align: center;
-    letter-spacing: 10px;
-    /*z-index: 1;*/
+   /* letter-spacing: 10px;*/
     display: flex;
-    margin-left: 2.6em;
+    margin-left: 1em;
     margin-top: -0.6em;
     position: absolute;
     font-size: 3em;
