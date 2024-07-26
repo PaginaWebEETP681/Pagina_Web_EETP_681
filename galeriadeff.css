@@ -3,7 +3,20 @@
     margin: 0;
     top: 0;
 }
+/*AAAAAAAAA*/
+.clickable-img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Transición suave para el agrandamiento */
+}
 
+/* CSS para el estilo ampliado de la imagen */
+.clickable-img.expanded {
+    transform: scale(1.5); /* Ajusta el factor de escala según tus necesidades */
+    z-index: 1000; /* Asegúrate de que la imagen ampliada esté encima de otras */
+    position: relative; /* Necesario para el efecto de escala */
+}
+/*AAAAAAAAAA*/
 /*---------espacios que ocupa la imagen------------------*/
 
 @media (min-width:900px){
