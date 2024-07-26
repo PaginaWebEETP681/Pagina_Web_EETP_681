@@ -332,7 +332,7 @@ body{
 }
 #popup-container {
     display:none;  
-    overflow-x: hidden;
+   
 }
 .block-scroll {
     overflow:hidden;
