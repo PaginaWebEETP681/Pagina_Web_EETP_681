@@ -12,6 +12,54 @@
     font-family: chau;
     src: url(imagenes/Buried\ Hopper.ttf);
 }
+header{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 4em;
+    padding: 2em;
+    background-color:#2b2d9c ;
+    background-repeat: no-repeat;
+    height: 00px;
+    width: 100%;
+    display: flex;
+}
+.logo{
+    background-color: transparent;
+    border: 0;
+}
+.logo1 a img{
+    transition-duration: 0.5;
+    display: flex;
+    border: 0;
+    margin: 0;
+    cursor: pointer;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    position: absolute;
+    width: 5%;
+    height: 11%;
+    margin-top: -1.5em;
+    margin-left: -1.2em;
+}
+.titulo{
+    font-family: chau;
+    text-align: center;
+    letter-spacing: 10px;
+    /*z-index: 1;*/
+    display: flex;
+    margin-left: 2.6em;
+    margin-top: -0.6em;
+    position: absolute;
+    font-size: 3em;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;/*ubica el texto en una sola linea*/
+    color: #FFFFFF;
+    width: 0;
+    animation: animacionIntro 1s steps(8) 1s 1 normal both;
+}
 table{
     border-color: black;
     border-collapse: collapse;
