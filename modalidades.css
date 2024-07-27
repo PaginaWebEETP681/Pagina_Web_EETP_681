@@ -49,10 +49,6 @@ header{
     font-size: 3em;
     font-weight: 700;
     overflow: hidden;
-    white-space: nowrap;/*ubica el texto en una sola linea*/
-    color: #FFFFFF;
-    width: 0;
-    animation: animacionIntro 1s steps(8) 1s 1 normal both;
 }
 table{
     border-color: black;
