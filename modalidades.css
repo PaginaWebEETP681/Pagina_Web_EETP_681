@@ -37,19 +37,6 @@ header{
     margin-top: -1.5em;
     margin-left: -1.2em;
 }
-.titulo h1{
-    font-family: chau;
-    text-align: center;
-    letter-spacing: 10px;
-    z-index: 1;
-    display: flex;
-    margin-left: 2.6em;
-    margin-top: -0.6em;
-    position: absolute;
-    font-size: 3em;
-    font-weight: 700;
-    overflow: hidden;
-}
 table{
     border-color: black;
     border-collapse: collapse;
