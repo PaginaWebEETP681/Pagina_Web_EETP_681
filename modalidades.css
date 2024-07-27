@@ -24,7 +24,7 @@ header{
     width: 100%;
     display: flex;
 }
-.logo a img{
+.logo{
     width: 20%;
     height: 9%;
     margin-top: -3em;
