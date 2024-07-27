@@ -43,23 +43,6 @@ header{
     margin-top: -1.5em;
     margin-left: -1.2em;
 }
-.h1{
-    font-family: chau;
-    text-align: center;
-    letter-spacing: 10px;
-    /*z-index: 1;*/
-    display: flex;
-    margin-left: 2.6em;
-    margin-top: -0.6em;
-    position: absolute;
-    font-size: 3em;
-    font-weight: 700;
-    overflow: hidden;
-    white-space: nowrap;/*ubica el texto en una sola linea*/
-    color: #FFFFFF;
-    width: 0;
-    animation: animacionIntro 1s steps(8) 1s 1 normal both;
-}
 table{
     border-color: black;
     border-collapse: collapse;
