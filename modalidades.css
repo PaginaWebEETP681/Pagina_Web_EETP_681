@@ -40,6 +40,7 @@ header{
 .titulo h1{
     font-family: chau;
     text-align: center;
+    letter-spacing: 10px;
     z-index: 1;
     display: flex;
     margin-left: 4em;
