@@ -13,8 +13,6 @@
     src: url(imagenes/Buried Hopper.ttf);
 }
 header{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:#FFFFFF;
     font-weight: bold;
     font-size: 4em;
     padding: 2em;
