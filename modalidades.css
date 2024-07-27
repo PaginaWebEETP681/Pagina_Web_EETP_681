@@ -13,7 +13,6 @@
     src: url(imagenes/Buried Hopper.ttf);
 }
 header{
-    font-weight: bold;
     font-size: 4em;
     padding: 2em;
     background-color:#2b2d9c ;
@@ -27,7 +26,6 @@ header{
     border: 0;
 }
 .logo a img{
-    transition-duration: 0.5;
     display: flex;
     border: 0;
     margin: 0;
