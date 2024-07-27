@@ -25,15 +25,6 @@ header{
     display: flex;
 }
 .logo a img{
-    transition-duration: 0.5;
-    display: flex;
-    border: 0;
-    margin: 0;
-    cursor: pointer;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    object-fit: fill;
-    position: absolute;
     width: 3%;
     height: 9%;
     margin-top: -3em;
