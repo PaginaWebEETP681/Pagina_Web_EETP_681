@@ -586,59 +586,107 @@ body{
     padding: 0;
     overflow-y: auto;
 }   
-footer {
+footer{
     background-color: #0055b6;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
-}
-
-.containerfoot {
-    display: flex;
-    justify-content: space-around;
-}
-
-.columna {
-    flex: 1;
-    margin: 0 50px;
-}
-
-.columna h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.columna p {
-    font-size: 0.9em;
-}
-.contactos{
-    text-align: left;
-}
-.imggmail{
-    bottom: -20px;
+    bottom:-1em;
     position: relative;
+    height: 22em;
 }
-.aaaa{
-    left: 35px;
-    position: relative;
+.columnafoo{
+    float:left;
+    width: 33%;
+    padding-right: 1px;
 }
-.tel {
-    bottom: -8px;
-    position: relative;
+.filafoo::after{
+    content:" ";
+    clear: both;
+    display: table;   
+    margin-top: 2em;
 }
-.eetptxt{
+.logoimg{
     position: relative;
-    bottom: 28px;
-    left: 35px;
+    top: 5em;
+}
+.logotext{
+    position: relative;
+    top: 90px;
+    font-size: 20px;
+}
+.titulofoo{
+    position: relative;
+    top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.mapaimg{
+    position: relative;
+    top: 45px;
+    right: 130px;
+}
+.mapatext{
+    position: relative;
+    top: 20px;
+    right: -20px;
+}
+.telimg{
+    position: relative;
+    top: 40px;
+    right: 130px;
+}
+.teltext{
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+.whatimg{
+    position: relative;
+    top: 30px;
+    right: 130px;
+}
+.whattext{
+    position: relative;
+    top: 2px;
+    right: 30px;
+}
+.correoimg{
+    position: relative;
+    top: 20px;
+    right: 130px;
+}
+.correotext1{
+    position: relative;
+    top: -18px;
+    right: -8px;
+}
+.correotext2{
+    position: relative;
+    top: -18px;
+    right: -2px;
+}
+.instaimg{
+    position: relative;
+    top: -5px;
+    right: 130px;
+}
+.instatext{
+    position: relative;
+    top: -33px;
+    right: 55px;
+}
+.contador{
+    position: relative;
+    top: 90px;
 }
 .copy{
-    text-align: center;
-    bottom: -1em;
     position: relative;
+    bottom: 10px;
+}
+.copytext{
+    position: relative;
+    bottom: 5px;
 }
 
-.copy{
-    text-align: center;
-    bottom: -1em;
-    position: relative;
-}
+
+
