@@ -585,6 +585,7 @@ body{
     font-family: sans-serif;
     padding: 0;
     overflow-y: auto;
+    overflox-x: hidden;
 }   
 footer {
     background-color: #0055b6;
