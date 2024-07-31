@@ -1,8 +1,10 @@
 *{ 
     padding: 0;
     margin: 0;
+  
 }
 *::before,
+
 *::after{ 
     margin: 0;
     padding: 0;
@@ -15,6 +17,7 @@
 }
 /* CELULAR VERTICAL */
 @media (max-width:750px) {
+
     .header{
         display: flex; 
         margin: 0 ;
@@ -29,24 +32,71 @@
         align-items: center;
         justify-content: space-between;
         z-index: 1000;  
+        
     } 
+    body {
+        overflow-x: hidden;
+    }
     .logo img{
         height: 3em;
         width: 3em; 
         margin-left: 0;  
         display: flex;  
     }
+    .slider-box {
+        width: 100%;
+        height: 100vh;
+        overflow: hidden; /* Prevents overflow */
+        position: relative;
+    }
+
+    .slider-box ul {
+        display: flex;
+        padding: 0;
+        width: 400%; /* 4 images, each taking up 100% */
+        height: 100%;
+        margin: 0; /* Ensure no extra margin */
+        list-style: none; /* Remove default list styles */
+        position: absolute; /* Position relative to the container */
+        top: 0; /* Align with the top of the slider */
+        left: 0; /* Align with the left of the slider */
+    }
+
+    .slider-box li {
+        flex: 0 0 100%; /* Ensures each item takes up 100% width */
+        height: 100%;
+    }
+
+    .slider-box img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover; /* Ensures images cover the container */
+    }
+
+    @keyframes slide {
+        0% { margin-left: 0; }
+        25% { margin-left: -100%; }
+        50% { margin-left: -200%; }
+        75% { margin-left: -300%; }
+        100% { margin-left: -400%; } /* Updated for 4 images */
+    }
+
+    .slider-box ul {
+        animation: slide 20s infinite linear; /* Adjust duration as needed */
+    }
+    
+    /*
     .slider-box img {  
         width: 100%; 
         height: 100vh;
         max-width: 100%;   
         background: url(imginicio/7.jpg); 
         position: relative;
-    }   
+    } */  
     .sec1{
         background-color: #fff;
         display: flex;
-        top: 7em;
+        top: 8em;
         position: absolute;
         height: 25vh;
         width: 35vw;
@@ -67,7 +117,7 @@
     .sec2{
         background-color: #fff;
         display: flex;
-        top: 7em;
+        top: 8em;
         position: absolute;
         height: 25vh;
         width: 35vw;
@@ -87,7 +137,7 @@
     .sec3{
         background-color: #fff;
         display: flex;
-        bottom: 2em;
+        bottom: 8em;
         position: absolute;
         height: 25vh;
         width: 35vw;
@@ -107,7 +157,7 @@
     .sec4{
         background-color: #fff;
         display: flex;
-        bottom: 2em;
+        bottom: 8em;
         position: absolute;
         height: 25vh;
         width: 35vw;
@@ -585,7 +635,7 @@ body{
     font-family: sans-serif;
     padding: 0;
     overflow-y: auto;
-    overflox-x: hidden;
+    overflow-x: hidden;
 }   
 footer {
     background-color: #0055b6;
@@ -643,6 +693,3 @@ footer {
     bottom: -1em;
     position: relative;
 }
-
-
-
