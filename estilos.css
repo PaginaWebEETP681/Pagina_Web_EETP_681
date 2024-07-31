@@ -29,7 +29,6 @@
         align-items: center;
         justify-content: space-between;
         z-index: 1000;  
-        opacity: 0.5;
     } 
     .logo img{
         height: 4em;
