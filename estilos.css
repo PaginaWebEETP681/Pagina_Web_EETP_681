@@ -53,13 +53,13 @@
     .slider-box ul {
         display: flex;
         padding: 0;
-        width: 400%; /* 4 images, each taking up 100% */
+        width: 400%; /* 4 images*/
         height: 100%;
-        margin: 0; /* Ensure no extra margin */
-        list-style: none; /* Remove default list styles */
-        position: absolute; /* Position relative to the container */
-        top: 0; /* Align with the top of the slider */
-        left: 0; /* Align with the left of the slider */
+        margin: 0;
+        list-style: none;
+        position: absolute; /
+        top: 0; 
+        left: 0; 
     }
 
     .slider-box li {
@@ -78,11 +78,11 @@
         25% { margin-left: -100%; }
         50% { margin-left: -200%; }
         75% { margin-left: -300%; }
-        100% { margin-left: -400%; } /* Updated for 4 images */
+        100% { margin-left: -400%; }
     }
 
     .slider-box ul {
-        animation: slide 20s infinite linear; /* Adjust duration as needed */
+        animation: slide 20s infinite linear;
     }
     
     /*
@@ -642,6 +642,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
+    overflox-x: hidden;
 }
 
 .containerfoot {
