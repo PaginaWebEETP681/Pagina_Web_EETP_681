@@ -13,6 +13,9 @@
     font-family: chau;
     src: url(imagenes/Buried\ Hopper.ttf);
 }
+ body {
+    overflow-x:hidden;
+    }
 header{
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
@@ -429,6 +432,9 @@ footer {
         padding: 0;
         border: 0;
     }
+     body {
+    overflow-x:hidden;
+    }
     header{
         background-image: 100% center;
         background-position: 100% center;
@@ -657,6 +663,9 @@ footer {
         margin: 0;
         padding: 0;
         border: 0;
+    }
+     body {
+    overflow-x:hidden;
     }
     header{
         background-image: 100% center;
@@ -905,6 +914,9 @@ footer {
         padding: 0;
         border: 0;
     }
+     body {
+    overflow-x:hidden;
+    }
     header{
         background-image: 100% center;
         background-position: 100% center;
@@ -1065,6 +1077,9 @@ footer {
         margin: 0;
         padding: 0;
         border: 0;
+    }
+    body {
+    overflow-x:hidden;
     }
     header{
         background-image: 100% center;
