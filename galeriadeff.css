@@ -33,7 +33,7 @@
 
 @media (min-width:1300px) {
 
-    .titulo{
+    header {
     font-family:Georgia, 'Times New Roman', Times, serif;
     color:#FFFFFF;
     font-weight: bold;
