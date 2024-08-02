@@ -190,6 +190,9 @@
         z-index: 1000;  
         box-sizing: inherit; 
     }
+    body {
+        overflow-x: hidden;
+    }
     .logo img{
         height: 4em;
         width: 5em; 
@@ -346,6 +349,9 @@
         display:flex; 
         padding: 1em; 
        
+    }
+    body {
+        overflow-x: hidden;
     }
     /*CARRUSEL*/
     #toggle
