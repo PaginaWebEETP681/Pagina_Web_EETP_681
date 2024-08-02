@@ -40,6 +40,7 @@
     @font-face{
         font-family:titulo;
         src: url(galeria/Buried\ Hopper.ttf);
+        text-align: center;
     }
     .titulo{
         padding-top: 1em;
