@@ -3,20 +3,9 @@
     margin: 0;
     top: 0;
 }
-/*AAAAAAAAA*/
-.clickable-img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease; /* Transición suave para el agrandamiento */
-}
 
-/* CSS para el estilo ampliado de la imagen */
-.clickable-img.expanded {
-    transform: scale(1.5); /* Ajusta el factor de escala según tus necesidades */
-    z-index: 1000; /* Asegúrate de que la imagen ampliada esté encima de otras */
-    position: relative; /* Necesario para el efecto de escala */
-}
-/*AAAAAAAAAA*/
+
+
 /*---------espacios que ocupa la imagen------------------*/
 
 @media (min-width:900px){
@@ -33,7 +22,7 @@
 
 @media (min-width:1300px) {
 
-     header{
+    header{
         background-color: #2b2d9c;
         width: 100%;
     }
@@ -42,12 +31,25 @@
         src: url(galeria/Buried\ Hopper.ttf);
     }
     .titulo{
-        padding-top: 1em;
+        padding-top: 0.3em;
         font-size: 60px;
         font-family: titulo;
         color: #FFFFFF;
         text-align: center;
     }
+    .grid-item.expanded,
+    .grid-item-wide.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Ajusta la escala según sea necesario */
+    z-index: 1000;
+    height: auto; /* Mantiene la relación de aspecto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
 
     .años {
         display: flex;
@@ -56,17 +58,13 @@
         justify-content: center;
         font-size: 30px;
         color:#fff;
-        background-color: #2a6a7a;
+        background-color: #4543c9;
        
         color: #ffffff;
         transition: all 0.5s ease ;
     }
     
-    .años:hover{
-        background-color: #fff;
-        color: #1b454d;
-    }
-
+  
     .subtitulos {
         display: flex;
         margin-top: 0.8em;
@@ -74,7 +72,8 @@
         justify-content: center;
         font-size: 30px;
         color:#fff;
-        background-color: #498291;
+        background-color: #6e6cee;
+  
        
     }
 
@@ -94,7 +93,6 @@
     }
 
     .grid-item:hover {
-        filter: opacity(0.9);
         transform: scale(1.02);
        }
 
@@ -113,7 +111,6 @@
     }
 
     .grid-item-wide:hover {
-        filter: opacity(0.9);
         transform: scale(1.02);
        }
 
@@ -132,19 +129,78 @@
     }
 
     .grid-item-tall:hover {
-        filter: opacity(0.9);
         transform: scale(1.02);
        }
 
+       .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-auto-rows: minmax(600px, auto);
+        gap: 30px;
+        padding: 30px;
+        grid-auto-flow: dense;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overlay-content img {
+        max-width: 100%;
+        max-height: 100%;
+        border: 5px solid white;
+    }
+ 
     .grid-container {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)); /*tamaño de las imagenes*/ /*fr medida que ocupa el espacio que sobra*/ /*auto-fit es para que las imagenes si son pocas llenen todo el espacio*/
-        grid-auto-rows: minmax(600px, auto); /*alto de las imagenes*/ /*minmax (auto) para que se acomode automaticamente*/
-        gap:30px; /*separacion entre las imagenes*/
-        padding: 30px; /*separacion de los bordes de la pantalla y las imagenes*/
-        grid-auto-flow: dense; /*acomoda las imagnes para que no quedes espacios*/ 
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-auto-rows: minmax(600px, auto);
+        gap: 30px;
+        padding: 30px;
+        grid-auto-flow: dense;
     }
-
+    .buttonn{
+        width: 6%;
+        height: 10vh;
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        border:0;
+        display: block;
+    }
+    
+    .buttonn img{
+        transition-duration: 0.5;
+        height: 6em;
+        border: 0;
+        margin: 0.5;
+        cursor: pointer;
+        width: 6em;     
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: fixed; 
+        margin-top: 0.5;
+        display: block;
+    }
 }
 
 /*-------------------TABLET-------------------------*/
@@ -160,11 +216,52 @@
         src: url(galeria/Buried\ Hopper.ttf);
     }
     .titulo{
-        padding-top: 1em;
+        padding-top: 0.3em;
         font-size: 40px;
         font-family: titulo;
         color: #FFFFFF;
         text-align: center;
+    }
+
+    .grid-item.expanded,
+    .grid-item-wide.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Ajusta la escala según sea necesario */
+    z-index: 1000;
+    height: auto; /* Mantiene la relación de aspecto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overlay-content img {
+        max-width: 100%;
+        max-height: 100%;
+        border: 5px solid white;
     }
 
     .buttonn{
@@ -179,17 +276,16 @@
     
     .buttonn img{
         transition-duration: 0.5;
-        height: 8.7em;
+        height: 4em;
         border: 0;
-        margin: 1.5em;
+        margin: 0.5;
         cursor: pointer;
-        width: 8.7em;     
+        width: 4em;     
         background-color: transparent;
         background-repeat: no-repeat;
         object-fit: fill;
         position: fixed; 
-        margin-top: 2em;
-        margin-bottom: 1.8em;
+        margin-top: 0.5;
         display: block;
     }
 
@@ -200,16 +296,12 @@
         justify-content: center;
         font-size: 14px;
         color:#fff;
-        background-color: #2a6a7a;
+        background-color: #4543c9;
        
         color: #ffffff;
         transition: all 0.5s ease ;
     }
     
-    .años:hover{
-        background-color: #fff;
-        color: #1b454d;
-    }
 
     .subtitulos {
         display: flex;
@@ -218,7 +310,7 @@
         justify-content: center;
         font-size: 16px;
         color:#fff;
-        background-color: #498291;
+        background-color: #6e6cee;
        
     }
 
@@ -302,13 +394,52 @@
         src: url(galeria/Buried\ Hopper.ttf);
     }
     .titulo{
-        padding-top: 1em;
+        padding-top: 0.3em;
         font-size: 20px;
         font-family: titulo;
         color: #FFFFFF;
         text-align: center;
     }
+    .grid-item.expanded,
+    .grid-item-wide.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Ajusta la escala según sea necesario */
+    z-index: 1000;
+    height: auto; /* Mantiene la relación de aspecto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
 
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overlay-content img {
+        max-width: 100%;
+        max-height: 100%;
+        border: 5px solid white;
+    }
     .buttonn{
         width: 6%;
         height: 10vh;
@@ -321,17 +452,16 @@
     
     .buttonn img{
         transition-duration: 0.5;
-        height: 8.7em;
+        height: 3em;
         border: 0;
-        margin: -1.1em;
+        margin: 0.5;
         cursor: pointer;
-        width: 8.7em;     
+        width: 3em;     
         background-color: transparent;
         background-repeat: no-repeat;
         object-fit: fill;
         position: fixed; 
-        margin-top: 2em;
-        margin-bottom: 1.8em;
+        margin-top: 0.5;
         display: block;
     }
 
@@ -342,16 +472,12 @@
         justify-content: center;
         font-size: 9px;
         color:#fff;
-        background-color: #2a6a7a;
+        background-color: #4543c9;
        
         color: #ffffff;
         transition: all 0.5s ease ;
     }
-    
-    .años:hover{
-        background-color: #fff;
-        color: #1b454d;
-    }
+
 
     .subtitulos {
         display: flex;
@@ -360,7 +486,7 @@
         justify-content: center;
         font-size: 10px;
         color:#fff;
-        background-color: #498291;
+        background-color: #6e6cee;
        
     }
        
@@ -463,36 +589,13 @@
 }
 
 body{
-    background-color: lightgrey;
+    background-color: rgb(203, 206, 236);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
+    overflow-x: hidden;
 }
 
-.buttonn{
-    width: 6%;
-    height: 10vh;
-    background-color: transparent;
-    border: none;
-    position: fixed;
-    border:0;
-    display: block;
-}
 
-.buttonn img{
-    transition-duration: 0.5;
-    height: 8.7em;
-    border: 0;
-    margin: -1.1em;
-    cursor: pointer;
-    width: 8.7em;     
-    background-color: transparent;
-    background-repeat: no-repeat;
-    object-fit: fill;
-    position: fixed; 
-    margin-top: -1em;
-    margin-bottom: 1.8em;
-    display: block;
-}
 @font-face{
     font-family: letra;
     src: url("imagenes/Buried\ Hopper.ttf");
@@ -501,62 +604,6 @@ body{
 @font-face {
     font-family: chulo;
     src: url(Vogue.ttf);
-}
-footer {
-    background-color: #0055b6;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
-
-.containerfoot {
-    display: flex;
-    justify-content: space-around;
-}
-
-.columna {
-    flex: 1;
-    margin: 0 50px;
-}
-
-.columna h3 {
-    font-size: 0.5em;
-    margin-bottom: 10px;
-}
-
-.columna p {
-    font-size: 0.5em;
-}
-.contactos{
-    text-align: left;
-}
-.imggmail{
-    bottom: -20px;
-    position: relative;
-}
-.aaaa{
-    left: 35px;
-    position: relative;
-}
-.tel {
-    bottom: -8px;
-    position: relative;
-}
-.eetptxt{
-    position: relative;
-    bottom: 28px;
-    left: 35px;
-}
-.copy{
-    text-align: center;
-    bottom: -1em;
-    position: relative;
-}
-
-.copy{
-    text-align: center;
-    bottom: -1em;
-    position: relative;
 }
 
 
