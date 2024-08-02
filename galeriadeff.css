@@ -33,20 +33,20 @@
 
 @media (min-width:1300px) {
 
-       header{
+     header{
         background-color: #2b2d9c;
         width: 100%;
     }
     @font-face{
         font-family:titulo;
         src: url(galeria/Buried\ Hopper.ttf);
-        text-align: center;
     }
     .titulo{
         padding-top: 1em;
         font-size: 60px;
         font-family: titulo;
         color: #FFFFFF;
+        text-align: center;
     }
 
     .años {
@@ -151,20 +151,20 @@
 
 @media (min-width:421px) and (max-width:1299px){
 
-    .titulo{
-        justify-content: center;
-        display: flex;
-        margin-top: -2.7em;
-        margin-bottom: 1em;
-        margin-left: 3.6em;
-        font-size: 20px;
-        color:#fff;
-        font-family: letra;
-        transition: all 0.3s ease;
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
     }
-
-    .titulo:hover{
-        color: #bfbfd1 ;
+    @font-face{
+        font-family:titulo;
+        src: url(galeria/Buried\ Hopper.ttf);
+    }
+    .titulo{
+        padding-top: 1em;
+        font-size: 40px;
+        font-family: titulo;
+        color: #FFFFFF;
+        text-align: center;
     }
 
     .buttonn{
@@ -293,20 +293,20 @@
 
 @media (max-width:420px) and (orientation:portrait) {
 
-    .titulo{
-        justify-content: center;
-        display: flex;
-        margin-top: -2.1em;
-        margin-bottom: 2.1em;
-        margin-left: 4.8em;
-        font-size: 12px;
-        color:#fff;
-        font-family: letra;
-        transition: all 0.3s ease;
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
     }
-
-    .titulo:hover{
-        color: #bfbfd1 ;
+    @font-face{
+        font-family:titulo;
+        src: url(galeria/Buried\ Hopper.ttf);
+    }
+    .titulo{
+        padding-top: 1em;
+        font-size: 20px;
+        font-family: titulo;
+        color: #FFFFFF;
+        text-align: center;
     }
 
     .buttonn{
