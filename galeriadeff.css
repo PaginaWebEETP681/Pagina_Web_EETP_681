@@ -462,7 +462,7 @@
 }
 
 body{
-    background-image: linear-gradient(#65afc5, #2a6670, #17313d );
+    background-color: lightgrey;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
 }
