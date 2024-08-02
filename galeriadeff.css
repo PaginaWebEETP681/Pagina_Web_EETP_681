@@ -34,19 +34,16 @@
 @media (min-width:1300px) {
 
     .titulo{
-        justify-content: center;
-        display: flex;
-        margin-top: -2.4em;
-        margin-left: 2.4em;
-        margin-bottom: -0.5em;
-        font-size: 30px;
-        color:#fff;
-        font-family: letra;
-        transition: all 0.3s ease;
-    }
-
-    .titulo:hover{
-        color: #bfbfd1 ;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color:#FFFFFF;
+    font-weight: bold;
+    font-size: 4em;
+    padding: 2em;
+    background-color:#2b2d9c ;
+    background-repeat: no-repeat;
+    height: 00px;
+    width: 100%;
+    display: flex;
     }
 
     .años {
