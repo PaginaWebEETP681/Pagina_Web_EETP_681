@@ -57,7 +57,7 @@
         height: 100%;
         margin: 0;
         list-style: none;
-        position: absolute; /
+        position: absolute; 
         top: 0; 
         left: 0; 
     }
@@ -189,9 +189,6 @@
         justify-content: space-between;
         z-index: 1000;  
         box-sizing: inherit; 
-    }
-    body {
-        overflow-x: hidden;
     }
     .logo img{
         height: 4em;
@@ -349,9 +346,6 @@
         display:flex; 
         padding: 1em; 
        
-    }
-    body {
-        overflow-x: hidden;
     }
     /*CARRUSEL*/
     #toggle
@@ -648,7 +642,7 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-    overflox-x: hidden;
+    overflow-x: hidden;
 }
 
 .containerfoot {
