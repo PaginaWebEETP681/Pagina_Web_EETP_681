@@ -635,6 +635,7 @@
     text-align: center;
     font-family: chau;
     font-weight: bold;
+    margin-top: 10px;
 }
 .cuerbody{
     text-align: justify;
@@ -644,6 +645,7 @@
     font-family: chau;
     font-size: 1.5em;
     color: #000000;
+    text-indent: 3em;
 }
 body{
     font-family: hola;
@@ -655,6 +657,57 @@ body{
     overflow-y: auto;
     overflow-x: hidden;
 }   
+.rectan{
+    width: 170px;
+    height: 80px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #000000;
+    border-radius: 1em;
+    display: flex;
+    position: relative;
+}
+.txtdire{
+    text-align: center;
+    margin-top: 1.4em;
+    margin-left: 1em;
+}
+.txtvice{
+    text-align: center;
+    margin-top: 1.4em;
+    margin-left: 0.95em;
+}
+.txtsec{
+    text-align: center;
+    margin-top: 1.4em;
+    margin-left: 1.6em;
+}
+.txtprose{
+    text-align: center;
+    margin-top: 1.4em;
+    margin-left: 0.2em;
+}
+.txtpre1{
+    text-align: center;
+    margin-top: 1.4em;
+    margin-left: 1.6em;
+}
+.txtpre2{
+    text-align: center;
+    margin-top: 1.4em;
+    margin-left: 0.2em;
+}
+.columnadire{
+    float: left;
+    width: 16.5%;
+    padding-right: 1px;
+}
+.filadire::after{
+    content: " ";
+    clear: both;
+    display: table;   
+    margin-top: 20em;
+}
 /*-------------------------------------------------------footer--------------------------------------------------------*/
 footer{
     background-color: #0055b6;
@@ -664,6 +717,7 @@ footer{
     position: relative;
     height: 22em;
     padding-bottom: -10em;
+    font-family: chau;
 }
 .columnafoo{
     float:left;
