@@ -40,6 +40,7 @@ header .nav{
     font-family: chau;
     transition: all 0.2s ease;
 }
+
 .nav a{
     text-decoration: none;
     color: #FFF;
@@ -67,15 +68,26 @@ header .nav{
     display: table;   
     margin-top: 20em;
 }
+.text{
+    text-align: center;
+    font-size: 25px;
+    background-color: #2a6a7a;
+    color: #FFF;
+    margin: 1em;
+}
+.img img{
+    width: 85%;
+    height: 25em;
+}
 /*-------------------------------------------------------footer--------------------------------------------------------*/
 footer{
     background-color: #0055b6;
     color: #fff;
     text-align: center;
-    bottom:-1em;
-    position: relative;
+    bottom:-185em;
+    position: absolute;
     height: 22em;
-    padding-bottom: -10em;
+    width: 100%;
 }
 .columnafoo{
     float:left;
