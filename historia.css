@@ -13,44 +13,21 @@
     font-family: chau;
     src: url(imagenes/Buried\ Hopper.ttf);
 }
- body {
-    overflow-x:hidden;
-    }
 header{
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    color:#FFFFFF;
-    font-weight: bold;
-    font-size: 4em;
-    padding: 2em;
-    background-color:#2b2d9c ;
-    background-repeat: no-repeat;
-    height: 00px;
+    background-color: #2b2d9c;
     width: 100%;
-    display: flex;
 }
-.logo1{
-    background-color: transparent;
-    border: 0;
-}
-.logo1 a img{
-    transition-duration: 0.5;
+.loesc img{
     display: flex;
-    border: 0;
-    margin: 0;
-    cursor: pointer;
-    background-color: transparent;
-    background-repeat: no-repeat;
-    object-fit: fill;
     position: absolute;
-    width: 5%;
-    height: 11%;
-    margin-top: -1.5em;
-    margin-left: -1.2em;
+    width: 7em;
+    top: 0.5em;
 }
-/*PONERLE QUE DIGA INICIO CON EL EFECTO*/
-.logo1 a img:hover{
-    color:#000000;
-    opacity: 0.5;
+.titulo{
+    padding-top: 1em;
+    font-size: 60px;
+    font-family: chau;
+    color: #FFFFFF;
 }
 /*TITULO HISTORIA*/
 .titulo1 h1{
@@ -102,6 +79,7 @@ p{
     margin-top: 1em;
     text-align: justify;
     color: #000000;
+    text-indent: 3em;
 }
 /*TEXTO HISTORIA*/
 article{
@@ -111,16 +89,15 @@ article{
     margin-left: 4em;
     margin-top: 1em;
     text-align: justify;
-    color: #787878;
+    color: #000000;
+    text-indent: 3em;
 }
 /*IMAGEN MERCEDES*/
 .foto1 img{
     width: 25%;
     height: 25%;
-    margin-left: 43em;
-    margin-top: 1em;
-    background-repeat: no-repeat;
     display: flex;
+    position: relative;
 }
 .foto1 img:hover{
     -webkit-transform:scale(1.1);transform:scale(1.1);
@@ -142,7 +119,7 @@ h3:hover{
 /*IMAGEN EDIFICIO VIEJO*/
 .wrap{
     width: 40%;
-    height: 40vh;
+    height: 40.5vh;
     margin-left: 6em;
     margin-top: 2.5em;
     display: flex;
@@ -176,13 +153,15 @@ h3:hover{
     background-color: #000000;
     color: #FFFFFF;
     font-weight: bold;
+    position: relative;
+    display: flex;
 }
 /*IMAGEN EDIFICIO ACTUAL*/
 .eetp{
     width: 40vw;
     height: 40.5vh;
-    margin-left: 60em;
-    margin-top: -23.5em;
+    margin-left: 50.5em;
+    margin-top: -18.5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -196,6 +175,7 @@ h3:hover{
     position: relative;
     color: transparent;
     border-radius: 2%;
+    display: flex;
 }
 .eetp-texto {
     text-align: center;
@@ -218,9 +198,9 @@ h3:hover{
 /*IMAGEN LOGO VIEJO*/
 .logoviejo{
     width: 38%;
-    height: 60vh;
-    margin-left: 6em;
-    margin-top: 3em;
+    height: 58vh;
+    margin-left: 7em;
+    margin-top: 2em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -234,6 +214,7 @@ h3:hover{
     position: relative;
     color: transparent;
     border-radius: 2%;
+    display: flex;
 }
 .logoviejo-texto{
     text-align: center;
@@ -255,10 +236,10 @@ h3:hover{
 }
 /*IMAGEN LOGO NUEVO*/
 .logonuevo{
-    width: 41%;
+    width: 38%;
     height: 58vh;
-    margin-left: 60em;
-    margin-top: -35em;
+    margin-left: 51.5em;
+    margin-top: -26.4em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -272,6 +253,7 @@ h3:hover{
     position: relative;
     color: transparent;
     border-radius: 2%;
+    display: flex;
 }
 .logonuevo-texto{
     text-align: center;
@@ -311,7 +293,7 @@ li{
     list-style: none ;
     font-family: 'Times New Roman', Times, serif;
     font-size: 1.5em;
-    color: #787878;
+    color: #000000;
     margin-left: 4em;
     margin-right: 4em;
     margin-top: 1.5em;
@@ -364,65 +346,113 @@ body{
 
 /*ESCRITORIO*/
 /*----------------------------------FOOTER GENERAL--------------------------------*/
-footer {
+/*-------------------------------------------------------footer--------------------------------------------------------*/
+footer{
     background-color: #0055b6;
     color: #fff;
-    padding: 20px 0;
     text-align: center;
+    bottom:-185em;
+    position: absolute;
+    height: 22em;
+    width: 100%;
 }
-
-.containerfoot {
-    display: flex;
-    justify-content: space-around;
+.columnafoo{
+    float:left;
+    width: 33%;
+    padding-right: 1px;
 }
-
-.columna {
-    flex: 1;
-    margin: 0 50px;
+.filafoo::after{
+    content:" ";
+    clear: both;
+    display: table;   
+    margin-top: 2em;
 }
-
-.columna h3 {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.columna p {
-    font-size: 0.9em;
-}
-.contactos{
-    text-align: left;
-}
-.imggmail{
-    bottom: -20px;
+.logoimg img{
     position: relative;
+    top: 5em;
+    width: 100px;
 }
-.aaaa{
-    left: 35px;
+.logotext{
     position: relative;
+    top: 90px;
+    font-size: 20px;
 }
-.tel {
-    bottom: -8px;
+.titulofoo{
     position: relative;
+    top: 40px;
+    font-size: 25px;
+    font-weight: bold;
 }
-.eetptxt{
+.contactos img{
+    width: 30px;
+}
+.mapaimg{
     position: relative;
-    bottom: 28px;
-    left: 35px;
+    top: 45px;
+    right: 130px;
+}
+.mapatext{
+    position: relative;
+    top: 20px;
+    right: -20px;
+}
+.telimg{
+    position: relative;
+    top: 40px;
+    right: 130px;
+}
+.teltext{
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+.whatimg{
+    position: relative;
+    top: 30px;
+    right: 130px;
+}
+.whattext{
+    position: relative;
+    top: 2px;
+    right: 30px;
+}
+.correoimg{
+    position: relative;
+    top: 20px;
+    right: 130px;
+}
+.correotext1{
+    position: relative;
+    top: -18px;
+    right: -8px;
+}
+.correotext2{
+    position: relative;
+    top: -18px;
+    right: -2px;
+}
+.instaimg{
+    position: relative;
+    top: -5px;
+    right: 130px;
+}
+.instatext{
+    position: relative;
+    top: -33px;
+    right: 55px;
+}
+.contador{
+    position: relative;
+    top: 90px;
 }
 .copy{
-    text-align: center;
-    bottom: -1em;
     position: relative;
+    bottom: 10px;
 }
-
-.copy{
-    text-align: center;
-    bottom: -1em;
+.copytext{
     position: relative;
+    bottom: 5px;
 }
-
-
-
 /*------------------------------------------------------------------------------*/
 /*.............................DE 1024px A 2000px...............................*/
 /*------------------------------------------------------------------------------*/
@@ -431,9 +461,6 @@ footer {
         margin: 0;
         padding: 0;
         border: 0;
-    }
-     body {
-    overflow-x:hidden;
     }
     header{
         background-image: 100% center;
@@ -663,9 +690,6 @@ footer {
         margin: 0;
         padding: 0;
         border: 0;
-    }
-     body {
-    overflow-x:hidden;
     }
     header{
         background-image: 100% center;
@@ -914,9 +938,6 @@ footer {
         padding: 0;
         border: 0;
     }
-     body {
-    overflow-x:hidden;
-    }
     header{
         background-image: 100% center;
         background-position: 100% center;
@@ -1077,9 +1098,6 @@ footer {
         margin: 0;
         padding: 0;
         border: 0;
-    }
-    body {
-    overflow-x:hidden;
     }
     header{
         background-image: 100% center;
