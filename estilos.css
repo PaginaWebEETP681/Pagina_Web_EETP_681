@@ -635,7 +635,7 @@
     text-align: center;
     font-family: chau;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 15px;
 }
 .cuerbody{
     text-align: justify;
@@ -662,10 +662,12 @@ body{
     height: 80px;
     border-width: 2px;
     border-style: solid;
-    border-color: #000000;
+    border-color: #2a6a7a;
     border-radius: 1em;
     display: flex;
     position: relative;
+    box-shadow: 20px 15px 7px #51829C;
+    margin-top: 1.5em;
 }
 .txtdire{
     text-align: center;
