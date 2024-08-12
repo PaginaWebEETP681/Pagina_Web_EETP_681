@@ -12,6 +12,9 @@
     font-family: chau;
     src: url(imagenescontacto/Buried\ Hopper.ttf);
 }
+
+/*----- computadora -----*/
+@media (min-width:1300px){
 /*---------------------------------------------------------header------------------------------------------------------*/
 header{
     background-color: #2b2d9c;
@@ -185,4 +188,359 @@ footer{
 .copytext{
     position: relative;
     bottom: 5px;
+}
+}
+/*----- telefono -----*/
+@media (min-width:421px) and (min-width:1299px){
+    /*---------------------------------------------------------header------------------------------------------------------*/
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+    }
+    .nav{
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+    }
+    .loesc img{
+        display: flex;
+        position: absolute;
+        width: 7em;
+        top: 0.5em;
+    }
+    .titulo{
+        padding-top: 1em;
+        font-size: 60px;
+        font-family: chau;
+        color: #FFFFFF;
+    }
+    header .nav{
+        background-color: rgba(41, 88, 125);
+        padding: 15px;
+        font-family: chau;
+        transition: all 0.2s ease;
+    }
+    
+    .nav a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .nav a:hover{
+        background-color:  #2a6a7a;
+        padding: 5px;
+    }
+    .nav ul{
+        list-style-type: none;
+    }
+    .nav li{
+        display: inline;
+        height: 15px;
+    }
+    /*------------------------------------------------------body-----------------------------------------------------------*/
+    .columnabody{
+        float: left;
+        width: 50%;
+        padding-right: 1px;
+    }
+    .filabodi::after{
+        content: " ";
+        clear: both;
+        display: table;   
+        margin-top: 20em;
+    }
+    .text{
+        text-align: center;
+        font-size: 25px;
+        background-color: #2a6a7a;
+        color: #FFF;
+        margin: 1em;
+    }
+    .img img{
+        width: 85%;
+        height: 25em;
+    }
+    /*-------------------------------------------------------footer--------------------------------------------------------*/
+    footer{
+        background-color: #0055b6;
+        color: #fff;
+        text-align: center;
+        bottom: -190em;
+        position: absolute;
+        height: 22em;
+        width: 100%;
+    }
+    .columnafoo{
+        float:left;
+        width: 33%;
+        padding-right: 1px;
+    }
+    .filafoo::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: 2em;
+    }
+    .logoimg img{
+        position: relative;
+        top: 5em;
+        width: 100px;
+    }
+    .logotext{
+        position: relative;
+        top: 90px;
+        font-size: 20px;
+    }
+    .titulofoo{
+        position: relative;
+        top: 40px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .contactos img{
+        width: 30px;
+    }
+    .mapaimg{
+        position: relative;
+        top: 45px;
+        right: 130px;
+    }
+    .mapatext{
+        position: relative;
+        top: 20px;
+        right: -20px;
+    }
+    .telimg{
+        position: relative;
+        top: 40px;
+        right: 130px;
+    }
+    .teltext{
+        position: relative;
+        top: 10px;
+        right: 50px;
+    }
+    .whatimg{
+        position: relative;
+        top: 30px;
+        right: 130px;
+    }
+    .whattext{
+        position: relative;
+        top: 2px;
+        right: 30px;
+    }
+    .correoimg{
+        position: relative;
+        top: 20px;
+        right: 130px;
+    }
+    .correotext1{
+        position: relative;
+        top: -18px;
+        right: -8px;
+    }
+    .correotext2{
+        position: relative;
+        top: -18px;
+        right: -2px;
+    }
+    .instaimg{
+        position: relative;
+        top: -5px;
+        right: 130px;
+    }
+    .instatext{
+        position: relative;
+        top: -33px;
+        right: 55px;
+    }
+    .contador{
+        position: relative;
+        top: 90px;
+    }
+    .copy{
+        position: relative;
+        bottom: 10px;
+    }
+    .copytext{
+        position: relative;
+        bottom: 5px;
+    }
+}
+/*----- celular -----*/
+@media (max-width:420px) and (orientation: portrait){
+    /*---------------------------------------------------------header------------------------------------------------------*/
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+    }
+    .nav{
+        font-size: 20px;
+        text-align: center;
+        position: relative;
+    }
+    .loesc img{
+        display: flex;
+        position: absolute;
+        width: 7em;
+        top: 0.5em;
+    }
+    .titulo{
+        padding-top: 1em;
+        font-size: 60px;
+        font-family: chau;
+        color: #FFFFFF;
+    }
+    header .nav{
+        background-color: rgba(41, 88, 125);
+        padding: 15px;
+        font-family: chau;
+        transition: all 0.2s ease;
+    }
+    
+    .nav a{
+        text-decoration: none;
+        color: #FFF;
+    }
+    .nav a:hover{
+        background-color:  #2a6a7a;
+        padding: 5px;
+    }
+    .nav ul{
+        list-style-type: none;
+    }
+    .nav li{
+        display: inline;
+        height: 15px;
+    }
+    /*------------------------------------------------------body-----------------------------------------------------------*/
+    .columnabody{
+        float: left;
+        width: 50%;
+        padding-right: 1px;
+    }
+    .filabodi::after{
+        content: " ";
+        clear: both;
+        display: table;   
+        margin-top: 20em;
+    }
+    .text{
+        text-align: center;
+        font-size: 25px;
+        background-color: #2a6a7a;
+        color: #FFF;
+        margin: 1em;
+    }
+    .img img{
+        width: 85%;
+        height: 25em;
+    }
+    /*-------------------------------------------------------footer--------------------------------------------------------*/
+    footer{
+        background-color: #0055b6;
+        color: #fff;
+        text-align: center;
+        bottom: -190em;
+        position: absolute;
+        height: 22em;
+        width: 100%;
+    }
+    .columnafoo{
+        float:left;
+        width: 33%;
+        padding-right: 1px;
+    }
+    .filafoo::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: 2em;
+    }
+    .logoimg img{
+        position: relative;
+        top: 5em;
+        width: 100px;
+    }
+    .logotext{
+        position: relative;
+        top: 90px;
+        font-size: 20px;
+    }
+    .titulofoo{
+        position: relative;
+        top: 40px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .contactos img{
+        width: 30px;
+    }
+    .mapaimg{
+        position: relative;
+        top: 45px;
+        right: 130px;
+    }
+    .mapatext{
+        position: relative;
+        top: 20px;
+        right: -20px;
+    }
+    .telimg{
+        position: relative;
+        top: 40px;
+        right: 130px;
+    }
+    .teltext{
+        position: relative;
+        top: 10px;
+        right: 50px;
+    }
+    .whatimg{
+        position: relative;
+        top: 30px;
+        right: 130px;
+    }
+    .whattext{
+        position: relative;
+        top: 2px;
+        right: 30px;
+    }
+    .correoimg{
+        position: relative;
+        top: 20px;
+        right: 130px;
+    }
+    .correotext1{
+        position: relative;
+        top: -18px;
+        right: -8px;
+    }
+    .correotext2{
+        position: relative;
+        top: -18px;
+        right: -2px;
+    }
+    .instaimg{
+        position: relative;
+        top: -5px;
+        right: 130px;
+    }
+    .instatext{
+        position: relative;
+        top: -33px;
+        right: 55px;
+    }
+    .contador{
+        position: relative;
+        top: 90px;
+    }
+    .copy{
+        position: relative;
+        bottom: 10px;
+    }
+    .copytext{
+        position: relative;
+        bottom: 5px;
+    }
 }
