@@ -3,15 +3,24 @@
     padding: 0;
     border: 0;
 }
+@font-face{
+    font-family:lheader;
+    src: url(imagenescontacto/Buried\ Hopper.ttf);
+}
+@font-face {
+    font-family: lbody;
+    src: url(imagenfooter/Repo-Medium.otf);
+}
+@font-face {
+    font-family: lfooter;
+    src: url(imagenfooter/belleza/Belleza-Regular.ttf);
+}
 /*---------------------------------------------------------header------------------------------------------------------*/
 header{
     background-color: #2b2d9c;
     width: 100%;
 }
-@font-face{
-    font-family:titulo;
-    src: url(imagenescontacto/Buried\ Hopper.ttf);
-}
+
 .loesc img{
     display: flex;
     position: absolute;
@@ -21,12 +30,13 @@ header{
 .titulo{
     padding-top: 1em;
     font-size: 60px;
-    font-family: titulo;
+    font-family: lheader;
     color: #FFFFFF;
 }
 /*------------------------------------------------------body-----------------------------------------------------------*/
 body{ 
     width: 100%;
+    font-family: lbody;
 }
 .columna{
     float:left;
@@ -109,6 +119,7 @@ footer{
     bottom:-1em;
     position: relative;
     height: 22em;
+    font-family: lfooter;
 }
 .columnafoo{
     float:left;
