@@ -4,15 +4,19 @@
     border: 0;
     box-sizing: border-box;
 }
+
 @font-face {
-    font-family: hola;
-    src: url(Imageneshistoria/Vogue.ttf);
-}
-@font-face {
-    font-family: chau;
+    font-family: lheader;
     src: url(imagenescontacto/Buried\ Hopper.ttf);
 }
-
+@font-face {
+    font-family: lbody;
+    src: url(imagenfooter/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: lfooter;
+    src: url(imagenfooter/Belleza-Regular.ttf);
+}
 /*----- computadora -----*/
 @media (min-width:1300px){
 /*---------------------------------------------------------header------------------------------------------------------*/
@@ -34,13 +38,13 @@ header{
 .titulo{
     padding-top: 1em;
     font-size: 60px;
-    font-family: chau;
+    font-family: lheader;
     color: #FFFFFF;
 }
 header .nav{
     background-color: rgba(41, 88, 125);
     padding: 15px;
-    font-family: chau;
+    font-family: lheader;
     transition: all 0.2s ease;
 }
 
@@ -77,6 +81,7 @@ header .nav{
     background-color: #2a6a7a;
     color: #FFF;
     margin: 1em;
+    font-family: lbody;
 }
 .img img{
     width: 85%;
@@ -91,6 +96,7 @@ footer{
     position: absolute;
     height: 22em;
     width: 100%;
+    font-family: lfooter;
 }
 .columnafoo{
     float:left;
