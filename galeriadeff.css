@@ -2,10 +2,21 @@
     box-sizing: border-box;
     margin: 0;
     top: 0;
+    padding: 0;
 }
 
-
-
+@font-face {
+    font-family: chau;
+    src: url(imagenescontacto/Buried\ Hopper.ttf);
+}
+@font-face {
+    font-family: lfooter;
+    src: url(imagenfooter/Belleza-Regular.ttf);
+}
+@font-face {
+    font-family: lbody;
+    src: url(imagenfooter/Montserrat-Regular.ttf);
+}
 /*---------espacios que ocupa la imagen------------------*/
 
 @media (min-width:900px){
@@ -22,20 +33,22 @@
 
 @media (min-width:1300px) {
 
+    /*---------------------------------------------------------header------------------------------------------------------*/
     header{
         background-color: #2b2d9c;
         width: 100%;
     }
-    @font-face{
-        font-family:titulo;
-        src: url(galeria/Buried\ Hopper.ttf);
+    .loesc img{
+        display: flex;
+        position: absolute;
+        width: 2.3em;
+        margin-top: 0.2em;
     }
     .titulo{
-        padding-top: 0.3em;
+        padding-top: 1em;
         font-size: 60px;
-        font-family: titulo;
+        font-family: chau;
         color: #FFFFFF;
-        text-align: center;
     }
     .grid-item.expanded,
     .grid-item-wide.expanded {
@@ -48,9 +61,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
- 
-
+    }
     .años {
         display: flex;
         margin-top: 0.8em;
@@ -58,13 +69,11 @@
         justify-content: center;
         font-size: 30px;
         color:#fff;
-        background-color: #4543c9;
-       
+        background-color: #4543c9;       
         color: #ffffff;
         transition: all 0.5s ease ;
-    }
-    
-  
+        font-family: lbody;
+    }  
     .subtitulos {
         display: flex;
         margin-top: 0.8em;
@@ -73,29 +82,22 @@
         font-size: 30px;
         color:#fff;
         background-color: #6e6cee;
-  
-       
-    }
-
-     
+        font-family: lbody;
+    }     
     .grid-item{
         display: flex;
         align-items: center;
         justify-content: center;
-    
         background-color: #03afff;
         border-radius: 4px;
-        transition: transform 0.3s ease-in-out;
-       
+        transition: transform 0.3s ease-in-out;   
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .grid-item:hover {
         transform: scale(1.02);
-       }
-
+    }
     .grid-item-wide{
         display: flex;
         align-items: center;
@@ -109,11 +111,9 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .grid-item-wide:hover {
         transform: scale(1.02);
-       }
-
+    }
     .grid-item-tall{
         display: flex;
         align-items: center;
@@ -127,12 +127,10 @@
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .grid-item-tall:hover {
         transform: scale(1.02);
-       }
-
-       .grid-container {
+    }
+    .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         grid-auto-rows: minmax(600px, auto);
@@ -140,7 +138,6 @@
         padding: 30px;
         grid-auto-flow: dense;
     }
-    
     .overlay {
         position: fixed;
         top: 0;
@@ -153,7 +150,6 @@
         align-items: center;
         z-index: 1000;
     }
-    
     .overlay-content {
         position: relative;
         width: 100%;
@@ -162,13 +158,11 @@
         justify-content: center;
         align-items: center;
     }
-    
     .overlay-content img {
         max-width: 100%;
         max-height: 100%;
         border: 5px solid white;
     }
- 
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
@@ -177,7 +171,7 @@
         padding: 30px;
         grid-auto-flow: dense;
     }
-    .buttonn{
+   /* .buttonn{
         width: 6%;
         height: 10vh;
         background-color: transparent;
@@ -185,8 +179,7 @@
         position: fixed;
         border:0;
         display: block;
-    }
-    
+    }*/
     .buttonn img{
         transition-duration: 0.5;
         height: 6em;
@@ -200,6 +193,120 @@
         position: fixed; 
         margin-top: 0.5;
         display: block;
+    }
+    /*-------------------------------------------------------footer--------------------------------------------------------*/
+    footer{
+        background-color: #0055b6;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 0;
+        position: relative;
+        height: 8.45em;
+        width: 100%;
+        font-family: lfooter;
+    }
+    .columnafoo{
+        float:left;
+        width: 33%;
+        padding-right: 1px;
+    }
+    .filafoo::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: 2em;
+    }
+    .logoimg img{
+        position: relative;
+        top: 2em;
+        width: 100px;
+    }
+    .logotext{
+        position: relative;
+        top: 90px;
+        font-size: 20px;
+    }
+    .titulofoo{
+        position: relative;
+        top: 40px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .contactos img{
+        width: 30px;
+        margin: 0;
+    }
+    .contactos p{
+        font-size: 15px;
+    }
+    .mapaimg{
+        position: relative;
+        top: 0.7em;
+        right: 130px;
+    }
+    .mapatext{
+        position: relative;
+        top: -0.01em;
+        right: -20px;
+    }
+    .telimg{
+        position: relative;
+        top: 0.15em;
+        right: 130px;
+    }
+    .teltext{
+        position: relative;
+        top: -0.6em;
+        right: 45px;
+    }
+    .whatimg{
+        position: relative;
+        top: -0.4em;
+        right: 130px;
+    }
+    .whattext{
+        position: relative;
+        top: -1.15em;
+        right: 30px;
+    }
+    .correoimg{
+        position: relative;
+        top: -0.9em;
+        right: 130px;
+    }
+    .correotext1{
+        position: relative;
+        top: -1.8em;
+        right: -8px;
+    }
+    .correotext2{
+        position: relative;
+        top: -1.8em;
+        right: -2px;
+    }
+    .instaimg{
+        position: relative;
+        top: -1.7em;
+        right: 130px;
+    }
+    .instatext{
+        position: relative;
+        top: -2.4em;
+        right: 51px;
+    }
+    .contador{
+        position: relative;
+        top: 90px;
+    }
+    .copy{
+        position: relative;
+        top: -5em;
+        font-size: 15px;
+    }
+    .copytext{
+        position: relative;
+        top: -4em;
+        font-size: 15px;
     }
 }
 
