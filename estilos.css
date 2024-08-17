@@ -91,12 +91,6 @@
         width: 200px;
         margin-top: 1em;
     }
-    .copy {
-        background-color: #6582a0;
-    }
-    .copytext {
-        background-color: #6582a0;
-    }
 }
 @media (max-width:750px) {
     .filadire {
