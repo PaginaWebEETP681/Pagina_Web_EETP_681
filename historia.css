@@ -4,15 +4,21 @@
     border: 0;
     box-sizing: border-box;
 }
-/*.............................DISEÑO DE LA PÁGINA..............................*/  
+
 @font-face {
-    font-family: hola;
-    src: url(Imageneshistoria/Vogue.ttf);
-}
-@font-face {
-    font-family: chau;
+    font-family: lheader;
     src: url(imagenes/Buried\ Hopper.ttf);
 }
+@font-face {
+    font-family: lbody;
+    src: url(imagenfooter/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: lfooter;
+    src: url(imagenfooter/Belleza-Regular.ttf);
+}
+/*.............................DISEÑO DE LA PÁGINA..............................*/  
+
 header{
     background-color: #2b2d9c;
     width: 100%;
@@ -26,12 +32,12 @@ header{
 .titulo{
     padding-top: 1em;
     font-size: 60px;
-    font-family: chau;
+    font-family: lheader;
     color: #FFFFFF;
 }
 /*TITULO HISTORIA*/
 .titulo1 h1{
-    font-family: chau;
+    font-family: lheader;
     text-align: center;
     letter-spacing: 10px;
     /*z-index: 1;*/
@@ -60,7 +66,7 @@ header{
 }
 /*MERCEDES*/
 h2{
-    font-family: hola;
+    font-family: lbody;
     font-size: 3em;
     color: #1C1266;
     margin-top: 1em;
@@ -72,7 +78,7 @@ h2:hover{
 }
 /*TEXTO MERCEDES*/
 .txtmercedes{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: lbody;
     font-size: 1.5em;
     margin-left: 4em;
     margin-right: 4em;
@@ -80,10 +86,11 @@ h2:hover{
     text-align: justify;
     color: #000000;
     text-indent: 3em;
+    line-height: 1.5em;
 }
 /*TEXTO HISTORIA*/
 article{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: lbody;
     font-size: 1.5em;
     margin-right: 4em;
     margin-left: 4em;
@@ -91,6 +98,7 @@ article{
     text-align: justify;
     color: #000000;
     text-indent: 3em;
+    line-height: 1.5em;
 }
 /*IMAGEN MERCEDES*/
 .foto1 img{
@@ -106,7 +114,7 @@ article{
 }
 /*NUESTROS INICIOS*/
 h3{
-    font-family: hola;
+    font-family: lbody;
     font-size: 3em;
     margin-top: 0.5em;
     color: #1C1266;
@@ -155,6 +163,9 @@ h3:hover{
     font-weight: bold;
     position: relative;
     display: flex;
+}
+h4{
+    font-family: lbody;
 }
 /*IMAGEN EDIFICIO ACTUAL*/
 .eetp{
@@ -279,7 +290,7 @@ h3:hover{
     margin-left: 15em;
 }
 h5{
-    font-family: hola;
+    font-family: lbody;
     font-size: 3em;
     margin-top: 2em;
     color:#1C1266;
@@ -343,17 +354,25 @@ body{
     bottom: 0;
     z-index: 1;
 }
-
+.denominaciones{
+    font-family: lbody;
+    font-size: 20px;
+}
+.directivos{
+    font-family: lbody;
+    font-size: 20px;
+}
 /*ESCRITORIO*/
 /*----------------------------------FOOTER GENERAL--------------------------------*/
 footer{
-    background-color: #0055b6;
+    background-color: #93b2d3;
+    color: #000000;
     margin-bottom: 0;
     position: absolute;
     height: 22em;
     width: 100%;
-    color: #FFF;
     text-align: center;
+    font-family: lfooter;
 }
 .columnafoo{
     float:left;
@@ -477,7 +496,7 @@ footer{
         z-index: -1;
     }
     .titulo1 h1{
-        font-family: chau;
+        font-family: lheader;
         font-size: 3em;
         letter-spacing: 10px;
         /*z-index: -1;*/
@@ -590,6 +609,7 @@ footer{
     }
     .denominaciones {
         font-size: 1.3em;
+        font-family: lbody;
     }
     .directivos {
         font-size: 1.3em;
@@ -706,7 +726,7 @@ footer{
     }
     .titulo1 h1{
         font-size: 2em;
-        font-family: chau;
+        font-family: lheader;
         z-index: 1;
         letter-spacing: 10px;
         display: flex;
@@ -954,7 +974,7 @@ footer{
         object-fit: fill;
     }
     .titulo1 h1{
-        font-family: chau;
+        font-family: lheader;
         font-size: 1.5em;
         z-index: 1;
         letter-spacing: 10px;
@@ -1054,6 +1074,7 @@ footer{
     }
     .denominaciones {
         font-size: 0.7em;
+        font-family: lbody;
     }
     .directivos {
         font-size: 0.7em;
@@ -1115,7 +1136,7 @@ footer{
         object-fit: fill;
     }
     .titulo1 h1{
-        font-family: chau;
+        font-family: lheader;
         display: flex;
         margin-top: -0.5em;
         left: -2.8em;
