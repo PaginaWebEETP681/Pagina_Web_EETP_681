@@ -89,8 +89,8 @@ header .nav{
 }
 /*-------------------------------------------------------footer--------------------------------------------------------*/
 footer{
-    background-color: #0055b6;
-    color: #fff;
+    background-color: #93b2d2;
+    color:  #000000;
     text-align: center;
     bottom: -190em;
     position: absolute;
@@ -217,13 +217,13 @@ footer{
     .titulo{
         padding-top: 1em;
         font-size: 60px;
-        font-family: chau;
+        font-family: lheader;
         color: #FFFFFF;
     }
     header .nav{
         background-color: rgba(41, 88, 125);
         padding: 15px;
-        font-family: chau;
+        font-family: lheader;
         transition: all 0.2s ease;
     }
     
@@ -260,6 +260,7 @@ footer{
         background-color: #2a6a7a;
         color: #FFF;
         margin: 1em;
+        font-family: lbody;
     }
     .img img{
         width: 85%;
@@ -267,13 +268,14 @@ footer{
     }
     /*-------------------------------------------------------footer--------------------------------------------------------*/
     footer{
-        background-color: #0055b6;
-        color: #fff;
+        background-color: #93b2d2;
+        color:  #000000;
         text-align: center;
         bottom: -190em;
         position: absolute;
         height: 22em;
         width: 100%;
+        font-family: lfooter;
     }
     .columnafoo{
         float:left;
@@ -395,13 +397,13 @@ footer{
     .titulo{
         padding-top: 1em;
         font-size: 40px;
-        font-family: chau;
+        font-family: lheader;
         color: #FFFFFF;
     }
     header .nav{
         background-color: rgba(41, 88, 125);
         padding: 15px;
-        font-family: chau;
+        font-family: lheader;
         transition: all 0.2s ease;
     }
     
@@ -431,6 +433,7 @@ footer{
         background-color: #2a6a7a;
         color: #FFF;
         margin: 1em;
+        font-family: lbody;
     }
     .img img{
         width: 90%;
@@ -439,13 +442,14 @@ footer{
 
     /*-------------------------------------------------------footer--------------------------------------------------------*/
     footer{
-        background-color: #0055b6;
-        color: #fff;
+        background-color: #93b2d2;
+        color:  #000000;
         text-align: center;
         bottom: -25em;
         position: absolute;
         height: 22em;
         width: 100%;
+        font-family: lfooter;
     }
     .columnafoo{
         float:left;
