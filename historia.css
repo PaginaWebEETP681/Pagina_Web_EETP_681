@@ -35,34 +35,13 @@ header{
     font-family: lheader;
     color: #FFFFFF;
 }
-/*TITULO HISTORIA*/
-.titulo1 h1{
-    font-family: lheader;
-    text-align: center;
-    letter-spacing: 10px;
-    /*z-index: 1;*/
+.inicio{
+    color: #fff;
+    position: relative;
     display: flex;
-    margin-left: 2.6em;
-    margin-top: -0.6em;
-    position: absolute;
-    font-size: 3em;
-    font-weight: 700;
-    overflow: hidden;
-    white-space: nowrap;/*ubica el texto en una sola linea*/
-    color: #FFFFFF;
-    width: 0;
-    animation: animacionIntro 1s steps(8) 1s 1 normal both;
-}
-/*COMANDO DE ANIMACIÓN TIPO MÁQUINA DE ESCRIBIR*/
-@keyframes animacionIntro{
-    from{
-        width: 0%;
-    }
-    to{
-        width: 80%;
-        border-right: 2px solid;
-        border-right: none;
-    }
+    top: -10em;
+    margin-left: 2.5em;
+    font-family: lheader;
 }
 /*MERCEDES*/
 h2{
@@ -469,6 +448,7 @@ footer{
 .copy{
     position: relative;
     bottom: 10px;
+
 }
 .copytext{
     position: relative;
@@ -487,65 +467,24 @@ footer{
         background-image: 100% center;
         background-position: 100% center;
         background-position-y: center;
-        background-position-x: center; 
-        height: 400px;
+        background-position-x: center;
         margin: 0;
         border: 0;
+        top: 0;
         float: center;
         object-fit: fill;
         z-index: -1;
-    }
-    .titulo1 h1{
-        font-family: lheader;
-        font-size: 3em;
-        letter-spacing: 10px;
-        /*z-index: -1;*/
-        display: flex;
-        margin-left: 2.5em;
-        position: relative;
-        color: #FFFFFF;
-        font-weight: 700;
-        overflow: hidden;
-        white-space: nowrap;/*ubica el texto en una sola linea*/
-        color: #FFFFFF;
-        width: 10em;
-        animation: animacionIntro 1s steps(8) 1s 1 normal both;
-    }
-    /*boton*/
-    .logo1{
-        background-color: transparent;
-        border: 0;
-    }
-    .logo1 a img{
-        transition-duration: 0.5;
-        display: flex;
-        border: 0;
-        margin: 0;
-        cursor: pointer;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        object-fit: fill;
-        position: absolute;
-        width: 10%;
-        height: 17%;
-        margin-top: -2em;
-        margin-left: -2em;
-    }
-    /*PONERLE QUE DIGA INICIO CON EL EFECTO*/
-    .logo1 a img:hover{
-        color:#000000;
-        opacity: 0.5;
     }
     h2{
         font-size: 3em;
         position: absolute center;
         margin-left: -1em;
     }
-    p{
-        font-size: 1.5em;
-        position: relative;
-        margin-left: 4em;
-        margin-right: 4em;
+    .txtmercedes{
+        font-size: 1.2em;
+        margin-left: 0.8em;
+        margin-right: 0.6em;
+        line-height: 2em;
     }
     h3 {
         margin-left: -1em;
@@ -561,21 +500,28 @@ footer{
     .foto1 img{
         margin-left: 45em;
         margin-top: 1em;
+        position: relative;
+        display: flex;
+        margin-right: 25em;
     }
     .wrap {
-        margin-left: 12em;
-        width: 50%;
-        height: 6s0vh;
+        margin-left: 8em;
+        width: 40%;
+        height: 60vh;
+        position: relative;
+        display: flex;
     }
     .eetp {
         margin-top: 2em;
-        margin-left: 45em;
-        width: 50%;
+        margin-left: 10em;
+        width: 40%;
         height: 60vh;
+        display: flex;
+        position: relative;
     }
     .logoviejo {
-        margin-left: 12em;
-        width: 50%;
+        margin-left: 8em;
+        width: 100%;
         height: 70vh;
     }
     .logonuevo {
@@ -585,23 +531,7 @@ footer{
         height: 60vh;
     }
     .videoescuela {
-        margin-left: 4em;
-    }
-    li li{
-        list-style: none;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1em;
-        color: #787878;
-        margin-left: 4em;
-        margin-right: 4em;
-        margin-top: 1.5em;
-        text-align: justify;
-        line-height: 2%;
-        margin-bottom: 2em;
-    }
-    .pal1 {
-        margin-left: 14em;
-        font-size: 1em;
+        margin-left: -4em;
     }
     h5 {
         margin-left: -1em;
@@ -646,63 +576,31 @@ footer{
         bottom: 0;
         z-index: 1;
     }
-    .escuela {
-        margin-left: 4em;
+    .footer{
+        width: 100%;
     }
-    .clima {
-        margin-left: -5em;
+    .logotext{
+        font-size: 15px;
     }
-    .clima h1 {
-        margin-left: -0.4em;
-        margin-top: 1.3em;
+    .titulofoo{
+        text-align: center;
     }
-    .ubicacion {
-        margin-left: -2em;
-        margin-top: -0.5em;
+    .contactos img{
+        width: 8.5%;
     }
-    .ubicacion h1 {
-        margin-left: -0.5em;
+    .contactos p{
+        font-size: 16.5px;
     }
-    .datos {
-        margin-left: -3em;
-    }
-    .datos h1 {
-        margin-left: -2em;
-    }
-    .copy a {
-        margin-left:41em;
-    }
-    .copy .texto {
-        margin-left: 50em
-    }
-    .portfolio img {
+    .copy{
         position: relative;
-        float: left;
-        left: 50em;
-        height: 2.8%;
-        width: 2.8%;
-        top: 2.3em;
-        padding: 10px 10px;
+        display: flex;
+        top: -1em;
+        margin-left: 28em;
     }
-    .instagram img {
-        position: relative;
-        float: left;
-        left: 50em;
-        height: 2.8%;
-        width: 2.8%;
-        top: 2.3em;
-        padding: 10px 10px;
+    .copytext{
+        top: -0.5em;
+        margin-left: 2em;
     }
-    .facebook img {
-        position: relative;
-        float: left;
-        left: 50em;
-        height: 2.8%;
-        width: 2.8%;
-        top: 2.3em;
-        padding: 10px 10px;
-    }
-    
 }
 /*------------------------------------------------------------------------------*/
 /*............................DE 1024px A 800px.................................*/
@@ -718,58 +616,16 @@ footer{
         background-position: 100% center;
         background-position-y: center;
         background-position-x: center;
-        height: 2px;
         margin: 0;
         border: 0;
         float: center;
         object-fit: fill;
     }
-    .titulo1 h1{
-        font-size: 2em;
-        font-family: lheader;
-        z-index: 1;
-        letter-spacing: 10px;
-        display: flex;
-        margin-left: 1em;
-        margin-top: -0.5em;
-        position: flex;
-        color: #FFFFFF;
-        font-weight: 700;
-        overflow: hidden;
-        white-space: nowrap;/*ubica el texto en una sola linea*/
-        color: #FFFFFF;
-        width: 0;
-        animation: animacionIntro 1s steps(8) 1s 1 normal both;
-    }
-    .logo1{
-        background-color: transparent;
-        border: 0;
-    }
-    .logo1 a img{
-        transition-duration: 0.5;
-        display: flex;
-        border: 0;
-        margin: 0;
-        cursor: pointer;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        object-fit: fill;
-        position: absolute;
-        width: 16%;
-        height: 17%;
-        margin-top: -2em;
-        margin-left: -2em;
-    }
-    /*PONERLE QUE DIGA INICIO CON EL EFECTO*/
-    .logo1 a img:hover{
-        color:#000000;
-        opacity: 0.5;
-    }
     h2{
         margin-left: -1em;
         font-size: 2.5em;
     }
-    p{
+    .txtmercedes{
         position: relative;
         margin-left: 2em;
         margin-right: 3em;
@@ -814,18 +670,6 @@ footer{
     .videoescuela video {
         margin-left: 12em;
     }
-    li li{
-        list-style: none ;
-        font-family: 'Times New Roman', Times, serif;
-        font-size: 1.1em;
-        color: #787878;
-        margin-left: 4em;
-        margin-right: 4em;
-        margin-top: 1.5em;
-        text-align: justify;
-        line-height: 2%;
-        margin-bottom: 2em;
-    }
     .img1 img{
         width: 50%;
         height: 50%;
@@ -857,101 +701,6 @@ footer{
         bottom: 0;
         z-index: 1;
     }
-    .footer{
-        width: 100%;
-        background-color: #93b2d3;
-        color: #000000;
-    }
-    .escuela {
-        margin-left: 1em;
-    }
-    .escuela img {
-        margin-left: 20%;
-    }
-    .escuela h1 {
-        margin-left: 5em;
-    }
-    h6 {
-       margin-left: 0.2em;
-    }
-    .clima{
-        margin-left: -0.5em;
-    }
-    .clima h1 {
-        margin-top: 1.2em;
-    }
-    .ubicacion {
-        margin-left: -0.5em;
-    }
-    .ubicacion h1 {
-        margin-top: 1.3em;
-        margin-left: 2em;
-    }
-    .datos {
-        margin-left: 0.5em;
-    }
-    .datos h1{
-        margin-left: 1em;
-        margin-top: 1em;
-    }
-    .textoubi {
-        margin-left: 7.5em;
-        margin-top: -0.5;
-    }
-    .imagenubi img {
-        margin-left: 5em;
-        margin-top: 0.5em;
-    }
-    .textotelefono {
-        margin-left: 7.5em;
-    }
-    .imagentelefono img {
-        margin-left: 5em;
-    }
-    .textogmail {
-        margin-left: 7.5em;
-    }
-    .imagengmail img {
-        margin-left: 5em;
-    }
-    .contadortitulo{
-        margin-left: 4.5em;
-    }
-    .copy a {
-        margin-left: 14em;
-        margin-top: -1.5em;
-    }
-    .copy .texto {
-        margin-left: 23em;
-        margin-top: -1.5em;
-    }
-    .portfolio img {
-        position: relative;
-        float: left;
-        left: 27em;
-        top: 3.2em;
-        padding: 10px 10px;
-        width: 4%;
-        height: 4%;
-    }
-    .instagram img {
-        position: relative;
-        float: left;
-        left: 27em;
-        top: 3.2em;
-        padding: 10px 10px;
-        width: 4%;
-        height: 4%;
-    }
-    .facebook img {
-        position: relative;
-        float: left;
-        left: 27em;
-        top: 3.2em;
-        padding: 10px 10px;
-        width: 4%;
-        height: 4%;
-    }
 }
 /*------------------------------------------------------------------------------*/
 /*.............................DE 800px A 500px..................................*/
@@ -967,56 +716,15 @@ footer{
         background-position: 100% center;
         background-position-y: center;
         background-position-x: center;
-        height: 2px;
         margin: 0;
         border: 0;
         float: center;
         object-fit: fill;
     }
-    .titulo1 h1{
-        font-family: lheader;
-        font-size: 1.5em;
-        z-index: 1;
-        letter-spacing: 10px;
-        display: flex;
-        margin-top: -0.5em;
-        margin-left: 1em;
-        position: relative;
-        color: #FFFFFF;
-        font-weight: 700;
-        overflow: hidden;
-        white-space: nowrap;/*ubica el texto en una sola linea*/
-        color: #FFFFFF;
-        width: 0;
-        animation: animacionIntro 1s steps(8) 1s 1 normal both;
-    }
-    .logo1{
-        background-color: transparent;
-        border: 0;
-    }
-    .logo1 a img{
-        transition-duration: 0.5;
-        display: flex;
-        border: 0;
-        margin: 0;
-        cursor: pointer;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        object-fit: fill;
-        position: absolute;
-        width: 20%;
-        height: 17%;
-        margin-top: -2em;
-        margin-left: -2em;
-    }
-    .logo1 a img:hover{
-        color:#000000;
-        opacity: 0.5;
-    }
     h2{
         font-size: 2em;
     }
-    p{
+    .txtmercedes{
         margin-left: 2em;
         margin-right: 2em;
         font-size: 1em;
@@ -1079,10 +787,6 @@ footer{
     .directivos {
         font-size: 0.7em;
     }
-    .pal1 {
-        font-size: 0.7em;
-        margin-left: 4em;
-    }
     .img1 img{
         width: 50%;
         height: 50%;
@@ -1114,7 +818,7 @@ footer{
         bottom: 0;
         z-index: 1;
     }
-   
+}  
 /*------------------------------------------------------------------------------*/
 /*............................DE 500px A 200px.................................*/
 /*------------------------------------------------------------------------------*/
@@ -1129,30 +833,17 @@ footer{
         background-position: 100% center;
         background-position-y: center;
         background-position-x: center;
-        height: 2px;
         margin: 0;
         border: 0;
         float: center;
         object-fit: fill;
+        width: 100%;
     }
-    .titulo1 h1{
-        font-family: lheader;
-        display: flex;
-        margin-top: -0.5em;
-        left: -2.8em;
-        position: relative;
-        color: #FFFFFF;
-        font-size: 50px;
-        overflow: hidden;
-        white-space: nowrap;/*ubica el texto en una sola linea*/
-        right: 20em;
-        animation: animacionIntro 1s steps(8) 1s 1 normal both;
-    }
-    .logo1{
+    .loesc{
         background-color: transparent;
         border: 0;
     }
-    .logo1 a img{
+    .loesc a img{
         transition-duration: 0.5;
         display: flex;
         border: 0;
@@ -1167,15 +858,10 @@ footer{
         margin-top: -2.2em;
         margin-left: -2.1em;
     }
-    /*PONERLE QUE DIGA INICIO CON EL EFECTO*/
-    .logo1 a img:hover{
-        color:#000000;
-        opacity: 0.5;
-    }
     h2{
         font-size: 2em;
     }
-    p{
+    .txtmercedes{
         margin-left: 2em;
         margin-right: 2em;
         font-size: 1em;
@@ -1244,12 +930,6 @@ footer{
         margin-right: -4em;*/
         display: none;
     }
-    .pal1 {
-        /*font-size: 0.7em;
-        margin-left: -1em;
-        line-height: 0%;*/
-        display: none;
-    }
     .img1 img{
         width: 80%;
         height: 80%;
@@ -1282,138 +962,4 @@ footer{
         bottom: 0;
         z-index: 1;
     }
-    footer{
-        width: 100%;
-        height: 30em;
-        z-index: 1;
-        display: flex;
-        position: absolute;
-    }
-    .escuela img {
-        margin-left: 1em;
-        margin-top: 0.3em;
-        height: 20%;
-        width: 50%;
-    }
-    h6 {
-        text-align: justify;
-        font-size: 1em;
-        margin-left: 5.3em;
-        margin-right: -11.2em;
-        margin-top: -4em;
-    }
-    .ubicacion {
-        display: none;
-    }
-    .ubicacion h1 {
-        display: none;   
-    }
-    .datos {
-        margin-left: 4em;
-        margin-top: -34em;
-    }
-    .datos h1{
-        margin-left: -3em;
-        margin-top: 27em;
-    }
-    .textoubi {
-        margin-left: -4.6em;
-        margin-top: -0.1em;
-        font-size: 0.8em;
-    }
-    .imagenubi img {
-        margin-left: -7em;
-        margin-top: 1em;
-        height: 15%;
-        width: 15%;
-    }
-    .textotelefono {
-        margin-left: -4.6em;
-        margin-top: 0.8em;
-        font-size: 0.8em;
-    }
-    .imagentelefono img {
-        margin-left: -7em;
-        margin-top: -0.2em;
-        height: 15%;
-        width: 15%;
-    }
-    .textogmail {
-        margin-left: -4.6em;
-        font-size: 0.8em;
-        margin-top: 1em;
-    }
-    .imagengmail img {
-        margin-left: -7em;
-        margin-top: -0.7em;
-        height: 15%;
-        width: 15%;
-    }
-    .contadortitulo{
-        margin-left: -3.7em;
-        margin-top: -5.6em;
-        font-size: 1em;
-    }
-    .contador a img{
-        margin-left: -4em;
-        margin-top: 2em;
-    }
-    .copy{
-        margin-top: 15em;
-        z-index: -1;
-        background-color: #242120;
-        padding: 2em;
-        grid-template-columns: repeat(3, 1fr);
-        width: 100%;
-        position: absolute;
-        bottom: 0;
-        margin: 0 0 0 0;
-        border: 0;
-        display: flex;
-        height: 6em;
-    }
-    .copy a {
-        margin-left: 4em;
-        margin-top: -1.4em;
-        z-index: -1em;
-    }
-    .copy .texto {
-        margin-left: 0.4em;
-        margin-top: 3.8em;
-        z-index: -1;
-        text-align: center;
-        font-size: 10px;
-    }
-    .portfolio img {
-        position: relative;
-        float: left;
-        left: 6.9em;
-        top: 8.6em;
-        width: 13%;
-        height: 10%;
-        padding: 10px 10px;
-        z-index: 1;
-    }
-    .instagram img {
-        position: relative;
-        float: left;
-        left: 9.2em;
-        top: 8.6em;
-        width: 13%;
-        height: 10%;
-        padding: 10px 10px;
-        z-index: 1;
-    }
-    .facebook img {
-        position: relative;
-        float: left;
-        left: 3.7em;
-        top: 8.6em;
-        width: 13%;
-        height: 10%;
-        padding: 10px 10px;
-        z-index: 1;
-    }
-}
-
 }
