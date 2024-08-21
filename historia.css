@@ -341,6 +341,23 @@ body{
     font-family: lbody;
     font-size: 20px;
 }
+.regresar img{
+    width: 40px;
+}
+.regresar{
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transform: translateX(120px);
+    transition: all .25s;
+    cursor: pointer;
+}
+.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
 /*ESCRITORIO*/
 /*----------------------------------FOOTER GENERAL--------------------------------*/
 footer{
