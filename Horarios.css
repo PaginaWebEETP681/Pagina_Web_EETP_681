@@ -391,7 +391,7 @@ footer{
     .loesc img{
         display: flex;
         position: absolute;
-        width: 7em;
+        width: 5em;
         top: 0.5em;
     }
     .titulo{
