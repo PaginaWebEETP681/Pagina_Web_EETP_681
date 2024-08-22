@@ -90,6 +90,7 @@
     .contador img {
         width: 200px;
         margin-top: 1em;
+        text-align:center;
     }
 }
 @media (max-width:750px) {
