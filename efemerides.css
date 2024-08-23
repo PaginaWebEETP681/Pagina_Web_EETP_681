@@ -25,10 +25,10 @@ header{
     align-items: center;
 }
 .loesc img{
-    display: flex;
     position: absolute;
-    width: 7em;
-    top: 0.5em;
+    width: 90px;
+    top: 1%;
+    padding-left: 1%;
 }
 .inicio{
     color: #fff;
