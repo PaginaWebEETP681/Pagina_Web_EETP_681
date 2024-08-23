@@ -1,0 +1,609 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+@font-face {
+    font-family: hola;
+    src: url(galeria/Vogue.ttf);
+}
+@font-face {
+    font-family: chau;
+    src: url(galeria/Buried\ Hopper.ttf);
+}
+@font-face {
+    font-family:  body;
+    src: url(imagenfooter/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: lfooter;
+    src: url(imagenfooter/Belleza-Regular.ttf);
+}
+@font-face {
+    font-family: Vintage;
+    src: url(galeria/VintageRough.otf);
+}
+/*-----------------Estilos Generales-------------------------*/
+header{
+    background-color: #2b2d9c;
+    width: 100%;
+    font-family: chau;
+}
+.loesc img{
+    display: flex;
+    position: absolute;
+    width: 7em;
+    top: 0.5em;
+}
+.titulo{
+    padding-top: 1em;
+    font-size: 60px;
+    font-family: chau;
+    color: #FFFFFF;
+}
+
+.nav{
+    background-color: rgba(41, 88, 125);
+    font-size: 10px;
+    text-align: center;
+    padding: 0.5em;
+    font-family: chau;
+    transition: all 0.2s ease;
+    margin: 0; 
+    position: absolute; 
+    width: 100%; 
+}
+
+header .nav {
+    background-color: rgba(41, 88, 125);
+    font-size: 10px;
+    text-align: center;
+    font-family: chau;
+    transition: all 0.2s ease;
+    margin: 0;
+    padding: 0; 
+}
+.nav a{
+    text-decoration: none;
+    color: #FFF;
+    font-family: chau;
+}
+.nav a:hover{
+    background-color:  #2a6a7a;
+    padding: 5px;
+    font-family: chau;
+}
+.nav ul{
+    list-style-type: none;
+    font-family: chau;
+    padding: 10px;
+}
+.nav li{
+    display: inline;
+    height: 15px;
+    font-family:chau;
+    margin: 0 15px;
+}
+
+h2 {
+    font-size: 5em;
+    font-family: Vintage;
+    
+}
+mark {
+    background-color: #8494ee;
+}
+.subtitulo {
+    font-size: 3em;
+    text-align: center;
+    font-family:  body;
+    font-style:inherit;
+    color: #6676cc;
+
+}
+
+
+p{
+    padding-bottom: 0.5em;
+    text-align: justify;
+    font-size: x-large;
+    font-family: body;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+li {
+    font-size: x-large;
+    font-family: body;
+    margin-left: 90px;
+    margin-right: 90px;
+    padding-bottom: 0.5em;
+    text-align: justify;
+}
+.subtituloFIN {
+    padding: 1em;
+    font-size: 3em;
+    text-align: center;
+    font-family:Vintage;
+}
+
+a.volerarriba {
+    font-size: x-large;
+    font-family: body;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5em;
+    border-radius: 5em; 
+    border: 2px solid #000;
+}
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    padding: 0.4em;
+   
+}
+.descargarpdf {
+    font-size: x-large;
+    font-family: body;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 0.5em;
+ 
+}
+a.descargarpdf {
+    text-decoration: underline;
+    color: #000;
+}
+
+/*-----COMPUTADORA-----*/
+@media (min-width:1300px)  { 
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+        height: 200px;;
+    }
+    .loesc img{
+        display: flex;
+        position: absolute;
+        width: 7em;
+        top: 0.5em;
+    }
+    .titulo{
+        padding-top: 9px;
+        font-size: 70px;
+        font-family: chau;
+        color: #FFFFFF;
+    }
+    
+}
+
+/*-----TABLET-----*/
+
+@media (min-width:421px) and (max-width:1299px){
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+        height: 100px;;
+     
+    }
+    .loesc img{
+        display: flex;
+        position: absolute;
+        width: 4em;
+        top: 0.5em;
+    }
+    .titulo{
+        padding-top: 8.5px;
+        font-size: 35px;
+        font-family: chau;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .nav{
+        background-color: rgba(41, 88, 125);
+        font-size: 8px;
+        text-align: center;
+        padding: 0.5em;
+        font-family: chau;
+        transition: all 0.2s ease;
+        margin: 0; 
+        position: absolute; 
+        width: 100%; 
+    }
+  
+    h2 {
+        font-size: 4em;
+        margin-top: 1em;
+       }
+    body {
+        overflow-x: hidden;
+    }
+    footer{
+        background-color: #93b2d2;
+        color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 100px;;
+        font-family: lfooter;
+    }
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar horizontalmente */
+        background-color: #93b2d2;
+        font-family: lfooter;
+    }
+    .columnafoo {
+        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
+        text-align: center; /* Alinear el contenido en el centro */
+        margin-bottom: 4em; /* Espacio entre columnas */
+        background-color: #93b2d2;
+        font-family: lfooter;
+        
+    }
+
+    .logoimg img {
+        width: 50px;
+    }
+
+    .FOOTER {
+        font-size: 20px;
+        text-align: center;
+        font-family: lfooter;
+    }
+
+    .titulofoo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em;
+    }
+
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
+        font-family: lfooter;
+    }
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
+        font-family: lfooter;
+    }
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+        margin-left: 0.4em;
+        margin-top: -0.6em;
+        font-family: lfooter;
+    }
+   
+    .instatext {
+        margin-bottom: -4.5em;
+        font-family: lfooter;
+    }
+
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
+    }
+    .subtitulo {
+        font-size: 2.6em;
+        text-align: center;
+        font-family:  body;
+        font-style:inherit;
+        color: #6676cc;
+    
+    }
+}
+
+/*-----CELULAR----------------------*/
+
+@media (max-width:420px) and (orientation:portrait) {
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+        height: 100px;;
+    }
+    .loesc img{
+        display: flex;
+        position: absolute;
+        width: 3.5em;
+        top: 0.5em;
+    }
+    .titulo{
+        padding-top: 9px;
+        font-size: 30px;
+        font-family: chau;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .nav{
+        background-color: rgba(41, 88, 125);
+        font-size: 9px;
+        text-align: center;
+        padding: 0.5em;
+        font-family: chau;
+        transition: all 0.2s ease;
+        margin: 0; 
+        position: absolute; 
+        width: 100%; 
+    }
+    
+    header .nav {
+        background-color: rgba(41, 88, 125);
+        font-size: 10px;
+        text-align: center;
+        font-family: chau;
+        transition: all 0.2s ease;
+        margin: 0;
+        padding: 0; 
+    }
+    .nav a{
+        text-decoration: none;
+        color: #FFF;
+        font-family: chau;
+        font-size: 20px;
+    }
+    .nav a:hover{
+        background-color:  #2a6a7a;
+        padding: 5px;
+        font-family: chau;
+    }
+    .nav ul{
+        list-style-type: none;
+        font-family: chau;
+        padding: 5px;
+    }
+    .nav li{
+        display: inline-block;
+        height: 15px;
+        font-family:chau;
+        margin: 0 14px;
+        font-size: 9px;
+    }
+    .subtitulo {
+        font-size: 2.2em;
+        text-align: center;
+        font-family:  body;
+        font-style:inherit;
+        color: #6676cc;
+    
+    }
+
+    body {
+        overflow-x: hidden;
+
+    }
+    p{
+        padding-bottom: 0.5em;
+        text-align:initial;
+        font-size: larger;
+        font-family: body;
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+   li {
+    text-align:initial;
+    margin-left: 70px;
+    margin-right: 70px;
+    font-size: larger;
+   }
+   h2 {
+    font-size: 3em;
+   }
+   .subtituloFIN {
+    padding: 1em;
+    font-size: 2em;
+    text-align: center;
+    font-family:Vintage;
+}
+
+    footer{
+        background-color: #93b2d2;
+        color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 100px;;
+        font-family: lfooter;
+    }
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar horizontalmente */
+        background-color: #93b2d2;
+        font-family: lfooter;
+    }
+    .columnafoo {
+        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
+        text-align: center; /* Alinear el contenido en el centro */
+        margin-bottom: 4em; /* Espacio entre columnas */
+        background-color: #93b2d2;
+        font-family: lfooter;
+        
+    }
+
+    .logoimg img {
+        width: 50px;
+    }
+
+    .FOOTER {
+        font-size: 20px;
+        text-align: center;
+        font-family: lfooter;
+    }
+
+    .titulofoo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em;
+    }
+
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
+        font-family: lfooter;
+    }
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
+        font-family: lfooter;
+    }
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+        margin-left: -4em;
+        margin-top: -0.6em;
+        font-family: lfooter;
+    }
+   
+    .instatext {
+        margin-bottom: -4.5em;
+        font-family: lfooter;
+    }
+
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
+    }
+    
+}
+@media (min-width:751px) and (max-width:1279px) {  
+}
+footer{
+    background-color: #93b2d2;
+    color: #000000;
+    text-align: center;
+    bottom:-1em;
+    position: relative;
+    height: 22em;
+    padding-bottom: -10em;
+    font-family: lfooter;
+}
+.columnafoo{
+    float:left;
+    width: 33%;
+    padding-right: 1px;
+}
+.filafoo::after{
+    content:" ";
+    clear: both;
+    display: table;   
+    margin-top: 2em;
+}
+.logoimg img{
+    position: relative;
+    top: 5em;
+    width: 100px;
+}
+.logotext{
+    position: relative;
+    top: 90px;
+    font-size: 20px;
+}
+.titulofoo{
+    position: relative;
+    top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.contactos img{
+    width: 30px;
+}
+.mapaimg{
+    position: relative;
+    top: 45px;
+    right: 130px;
+}
+.mapatext{
+    position: relative;
+    top: 20px;
+    right: -20px;
+}
+.telimg{
+    position: relative;
+    top: 40px;
+    right: 130px;
+}
+.teltext{
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+.whatimg{
+    position: relative;
+    top: 30px;
+    right: 130px;
+}
+.whattext{
+    position: relative;
+    top: 2px;
+    right: 30px;
+}
+.correoimg{
+    position: relative;
+    top: 20px;
+    right: 130px;
+}
+.correotext1{
+    position: relative;
+    top: -18px;
+    right: -8px;
+}
+.correotext2{
+    position: relative;
+    top: -18px;
+    right: -2px;
+}
+.instaimg{
+    position: relative;
+    top: -5px;
+    right: 130px;
+}
+.instatext{
+    position: relative;
+    top: -33px;
+    right: 55px;
+}
+.contador{
+    position: relative;
+    top: 90px;
+}
+.copy{
+    position: relative;
+    bottom: 10px;
+}
+.copytext{
+    position: relative;
+    bottom: 5px;
+}
+
