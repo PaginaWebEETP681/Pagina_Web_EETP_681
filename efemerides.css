@@ -24,11 +24,19 @@ header{
     justify-content: space-between;
     align-items: center;
 }
-.logo img{
+.loesc img{
+    display: flex;
     position: absolute;
-    width: 90px;
-    top: 1%;
-    padding-left: 1%;
+    width: 7em;
+    top: 0.5em;
+}
+.inicio{
+    color: #fff;
+    position: relative;
+    display: flex;
+    top: -10em;
+    margin-left: 2.5em;
+    font-family: lheader;
 }
 .titulo{
     max-width: 100%;
