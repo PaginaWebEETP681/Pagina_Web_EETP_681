@@ -26,17 +26,9 @@ header{
 }
 .loesc img{
     position: absolute;
-    width: 10px;
+    width: 7em;
     top: 1%;
     padding-left: 1%;
-}
-.inicio{
-    color: #fff;
-    position: relative;
-    display: flex;
-    top: -10em;
-    margin-left: 2.5em;
-    font-family: lheader;
 }
 .titulo{
     max-width: 100%;
