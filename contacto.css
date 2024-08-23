@@ -15,8 +15,8 @@
     font-family: lfooter;
     src: url(imagenfooter/Belleza-Regular.ttf);
 }
-/*--------------------------------------------------------- CELULAR -------------------------------------------------------------*/
-@media (max-width:420px) and (orientation: portrait){
+/*--------------------------------------------------------- CELULAR VERTICAL-------------------------------------------------------------*/
+@media only screen and (max-width: 420px) {
     /*--------------- header ---------------------*/
     header{
         background-color: #2b2d9c;
