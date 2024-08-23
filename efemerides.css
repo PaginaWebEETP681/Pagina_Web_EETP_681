@@ -32,10 +32,10 @@ header{
 }
 .inicio{
     color: #fff;
-    position: absoluta;
+    position: relative;
     display: flex;
-    top: -1%;
-    padding-left: 1%;
+    top: -10em;
+    margin-left: 2.5em;
     font-family: lheader;
 }
 .titulo{
