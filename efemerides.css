@@ -43,10 +43,9 @@ header{
     text-align: center;
     align-items: center;
     margin: auto;
-}
-.titulo h1{
-    font-size: 50px;
-    font-weight: bold;
+    padding-top: 1em;
+    font-size: 60px;
+    font-family: lheader;
     color: #FFFFFF;
 }
 /*------------------------------------------------------body-----------------------------------------------------------*/
