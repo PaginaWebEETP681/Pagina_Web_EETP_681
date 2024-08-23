@@ -52,7 +52,7 @@ header{
 }
 /*------------------------------------------------------body-----------------------------------------------------------*/
 body {
-    font-family: 'lbody';
+    font-family: lbody;
 }
 .subtitulo{
     font-weight: bold;
@@ -130,7 +130,7 @@ footer{
     position: relative;
     height: 22em;
     padding-bottom: -10em;
-    font-family: 'lfooter';
+    font-family: lfooter;
     z-index: -1;
 }
 .columnafoo{
