@@ -214,6 +214,7 @@
         display: flex;
         justify-content: center; 
         align-items: center;
+        padding: 0.4em;
        
     }
     a.VOLVER {
@@ -234,7 +235,6 @@
         text-align: center;
         margin-bottom: 0;
         position: relative;
-        height: 8.45em;
         width: 100%;
         font-family: lfooter;
     }
@@ -243,6 +243,7 @@
         width: 33%;
         padding-right: 1px;
     }
+   
     .filafoo::after{
         content:" ";
         clear: both;
@@ -253,6 +254,8 @@
         position: relative;
         top: 2em;
         width: 100px;
+        margin-bottom: 3em;
+        margin-top: -3em;
     }
     .logotext{
         position: relative;
@@ -527,6 +530,7 @@
         display: flex;
         justify-content: center; 
         align-items: center;
+        padding: 0.4em;
        
     }
     a.VOLVER {
@@ -542,124 +546,107 @@
         font-size: xx-large;
     }
     footer{
-        background-color: #93b2d3;
+        background-color: #93b2d2;
         color: #000000;
         text-align: center;
-        margin-bottom: 0;
+        bottom:-1em;
         position: relative;
-        height: 8.45em;
-        width: 100%;
+        height: 20px;;
         font-family: lfooter;
     }
-    .columnafoo{
-        float:left;
-        width: 33%;
-        padding-right: 1px;
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color: #93b2d2;
     }
-    .filafoo::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: 2em;
+
+    .columnafoo {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 4em; 
+        background-color: #93b2d2;
+        
     }
-    .logoimg img{
-        position: relative;
-        top: 2em;
-        width: 100px;
+
+    .logoimg img {
+        width: 80px; /* Reduce el tamaño del logo para pantallas pequeñas */
+        margin-bottom: 3.1em;
+        margin-top: -4.3em;
     }
-    .logotext{
-        position: relative;
-        top: 90px;
-        font-size: 20px;
+
+    .logotext {
+        font-size: 16px;
+        margin-bottom: 1em;
     }
-    .titulofoo{
-        position: relative;
-        top: 40px;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .contactos img{
-        width: 30px;
-        margin: 0;
-    }
-    .contactos p{
+
+    .titulofoo {
         font-size: 15px;
+        font-weight: bold;
+        margin-top: -4.5em;
     }
-    .mapaimg{
-        position: relative;
-        top: 0.7em;
-        right: 130px;
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .mapatext{
-        position: relative;
-        top: -0.01em;
-        right: -20px;
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em; /* Espacio entre los iconos de contacto */
     }
-    .telimg{
-        position: relative;
-        top: 0.15em;
-        right: 130px;
+
+    .teltext, .whattext,  .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
+        margin-top: -1.2em;
+
     }
-    .teltext{
-        position: relative;
-        top: -0.6em;
-        right: 45px;
+    .mapatext {
+        font-size: 16px;
+        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
+        margin-top: -1.6em;
+        margin-left: -3em;
     }
-    .whatimg{
-        position: relative;
-        top: -0.4em;
-        right: 130px;
+    
+    .correotext1 {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+        margin-top: -1.3em;
     }
-    .whattext{
-        position: relative;
-        top: -1.15em;
-        right: 30px;
+    .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
+        
     }
-    .correoimg{
-        position: relative;
-        top: -0.9em;
-        right: 130px;
+
+    .instatext {
+        margin-bottom: -4.5em;
     }
-    .correotext1{
-        position: relative;
-        top: -1.8em;
-        right: -8px;
-    }
-    .correotext2{
-        position: relative;
-        top: -1.8em;
-        right: -2px;
-    }
-    .instaimg{
-        position: relative;
-        top: -1.7em;
-        right: 130px;
-    }
-    .instatext{
-        position: relative;
-        top: -2.4em;
-        right: 51px;
-    }
-    .contador{
-        position: relative;
-        top: 90px;
+   
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
     }
     .copy{
+        margin-top: -2em;
         position: relative;
-        top: -5em;
-        font-size: 15px;
+        bottom: 10px;
+        font-size: 19px;
     }
     .copytext{
         position: relative;
-        top: -4em;
-        font-size: 15px;
+        bottom: 5px;
+        font-size: 19px;
     }
+    
 
 }
+/*-------------------CELULAR----------------------*/
 
-/*--------------------CELULAR----------------------*/
-
-@media (max-width:420px) and (orientation:portrait) {
+@media only screen and (max-width: 420px) {
 
     header{
         background-color: #2b2d9c;
@@ -829,15 +816,16 @@
     .grid-container {
         display: grid;
         grid-template-columns: repeat (auto-fill, minmax(260px, 1fr)); /*tamaño de las imagenes*/ /*fr medida que ocupa el espacio que sobra*/ /*auto-fit es para que las imagenes si son pocas llenen todo el espacio*/
-        grid-auto-rows: minmax(250px, auto); /*alto de las imagenes*/ /*minmax (auto) para que se acomode automaticamente*/
+        grid-auto-rows: minmax(250px, auto); /*alto de las imagenes*/ 
         gap:10px; /*separacion entre las imagenes*/
-        padding: 10px; /*separacion de los bordes de la pantalla y las imagenes*/
+        padding: 10px; /*separacion de los bordes de la pantalla y las imagenessd*/
         grid-auto-flow: dense; /*acomoda las imagnes para que no quedes espacios*/ 
     }
     .container {
         display: flex;
         justify-content: center; 
         align-items: center;
+        padding: 0.4em;
        
     }
     a.VOLVER {
@@ -851,6 +839,7 @@
         border: 2px solid #000;
         text-align: center;
         font-size: x-large;
+      
     }
     footer{
         background-color: #93b2d2;
@@ -864,29 +853,33 @@
     .filafoo {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrar horizontalmente */
+        align-items: center; 
         background-color: #93b2d2;
     }
 
     .columnafoo {
-        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
-        text-align: center; /* Alinear el contenido en el centro */
-        margin-bottom: 4em; /* Espacio entre columnas */
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 4em; 
         background-color: #93b2d2;
         
     }
 
     .logoimg img {
-        width: 50px;
+        width: 80px; /* Reduce el tamaño del logo para pantallas pequeñas */
+        margin-bottom: 3.1em;
+        margin-top: -4.3em;
     }
 
     .logotext {
-        font-size: 10px;
+        font-size: 16px;
+        margin-bottom: 1em;
     }
 
     .titulofoo {
         font-size: 15px;
         font-weight: bold;
+        margin-top: -4.5em;
     }
 
     .contactos {
@@ -900,10 +893,30 @@
         margin-bottom: 0.3em; /* Espacio entre los iconos de contacto */
     }
 
-    .mapatext, .teltext, .whattext, .correotext1, .correotext2, .instatext {
-        font-size: 12px;
+    .teltext, .whattext,  .instatext {
+        font-size: 16px;
         margin-bottom: 0.3em; /* Espacio entre textos de contacto */
+        margin-top: -1.2em;
+
     }
+    .mapatext {
+        font-size: 16px;
+        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
+        margin-top: -1.6em;
+        margin-left: -3em;
+    }
+    
+    .correotext1 {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+        margin-top: -1.3em;
+    }
+    .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
+        
+    }
+
     .instatext {
         margin-bottom: -4.5em;
     }
@@ -913,9 +926,18 @@
         margin-top: 1em;
         text-align:center;
     }
-
+    .copy{
+        margin-top: -2em;
+        position: relative;
+        bottom: 10px;
+        font-size: 19px;
+    }
+    .copytext{
+        position: relative;
+        bottom: 5px;
+        font-size: 19px;
+    }
 }
-
 
 .button{ 
     background-color: transparent;
@@ -951,6 +973,114 @@ body{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 3rem;
     overflow-x: hidden;
+}
+ 
+footer{
+    background-color: #93b2d2;
+    color: #000000;
+    text-align: center;
+    bottom:-1em;
+    position: relative;
+    height: 10em;
+    padding-bottom: -10em;
+    font-family: lfooter;
+}
+.columnafoo{
+    float:left;
+    width: 33%;
+    padding-right: 1px;
+}
+.filafoo::after{
+    content:" ";
+    clear: both;
+    display: table;   
+    margin-top: 2em;
+}
+.logoimg img{
+    position: relative;
+    top: 5em;
+    width: 100px;
+}
+.logotext{
+    position: relative;
+    top: 90px;
+    font-size: 20px;
+}
+.titulofoo{
+    position: relative;
+    top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.contactos img{
+    width: 30px;
+}
+.mapaimg{
+    position: relative;
+    top: 45px;
+    right: 130px;
+}
+.mapatext{
+    position: relative;
+    top: 20px;
+    right: -20px;
+}
+.telimg{
+    position: relative;
+    top: 40px;
+    right: 130px;
+}
+.teltext{
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+.whatimg{
+    position: relative;
+    top: 30px;
+    right: 130px;
+}
+.whattext{
+    position: relative;
+    top: 2px;
+    right: 30px;
+}
+.correoimg{
+    position: relative;
+    top: 20px;
+    right: 130px;
+}
+.correotext1{
+    position: relative;
+    top: -18px;
+    right: -8px;
+}
+.correotext2{
+    position: relative;
+    top: -18px;
+    right: -2px;
+}
+.instaimg{
+    position: relative;
+    top: -5px;
+    right: 130px;
+}
+.instatext{
+    position: relative;
+    top: -33px;
+    right: 55px;
+}
+.contador{
+    position: relative;
+    top: 90px;
+}
+.copy{
+    position: relative;
+    bottom: 10px;
+}
+.copytext{
+    position: relative;
+    bottom: 5px;
 }
 
 
