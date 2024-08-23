@@ -16,7 +16,7 @@
 }
 /*---------------------------------------------------------header------------------------------------------------------*/
 header{
-    font-family: 'lheader'; 
+    font-family: lheader; 
     font-size: 25px;
     background-color: #2b2d9c;
     height: 160px;
