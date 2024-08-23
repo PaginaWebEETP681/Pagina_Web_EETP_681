@@ -28,7 +28,43 @@
 /*--------------------------------------- CELULAR VERTICAL ------------------------------------------------*/
 @media only screen and (max-width: 420px) {
     .rectan {
-        box-shadow: 5px 5px 2.5px #51829C; /* Reduce el tamaño de la sombra para pantallas pequeñas */
+        box-shadow: 5px 5px 2.5px #51829C; 
+    }
+    #popup-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000; /* Ajusta el z-index para que esté sobre otros elementos */
+    }
+    
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 5px 5px;
+        max-width: 100%;
+        max-height: 200%;
+        z-index: 1001;
+    }
+    
+    #popup-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000; 
+    }
+    #popup-content .img1 img {
+        max-width: 200%;
+        width: 300px;
+        height: auto;
     }
     footer{
         background-color: #93b2d2;
@@ -42,7 +78,7 @@
     .filafoo {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrar horizontalmente */
+        align-items: center; 
         background-color: #93b2d2;
     }
     .columnafoo {
@@ -109,8 +145,8 @@
         justify-content: center; /* Centra los rectángulos en pantallas pequeñas */
     }
     .rectan {
-        width: 100%; /* Ajusta el ancho del rectángulo al 100% del contenedor */
-        max-width: 300px; /* Máximo ancho para evitar que sea demasiado grande */
+        width: 100%; 
+        max-width: 300px; 
     }
     .nav ul {
         list-style: none;
@@ -122,11 +158,11 @@
     .header .nav ul li {
         float: left;
         position: relative;
-        z-index: 10; /* Menor z-index para que los submenús se superpongan */
+        z-index: 10; 
     }
     
     .header .nav ul li a {
-        font-family: 'hola'; /* Asegúrate de que 'hola' es la fuente correcta y está disponible */
+        font-family: 'hola'; 
         font-size: 25px;
         color: #fff;
         text-decoration: none;
@@ -143,25 +179,25 @@
     /* Submenús */
     .header .nav ul li ul {
         width: 200px;
-        display: none; /* Ocultar el submenú por defecto */
+        display: none; 
         background-color: #2a6a7a;
         position: absolute;
         left: 0;
-        bottom: 100%; /* Posicionar hacia abajo */
+        bottom: 100%; 
         padding: 14px 0;
         visibility: hidden;
         opacity: 0;
         box-shadow: 0px 0px 10px 0px rgb(61, 126, 176);
-        z-index: 20; /* Mayor z-index para superponerse a los apartados principales */
+        z-index: 20; 
         transition: all 300ms ease;
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
-        gap: 10px; /* Espacio entre columnas y filas */
+        grid-template-columns: repeat(2, 1fr); 
+        gap: 10px; 
     }
     
     .header .nav ul li:hover ul,
     .header .nav ul li:focus-within ul {
-        display: grid; /* Mostrar el submenú al hacer hover o foco en el elemento padre */
+        display: grid; 
         visibility: visible;
         opacity: 1;
     }
@@ -182,48 +218,13 @@
         padding-left: 30px;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     }
-    #popup-container {
-        display: none;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1000; /* Ajusta el z-index para que esté sobre otros elementos */
-    }
     
-    #popup-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: rgba(255, 255, 255, 0.75);
-        padding: 5px 5px;
-        max-width: 100%;
-        max-height: 100%;
-        z-index: 1001;
-    }
-    
-    #popup-overlay {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0, 0, 0, 0.8);
-        z-index: 1000; 
-    }
-    #popup-content .img1 img {
-        max-width: 50%;
-        width: 100px;
-        height: auto;
-    }
     .header{
         display: flex; 
         margin: 0 ;
         padding: 0; 
         box-sizing: inherit;
-        /* position: fixed;*/
+      
         background-color: rgba(41, 88, 125);
         top: 0;
         left: 0;
@@ -245,14 +246,14 @@
     .slider-box {
         width: 100%;
         height: 100vh;
-        overflow: hidden; /* Prevents overflow */
+        overflow: hidden; 
         position: relative;
     }
 
     .slider-box ul {
         display: flex;
         padding: 0;
-        width: 400%; /* 4 images*/
+        width: 400%; 
         height: 100%;
         margin: 0;
         list-style: none;
@@ -262,14 +263,14 @@
     }
 
     .slider-box li {
-        flex: 0 0 100%; /* Ensures each item takes up 100% width */
+        flex: 0 0 100%; 
         height: 100%;
     }
 
     .slider-box img {
         width: 100%;
         height: 100vh;
-        object-fit: cover; /* Ensures images cover the container */
+        object-fit: cover; 
     }
 
     @keyframes slide {
@@ -378,13 +379,13 @@
     .filafoo {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrar horizontalmente */
+        align-items: center; 
         background-color: #93b2d2;
     }
     .columnafoo {
-        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
-        text-align: center; /* Alinear el contenido en el centro */
-        margin-bottom: 4em; /* Espacio entre columnas */
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 4em; 
         background-color: #93b2d2;
         
     }
@@ -453,11 +454,11 @@
     .header .nav ul li {
         float: left;
         position: relative;
-        z-index: 10; /* Menor z-index para que los submenús se superpongan */
+        z-index: 10; 
     }
     
     .header .nav ul li a {
-        font-family: 'hola'; /* Asegúrate de que 'hola' es la fuente correcta y está disponible */
+        font-family: 'hola'; 
         font-size: 25px;
         color: #fff;
         text-decoration: none;
@@ -474,25 +475,25 @@
     /* Submenús */
     .header .nav ul li ul {
         width: 200px;
-        display: none; /* Ocultar el submenú por defecto */
+        display: none; 
         background-color: #2a6a7a;
         position: absolute;
         left: 0;
-        bottom: 100%; /* Posicionar hacia abajo */
+        bottom: 100%; 
         padding: 14px 0;
         visibility: hidden;
         opacity: 0;
         box-shadow: 0px 0px 10px 0px rgb(61, 126, 176);
-        z-index: 20; /* Mayor z-index para superponerse a los apartados principales */
+        z-index: 20; 
         transition: all 300ms ease;
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual ancho */
-        gap: 10px; /* Espacio entre columnas y filas */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px; 
     }
     
     .header .nav ul li:hover ul,
     .header .nav ul li:focus-within ul {
-        display: grid; /* Mostrar el submenú al hacer hover o foco en el elemento padre */
+        display: grid; 
         visibility: visible;
         opacity: 1;
     }
@@ -529,9 +530,9 @@
         left: 50%;
         transform: translate(-50%, -50%);
         background-color: rgba(255, 255, 255, 0.75);
-        padding: 10px 10px;
+        padding: 5px 5px;
         max-width: 100%;
-        max-height: 100%;
+        max-height: 200%;
         z-index: 1001;
     }
     
@@ -545,8 +546,8 @@
         z-index: 1000; 
     }
     #popup-content .img1 img {
-        max-width: 100%;
-        width: 200px;
+        max-width: 200%;
+        width: 300px;
         height: auto;
     }
     .header {
@@ -573,22 +574,22 @@
         width: 100%;
         height: 100vh;
         margin: 0;
-        overflow: hidden; /* Oculta cualquier contenido que se salga del contenedor */
+        overflow: hidden; 
     }
     
     .slider-box ul {
         display: flex;
         padding: 0;
         margin: 0;
-        width: 100%; /* Asegúrate de que solo se muestre una imagen */
-        transform: translateX(0); /* Mantén el slider en la primera imagen */
+        width: 100%; 
+        transform: translateX(0); 
     }
     
     .slider-box li {
-        width: 100%; /* Asegura que cada imagen ocupe el 100% del ancho del contenedor */
+        width: 100%; 
         list-style: none;
         position: relative;
-        flex-shrink: 0; /* Evita que las imágenes se reduzcan para caber en la pantalla */
+        flex-shrink: 0; 
     }
     
     .slider-box img {
@@ -709,13 +710,13 @@
     .filafoo {
         display: flex;
         flex-direction: column;
-        align-items: center; /* Centrar horizontalmente */
+        align-items: center; 
         background-color: #93b2d2;
     }
     .columnafoo {
-        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
-        text-align: center; /* Alinear el contenido en el centro */
-        margin-bottom: 4em; /* Espacio entre columnas */
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 4em; 
         background-color: #93b2d2;
         
     }
@@ -783,18 +784,18 @@
     .header .nav ul li {
         float: left;
         position: relative;
-        z-index: 1; /* Asegúrate de que todos los elementos li tengan un z-index definido */
+        z-index: 1;
     }
     
     .header .nav ul li a {
-        font-family: 'hola'; /* Asegúrate de que 'hola' es la fuente correcta y está disponible */
+        font-family: 'hola'; 
         font-size: 25px;
         color: #fff;
         text-decoration: none;
         padding: 18px;
         display: flex;
         transition: all 0.2s ease;
-        position: relative; /* Añade position: relative; para asegurar z-index funcione */
+        position: relative; 
     }
     
     .header .nav ul li a:hover {
@@ -804,7 +805,7 @@
     /* SUBMENU */
     .header .nav ul li ul {
         width: 200px;
-        display: none; /* Ocultar el submenú por defecto */
+        display: none; 
         flex-direction: column;
         background-color: #2a6a7a;
         position: absolute;
@@ -814,12 +815,12 @@
         visibility: hidden;
         opacity: 0;
         box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-        z-index: 100; /* Asegúrate de que el z-index sea suficientemente alto */
+        z-index: 100; 
         transition: all 300ms ease;
     }
     
     .header .nav ul li:hover ul {
-        display: block; /* Mostrar el submenú cuando se hace hover en el elemento padre */
+        display: block; 
         visibility: visible;
         opacity: 1;
     }
@@ -827,9 +828,9 @@
     .nav ul li ul li a {
         display: block;
         color: #0099E9;
-        padding: 10px 20px; /* Ajusta el padding según tus necesidades */
+        padding: 10px 20px; 
         margin-top: 10px;
-        font-size: 16px; /* Ajusta el tamaño de fuente según tus necesidades */
+        font-size: 16px; 
         text-decoration: none;
         transition: all 300ms ease;
     }
@@ -993,46 +994,47 @@
     .sec4 img:hover{
         transform: scale(1.1);
     }
+    #popup-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 50px 50px;
+        max-width: 100%;
+        max-height: 100%;
+        z-index: 1001;
+    }
+    
+    #popup-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000; 
+    }
+    #popup-content .img1 img {
+        max-width: 100%; 
+        width: 500px; 
+        height: auto; 
+    }
 }   
 /* menu de navegacion*/
 
 
-#popup-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1000; /* Ajusta el z-index para que esté sobre otros elementos */
-}
 
-#popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.75);
-    padding: 50px 50px;
-    max-width: 100%;
-    max-height: 100%;
-    z-index: 1001;
-}
-
-#popup-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: 1000; 
-}
-#popup-content .img1 img {
-    max-width: 100%; 
-    width: 500px; 
-    height: auto; 
-}
 
 .block-scroll {
     overflow: hidden;
@@ -1058,7 +1060,7 @@
         left: 0;  
     }
     .header{
-        padding: 5px 5.7%;  /* modificar  con esto quedo fijo el header con las opciones*/
+        padding: 5px 5.7%; 
         left: 0;
         position: absolute;
     }
@@ -1107,7 +1109,43 @@
     #toggle:checked ~ .nav{ 
         display: block;
         left: 0;
-    }   
+    }  
+    #popup-container {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 50px 50px;
+        max-width: 100%;
+        max-height: 100%;
+        z-index: 1001;
+    }
+    
+    #popup-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000; 
+    }
+    #popup-content .img1 img {
+        max-width: 100%; 
+        width: 500px; 
+        height: auto; 
+    } 
 }
 .titubody{
     color: #1C1266;
@@ -1138,9 +1176,9 @@ body{
 }   
 .filadire {
     display: flex;
-    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    gap: 50px; /* Espacio entre los rectángulos */
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 50px; 
 }
 
 /* Estilos generales para los rectángulos */
@@ -1161,7 +1199,7 @@ body{
 
 /* Ajustes para el texto dentro de los rectángulos */
 .txtdire, .txtvice, .txtsec, .txtprose, .txtpre1, .txtpre2 {
-    margin: 0; /* Elimina márgenes para un diseño más consistente */
+    margin: 0;
 }
 /*-------------------------------------------------------footer--------------------------------------------------------*/
 
