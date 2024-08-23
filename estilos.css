@@ -74,13 +74,26 @@
 
     .contactos img {
         width: 30px;
-        margin-bottom: 0.3em; /* Espacio entre los iconos de contacto */
+        margin-bottom: 0.3em;
     }
 
-    .mapatext, .teltext, .whattext, .correotext1, .correotext2, .instatext {
-        font-size: 12px;
-        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
     }
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
+    }
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+        margin-left: -4em;
+        margin-top: -0.6em;
+    }
+   
     .instatext {
         margin-bottom: -4.5em;
     }
@@ -356,8 +369,77 @@
     footer{
         background-color: #93b2d2;
         color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 100px;;
         font-family: lfooter;
     }
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar horizontalmente */
+        background-color: #93b2d2;
+    }
+    .columnafoo {
+        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
+        text-align: center; /* Alinear el contenido en el centro */
+        margin-bottom: 4em; /* Espacio entre columnas */
+        background-color: #93b2d2;
+        
+    }
+
+    .logoimg img {
+        width: 50px;
+    }
+
+    .logotext {
+        font-size: 10px;
+    }
+
+    .titulofoo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em;
+    }
+
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
+    }
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
+    }
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+    
+        margin-top: -0.6em;
+    }
+   
+    .instatext {
+        margin-bottom: -4.5em;
+    }
+
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
+    }
+  
 } 
 /*------------------------------------------- TABLET ----------------------------------------------------*/
 @media (min-width:751px) and (max-width:1279px) {  
@@ -618,7 +700,75 @@
     footer{
         background-color: #93b2d2;
         color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 100px;;
         font-family: lfooter;
+    }
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centrar horizontalmente */
+        background-color: #93b2d2;
+    }
+    .columnafoo {
+        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
+        text-align: center; /* Alinear el contenido en el centro */
+        margin-bottom: 4em; /* Espacio entre columnas */
+        background-color: #93b2d2;
+        
+    }
+
+    .logoimg img {
+        width: 50px;
+    }
+
+    .logotext {
+        font-size: 10px;
+    }
+
+    .titulofoo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em;
+    }
+
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
+    }
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
+    }
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+    
+        margin-top: -0.6em;
+    }
+   
+    .instatext {
+        margin-bottom: -4.5em;
+    }
+
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
     }
 }
 /*----------------------------------- Computadora -------------------------------------------------------*/ 
