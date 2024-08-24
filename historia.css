@@ -26,8 +26,8 @@ header{
 .loesc img{
     display: flex;
     position: absolute;
-    width: 7em;
-    top: 0.5em;
+    width: 8%;
+    margin-top: -17em;
 }
 .titulo{
     padding-top: 1em;
@@ -39,8 +39,8 @@ header{
     color: #fff;
     position: relative;
     display: flex;
-    top: -10em;
-    margin-left: 2.5em;
+    top: -9.8em;
+    margin-left: 2.8em;
     font-family: lheader;
 }
 /*MERCEDES*/
@@ -68,9 +68,9 @@ h2:hover{
     line-height: 1.5em;
 }
 /*TEXTO HISTORIA*/
-article{
+.txtinicios p{
     font-family: lbody;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-right: 4em;
     margin-left: 4em;
     margin-top: 1em;
@@ -113,31 +113,11 @@ h3:hover{
     margin-left: 5em;
     height: 25em;
 }
-/*.wrap{
-    width: 40%;
-    height: 40.5vh;
-    margin-left: 4em;
-    margin-top: 2.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right,
-        rgb(0 0 0 / .2),
-        rgb(0 0 0 / .2)
-    );
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: transparent;
-    border-radius: 2%;
-}*/
 .wrap-texto{
     text-align: center;
     width: 25%;
     font-size: 1.5em;
     font-family: lbody;
-    position: relative;
-    display: flex;
     margin-left: 8em;
     margin-top: -8em;
 }
@@ -155,9 +135,6 @@ h3:hover{
     position: relative;
     display: flex;
 }
-h4{
-    font-family: lbody;
-}
 /*IMAGEN EDIFICIO ACTUAL*/
 .eetp img{
     width: 40%;
@@ -167,33 +144,14 @@ h4{
     margin-top: -15em;
     margin-left: 51em;
     height: 25em;
+    z-index: -1;
 }
-/*.eetp{
-    width: 40vw;
-    height: 40.5vh;
-    margin-left: 100em;
-    margin-top: -18.5em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right,
-        rgb(0 0 0 / .2),
-        rgb(0 0 0 / .2)
-    );
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: transparent;
-    border-radius: 2%;
-    display: flex;
-}*/
+
 .eetp-texto {
     text-align: center;
     width: 25%;
     font-size: 1.5em;
     font-family: lbody;
-    position: relative;
-    display: flex;
     margin-left: 39em;
     margin-top: -8em;
 }
@@ -220,32 +178,11 @@ h4{
     z-index: -1;
     margin-top: 12em;
 }
-/*.logoviejo{
-    width: 10%;
-    height: 58vh;
-    margin-left: 7em;
-    margin-top: 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right,
-        rgb(0 0 0 / .2),
-        rgb(0 0 0 / .2)
-    );
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    color: transparent;
-    border-radius: 2%;
-    display: flex;
-}*/
 .logoviejo-texto{
     text-align: center;
     width: 25%;
     font-size: 1.5em;
     font-family: lbody;
-    position: relative;
-    display: flex;
     margin-left: 8em;
     margin-top: -8em;
 }
@@ -277,8 +214,6 @@ h4{
     width: 25%;
     font-size: 1.5em;
     font-family: lbody;
-    position: relative;
-    display: flex;
     margin-left: 39em;
     margin-top: -8em;
 }
@@ -509,27 +444,7 @@ footer{
 /*------------------------------------------------------------------------------*/
 /*.............................DE 1024px A 2000px...............................*/
 /*------------------------------------------------------------------------------*/
-@media screen and (max-width:1500px) {
-    *{
-        margin: 0;
-        padding: 0;
-        border: 0;
-    }
-    .header{
-        width: 100%;
-        background-image: 100% center;
-        background-position: 100% center;
-        background-position-y: center;
-        background-position-x: center;
-    }
-    /*.logoviejo img{
-        margin-top: 2em;
-        margin-left: 45em;
-        width: 50%;
-        height: 60vh;
-    }*/
-}
-@media  screen and (min-width:1024px) {
+@media  screen and (min-width:1024px) and (max-width:1500px) {
     *{
         margin: 0;
         padding: 0;
@@ -551,10 +466,10 @@ footer{
         position: absolute center;
         margin-left: -1em;
     }
-    .txtmercedes{
+    .txtmercedes p{
         font-size: 1.2em;
-        margin-left: 0.8em;
-        margin-right: 0.6em;
+        margin-left: 2em;
+        margin-right: 2em;
         line-height: 2em;
     }
     h3 {
@@ -563,43 +478,62 @@ footer{
         margin-top: 1em;
         font-size: 3em;
     }
-    article{
-        font-size: 1.5em;
-        margin-right: 4.5em;
-        margin-left: 4em;
+    .txtinicios p{
+        font-size: 1.2em;
+        margin-right: 2em;
+        margin-left: 2em;
+        line-height: 2em;
     }
-    /*.foto1 img{
-        margin-left: 45em;
-        margin-top: 1em;
+    .wrap img{
         position: relative;
         display: flex;
-    }*/
-    /*.wrap {
-        margin-left: 8em;
         width: 40%;
-        height: 60vh;
+        height: 20em;
+        margin-left: 3em;
+    }
+    .wrap-texto{
+        margin-top: -7em;
+        margin-left: 5em;
+        text-align: center;
+    }
+    .eetp img{
+        margin-left: 34em;
+        margin-top: -11em;
+        width: 40%;
+        height: 20em;
+        display: flex;
+        position: relative;
+    }
+    .eetp-texto{
+        margin-top: -7em;
+        margin-left: 26em;
+        text-align: center;
+    }
+    .logoviejo img{
+        margin-left: 3em;
+        width: 40%;
+        height: 20em;
         position: relative;
         display: flex;
-    }*/
-    /*.eetp {
-        margin-top: 2em;
-        margin-left: 10em;
+    }
+    .logoviejo-texto{
+        margin-top: -7em;
+        margin-left: 5em;
+        text-align: center;
+    }
+    .logonuevo img{
+        margin-left: 34em;
+        margin-top: -11em;
         width: 40%;
-        height: 60vh;
-        display: flex;
+        height: 20em;
         position: relative;
-    }*/
-    /*.logoviejo {
-        margin-left: 8em;
-        width: 40%;
-        height: 70vh;
-    }*/
-    /*.logonuevo {
-        margin-top: 2em;
-        margin-left: 45em;
-        width: 40%;
-        height: 60vh;
-    }*/
+        display: flex;
+    }
+    .logonuevo-texto{
+        margin-top: -7em;
+        margin-left: 26em;
+        text-align: center;
+    }
     .videoescuela {
         margin-left: -4em;
     }
@@ -655,21 +589,11 @@ footer{
     .titulofoo{
         text-align: center;
     }
-    /*.contactos img{
+    .contactos img{
         width: 8.5%;
-    }*/
+    }
     .contactos p{
         font-size: 16.5px;
-    }
-    /*.copy{
-        position: relative;
-        display: flex;
-        top: -1em;
-        margin-left: 28em;
-    }*/
-    .copytext{
-        top: -0.5em;
-        margin-left: 2em;
     }
 }
 /*------------------------------------------------------------------------------*/
@@ -692,54 +616,74 @@ footer{
         object-fit: fill;
         width: 100%;
     }
+    .loesc img{
+        width: 5%;
+    }
     h2{
         margin-left: -1em;
         font-size: 2.5em;
     }
-    .txtmercedes{
-        position: relative;
-        margin-left: 2em;
-        margin-right: 3em;
-        font-size: 1.3em;
+    .txtmercedes p{
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        font-size: 1.2em;
+        line-height: 2em;
+        font-family: lbody;
     }
     h3{
         margin-left: -1em;
         font-size: 2.5em;
     }
-    article {
+    .txtinicios p {
         margin-left: 2em;
-        margin-right: 3em;
+        margin-right: 2em;
+        font-size: 1.2em;
+        line-height: 2em;
+        font-family: lbody;
     }
-    /*.foto1 img{
-        position: relative;
-        display: flex;
-        margin-top: 2em;
-        margin-right: 15em;
-        height: 30%;
-        width: 30%;
-    }*/
-    /*.wrap {
-        margin-left: 15em;
-        width: 50%;
-        height: 40vh;
-    }*/
-    /*.eetp{
-        margin-top: 3em;
-        margin-left: 15em;
-        width: 50%;
-        height: 40vh;
-    }*/
-    /*.logoviejo {
-        margin-left: 15em;
-        width: 50%;
-        height: 65vh;
-    }*/
-    /*.logonuevo {
-        margin-top: 3em;
-        margin-left: 15em;
-        width: 50%;
-        height: 60vh;
-    }*/
+    .wrap img {
+        margin-left: 10em;
+        width: 60%;
+        height: 20em;
+    }
+    .wrap-texto{
+        width: 35%;
+        margin-left: 11em;
+        margin-top: -7em;
+    }
+    .eetp img{
+        margin-top: 10em;
+        margin-left: 10em;
+        width: 60%;
+        height: 20em;
+    }
+    .eetp-texto{
+        margin-left: 11em;
+        margin-top: -7em;
+        width: 35%;
+    }
+    .logoviejo img{
+        margin-left: 10em;
+        width: 60%;
+        height: 20em;
+        margin-top: 9.8em;
+    }
+    .logoviejo-texto{
+        margin-left: 11em;
+        margin-top: -7em;
+        width: 35%;
+    }
+    .logonuevo img{
+        margin-top: 8em;
+        margin-left: 10em;
+        width: 60%;
+        height: 22em;
+    }
+    .logonuevo-texto{
+        margin-left: 11em;
+        margin-top: -7em;
+        width: 35%;
+    }
     .videoescuela video {
         margin-left: 12em;
     }
@@ -841,8 +785,6 @@ footer{
     }
     .loesc img{
         width: 15%;
-        display: flex;
-        position: absolute;
     }
     .txtmercedes{
         margin-left: 2em;
@@ -852,11 +794,11 @@ footer{
     h3{
         font-size: 2em;
     }
-    article{
+    /*.txtinicios p{
         margin-left: 2em;
         margin-right: 2em;
         font-size: 1em;
-    }
+    }*/
     /*.foto1 img{
         margin-right: 5em;
         height: 30%;
@@ -1062,11 +1004,11 @@ footer{
     h3{
         font-size: 2em;
     }
-    article{
+    /*.txtinicios p{
         margin-left: 2em;
         margin-right: 2em;
         font-size: 1em;
-    }
+    }*/
     /*.foto1 img{
         margin-left: 7.2em;
         height: 30%;
