@@ -104,10 +104,19 @@ h3:hover{
     transition: 0.6s;
 }
 /*IMAGEN EDIFICIO VIEJO*/
-.wrap{
+.wrap img{
+    width: 40%;
+    position: relative;
+    display: flex;
+    border-radius: 2em;
+    z-index: -1;
+    margin-left: 5em;
+    height: 25em;
+}
+/*.wrap{
     width: 40%;
     height: 40.5vh;
-    margin-left: 6em;
+    margin-left: 4em;
     margin-top: 2.5em;
     display: flex;
     align-items: center;
@@ -115,19 +124,22 @@ h3:hover{
     background: linear-gradient(to right,
         rgb(0 0 0 / .2),
         rgb(0 0 0 / .2)
-    )
-    ,url(Imageneshistoria/antiguoedificio.jpg);
+    );
     background-size: cover;
     background-position: center;
     position: relative;
     color: transparent;
     border-radius: 2%;
-}
+}*/
 .wrap-texto{
     text-align: center;
-    width: 50%;
-    font-size: 2em;
-    font-family:'Times New Roman', Times, serif;
+    width: 25%;
+    font-size: 1.5em;
+    font-family: lbody;
+    position: relative;
+    display: flex;
+    margin-left: 8em;
+    margin-top: -8em;
 }
 .wrap:hover {
     opacity: 0.8;
@@ -147,10 +159,19 @@ h4{
     font-family: lbody;
 }
 /*IMAGEN EDIFICIO ACTUAL*/
-.eetp{
+.eetp img{
+    width: 40%;
+    position: relative;
+    display: flex;
+    border-radius: 2em;
+    margin-top: -15em;
+    margin-left: 51em;
+    height: 25em;
+}
+/*.eetp{
     width: 40vw;
     height: 40.5vh;
-    margin-left: 50.5em;
+    margin-left: 100em;
     margin-top: -18.5em;
     display: flex;
     align-items: center;
@@ -158,20 +179,23 @@ h4{
     background: linear-gradient(to right,
         rgb(0 0 0 / .2),
         rgb(0 0 0 / .2)
-    )
-    ,url(Imageneshistoria/eetp.jpg);
+    );
     background-size: cover;
     background-position: center;
     position: relative;
     color: transparent;
     border-radius: 2%;
     display: flex;
-}
+}*/
 .eetp-texto {
     text-align: center;
-    width: 50%;
-    font-size: 2em;
-    font-family: 'Times New Roman', Times, serif;
+    width: 25%;
+    font-size: 1.5em;
+    font-family: lbody;
+    position: relative;
+    display: flex;
+    margin-left: 39em;
+    margin-top: -8em;
 }
 .eetp:hover {
     opacity: 0.8;
@@ -186,8 +210,18 @@ h4{
     font-weight: bold;
 }
 /*IMAGEN LOGO VIEJO*/
-.logoviejo{
-    width: 38%;
+.logoviejo img{
+    position: relative;
+    display: flex;
+    width: 40%;
+    border-radius: 2em;
+    height: 25em;
+    margin-left: 5em;
+    z-index: -1;
+    margin-top: 12em;
+}
+/*.logoviejo{
+    width: 10%;
     height: 58vh;
     margin-left: 7em;
     margin-top: 2em;
@@ -197,20 +231,23 @@ h4{
     background: linear-gradient(to right,
         rgb(0 0 0 / .2),
         rgb(0 0 0 / .2)
-    )
-    ,url(Imageneshistoria/Escudo.jpg);
+    );
     background-size: cover;
     background-position: center;
     position: relative;
     color: transparent;
     border-radius: 2%;
     display: flex;
-}
+}*/
 .logoviejo-texto{
     text-align: center;
-    width: 50%;
-    font-size: 2em;
-    font-family:'Times New Roman', Times, serif;
+    width: 25%;
+    font-size: 1.5em;
+    font-family: lbody;
+    position: relative;
+    display: flex;
+    margin-left: 8em;
+    margin-top: -8em;
 }
 .logoviejo:hover {
     opacity: 0.8;
@@ -225,31 +262,25 @@ h4{
     font-weight: bold;
 }
 /*IMAGEN LOGO NUEVO*/
-.logonuevo{
-    width: 38%;
-    height: 58vh;
-    margin-left: 51.5em;
-    margin-top: -26.4em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to right,
-        rgb(0 0 0 / .2),
-        rgb(0 0 0 / .2)
-    )
-    ,url(Imageneshistoria/logo4.png);
-    background-size: cover;
-    background-position: center;
+.logonuevo img{
     position: relative;
-    color: transparent;
-    border-radius: 2%;
     display: flex;
+    width: 35%;
+    border-radius: 2em;
+    margin-left: 54em;
+    margin-top: -15em;
+    height: 25em;
+    z-index: -1;
 }
 .logonuevo-texto{
     text-align: center;
-    width: 50%;
-    font-size: 2em;
-    font-family:'Times New Roman', Times, serif;
+    width: 25%;
+    font-size: 1.5em;
+    font-family: lbody;
+    position: relative;
+    display: flex;
+    margin-left: 39em;
+    margin-top: -8em;
 }
 .logonuevo:hover {
     opacity: 0.8;
@@ -265,8 +296,11 @@ h4{
 }
 /*VIDEO ESCUELA*/
 .videoescuela video{
-    margin-top: 2em;
+    margin-top: 5em;
     margin-left: 15em;
+}
+.video h2{
+    margin-top: 5em;
 }
 h5{
     font-family: lbody;
@@ -369,6 +403,7 @@ footer{
     width: 100%;
     text-align: center;
     font-family: lfooter;
+    z-index: -1;
 }
 .columnafoo{
     float:left;
@@ -398,7 +433,7 @@ footer{
     font-weight: bold;
 }
 .contactos img{
-    width: 30px;
+    width: 5%;
 }
 .contactos{
     font-size: 16px;
@@ -474,7 +509,27 @@ footer{
 /*------------------------------------------------------------------------------*/
 /*.............................DE 1024px A 2000px...............................*/
 /*------------------------------------------------------------------------------*/
-@media  screen and (min-width:1024px) and (max-width:1500px) {
+@media screen and (max-width:1500px) {
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .header{
+        width: 100%;
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center;
+    }
+    /*.logoviejo img{
+        margin-top: 2em;
+        margin-left: 45em;
+        width: 50%;
+        height: 60vh;
+    }*/
+}
+@media  screen and (min-width:1024px) {
     *{
         margin: 0;
         padding: 0;
@@ -485,12 +540,11 @@ footer{
         background-position: 100% center;
         background-position-y: center;
         background-position-x: center;
-        margin: 0;
-        border: 0;
         top: 0;
         float: center;
         object-fit: fill;
         z-index: -1;
+        width: 100%;
     }
     h2{
         font-size: 3em;
@@ -514,39 +568,38 @@ footer{
         margin-right: 4.5em;
         margin-left: 4em;
     }
-    .foto1 img{
+    /*.foto1 img{
         margin-left: 45em;
         margin-top: 1em;
         position: relative;
         display: flex;
-        margin-right: 25em;
-    }
-    .wrap {
+    }*/
+    /*.wrap {
         margin-left: 8em;
         width: 40%;
         height: 60vh;
         position: relative;
         display: flex;
-    }
-    .eetp {
+    }*/
+    /*.eetp {
         margin-top: 2em;
         margin-left: 10em;
         width: 40%;
         height: 60vh;
         display: flex;
         position: relative;
-    }
-    .logoviejo {
+    }*/
+    /*.logoviejo {
         margin-left: 8em;
-        width: 100%;
+        width: 40%;
         height: 70vh;
-    }
-    .logonuevo {
+    }*/
+    /*.logonuevo {
         margin-top: 2em;
         margin-left: 45em;
-        width: 50%;
+        width: 40%;
         height: 60vh;
-    }
+    }*/
     .videoescuela {
         margin-left: -4em;
     }
@@ -602,18 +655,18 @@ footer{
     .titulofoo{
         text-align: center;
     }
-    .contactos img{
+    /*.contactos img{
         width: 8.5%;
-    }
+    }*/
     .contactos p{
         font-size: 16.5px;
     }
-    .copy{
+    /*.copy{
         position: relative;
         display: flex;
         top: -1em;
         margin-left: 28em;
-    }
+    }*/
     .copytext{
         top: -0.5em;
         margin-left: 2em;
@@ -637,6 +690,7 @@ footer{
         border: 0;
         float: center;
         object-fit: fill;
+        width: 100%;
     }
     h2{
         margin-left: -1em;
@@ -656,34 +710,36 @@ footer{
         margin-left: 2em;
         margin-right: 3em;
     }
-    .foto1 img {
+    /*.foto1 img{
+        position: relative;
+        display: flex;
         margin-top: 2em;
-        margin-left: 22em;
+        margin-right: 15em;
         height: 30%;
         width: 30%;
-    }
-    .wrap {
+    }*/
+    /*.wrap {
         margin-left: 15em;
         width: 50%;
         height: 40vh;
-    }
-    .eetp{
+    }*/
+    /*.eetp{
         margin-top: 3em;
         margin-left: 15em;
         width: 50%;
         height: 40vh;
-    }
-    .logoviejo {
+    }*/
+    /*.logoviejo {
         margin-left: 15em;
         width: 50%;
         height: 65vh;
-    }
-    .logonuevo {
+    }*/
+    /*.logonuevo {
         margin-top: 3em;
         margin-left: 15em;
         width: 50%;
         height: 60vh;
-    }
+    }*/
     .videoescuela video {
         margin-left: 12em;
     }
@@ -718,6 +774,39 @@ footer{
         bottom: 0;
         z-index: 1;
     }
+    .logotext{
+        font-size: 18px;
+    }
+    /*.contactos img{
+        width: 9%;
+        margin-left: 70px;
+        margin-top: 8px;
+    }*/
+    .contactos p{
+        font-size: 12px;
+    }
+    .mapatext{
+        margin-top: 5px;
+    }
+    .teltext{
+        margin-left: 32px;
+        margin-top: 10px;
+    }
+    .whattext{
+        margin-left: 28px;
+        margin-top: 5px;
+    }
+    .correotext1{
+        margin-top: 5px;
+        margin-left: 10px;
+    }
+    .correotext2{
+        margin-left: 10px;
+    }
+    .instatext{
+        margin-left: 35px;
+        margin-top: 5px;
+    }
 }
 /*------------------------------------------------------------------------------*/
 /*.............................DE 800px A 500px..................................*/
@@ -733,13 +822,27 @@ footer{
         background-position: 100% center;
         background-position-y: center;
         background-position-x: center;
-        margin: 0;
-        border: 0;
         float: center;
         object-fit: fill;
+        width: 100%;
+    }
+    h1{
+        font-size: 80px;
+    }
+    .inicio{
+        font-size: 13px;
+        margin-top: -1em;
+        margin-left: 2em;
+        position: relative;
+        display: flex;
     }
     h2{
         font-size: 2em;
+    }
+    .loesc img{
+        width: 15%;
+        display: flex;
+        position: absolute;
     }
     .txtmercedes{
         margin-left: 2em;
@@ -754,39 +857,41 @@ footer{
         margin-right: 2em;
         font-size: 1em;
     }
-    .foto1 img{
-        margin-left: 16em;
+    /*.foto1 img{
+        margin-right: 5em;
         height: 30%;
         width: 30%;
         margin-top: 2em;
-    }
-    .wrap{
+        position: relative;
+        display: flex;
+    }*/
+    /*.wrap{
         width: 90%;
         height: 30vh;
         margin-left: 2em;
         margin-right: 2em;  
-    }
-    .eetp{
+    }*/
+    /*.eetp{
         margin-top: 3em;
         margin-left: 2em;
         margin-right: 2em;
         width: 90%;
         height: 30vh;
-    }
-    .logoviejo{
+    }*/
+    /*.logoviejo{
         width: 90%;
         height: 40vh;
         margin-left: 2em;
         margin-right: 2em;
         margin-top: 3em;
-    }
-    .logonuevo{
+    }*/
+    /*.logonuevo{
         margin-left: 2em;
         margin-right: 2em;
         margin-top: 3em;
         width: 90%;
         height: 45vh;
-    }
+    }*/
     .videoescuela video{
         margin-left: 2em;
         margin-right: 2em;
@@ -798,11 +903,12 @@ footer{
         font-size: 2em;
     }
     .denominaciones {
-        font-size: 0.7em;
+        font-size: 1em;
         font-family: lbody;
     }
     .directivos {
-        font-size: 0.7em;
+        font-size: 1em;
+        font-family: lbody;
     }
     .img1 img{
         width: 50%;
@@ -835,6 +941,76 @@ footer{
         bottom: 0;
         z-index: 1;
     }
+    .footer{
+        width: 100%;
+        height: 50em;
+    }
+    .logoimg{
+        margin-left: 5.5em;
+        position: relative;
+        display: flex;
+    }
+    .logotext{
+        font-size: 20px;
+        margin-left: 2em;
+        width: 120%;
+    }
+    /*.contactos img{
+        width: 14%;
+        margin-left: 15em;
+        margin-top: 8px;
+        position: relative;
+        display: flex;
+    }*/
+    .t1{
+        margin-left: 5em;
+        width: 120%;
+    }
+    .t2{
+        margin-top: 10em;
+        margin-left: -7em;
+        width: 120%;
+    }
+    .contador{
+        margin-top: -3em;
+        margin-left: -11em;
+        width: 120%;
+    }
+    .contactos p{
+        font-size: 12px;
+    }
+    .mapatext{
+        margin-top: 5px;
+        margin-left: 7em;
+        width: 120%;
+    }
+    .teltext{
+        margin-left: 8em;
+        margin-top: 10px;
+        width: 120%;
+    }
+    .whattext{
+        margin-left: 7.8em;
+        margin-top: 10px;
+        width: 120%;
+    }
+    .correotext1{
+        margin-top: 9px;
+        margin-left: 7.5em;
+        width: 120%;
+    }
+    .correotext2{
+        margin-left: 7.5em;
+        width: 120%;
+    }
+    .instatext{
+        margin-left: 13em;
+        margin-top: 10px;
+    }
+    /*.copy{
+        margin-top: -10em;
+        width: 120%;
+    }*/
 }  
 /*------------------------------------------------------------------------------*/
 /*............................DE 500px A 200px.................................*/
@@ -856,7 +1032,7 @@ footer{
         object-fit: fill;
         width: 100%;
     }
-    .loesc{
+   /* .loesc{
         background-color: transparent;
         border: 0;
     }
@@ -874,7 +1050,7 @@ footer{
         height: 20%;
         margin-top: -2.2em;
         margin-left: -2.1em;
-    }
+    }*/
     h2{
         font-size: 2em;
     }
@@ -891,39 +1067,41 @@ footer{
         margin-right: 2em;
         font-size: 1em;
     }
-    .foto1 img{
+    /*.foto1 img{
         margin-left: 7.2em;
         height: 30%;
         width: 30%;
         margin-top: 2em;
-    }
-    .wrap{
+        position: relative;
+        display: flex;
+    }*/
+    /*.wrap{
         width: 90%;
         height: 30vh;
         margin-left: 1.5em;
         margin-right: 3em;  
-    }
-    .eetp{
+    }*/
+    /*.eetp{
         margin-top: 3em;
         margin-left: 1.5em;
         margin-right: 3em;
         width: 90%;
         height: 30vh;
-    }
-    .logoviejo{
+    }*/
+    /*.logoviejo{
         width: 90%;
         height: 40vh;
         margin-left: 1.5em;
         margin-right: 3em;
         margin-top: 3em;
-    }
-    .logonuevo{
+    }*/
+    /*.logonuevo{
         margin-left: 1.5em;
         margin-right: 3em;
         margin-top: 3em;
         width: 90%;
         height: 45vh;
-    }
+    }*/
     .videoescuela video{
         margin-left: 1.5em;
         margin-right: 2em;
@@ -931,21 +1109,19 @@ footer{
         width: 90%;
     }
     h5{
-        /*margin-top: 1em;
-        font-size: 2em;*/
-        display: none;
+        margin-top: 1em;
+        font-size: 2em;
     }
     .denominaciones {
-        /*font-size: 0.6em;
+        font-size: 0.6em;
         margin-left: -4em;
-        margin-right: -4em;*/
-        display: none;
+        margin-right: -4em;
     }
     .directivos {
-        /*font-size: 0.5em;
+        font-size: 0.5em;
         margin-left: -4em;
-        margin-right: -4em;*/
-        display: none;
+        margin-right: -4em;
+        
     }
     .img1 img{
         width: 80%;
