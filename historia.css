@@ -56,9 +56,9 @@ h2:hover{
     transition: 0.6s;
 }
 /*TEXTO MERCEDES*/
-.txtmercedes{
+.txtmercedes p{
     font-family: lbody;
-    font-size: 1.5em;
+    font-size: 1.2em;
     margin-left: 4em;
     margin-right: 4em;
     margin-top: 1em;
