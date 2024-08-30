@@ -196,7 +196,7 @@
     }   
 }
 /*----------------------------------------------------------- Computadora/Netbook del gobierno -----------------------------------------------*/
-@media (max-width:1024px) and (min-width:600px){
+@media (max-width:1024px) and (min-width:700px){
     /*--------------------------header------------------------*/
     header{
         background-color: #2b2d9c;
@@ -554,7 +554,7 @@
     }
 }
 /*------------------------------------------------------------------ Tablet ------------------------------------------------------------------*/
-@media (min-width:421px) and (max-width:599px){
+@media (min-width:421px) and (max-width:699px){
     /*---------------------header--------------------*/
     header{
         background-color: #2b2d9c;
