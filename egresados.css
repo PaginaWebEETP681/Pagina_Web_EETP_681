@@ -3,8 +3,23 @@
     margin: 0;
     top: 0;
 }
-
-
+@font-face {
+    font-family: lfooter;
+    src: url(imagenfooter/Belleza-Regular.ttf);
+}
+@font-face {
+    font-family: lbody;
+    src: url(imagenfooter/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: chau;
+    src: url(imagenfooter/Buried\ hopper.tff);
+}
+.años h2{
+    font-family: lbody;
+    font-size: 40px;
+    justify-content: center;
+}
 
 /*---------espacios que ocupa la imagen------------------*/
 
@@ -591,13 +606,14 @@
 
 
 footer{
-    background-color: #0055b6;
-    color: #fff;
+    background-color: #93b2d2;
+    color: #000000;
     text-align: center;
     bottom:-1em;
     position: relative;
-    height: 22em;
+    height: 25em;
     padding-bottom: -10em;
+    font-family: lfooter;
 }
 .columnafoo{
     float:left;
@@ -696,6 +712,17 @@ footer{
     position: relative;
     bottom: 5px;
 }
+@font-face{
+    font-family: letra;
+    src: url("imagenes/Buried\ Hopper.ttf");
+}
+
+@font-face {
+    font-family: chulo;
+    src: url(Vogue.ttf);
+}
+
+
 @media (max-width: 768px) {
 
     footer{
