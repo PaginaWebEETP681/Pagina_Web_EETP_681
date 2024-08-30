@@ -394,11 +394,84 @@
         padding: 12px; /*separacion de los bordes de la pantalla y las imagenes*/
         grid-auto-flow: dense; /*acomoda las imagnes para que no quedes espacios*/ 
     }
+    footer{
+        background-color: #93b2d2;
+        color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 100px;;
+        font-family: lfooter;
+    }
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color: #93b2d2;
+    }
+    .columnafoo {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 4em; 
+        background-color: #93b2d2;
+        
+    }
+
+    .logoimg img {
+        width: 50px;
+    }
+
+    .logotext {
+        font-size: 10px;
+    }
+
+    .titulofoo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em;
+    }
+
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
+    }
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
+    }
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+    
+        margin-top: -0.6em;
+    }
+   
+    .instatext {
+        margin-bottom: -4.5em;
+    }
+
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
+    }
 }
 
 /*--------------------CELULAR----------------------*/
 
-@media (max-width:420px) and (orientation:portrait) {
+@media (max-width:420px) {
 
     header{
         background-color: #2b2d9c;
@@ -570,6 +643,80 @@
         padding: 10px; /*separacion de los bordes de la pantalla y las imagenes*/
         grid-auto-flow: dense; /*acomoda las imagnes para que no quedes espacios*/ 
     }
+    footer{
+        background-color: #93b2d2;
+        color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 100px;;
+        font-family: lfooter;
+    }
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color: #93b2d2;
+    }
+    .columnafoo {
+        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
+        text-align: center; /* Alinear el contenido en el centro */
+        margin-bottom: 4em; /* Espacio entre columnas */
+        background-color: #93b2d2;
+        
+    }
+
+    .logoimg img {
+        width: 50px;
+    }
+
+    .logotext {
+        font-size: 10px;
+    }
+
+    .titulofoo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em;
+    }
+
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
+    }
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
+    }
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+        margin-left: -4em;
+        margin-top: -0.6em;
+    }
+   
+    .instatext {
+        margin-bottom: -4.5em;
+    }
+
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
+    }
+
 
 }
 
@@ -611,7 +758,7 @@ footer{
     text-align: center;
     bottom:-1em;
     position: relative;
-    height: 25em;
+    height: 22em;
     padding-bottom: -10em;
     font-family: lfooter;
 }
