@@ -80,14 +80,9 @@ header .nav{
     margin: 1em;
     font-family: lbody;
 }
-.img{
-    display: flex ;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
 .img img{
-    width: 80%;
+    width: 85%;
+    height: 25em;
 }
 /*-------------------------------------------------------footer--------------------------------------------------------*/
 footer{
