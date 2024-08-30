@@ -78,7 +78,7 @@ header .nav{
         width: 90%;
         height: 25em;
     }
-
+@media (min-width:1300px){
 .columnabody{
     float: left;
     width: 50%;
