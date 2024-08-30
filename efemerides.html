@@ -20,7 +20,17 @@
 </header>
 <br>
 <body>
-    
+           <!--VENTANA EMERGENTE-->
+<script>
+    window.onload = function() {
+        // Obtén la referencia al elemento de la ventana emergente
+        var popup = document.getElementById("popup-container");
+        // Abre la ventana emergente automáticamente
+        popup.style.display = "block";
+    };
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="historia.js"></script> 
     <div class="container">
         <button class="toggle-btn" data-target="content1">24 DE MARZO</button>
         <div class="content" id="content1">
@@ -183,6 +193,7 @@
     </div>
     <button class="regresar" id="irArriba"><img src="imagenfooter/55008.png" alt=""></button>
     <script src="efemerides.js"></script>
+    <button class="regresar" id="irArriba"><img src="imagenfooter/55008.png" alt=""></button>
 </body>
 <footer>
     <div class="filafoo">
