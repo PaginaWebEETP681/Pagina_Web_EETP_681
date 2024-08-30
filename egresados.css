@@ -1,0 +1,715 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    top: 0;
+}
+
+
+
+/*---------espacios que ocupa la imagen------------------*/
+
+@media (min-width:900px){
+    .grid-item-wide{
+        grid-column: span 2;
+    }
+
+    .grid-item-tall{
+        grid-row: span 2 ;
+    }
+}
+
+/*-----------------------COMPUTADORA---------------------*/
+
+@media (min-width:1300px) {
+
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+    }
+    @font-face{
+        font-family:titulo;
+        src: url(galeria/Buried\ Hopper.ttf);
+    }
+    .titulo{
+        padding-top: 0.3em;
+        font-size: 60px;
+        font-family: titulo;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .grid-item.expanded,
+    .grid-item-wide.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Ajusta la escala según sea necesario */
+    z-index: 1000;
+    height: auto; /* Mantiene la relación de aspecto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+ 
+
+    .años {
+        display: flex;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        justify-content: center;
+        font-size: 30px;
+        color:#fff;
+        background-color: #4543c9;
+       
+        color: #ffffff;
+        transition: all 0.5s ease ;
+    }
+    
+  
+    .subtitulos {
+        display: flex;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        justify-content: center;
+        font-size: 30px;
+        color:#fff;
+        background-color: #6e6cee;
+  
+       
+    }
+
+     
+    .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #03afff;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+       
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .grid-item:hover {
+        transform: scale(1.02);
+       }
+
+    .grid-item-wide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #282c34;
+        border-radius: 4px;
+        transition: transform 0.4s ease-in-out;
+       
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .grid-item-wide:hover {
+        transform: scale(1.02);
+       }
+
+    .grid-item-tall{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #282c34;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+       
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .grid-item-tall:hover {
+        transform: scale(1.02);
+       }
+
+       .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-auto-rows: minmax(600px, auto);
+        gap: 30px;
+        padding: 30px;
+        grid-auto-flow: dense;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overlay-content img {
+        max-width: 100%;
+        max-height: 100%;
+        border: 5px solid white;
+    }
+ 
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+        grid-auto-rows: minmax(600px, auto);
+        gap: 30px;
+        padding: 30px;
+        grid-auto-flow: dense;
+    }
+    .buttonn{
+        width: 6%;
+        height: 10vh;
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        border:0;
+        display: block;
+    }
+    
+    .buttonn img{
+        transition-duration: 0.5;
+        height: 6em;
+        border: 0;
+        margin: 0.5;
+        cursor: pointer;
+        width: 6em;     
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: fixed; 
+        margin-top: 0.5;
+        display: block;
+    }
+}
+
+/*-------------------TABLET-------------------------*/
+
+@media (min-width:421px) and (max-width:1299px){
+
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+    }
+    @font-face{
+        font-family:titulo;
+        src: url(galeria/Buried\ Hopper.ttf);
+    }
+    .titulo{
+        padding-top: 0.3em;
+        font-size: 40px;
+        font-family: titulo;
+        color: #FFFFFF;
+        text-align: center;
+    }
+
+    .grid-item.expanded,
+    .grid-item-wide.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Ajusta la escala según sea necesario */
+    z-index: 1000;
+    height: auto; /* Mantiene la relación de aspecto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overlay-content img {
+        max-width: 100%;
+        max-height: 100%;
+        border: 5px solid white;
+    }
+
+    .buttonn{
+        width: 6%;
+        height: 10vh;
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        border:0;
+        display: block;
+    }
+    
+    .buttonn img{
+        transition-duration: 0.5;
+        height: 4em;
+        border: 0;
+        margin: 0.5;
+        cursor: pointer;
+        width: 4em;     
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: fixed; 
+        margin-top: 0.5;
+        display: block;
+    }
+
+    .años {
+        display: flex;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        justify-content: center;
+        font-size: 14px;
+        color:#fff;
+        background-color: #4543c9;
+       
+        color: #ffffff;
+        transition: all 0.5s ease ;
+    }
+    
+
+    .subtitulos {
+        display: flex;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        justify-content: center;
+        font-size: 16px;
+        color:#fff;
+        background-color: #6e6cee;
+       
+    }
+
+    .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #03afff;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+       
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .grid-item:hover {
+        filter: opacity(0.9);
+        transform: scale(1.02);
+       }
+
+    .grid-item-wide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #282c34;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+       
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .grid-item-wide:hover {
+        filter: opacity(0.9);
+        transform: scale(1.02);
+       }
+
+    .grid-item-tall{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #282c34;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+       
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .grid-item-tall:hover {
+        filter: opacity(0.9);
+        transform: scale(1.02);
+       }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 2fr)); /*tamaño de las imagenes*/ /*fr medida que ocupa el espacio que sobra*/ /*auto-fit es para que las imagenes si son pocas llenen todo el espacio*/
+        grid-auto-rows: minmax(340px, auto); /*alto de las imagenes*/ /*minmax (auto) para que se acomode automaticamente*/
+        gap:12px; /*separacion entre las imagenes*/
+        padding: 12px; /*separacion de los bordes de la pantalla y las imagenes*/
+        grid-auto-flow: dense; /*acomoda las imagnes para que no quedes espacios*/ 
+    }
+}
+
+/*--------------------CELULAR----------------------*/
+
+@media (max-width:420px) and (orientation:portrait) {
+
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+    }
+    @font-face{
+        font-family:titulo;
+        src: url(galeria/Buried\ Hopper.ttf);
+    }
+    .titulo{
+        padding-top: 0.3em;
+        font-size: 20px;
+        font-family: titulo;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    .grid-item.expanded,
+    .grid-item-wide.expanded {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(2); /* Ajusta la escala según sea necesario */
+    z-index: 1000;
+    height: auto; /* Mantiene la relación de aspecto */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+    }
+    
+    .overlay-content {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .overlay-content img {
+        max-width: 100%;
+        max-height: 100%;
+        border: 5px solid white;
+    }
+    .buttonn{
+        width: 6%;
+        height: 10vh;
+        background-color: transparent;
+        border: none;
+        position: fixed;
+        border:0;
+        display: block;
+    }
+    
+    .buttonn img{
+        transition-duration: 0.5;
+        height: 3em;
+        border: 0;
+        margin: 0.5;
+        cursor: pointer;
+        width: 3em;     
+        background-color: transparent;
+        background-repeat: no-repeat;
+        object-fit: fill;
+        position: fixed; 
+        margin-top: 0.5;
+        display: block;
+    }
+
+    .años {
+        display: flex;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        justify-content: center;
+        font-size: 9px;
+        color:#fff;
+        background-color: #4543c9;
+       
+        color: #ffffff;
+        transition: all 0.5s ease ;
+    }
+
+
+    .subtitulos {
+        display: flex;
+        margin-top: 0.8em;
+        margin-bottom: 0.8em;
+        justify-content: center;
+        font-size: 10px;
+        color:#fff;
+        background-color: #6e6cee;
+       
+    }
+       
+    .grid-item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #03afff;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+       
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+       
+    .grid-item:hover {
+        filter: opacity(0.9);
+        transform: scale(1.02);
+       }
+
+    .grid-item-wide{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #282c34;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+       
+        background-size:cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .grid-item-wide:hover {
+        filter: opacity(0.9);
+        transform: scale(1.02);
+       }
+
+    .grid-item-tall{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        background-color: #282c34;
+        border-radius: 4px;
+        transition: transform 0.3s ease-in-out;
+       
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    .grid-item-tall:hover {
+        filter: opacity(0.9);
+        transform: scale(1.02);
+       }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat (auto-fill, minmax(260px, 1fr)); /*tamaño de las imagenes*/ /*fr medida que ocupa el espacio que sobra*/ /*auto-fit es para que las imagenes si son pocas llenen todo el espacio*/
+        grid-auto-rows: minmax(250px, auto); /*alto de las imagenes*/ /*minmax (auto) para que se acomode automaticamente*/
+        gap:10px; /*separacion entre las imagenes*/
+        padding: 10px; /*separacion de los bordes de la pantalla y las imagenes*/
+        grid-auto-flow: dense; /*acomoda las imagnes para que no quedes espacios*/ 
+    }
+
+}
+
+
+.button{ 
+    background-color: transparent;
+    border: 0;  
+    width: 6%;
+    height: 10vh;
+    display: block;
+}
+
+.button img{ 
+    transition-duration: 0.5;
+    height: 8.7em;
+    border: 0;
+    margin: -1.1em;
+    cursor: pointer;
+    width: 8.7em;     
+    background-color: transparent;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    position: relative; 
+    margin-top: -1em;
+    margin-bottom: 1.8em;
+    display: block;
+}
+
+.button:hover {
+ color: #000;
+ opacity: 0.5;
+}
+
+
+
+footer{
+    background-color: #0055b6;
+    color: #fff;
+    text-align: center;
+    bottom:-1em;
+    position: relative;
+    height: 22em;
+    padding-bottom: -10em;
+}
+.columnafoo{
+    float:left;
+    width: 33%;
+    padding-right: 1px;
+}
+.filafoo::after{
+    content:" ";
+    clear: both;
+    display: table;   
+    margin-top: 2em;
+}
+.logoimg img{
+    position: relative;
+    top: 5em;
+    width: 100px;
+}
+.logotext{
+    position: relative;
+    top: 90px;
+    font-size: 20px;
+}
+.titulofoo{
+    position: relative;
+    top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.contactos img{
+    width: 30px;
+}
+.mapaimg{
+    position: relative;
+    top: 45px;
+    right: 130px;
+}
+.mapatext{
+    position: relative;
+    top: 20px;
+    right: -20px;
+}
+.telimg{
+    position: relative;
+    top: 40px;
+    right: 130px;
+}
+.teltext{
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+.whatimg{
+    position: relative;
+    top: 30px;
+    right: 130px;
+}
+.whattext{
+    position: relative;
+    top: 2px;
+    right: 30px;
+}
+.correoimg{
+    position: relative;
+    top: 20px;
+    right: 130px;
+}
+.correotext1{
+    position: relative;
+    top: -18px;
+    right: -8px;
+}
+.correotext2{
+    position: relative;
+    top: -18px;
+    right: -2px;
+}
+.instaimg{
+    position: relative;
+    top: -5px;
+    right: 130px;
+}
+.instatext{
+    position: relative;
+    top: -33px;
+    right: 55px;
+}
+.contador{
+    position: relative;
+    top: 90px;
+}
+.copy{
+    position: relative;
+    bottom: 10px;
+}
+.copytext{
+    position: relative;
+    bottom: 5px;
+}
+@media (max-width: 768px) {
+
+    footer{
+        font-size: 1em;
+    }
+}
+body {
+    background-color: rgb(203, 206, 236);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    overflow-x: hidden;
+}
+.titulo {
+    font-size: 3rem;
+}
+.años {
+    font-size: 3rem;
+}
