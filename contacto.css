@@ -17,27 +17,30 @@
 }
 /*--------------------------------------------------------- CELULAR VERTICAL-------------------------------------------------------------*/
 @media only screen and (max-width: 420px) {
-    /*--------------- header ---------------------*/
     header{
         background-color: #2b2d9c;
         width: 100%;
+        height: 88px;
     }
     .loesc img{
         display: flex;
         position: absolute;
-        width: 7em;
+        width: 3.5em;
         top: 0.5em;
     }
+  
     .titulo{
-        padding-top: 1em;
-        font-size: 60px;
+        padding-top: 9px;
+        font-size: 30px;
         font-family: lheader;
         color: #FFFFFF;
+        text-align: center;
     }
-    /*-------------------body----------------------*/
-    body{ 
+    body {
         width: 100%;
         font-family: lbody;
+        margin: 0; 
+        padding: 0; 
     }
     .columna{
         float:left;
@@ -54,55 +57,24 @@
         display: table;   
         margin-top: -24em;
     }
-    .instimg{
+    
+    .insttext, .telltext, .whatstext {
         position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .insttext{
-        position: relative;
-        left: 250px;
+        left: 110px;
         top: -5px;
-        font-size: 30px;
+        font-size: 20px;
     }
-    .whatsimg{
+    .mailtext1, .mailtext2 {
         position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .whatstext{
-        position: relative;
-        left: 250px;
+        left: 110px;
         top: -5px;
-        font-size: 30px;
+        font-size: 19px;
     }
-    .tellimg{
+   
+    .tellimg, .mailimg, .instimg, .whatsimg {
         position: relative;
-        left: 150px;
+        left: 30px;
         top: 50px;
-    }
-    .telltext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .mailimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .mailtext1{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .mailtext2{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
     }
     .ubic{
         position: relative;
@@ -112,310 +84,84 @@
         margin-top: 75px;
         margin-bottom: 50px;
     }
-    /*--------------footer-------------------------------*/
+
+
     footer{
         background-color: #93b2d2;
         color: #000000;
         text-align: center;
         bottom:-1em;
         position: relative;
-        height: 22em;
+        height: 100px;;
         font-family: lfooter;
     }
-    .columnafoo{
-        float:left;
-        width: 33%;
-        padding-right: 1px;
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color: #93b2d2;
     }
-    .filafoo::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: 2em;
+    .columnafoo {
+        width: 100%; 
+        margin-bottom: 4em; 
+        background-color: #93b2d2;
+        
     }
-    .logoimg{
-        position: relative;
-        top: 5em;
+
+    .logoimg img {
+        width: 50px;
     }
-    .logotext{
-        position: relative;
-        top: 90px;
-        font-size: 20px;
+
+    .logotext {
+        font-size: 10px;
     }
-    .titulofoo{
-        position: relative;
-        top: 40px;
-        font-size: 25px;
+
+    .titulofoo {
+        font-size: 15px;
         font-weight: bold;
     }
-    .mapaimg{
-        position: relative;
-        top: 45px;
-        right: 130px;
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
-    .mapatext{
-        position: relative;
-        top: 20px;
-        right: -20px;
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em;
     }
-    .telimg{
-        position: relative;
-        top: 40px;
-        right: 130px;
+
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
     }
-    .teltext{
-        position: relative;
-        top: 10px;
-        right: 50px;
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
     }
-    .whatimg{
-        position: relative;
-        top: 30px;
-        right: 130px;
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+        margin-left: -4em;
+        margin-top: -0.6em;
     }
-    .whattext{
-        position: relative;
-        top: 2px;
-        right: 30px;
+   
+    .instatext {
+        margin-bottom: -4.5em;
     }
-    .correoimg{
-        position: relative;
-        top: 20px;
-        right: 130px;
-    }
-    .correotext1{
-        position: relative;
-        top: -18px;
-        right: -8px;
-    }   
-    .correotext2{
-        position: relative;
-        top: -18px;
-        right: -2px;
-    }
-    .instaimg{
-        position: relative;
-        top: -5px;
-        right: 130px;
-    }
-    .instatext{
-        position: relative;
-        top: -33px;
-        right: 55px;
-    }   
-    .contador{
-        position: relative;
-        top: 90px;
-    }
-    .copy{
-        position: relative;
-        bottom: 10px;
-    }
-    .copytext{
-        position: relative;
-        bottom: 5px;
+
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
     }
 }
 /*-------------------------------------------------------------------- TABLET ---------------------------------------------------------------*/
 @media (min-width:421px) and (min-width:1299px){ 
-    /*--------------- header ---------------------*/
-    header{
-        background-color: #2b2d9c;
-        width: 100%;
-    }
-    .loesc img{
-        display: flex;
-        position: absolute;
-        width: 7em;
-        top: 0.5em;
-    }
-    .titulo{
-        padding-top: 1em;
-        font-size: 60px;
-        font-family: lheader;
-        color: #FFFFFF;
-    }
-    /*-------------------body----------------------*/
-    body{ 
-        width: 100%;
-        font-family: lbody;
-    }
-    .columna{
-        float:left;
-        width: 40%;
-        padding-right: -19px;
-    }
-    .columna1{
-        float:left;
-        width: 60%;
-    }
-    .fila::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: -24em;
-    }
-    .instimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .insttext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .whatsimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .whatstext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .tellimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .telltext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .mailimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .mailtext1{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .mailtext2{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .ubic{
-        position: relative;
-        align-self: center;
-        margin-left: 300px;
-        margin-right: 1px;
-        margin-top: 75px;
-        margin-bottom: 50px;
-    }
-    /*--------------footer-------------------------------*/
-    footer{
-        background-color: #93b2d2;
-        color: #000000;
-        text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 22em;
-        font-family: lfooter;
-    }
-    .columnafoo{
-        float:left;
-        width: 33%;
-        padding-right: 1px;
-    }
-    .filafoo::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: 2em;
-    }
-    .logoimg{
-        position: relative;
-        top: 5em;
-    }
-    .logotext{
-        position: relative;
-        top: 90px;
-        font-size: 20px;
-    }
-    .titulofoo{
-        position: relative;
-        top: 40px;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .mapaimg{
-        position: relative;
-        top: 45px;
-        right: 130px;
-    }
-    .mapatext{
-        position: relative;
-        top: 20px;
-        right: -20px;
-    }
-    .telimg{
-        position: relative;
-        top: 40px;
-        right: 130px;
-    }
-    .teltext{
-        position: relative;
-        top: 10px;
-        right: 50px;
-    }
-    .whatimg{
-        position: relative;
-        top: 30px;
-        right: 130px;
-    }
-    .whattext{
-        position: relative;
-        top: 2px;
-        right: 30px;
-    }
-    .correoimg{
-        position: relative;
-        top: 20px;
-        right: 130px;
-    }
-    .correotext1{
-        position: relative;
-        top: -18px;
-        right: -8px;
-    }   
-    .correotext2{
-        position: relative;
-        top: -18px;
-        right: -2px;
-    }
-    .instaimg{
-        position: relative;
-        top: -5px;
-        right: 130px;
-    }
-    .instatext{
-        position: relative;
-        top: -33px;
-        right: 55px;
-    }   
-    .contador{
-        position: relative;
-        top: 90px;
-    }
-    .copy{
-        position: relative;
-        bottom: 10px;
-    }
-    .copytext{
-        position: relative;
-        bottom: 5px;
-    }
+   
 }
 /*----------------------------------------------------- Computadora -----------------------------------------------------------------------*/ 
 @media (min-width:1300px) { 
@@ -456,192 +202,6 @@
         display: table;   
         margin-top: -24em;
     }
-    .instimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .insttext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .whatsimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .whatstext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .tellimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .telltext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .mailimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .mailtext1{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .mailtext2{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .ubic{
-        position: relative;
-        align-self: center;
-        margin-left: 300px;
-        margin-right: 1px;
-        margin-top: 75px;
-        margin-bottom: 50px;
-    }
-    /*--------------footer-------------------------------*/
-    footer{
-        background-color: #93b2d2;
-        color: #000000;
-        text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 22em;
-        font-family: lfooter;
-    }
-    .columnafoo{
-        float:left;
-        width: 33%;
-        padding-right: 1px;
-    }
-    .filafoo::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: 2em;
-    }
-    .logoimg{
-        position: relative;
-        top: 5em;
-    }
-    .logotext{
-        position: relative;
-        top: 90px;
-        font-size: 20px;
-    }
-    .titulofoo{
-        position: relative;
-        top: 40px;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .mapaimg{
-        position: relative;
-        top: 45px;
-        right: 130px;
-    }
-    .mapatext{
-        position: relative;
-        top: 20px;
-        right: -20px;
-    }
-    .telimg{
-        position: relative;
-        top: 40px;
-        right: 130px;
-    }
-    .teltext{
-        position: relative;
-        top: 10px;
-        right: 50px;
-    }
-    .whatimg{
-        position: relative;
-        top: 30px;
-        right: 130px;
-    }
-    .whattext{
-        position: relative;
-        top: 2px;
-        right: 30px;
-    }
-    .correoimg{
-        position: relative;
-        top: 20px;
-        right: 130px;
-    }
-    .correotext1{
-        position: relative;
-        top: -18px;
-        right: -8px;
-    }   
-    .correotext2{
-        position: relative;
-        top: -18px;
-        right: -2px;
-    }
-    .instaimg{
-        position: relative;
-        top: -5px;
-        right: 130px;
-    }
-    .instatext{
-        position: relative;
-        top: -33px;
-        right: 55px;
-    }   
-    .contador{
-        position: relative;
-        top: 90px;
-    }
-    .copy{
-        position: relative;
-        bottom: 10px;
-    }
-    .copytext{
-        position: relative;
-        bottom: 5px;
-    }
-}
-/*----------------------------------------------------------- Computadora/Netbook del gobierno -----------------------------------------------*/
-@media (max-width:1024px) and (min-width:600px){
-    /*--------------- header ---------------------*/
-    header{
-        background-color: #2b2d9c;
-        width: 100%;
-    }
-    .loesc img{
-        display: flex;
-        position: absolute;
-        width: 7em;
-        top: 0.5em;
-    }
-    .titulo{
-        padding-top: 1em;
-        font-size: 60px;
-        font-family: lheader;
-        color: #FFFFFF;
-    }
-    /*-------------------body----------------------*/
-    body{ 
-        width: 100%;
-        font-family: lbody;
-    }
     .columna{
         float:left;
         width: 40%;
@@ -657,55 +217,32 @@
         display: table;   
         margin-top: -24em;
     }
-    .instimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .insttext{
+    
+    .insttext, .telltext, .whatstext, .mailtext1, .mailtext2 {
         position: relative;
         left: 250px;
         top: -5px;
         font-size: 30px;
     }
-    .whatsimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
+   
     .whatstext{
         position: relative;
         left: 250px;
         top: -5px;
         font-size: 30px;
     }
-    .tellimg{
+    .tellimg, .mailimg, .instimg, .whatsimg {
         position: relative;
         left: 150px;
         top: 50px;
     }
-    .telltext{
+    .ubic{
         position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .mailimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .mailtext1{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .mailtext2{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
+        align-self: center;
+        margin-left: 300px;
+        margin-right: 1px;
+        margin-top: 75px;
+        margin-bottom: 50px;
     }
     .ubic{
         position: relative;
@@ -819,405 +356,116 @@
         bottom: 5px;
     }
 }
-/*----------------------------------------------------- Computadora/Netbook Juana Manso -----------------------------------------------------*/
-@media (max-width:1366px) and (min-width:768px){
-    /*--------------- header ---------------------*/
-    header{
-        background-color: #2b2d9c;
-        width: 100%;
-    }
-    .loesc img{
-        display: flex;
-        position: absolute;
-        width: 7em;
-        top: 0.5em;
-    }
-    .titulo{
-        padding-top: 1em;
-        font-size: 60px;
-        font-family: lheader;
-        color: #FFFFFF;
-    }
-    /*-------------------body----------------------*/
-    body{ 
-        width: 100%;
-        font-family: lbody;
-    }
-    .columna{
-        float:left;
-        width: 40%;
-        padding-right: -19px;
-    }
-    .columna1{
-        float:left;
-        width: 60%;
-    }
-    .fila::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: -24em;
-    }
-    .instimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .insttext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .whatsimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .whatstext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .tellimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .telltext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .mailimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .mailtext1{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .mailtext2{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .ubic{
-        position: relative;
-        align-self: center;
-        margin-left: 300px;
-        margin-right: 1px;
-        margin-top: 75px;
-        margin-bottom: 50px;
-    }
-    /*--------------footer-------------------------------*/
-    footer{
-        background-color: #93b2d2;
-        color: #000000;
-        text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 22em;
-        font-family: lfooter;
-    }
-    .columnafoo{
-        float:left;
-        width: 33%;
-        padding-right: 1px;
-    }
-    .filafoo::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: 2em;
-    }
-    .logoimg{
-        position: relative;
-        top: 5em;
-    }
-    .logotext{
-        position: relative;
-        top: 90px;
-        font-size: 20px;
-    }
-    .titulofoo{
-        position: relative;
-        top: 40px;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .mapaimg{
-        position: relative;
-        top: 45px;
-        right: 130px;
-    }
-    .mapatext{
-        position: relative;
-        top: 20px;
-        right: -20px;
-    }
-    .telimg{
-        position: relative;
-        top: 40px;
-        right: 130px;
-    }
-    .teltext{
-        position: relative;
-        top: 10px;
-        right: 50px;
-    }
-    .whatimg{
-        position: relative;
-        top: 30px;
-        right: 130px;
-    }
-    .whattext{
-        position: relative;
-        top: 2px;
-        right: 30px;
-    }
-    .correoimg{
-        position: relative;
-        top: 20px;
-        right: 130px;
-    }
-    .correotext1{
-        position: relative;
-        top: -18px;
-        right: -8px;
-    }   
-    .correotext2{
-        position: relative;
-        top: -18px;
-        right: -2px;
-    }
-    .instaimg{
-        position: relative;
-        top: -5px;
-        right: 130px;
-    }
-    .instatext{
-        position: relative;
-        top: -33px;
-        right: 55px;
-    }   
-    .contador{
-        position: relative;
-        top: 90px;
-    }
-    .copy{
-        position: relative;
-        bottom: 10px;
-    }
-    .copytext{
-        position: relative;
-        bottom: 5px;
-    }
-}
+
+
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
 @media (min-width:320px){
-    /*--------------- header ---------------------*/
-    header{
-        background-color: #2b2d9c;
-        width: 100%;
-    }
-    .loesc img{
-        display: flex;
-        position: absolute;
-        width: 7em;
-        top: 0.5em;
-    }
-    .titulo{
-        padding-top: 1em;
-        font-size: 60px;
-        font-family: lheader;
-        color: #FFFFFF;
-    }
-    /*-------------------body----------------------*/
-    body{ 
-        width: 100%;
-        font-family: lbody;
-    }
-    .columna{
-        float:left;
-        width: 40%;
-        padding-right: -19px;
-    }
-    .columna1{
-        float:left;
-        width: 60%;
-    }
-    .fila::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: -24em;
-    }
-    .instimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .insttext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .whatsimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .whatstext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .tellimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .telltext{
-        position: relative;
-        left: 250px;
-        top: -5px;
-        font-size: 30px;
-    }
-    .mailimg{
-        position: relative;
-        left: 150px;
-        top: 50px;
-    }
-    .mailtext1{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .mailtext2{
-        position: relative;
-        left: 250px;
-        top: -25px;
-        font-size: 30px;
-    }
-    .ubic{
-        position: relative;
-        align-self: center;
-        margin-left: 300px;
-        margin-right: 1px;
-        margin-top: 75px;
-        margin-bottom: 50px;
-    }
-    /*--------------footer-------------------------------*/
-    footer{
-        background-color: #93b2d2;
-        color: #000000;
-        text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 22em;
-        font-family: lfooter;
-    }
-    .columnafoo{
-        float:left;
-        width: 33%;
-        padding-right: 1px;
-    }
-    .filafoo::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: 2em;
-    }
-    .logoimg{
-        position: relative;
-        top: 5em;
-    }
-    .logotext{
-        position: relative;
-        top: 90px;
-        font-size: 20px;
-    }
-    .titulofoo{
-        position: relative;
-        top: 40px;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .mapaimg{
-        position: relative;
-        top: 45px;
-        right: 130px;
-    }
-    .mapatext{
-        position: relative;
-        top: 20px;
-        right: -20px;
-    }
-    .telimg{
-        position: relative;
-        top: 40px;
-        right: 130px;
-    }
-    .teltext{
-        position: relative;
-        top: 10px;
-        right: 50px;
-    }
-    .whatimg{
-        position: relative;
-        top: 30px;
-        right: 130px;
-    }
-    .whattext{
-        position: relative;
-        top: 2px;
-        right: 30px;
-    }
-    .correoimg{
-        position: relative;
-        top: 20px;
-        right: 130px;
-    }
-    .correotext1{
-        position: relative;
-        top: -18px;
-        right: -8px;
-    }   
-    .correotext2{
-        position: relative;
-        top: -18px;
-        right: -2px;
-    }
-    .instaimg{
-        position: relative;
-        top: -5px;
-        right: 130px;
-    }
-    .instatext{
-        position: relative;
-        top: -33px;
-        right: 55px;
-    }   
-    .contador{
-        position: relative;
-        top: 90px;
-    }
-    .copy{
-        position: relative;
-        bottom: 10px;
-    }
-    .copytext{
-        position: relative;
-        bottom: 5px;
-    }
+   
+}
+footer{
+    background-color: #93b2d2;
+    color: #000000;
+    text-align: center;
+    bottom:-1em;
+    position: relative;
+    height: 22em;
+    padding-bottom: -10em;
+    font-family: lfooter;
+}
+.columnafoo{
+    float:left;
+    width: 33%;
+    padding-right: 1px;
+}
+.filafoo::after{
+    content:" ";
+    clear: both;
+    display: table;   
+    margin-top: 2em;
+}
+.logoimg img{
+    position: relative;
+    top: 5em;
+    width: 100px;
+}
+.logotext{
+    position: relative;
+    top: 90px;
+    font-size: 20px;
+}
+.titulofoo{
+    position: relative;
+    top: 40px;
+    font-size: 25px;
+    font-weight: bold;
+}
+.contactos img{
+    width: 30px;
+}
+.mapaimg{
+    position: relative;
+    top: 45px;
+    right: 130px;
+}
+.mapatext{
+    position: relative;
+    top: 20px;
+    right: -20px;
+}
+.telimg{
+    position: relative;
+    top: 40px;
+    right: 130px;
+}
+.teltext{
+    position: relative;
+    top: 10px;
+    right: 50px;
+}
+.whatimg{
+    position: relative;
+    top: 30px;
+    right: 130px;
+}
+.whattext{
+    position: relative;
+    top: 2px;
+    right: 30px;
+}
+.correoimg{
+    position: relative;
+    top: 20px;
+    right: 130px;
+}
+.correotext1{
+    position: relative;
+    top: -18px;
+    right: -8px;
+}
+.correotext2{
+    position: relative;
+    top: -18px;
+    right: -2px;
+}
+.instaimg{
+    position: relative;
+    top: -5px;
+    right: 130px;
+}
+.instatext{
+    position: relative;
+    top: -33px;
+    right: 55px;
+}
+.contador{
+    position: relative;
+    top: 90px;
+}
+.copy{
+    position: relative;
+    bottom: 10px;
+}
+.copytext{
+    position: relative;
+    bottom: 5px;
 }
