@@ -61,24 +61,6 @@ header .nav{
     height: 15px;
 }
 /*------------------------------------------------------body-----------------------------------------------------------*/
-@media (max-width:420px) and (orientation: portrait){
-    body{
-        position: relative;
-        left: 0em;
-    }
-    .text{
-        text-align: center; 
-        font-size: 25px;
-        background-color: #2a6a7a;
-        color: #FFF;
-        margin: 1em;
-        font-family: lbody;
-    }
-    .img img{
-        width: 90%;
-        height: 25em;
-    }
-@media (min-width:1300px){
 .columnabody{
     float: left;
     width: 50%;
