@@ -17,9 +17,10 @@
 }
 /*--------------------------------------------------------- CELULAR VERTICAL-------------------------------------------------------------*/
 @media only screen and (max-width: 420px) {
+    
     header{
         background-color: #2b2d9c;
-        width: 100%;
+        width: auto;
         height: 88px;
     }
     .loesc img{
@@ -41,6 +42,7 @@
         font-family: lbody;
         margin: 0; 
         padding: 0; 
+        overflow-x: hidden;
     }
     .columna{
         float:left;
@@ -68,7 +70,7 @@
         position: relative;
         left: 110px;
         top: -5px;
-        font-size: 19px;
+        font-size: 15px;
     }
    
     .tellimg, .mailimg, .instimg, .whatsimg {
@@ -76,16 +78,20 @@
         left: 30px;
         top: 50px;
     }
-    .ubic{
-        position: relative;
-        align-self: center;
-        margin-left: 300px;
-        margin-right: 1px;
-        margin-top: 75px;
-        margin-bottom: 50px;
+   
+    .ubic {
+        margin-left: -6em;
+        margin-right: 0em; /* Elimina el margen derecho para pantallas pequeñas */
+        width: 100%; /* El contenedor ocupa todo el ancho de la pantalla */
+        margin-top: 440px;
+        margin-bottom: 30px;
     }
 
-
+    .ubic iframe {
+        width: 100%; /* El mapa ocupará todo el ancho del contenedor en pantallas pequeñas */
+        height: 250px; /* Altura más pequeña para pantallas móviles */
+        border: 0;
+    }
     footer{
         background-color: #93b2d2;
         color: #000000;
@@ -158,10 +164,167 @@
         margin-top: 1em;
         text-align:center;
     }
+    .copytext {
+        font-size: 12px;
+    }
 }
 /*-------------------------------------------------------------------- TABLET ---------------------------------------------------------------*/
-@media (min-width:421px) and (min-width:1299px){ 
+@media (min-width:421px) and (max-width:1299px){ 
+    header{
+        background-color: #2b2d9c;
+        width: 100%;
+        height: 100px;;
+     
+    }
+    .loesc img{
+        display: flex;
+        position: absolute;
+        width: 4em;
+        top: 0.5em;
+    }
+    .titulo{
+        padding-top: 8.5px;
+        font-size: 35px;
+        font-family: lheader;
+        color: #FFFFFF;
+        text-align: center;
+    }
+    body {
+        width: 100%;
+        font-family: lbody;
+        margin: 0; 
+        padding: 0; 
+        overflow-x: hidden;
+    }
+    .columna{
+        float:left;
+        width: 40%;
+        padding-right: -19px;
+    }
+    .columna1{
+        float:left;
+        width: 60%;
+    }
+    .fila::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: -24em;
+    }
+    
+    .insttext, .telltext, .whatstext {
+        position: relative;
+        left: 110px;
+        top: -5px;
+        font-size: 20px;
+    }
+    .mailtext1, .mailtext2 {
+        position: relative;
+        left: 110px;
+        top: -5px;
+        font-size: 20px;
+    }
    
+    .tellimg, .mailimg, .instimg, .whatsimg {
+        position: relative;
+        left: 30px;
+        top: 50px;
+    }
+   
+    .ubic {
+        margin-left: 0;
+        margin-right: 0em; 
+        margin-top: 440px;
+        margin-bottom: 30px;
+    }
+
+    .ubic iframe {
+        width: 100%; 
+        height: 250px; 
+        border: 0;
+        text-align: center;
+    }
+    footer{
+        background-color: #93b2d2;
+        color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 100px;;
+        font-family: lfooter;
+    }
+    .filafoo {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        background-color: #93b2d2;
+        font-family: lfooter;
+    }
+    .columnafoo {
+        width: 100%; 
+        text-align: center; 
+        margin-bottom: 4em; 
+        background-color: #93b2d2;
+        font-family: lfooter;
+        
+    }
+
+    .logoimg img {
+        width: 50px;
+    }
+
+    .FOOTER {
+        font-size: 20px;
+        text-align: center;
+        font-family: lfooter;
+    }
+
+    .titulofoo {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .contactos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contactos img {
+        width: 30px;
+        margin-bottom: 0.3em;
+    }
+
+    .teltext, .whattext, .instatext {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.5em;
+        font-family: lfooter;
+    }
+    .correotext1, .correotext2 {
+        font-size: 16px;
+        margin-bottom: 0.3em;  
+        margin-top:  -0.4em;
+        font-family: lfooter;
+    }
+    .mapatext  {
+        font-size: 16px;
+        margin-bottom: 0.3em; 
+        margin-left: 0.4em;
+        margin-top: -0.6em;
+        font-family: lfooter;
+    }
+   
+    .instatext {
+        margin-bottom: -4.5em;
+        font-family: lfooter;
+    }
+
+    .contador img {
+        width: 200px;
+        margin-top: 1em;
+        text-align:center;
+    }
 }
 /*----------------------------------------------------- Computadora -----------------------------------------------------------------------*/ 
 @media (min-width:1300px) { 
@@ -169,6 +332,7 @@
     header{
         background-color: #2b2d9c;
         width: 100%;
+        font-family: lheader;
     }
     .loesc img{
         display: flex;
@@ -182,6 +346,7 @@
         font-family: lheader;
         color: #FFFFFF;
     }
+    
     /*-------------------body----------------------*/
     body{ 
         width: 100%;
@@ -236,22 +401,23 @@
         left: 150px;
         top: 50px;
     }
-    .ubic{
+    .ubic {
         position: relative;
         align-self: center;
-        margin-left: 300px;
-        margin-right: 1px;
-        margin-top: 75px;
-        margin-bottom: 50px;
+        margin-left: 300px; 
+        margin-right: 1px; 
+        margin-top: 75px; 
+        margin-bottom: 50px; 
+        width: 60%; 
     }
-    .ubic{
-        position: relative;
-        align-self: center;
-        margin-left: 300px;
-        margin-right: 1px;
-        margin-top: 75px;
-        margin-bottom: 50px;
+    
+  
+    .ubic iframe {
+        width: 100%; 
+        height: 500px; 
+        border: 0; 
     }
+
     /*--------------footer-------------------------------*/
     footer{
         background-color: #93b2d2;
