@@ -24,6 +24,23 @@
     font-family: Vintage;
     src: url(galeria/VintageRough.otf);
 }
+.regresar img{
+    width: 40px;
+    }
+    .regresar{
+        background-color: transparent;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        opacity: 0;
+        transform: translateX(120px);
+        transition: all .25s;
+        cursor: pointer;
+    }
+    .visible{
+        opacity: 1;
+        transform: translateX(0);
+    }
 /*-----------------Estilos Generales-------------------------*/
 header{
     background-color: #2b2d9c;
