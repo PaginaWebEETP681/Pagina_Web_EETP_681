@@ -922,7 +922,7 @@ footer{
 /*------------------------------------------------------------------------------*/
 /*............................DE 500px A 200px.................................*/
 /*------------------------------------------------------------------------------*/
-@media screen and (min-width:320px) and (max-width:499px) {
+@media screen and (min-width:420px) and (max-width:499px) {
     *{
         margin: 0;
         padding: 0;
@@ -1008,11 +1008,11 @@ footer{
         margin-top: 7em;
         margin-left: 1em;
         width: 90%;
-        height: 15em;
+        height: 20em;
     }
     .logonuevo-texto{
-        margin-left: 2.6em;
-        margin-top: -5.5em;
+        margin-left: 3.5em;
+        margin-top: -8.5em;
         width: 65%;
         font-size: 1.3em;
     }
@@ -1072,8 +1072,8 @@ footer{
         width: 100%;
     }
     .logoimg img{
-        width: 20%;
-        margin-left: 8em;
+        width: 30%;
+        margin-left: 9em;
         margin-top: 2em;
     }
     .logotext{
@@ -1082,24 +1082,24 @@ footer{
         margin-left: 0.5em;
     }
     .t1{
-        margin-left: 4em;
+        margin-left: 6em;
         margin-top: 1em;
         margin-bottom: 1em;
     }
     .contactos img{
-        margin-left: 2.5em;
+        margin-left: 4.5em;
         width: 6%;
     }
     .contactos p{
-        margin-left: 5em;
+        margin-left: 8em;
         font-size: 15px;
     }
     .t2{
-        margin-left: 2.5em;
+        margin-left: 4.5em;
         margin-top: 1em;
     }
     .contador{
-        margin-left: 7em;
+        margin-left: 10em;
     }
     .copy{
         margin-top: 1em;
