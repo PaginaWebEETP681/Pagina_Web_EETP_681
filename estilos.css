@@ -28,8 +28,10 @@
 .regresar img{
     width: 40px;
     border: none;
+    background-color: transparent;
     }
     .regresar{
+        border: none;
         background-color: transparent;
         position: fixed;
         bottom: 20px;
@@ -244,7 +246,7 @@
         padding: 0; 
         box-sizing: inherit;
       
-        background-color: rgba(41, 88, 125);
+        background-color: rgb(72, 132, 179);
         top: 0;
         left: 0;
         right: 0;
