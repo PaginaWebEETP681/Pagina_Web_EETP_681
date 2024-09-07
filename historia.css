@@ -27,7 +27,8 @@ header{
     display: flex;
     position: absolute;
     width: 8%;
-    margin-top: -17em;
+    margin-top: -16em;
+    margin-left: 1.5em;
 }
 .titulo{
     padding-top: 1em;
@@ -39,8 +40,8 @@ header{
     color: #fff;
     position: relative;
     display: flex;
-    top: -9.8em;
-    margin-left: 2.8em;
+    top: -8.8em;
+    margin-left: 4.2em;
     font-family: lheader;
 }
 /*MERCEDES*/
@@ -244,26 +245,10 @@ h5:hover{
     overflow:hidden;
     transition: 0.6s;
 }
-li{
-    list-style: none ;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 1.5em;
-    color: #000000;
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-top: 1.5em;
-    text-align: justify;
-    line-height: 2%;
-    margin-bottom: 2em;
-}
-.pal1 {
-    font-size: 0.7em;
-    margin-left: 20em;
-    line-height: 0%;
-}
 body{
     background-color: #FFFFFF;
 }
+/* Ventana modal
 .img1 img{
     width: 50%;
     height: 50%;
@@ -297,7 +282,7 @@ body{
     right: 0;
     bottom: 0;
     z-index: 1;
-}
+}*/
 .denominaciones{
     font-family: lbody;
     font-size: 20px;
@@ -401,9 +386,65 @@ footer{
     margin-top: 15em;
 }
 /*------------------------------------------------------------------------------*/
-/*.............................DE 1024px A 2000px...............................*/
+/*.............................DE 1367px A 1500px...............................*/
 /*------------------------------------------------------------------------------*/
-@media  screen and (min-width:1024px) and (max-width:1500px) {
+@media  screen and (min-width:1367px) and (max-width:1500px) {
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    .wrap img{
+        position: relative;
+        display: flex;
+        width: 40%;
+        height: 25em;
+        margin-left: 6em;
+    }
+    .wrap-texto{
+        margin-top: -8em;
+        margin-left: 8.7em;
+    }
+    .eetp img{
+        margin-left: 50em;
+        margin-top: -16em;
+        width: 40%;
+        height: 25em;
+        display: flex;
+        position: relative;
+    }
+    .eetp-texto{
+        margin-top: -8em;
+        margin-left: 38em;
+    }
+    .logoviejo img{
+        margin-left: 6em;
+        width: 40%;
+        height: 25em;
+        position: relative;
+        display: flex;
+    }
+    .logoviejo-texto{
+        margin-top: -8em;
+        margin-left: 8.7em;
+    }
+    .logonuevo img{
+        margin-left: 52em;
+        margin-top: -16em;
+        width: 40%;
+        height: 25em;
+        position: relative;
+        display: flex;
+    }
+    .logonuevo-texto{
+        margin-top: -8em;
+        margin-left: 39em;
+    }
+}
+/*------------------------------------------------------------------------------*/
+/*.............................DE 1024px A 1366px...............................*/
+/*------------------------------------------------------------------------------*/
+@media  screen and (min-width:1024px) and (max-width:1366px) {
     *{
         margin: 0;
         padding: 0;
@@ -424,7 +465,7 @@ footer{
         width: 12%;
     }
     .inicio{
-        margin-left: 2.8em;
+        margin-left: 4.3em;
     }
     h2{
         font-size: 3em;
@@ -461,7 +502,7 @@ footer{
         margin-left: 5em;
     }
     .eetp img{
-        margin-left: 34em;
+        margin-left: 35em;
         margin-top: -11em;
         width: 40%;
         height: 20em;
@@ -509,6 +550,7 @@ footer{
     .directivos {
         font-size: 1.3em;
     }
+    /* Ventana modal
     .img1 img{
         width: 50%;
         height: 50%;
@@ -540,7 +582,7 @@ footer{
         right: 0;
         bottom: 0;
         z-index: 1;
-    }
+    }*/
     footer{
         width: 100%;
     }
@@ -579,7 +621,7 @@ footer{
 /*------------------------------------------------------------------------------*/
 /*............................DE 1024px A 800px.................................*/
 /*------------------------------------------------------------------------------*/
-@media screen and (min-width:800px) and (max-width:1023px){
+@media screen and (min-width:769px) and (max-width:1023px){
     *{
         margin: 0;
         padding: 0;
@@ -598,13 +640,13 @@ footer{
     }
     .loesc img{
         width: 12%;
-        margin-top: -17em;
+        margin-top: -16em;
     }
     .inicio{
         margin-top: -1.5em;
         position: relative;
         display: flex;
-        margin-left: 2em;
+        margin-left: 3.5em;
     }
     h2{
         margin-left: -1em;
@@ -674,6 +716,7 @@ footer{
     .videoescuela video {
         margin-left: 8em;
     }
+    /* Ventana modal
     .img1 img{
         width: 50%;
         height: 50%;
@@ -704,7 +747,7 @@ footer{
         right: 0;
         bottom: 0;
         z-index: 1;
-    }
+    }*/
     footer{
         width: 100%;
     }
@@ -743,7 +786,7 @@ footer{
 /*------------------------------------------------------------------------------*/
 /*.............................DE 800px A 500px..................................*/
 /*------------------------------------------------------------------------------*/
-@media screen and (min-width:500px) and (max-width:799px) {
+@media screen and (min-width:500px) and (max-width:768px) {
     *{
         margin: 0;
         padding: 0;
@@ -763,18 +806,17 @@ footer{
     }
     .inicio{
         font-size: 13px;
-        margin-top: -2em;
-        margin-left: 1.9em;
+        margin-top: -1.8em;
+        margin-left: 3.8em;
         position: relative;
         display: flex;
     }
-    
     h2{
         font-size: 2em;
     }
     .loesc img{
         width: 15%;
-        margin-top: -14em;
+        margin-top: -13em;
     }
     .txtmercedes p{
         margin-left: 1.5em;
@@ -853,6 +895,7 @@ footer{
         font-size: 1em;
         font-family: lbody;
     }
+    /* Ventana modal
     .img1 img{
         width: 50%;
         height: 50%;
@@ -883,7 +926,7 @@ footer{
         right: 0;
         bottom: 0;
         z-index: 1;
-    }
+    }*/
     footer{
         width: 100%;
     }
@@ -939,16 +982,18 @@ footer{
         object-fit: fill;
         width: 100%;
     }
-    .titulo h1{
-        font-size: 75px;
+    h1{
+        font-size: 70px;
     }
     .loesc img{
         width: 4em;
-        margin-top: -13.6em;
+        margin-top: -13em;
+        margin-left: 1em;
     }
     .inicio p{
         font-size: 10px;
-        margin-left: -2.3em;
+        margin-left: -3em;
+        margin-top: -0.5em;
     }
     h2{
         font-size: 2em;
@@ -1034,8 +1079,8 @@ footer{
         font-size: 0.9em;
         margin-left: 0.5em;
         margin-right: 0.5em;
-        
     }
+    /* Ventana modal
     .img1 img{
         width: 80%;
         height: 80%;
@@ -1067,7 +1112,7 @@ footer{
         right: 0;
         bottom: 0;
         z-index: 1;
-    }
+    }*/
     footer{
         width: 100%;
     }

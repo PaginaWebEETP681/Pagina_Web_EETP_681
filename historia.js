@@ -1,4 +1,4 @@
-const open = document.getElementById('open');
+/*const open = document.getElementById('open');
 const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close');
 
@@ -12,6 +12,7 @@ const close = document.getElementById('close');
 */
 
 $(document).ready(function(){
+   /* Ventana modal
     var $popContainer = $('#popup-container');
     var $body = $('html,body');
 
@@ -22,7 +23,7 @@ $(document).ready(function(){
     $('#popup-overlay').on('click', function() {
         $popContainer.fadeOut();
         $body.removeClass('block-scroll'); // clase de manejo
-    });
+    });*/
     var regresar = $("#irArriba");
     $(window).scroll(function () {
         if ($(window).scrollTop() > 400){
