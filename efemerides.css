@@ -16,6 +16,7 @@
 }
 .regresar img{
     width: 40px;
+    border: none;
 }
 .regresar{
     background-color: transparent;
