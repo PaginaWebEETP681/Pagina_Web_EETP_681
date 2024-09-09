@@ -16,7 +16,6 @@
 }
 .regresar img{
     width: 40px;
-    border: none;
 }
 .regresar{
     background-color: transparent;
@@ -27,11 +26,11 @@
     transform: translateX(120px);
     transition: all .25s;
     cursor: pointer;
-    border: none;
 }
 .visible{
     opacity: 1;
     transform: translateX(0);
+    border: none;
 }
 /*---------------------------------------------------------header------------------------------------------------------*/
 
