@@ -8,8 +8,20 @@
         <link rel="stylesheet" href="egresados.css">
         <link rel="shortcut icon" href="imagenes/logo4.png">
         <script src="galeriadeff.js" defer></script>
+        <link rel="stylesheet" href="historia.js">
     </head>
     <body>
+        <!--VENTANA EMERGENTE-->
+<script>
+    window.onload = function() {
+        // Obtén la referencia al elemento de la ventana emergente
+        var popup = document.getElementById("popup-container");
+        // Abre la ventana emergente automáticamente
+        popup.style.display = "block";
+    };
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="historia.js"></script>
         <header>
             <div class="titulo"><h1>Egresados</h1></div>
         </header>
@@ -70,7 +82,7 @@
         <div class="años"><h2>Egresados 2000</h2></div>
         <div class="e2024"><center><img src="egresadosimg/2000.JPG" alt="" width="85%"></center></div>  
         <br><br>
-        
+        <button class="regresar" id="irArriba"><img src="imagenfooter/55008.png" alt=""></button>
     </body>
     <footer>
         <button class="buttonn"> 
