@@ -388,11 +388,15 @@ footer{
 /*------------------------------------------------------------------------------*/
 /*.............................DE 1367px A 1500px...............................*/
 /*------------------------------------------------------------------------------*/
-@media  screen and (min-width:1367px) and (max-width:1500px) {
+@media  screen and (min-width:1366px) and (max-width:1500px) {
     *{
         margin: 0;
         padding: 0;
         border: 0;
+    }
+    .inicio{
+        margin-left: 3.9em;
+        margin-top: -0.5em;
     }
     .wrap img{
         position: relative;
@@ -406,8 +410,8 @@ footer{
         margin-left: 8.7em;
     }
     .eetp img{
-        margin-left: 50em;
-        margin-top: -16em;
+        margin-left: 46em;
+        margin-top: -15em;
         width: 40%;
         height: 25em;
         display: flex;
@@ -415,7 +419,7 @@ footer{
     }
     .eetp-texto{
         margin-top: -8em;
-        margin-left: 38em;
+        margin-left: 35em;
     }
     .logoviejo img{
         margin-left: 6em;
@@ -429,8 +433,8 @@ footer{
         margin-left: 8.7em;
     }
     .logonuevo img{
-        margin-left: 52em;
-        margin-top: -16em;
+        margin-left: 48em;
+        margin-top: -15em;
         width: 40%;
         height: 25em;
         position: relative;
@@ -438,13 +442,18 @@ footer{
     }
     .logonuevo-texto{
         margin-top: -8em;
-        margin-left: 39em;
+        margin-left: 36em;
     }
+    .contador{
+        margin-left: 73em;
+        margin-top: 2em;
+        width: 10%;
+    } 
 }
 /*------------------------------------------------------------------------------*/
 /*.............................DE 1024px A 1366px...............................*/
 /*------------------------------------------------------------------------------*/
-@media  screen and (min-width:1024px) and (max-width:1366px) {
+@media  screen and (min-width:1024px) and (max-width:1365px) {
     *{
         margin: 0;
         padding: 0;
@@ -519,6 +528,7 @@ footer{
         height: 20em;
         position: relative;
         display: flex;
+        margin-top: 10em;
     }
     .logoviejo-texto{
         margin-top: -7em;
@@ -621,7 +631,7 @@ footer{
 /*------------------------------------------------------------------------------*/
 /*............................DE 1024px A 800px.................................*/
 /*------------------------------------------------------------------------------*/
-@media screen and (min-width:769px) and (max-width:1023px){
+@media screen and (min-width:768px) and (max-width:1023px){
     *{
         margin: 0;
         padding: 0;
@@ -643,10 +653,10 @@ footer{
         margin-top: -16em;
     }
     .inicio{
-        margin-top: -1.5em;
+        margin-top: -1.8em;
         position: relative;
         display: flex;
-        margin-left: 3.5em;
+        margin-left: 3.4em;
     }
     h2{
         margin-left: -1em;
@@ -786,7 +796,7 @@ footer{
 /*------------------------------------------------------------------------------*/
 /*.............................DE 800px A 500px..................................*/
 /*------------------------------------------------------------------------------*/
-@media screen and (min-width:500px) and (max-width:768px) {
+@media screen and (min-width:500px) and (max-width:767px) {
     *{
         margin: 0;
         padding: 0;
