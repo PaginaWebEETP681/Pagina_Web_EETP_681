@@ -15,13 +15,21 @@
     font-family: lfooter;
     src: url(imagenfooter/Belleza-Regular.ttf);
 }
-/*--------------------------------------------------------- CELULAR VERTICAL-------------------------------------------------------------*/
+/*--------------------------------------------------------- CELULAR VERTICAL-------------------------------------------------------------
 @media only screen and (max-width: 420px) {
-    
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
     header{
-        background-color: #2b2d9c;
-        width: auto;
-        height: 88px;
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center ;
+        float: center;
+        object-fit: fill;
+        width: 100%;
     }
     .loesc img{
         display: flex;
@@ -29,7 +37,6 @@
         width: 3.5em;
         top: 0.5em;
     }
-  
     .titulo{
         padding-top: 9px;
         font-size: 30px;
@@ -72,24 +79,22 @@
         top: -5px;
         font-size: 15px;
     }
-   
     .tellimg, .mailimg, .instimg, .whatsimg {
         position: relative;
         left: 30px;
         top: 50px;
     }
-   
     .ubic {
         margin-left: -6em;
-        margin-right: 0em; /* Elimina el margen derecho para pantallas pequeñas */
-        width: 100%; /* El contenedor ocupa todo el ancho de la pantalla */
+        margin-right: 0em; /* Elimina el margen derecho para pantallas pequeñas *
+        width: 100%; /* El contenedor ocupa todo el ancho de la pantalla 
         margin-top: 440px;
         margin-bottom: 30px;
     }
 
     .ubic iframe {
-        width: 100%; /* El mapa ocupará todo el ancho del contenedor en pantallas pequeñas */
-        height: 250px; /* Altura más pequeña para pantallas móviles */
+        width: 100%; /* El mapa ocupará todo el ancho del contenedor en pantallas pequeñas 
+        height: 250px; /* Altura más pequeña para pantallas móviles 
         border: 0;
     }
     footer{
@@ -154,7 +159,6 @@
         margin-left: -4em;
         margin-top: -0.6em;
     }
-   
     .instatext {
         margin-bottom: -4.5em;
     }
@@ -168,13 +172,13 @@
         font-size: 12px;
     }
 }
+*/
 /*-------------------------------------------------------------------- TABLET ---------------------------------------------------------------*/
 @media (min-width:421px) and (max-width:1299px){ 
     header{
         background-color: #2b2d9c;
         width: 100%;
         height: 100px;;
-     
     }
     .loesc img{
         display: flex;
@@ -224,13 +228,11 @@
         top: -5px;
         font-size: 20px;
     }
-   
     .tellimg, .mailimg, .instimg, .whatsimg {
         position: relative;
         left: 30px;
         top: 50px;
     }
-   
     .ubic {
         margin-left: 0;
         margin-right: 0em; 
@@ -314,7 +316,6 @@
         margin-top: -0.6em;
         font-family: lfooter;
     }
-   
     .instatext {
         margin-bottom: -4.5em;
         font-family: lfooter;
@@ -389,7 +390,6 @@
         top: -5px;
         font-size: 30px;
     }
-   
     .whatstext{
         position: relative;
         left: 250px;
@@ -411,7 +411,7 @@
         width: 60%; 
     }
     
-  
+
     .ubic iframe {
         width: 100%; 
         height: 500px; 
@@ -522,116 +522,406 @@
         bottom: 5px;
     }
 }
+/*--------------------------------------------------------------------------------------------------------------------------------------------*/
+@media screen and (min-width:500px) and (max-width:799px) {
+    /*--------------- header ---------------------*/
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image:   100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center ;
+        float: center;
+        object-fit: fill;
+        width: 100%;
+    }
+    .loesc img{
+        width: 12%;
+    }
+    .titulo{
+        padding-top: 1em;
+        font-size: 80px;
+        font-family: lheader;
+        color: #FFFFFF;
+    }
+    /*-------------------body----------------------*/
+    body{ 
+        width: 100%;
+        font-family: lbody;
+    }
+    .columna{
+        float:left;
+        width: 40%;
+        padding-right: -19px;
+    }
+    .columna1{
+        float:left;
+        width: 60%;
+    }
+    .fila::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: -24em;
+    }
+    .columna{
+        float:left;
+        width: 40%;
+        padding-right: -19px;
+    }
+    .columna1{
+        float:left;
+        width: 60%;
+    }
+    .fila::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: -24em;
+    }
+    
+    .insttext, .telltext, .whatstext, .mailtext1, .mailtext2 {
+        position: relative;
+        left: 250px;
+        top: -5px;
+        font-size: 30px;
+    }
+    .whatstext{
+        position: relative;
+        left: 250px;
+        top: -5px;
+        font-size: 30px;
+    }
+    .tellimg, .mailimg, .instimg, .whatsimg {
+        position: relative;
+        left: 150px;
+        top: 50px;
+    }
+    .ubic {
+        position: relative;
+        align-self: center;
+        margin-left: 300px; 
+        margin-right: 1px; 
+        margin-top: 75px; 
+        margin-bottom: 50px; 
+        width: 60%; 
+    }
+    
+    .ubic iframe {
+        width: 100%; 
+        height: 500px; 
+        border: 0; 
+    }
 
-
+    /*--------------footer-------------------------------*/
+    footer{
+        background-color: #93b2d2;
+        color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 22em;
+        font-family: lfooter;
+    }
+    .columnafoo{
+        float:left;
+        width: 33%;
+        padding-right: 1px;
+    }
+    .filafoo::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: 2em;
+    }
+    .logoimg{
+        position: relative;
+        top: 5em;
+    }
+    .logotext{
+        position: relative;
+        top: 90px;
+        font-size: 20px;
+    }
+    .titulofoo{
+        position: relative;
+        top: 40px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .mapaimg{
+        position: relative;
+        top: 45px;
+        right: 130px;
+    }
+    .mapatext{
+        position: relative;
+        top: 20px;
+        right: -20px;
+    }
+    .telimg{
+        position: relative;
+        top: 40px;
+        right: 130px;
+    }
+    .teltext{
+        position: relative;
+        top: 10px;
+        right: 50px;
+    }
+    .whatimg{
+        position: relative;
+        top: 30px;
+        right: 130px;
+    }
+    .whattext{
+        position: relative;
+        top: 2px;
+        right: 30px;
+    }
+    .correoimg{
+        position: relative;
+        top: 20px;
+        right: 130px;
+    }
+    .correotext1{
+        position: relative;
+        top: -18px;
+        right: -8px;
+    }   
+    .correotext2{
+        position: relative;
+        top: -18px;
+        right: -2px;
+    }
+    .instaimg{
+        position: relative;
+        top: -5px;
+        right: 130px;
+    }
+    .instatext{
+        position: relative;
+        top: -33px;
+        right: 55px;
+    }   
+    .contador{
+        position: relative;
+        top: 90px;
+    }
+    .copy{
+        position: relative;
+        bottom: 10px;
+    }
+    .copytext{
+        position: relative;
+        bottom: 5px;
+    }
+}
 /*-------------------------------------------------------------------------------------------------------------------------------------*/
-@media (min-width:320px){
-   
-}
-footer{
-    background-color: #93b2d2;
-    color: #000000;
-    text-align: center;
-    bottom:-1em;
-    position: relative;
-    height: 22em;
-    padding-bottom: -10em;
-    font-family: lfooter;
-}
-.columnafoo{
-    float:left;
-    width: 33%;
-    padding-right: 1px;
-}
-.filafoo::after{
-    content:" ";
-    clear: both;
-    display: table;   
-    margin-top: 2em;
-}
-.logoimg img{
-    position: relative;
-    top: 5em;
-    width: 100px;
-}
-.logotext{
-    position: relative;
-    top: 90px;
-    font-size: 20px;
-}
-.titulofoo{
-    position: relative;
-    top: 40px;
-    font-size: 25px;
-    font-weight: bold;
-}
-.contactos img{
-    width: 30px;
-}
-.mapaimg{
-    position: relative;
-    top: 45px;
-    right: 130px;
-}
-.mapatext{
-    position: relative;
-    top: 20px;
-    right: -20px;
-}
-.telimg{
-    position: relative;
-    top: 40px;
-    right: 130px;
-}
-.teltext{
-    position: relative;
-    top: 10px;
-    right: 50px;
-}
-.whatimg{
-    position: relative;
-    top: 30px;
-    right: 130px;
-}
-.whattext{
-    position: relative;
-    top: 2px;
-    right: 30px;
-}
-.correoimg{
-    position: relative;
-    top: 20px;
-    right: 130px;
-}
-.correotext1{
-    position: relative;
-    top: -18px;
-    right: -8px;
-}
-.correotext2{
-    position: relative;
-    top: -18px;
-    right: -2px;
-}
-.instaimg{
-    position: relative;
-    top: -5px;
-    right: 130px;
-}
-.instatext{
-    position: relative;
-    top: -33px;
-    right: 55px;
-}
-.contador{
-    position: relative;
-    top: 90px;
-}
-.copy{
-    position: relative;
-    bottom: 10px;
-}
-.copytext{
-    position: relative;
-    bottom: 5px;
+@media screen and (min-width:320px) and (max-width:499px) {
+    /*--------------- header ---------------------*/
+    *{
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+    header{
+        background-image: 100% center;
+        background-position: 100% center;
+        background-position-y: center;
+        background-position-x: center ;
+        float: center;
+        object-fit: fill;
+        width: 100%;
+    }
+    .loesc img{
+        display: flex;
+        position: absolute;
+        width: 7em;
+        top: 0.5em;
+    }
+    .titulo{
+        padding-top: 1em;
+        font-size: 60px;
+        font-family: lheader;
+        color: #FFFFFF;
+    }
+    
+    /*-------------------body----------------------*/
+    body{ 
+        width: 100%;
+        font-family: lbody;
+    }
+    .columna{
+        float:left;
+        width: 40%;
+        padding-right: -19px;
+    }
+    .columna1{
+        float:left;
+        width: 60%;
+    }
+    .fila::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: -24em;
+    }
+    .columna{
+        float:left;
+        width: 40%;
+        padding-right: -19px;
+    }
+    .columna1{
+        float:left;
+        width: 60%;
+    }
+    .fila::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: -24em;
+    }
+    
+    .insttext, .telltext, .whatstext, .mailtext1, .mailtext2 {
+        position: relative;
+        left: 250px;
+        top: -5px;
+        font-size: 30px;
+    }
+
+    .whatstext{
+        position: relative;
+        left: 250px;
+        top: -5px;
+        font-size: 30px;
+    }
+    .tellimg, .mailimg, .instimg, .whatsimg {
+        position: relative;
+        left: 150px;
+        top: 50px;
+    }
+    .ubic {
+        position: relative;
+        align-self: center;
+        margin-left: 300px; 
+        margin-right: 1px; 
+        margin-top: 75px; 
+        margin-bottom: 50px; 
+        width: 60%; 
+    }
+
+    .ubic iframe {
+        width: 100%; 
+        height: 500px; 
+        border: 0; 
+    }
+
+    /*--------------footer-------------------------------*/
+    footer{
+        background-color: #93b2d2;
+        color: #000000;
+        text-align: center;
+        bottom:-1em;
+        position: relative;
+        height: 22em;
+        font-family: lfooter;
+    }
+    .columnafoo{
+        float:left;
+        width: 33%;
+        padding-right: 1px;
+    }
+    .filafoo::after{
+        content:" ";
+        clear: both;
+        display: table;   
+        margin-top: 2em;
+    }
+    .logoimg{
+        position: relative;
+        top: 5em;
+    }
+    .logotext{
+        position: relative;
+        top: 90px;
+        font-size: 20px;
+    }
+    .titulofoo{
+        position: relative;
+        top: 40px;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .mapaimg{
+        position: relative;
+        top: 45px;
+        right: 130px;
+    }
+    .mapatext{
+        position: relative;
+        top: 20px;
+        right: -20px;
+    }
+    .telimg{
+        position: relative;
+        top: 40px;
+        right: 130px;
+    }
+    .teltext{
+        position: relative;
+        top: 10px;
+        right: 50px;
+    }
+    .whatimg{
+        position: relative;
+        top: 30px;
+        right: 130px;
+    }
+    .whattext{
+        position: relative;
+        top: 2px;
+        right: 30px;
+    }
+    .correoimg{
+        position: relative;
+        top: 20px;
+        right: 130px;
+    }
+    .correotext1{
+        position: relative;
+        top: -18px;
+        right: -8px;
+    }   
+    .correotext2{
+        position: relative;
+        top: -18px;
+        right: -2px;
+    }
+    .instaimg{
+        position: relative;
+        top: -5px;
+        right: 130px;
+    }
+    .instatext{
+        position: relative;
+        top: -33px;
+        right: 55px;
+    }   
+    .contador{
+        position: relative;
+        top: 90px;
+    }
+    .copy{
+        position: relative;
+        bottom: 10px;
+    }
+    .copytext{
+        position: relative;
+        bottom: 5px;
+    }
 }
