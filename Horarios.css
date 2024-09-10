@@ -29,6 +29,7 @@
         transform: translateX(120px);
         transition: all .25s;
         cursor: pointer;
+         z-index: 100;
     }
     .visible{
         opacity: 1;
