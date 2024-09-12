@@ -18,7 +18,7 @@
     src: url(imagenfooter/Belleza-Regular.ttf);
 }
 /*.............................DISEÑO DE LA PÁGINA..............................*/  
-
+/*----HEADER----*/
 header{
     background-color: #2b2d9c;
     width: 100%;
@@ -44,6 +44,7 @@ header{
     margin-left: 4.2em;
     font-family: lheader;
 }
+/*----BODY----*/
 /*MERCEDES*/
 h2{
     font-family: lbody;
@@ -146,7 +147,6 @@ h3:hover{
     height: 25em;
     z-index: -1;
 }
-
 .eetp-texto {
     width: 25%;
     font-size: 1.5em;
@@ -248,41 +248,6 @@ h5:hover{
 body{
     background-color: #FFFFFF;
 }
-/* Ventana modal
-.img1 img{
-    width: 50%;
-    height: 50%;
-    margin-left: 15em;
-    z-index: 1;
-}
-#popup-container {
-    display:none;  
-   
-}
-.block-scroll {
-    overflow:hidden;
-}
-#popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color:rgba(255, 255, 255, 0.75);
-    padding: 10px 20px;
-    
-}
-#popup-overlay{
-    background-color: rgba(0,0,0,0.8);
-    z-index: -1;
-}
-.full-layer{
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 1;
-}*/
 .denominaciones{
     font-family: lbody;
     font-size: 20px;
@@ -294,6 +259,7 @@ body{
 .regresar img{
     width: 40px;
 }
+/*BOTON HACIA ARRIBA*/
 .regresar{
     background-color: transparent;
     position: fixed;
@@ -308,8 +274,7 @@ body{
     opacity: 1;
     transform: translateX(0);
 }
-/*ESCRITORIO*/
-/*----------------------------------FOOTER GENERAL--------------------------------*/
+/*----FOOTER----*/
 footer{
     background-color: #93b2d2;
     color: #000000;
@@ -386,7 +351,7 @@ footer{
     margin-top: 15em;
 }
 /*------------------------------------------------------------------------------*/
-/*.............................DE 1367px A 1500px...............................*/
+/*.............................DE 1500px A 1366px...............................*/
 /*------------------------------------------------------------------------------*/
 @media  screen and (min-width:1366px) and (max-width:1500px) {
     *{
@@ -394,10 +359,12 @@ footer{
         padding: 0;
         border: 0;
     }
+    /*----HEADER----*/
     .inicio{
         margin-left: 3.9em;
         margin-top: -0.5em;
     }
+    /*----BODY----*/
     .wrap img{
         position: relative;
         display: flex;
@@ -444,14 +411,27 @@ footer{
         margin-top: -8em;
         margin-left: 36em;
     }
+    .videoescuela{
+        margin-left: -3em;
+    }
+    /*----FOOTER----*/
     .contador{
         margin-left: 73em;
         margin-top: 2em;
         width: 10%;
     } 
+    footer{
+        width: 100%;
+    }
+    .t2{
+        margin-top: -10em;
+    }
+    .copy{
+        margin-top: 12em;
+    }
 }
 /*------------------------------------------------------------------------------*/
-/*.............................DE 1024px A 1366px...............................*/
+/*.............................DE 1365px A 1024px...............................*/
 /*------------------------------------------------------------------------------*/
 @media  screen and (min-width:1024px) and (max-width:1365px) {
     *{
@@ -459,6 +439,7 @@ footer{
         padding: 0;
         border: 0;
     }
+    /*----HEADER----*/
     header{
         background-image: 100% center;
         background-position: 100% center;
@@ -476,6 +457,7 @@ footer{
     .inicio{
         margin-left: 4.3em;
     }
+    /*----BODY----*/
     h2{
         font-size: 3em;
         position: absolute center;
@@ -560,39 +542,7 @@ footer{
     .directivos {
         font-size: 1.3em;
     }
-    /* Ventana modal
-    .img1 img{
-        width: 50%;
-        height: 50%;
-        margin-left: 9em;
-        z-index: 1;
-    }
-    #popup-container {
-        display:none;
-    }
-    .block-scroll {
-        overflow:hidden;
-    }
-    #popup-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color:rgba(255, 255, 255, 0.75);
-        padding: 10px 20px;
-    }
-    #popup-overlay{
-        background-color: rgba(0,0,0,0.8);
-        z-index: -1;
-    }
-    .full-layer{
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-    }*/
+    /*----FOOTER----*/
     footer{
         width: 100%;
     }
@@ -629,7 +579,7 @@ footer{
     }
 }
 /*------------------------------------------------------------------------------*/
-/*............................DE 1024px A 800px.................................*/
+/*............................DE 1023px A 768px.................................*/
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023px){
     *{
@@ -637,6 +587,7 @@ footer{
         padding: 0;
         border: 0;
     }
+    /*----HEADER----*/
     header{
         background-image: 100% center;
         background-position: 100% center;
@@ -658,6 +609,7 @@ footer{
         display: flex;
         margin-left: 3.4em;
     }
+    /*----BODY----*/
     h2{
         margin-left: -1em;
         font-size: 2.5em;
@@ -726,38 +678,7 @@ footer{
     .videoescuela video {
         margin-left: 8em;
     }
-    /* Ventana modal
-    .img1 img{
-        width: 50%;
-        height: 50%;
-        margin-left: 9em;
-    }
-    #popup-container {
-        display:none;
-    }
-    .block-scroll {
-        overflow:hidden;
-    }
-    #popup-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color:rgba(255, 255, 255, 0.75);
-        padding: 10px 20px;
-    }
-    #popup-overlay{
-        background-color: rgba(0,0,0,0.8);
-        z-index: -1;
-    }
-    .full-layer{
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-    }*/
+    /*----FOOTER----*/
     footer{
         width: 100%;
     }
@@ -794,7 +715,7 @@ footer{
     }
 }
 /*------------------------------------------------------------------------------*/
-/*.............................DE 800px A 500px..................................*/
+/*.............................DE 767px A 500px..................................*/
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:500px) and (max-width:767px) {
     *{
@@ -802,6 +723,7 @@ footer{
         padding: 0;
         border: 0;
     }
+    /*----HEADER----*/
     header{
         background-image: 100% center;
         background-position: 100% center;
@@ -821,12 +743,13 @@ footer{
         position: relative;
         display: flex;
     }
-    h2{
-        font-size: 2em;
-    }
     .loesc img{
         width: 15%;
         margin-top: -13em;
+    }
+    /*----BODY----*/
+    h2{
+        font-size: 2em;
     }
     .txtmercedes p{
         margin-left: 1.5em;
@@ -905,38 +828,7 @@ footer{
         font-size: 1em;
         font-family: lbody;
     }
-    /* Ventana modal
-    .img1 img{
-        width: 50%;
-        height: 50%;
-        margin-left: 3.5em;
-    }
-    #popup-container {
-        display:none;
-    }
-    .block-scroll {
-        overflow:hidden;
-    }
-    #popup-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color:rgba(255, 255, 255, 0.75);
-        padding: 10px 20px;
-    }
-    #popup-overlay{
-        background-color: rgba(0,0,0,0.8);
-        z-index: -1;
-    }
-    .full-layer{
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-    }*/
+    /*----FOOTER----*/
     footer{
         width: 100%;
     }
@@ -973,7 +865,7 @@ footer{
     }
 }  
 /*------------------------------------------------------------------------------*/
-/*............................DE 500px A 200px.................................*/
+/*............................DE 499px A 320px.................................*/
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:320px) and (max-width:499px) {
     *{
@@ -981,6 +873,7 @@ footer{
         padding: 0;
         border: 0;
     }
+    /*----HEADER----*/
     header{
         background-image: 100% center;
         background-position: 100% center;
@@ -1005,6 +898,7 @@ footer{
         margin-left: -3em;
         margin-top: -0.5em;
     }
+    /*----BODY----*/
     h2{
         font-size: 2em;
     }
@@ -1090,39 +984,7 @@ footer{
         margin-left: 0.5em;
         margin-right: 0.5em;
     }
-    /* Ventana modal
-    .img1 img{
-        width: 80%;
-        height: 80%;
-        margin-left: 0.8em;
-        z-index: 1;
-    }
-    #popup-container {
-        display:none;
-    }
-    .block-scroll {
-        overflow:hidden;
-    }
-    #popup-content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color:rgba(255, 255, 255, 0.75);
-        padding: 10px 20px;
-    }
-    #popup-overlay{
-        background-color: rgba(0,0,0,0.8);
-        z-index: -1;
-    }
-    .full-layer{
-        position: fixed;
-        left: 0;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 1;
-    }*/
+    /*----FOOTER----*/
     footer{
         width: 100%;
     }
