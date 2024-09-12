@@ -10,10 +10,6 @@
     box-sizing:inherit;
 }
 @font-face {
-    font-family: chau;
-    src: url(Imageneshistoria/Vogue.ttf);
-}
-@font-face {
     font-family: hola;
     src: url(Imageneshistoria/Buried\ Hopper.ttf); 
 }
@@ -46,8 +42,84 @@
         opacity: 1;
         transform: translateX(0);
     }
+    /*----FOOTER----*/
+footer{
+    background-color: #93b2d2;
+    color: #000000;
+}
+.logoimg img{
+    position: relative;
+    width: 8%;
+    margin-left: 10em;
+    margin-top: 4em;
+}
+.logotext{
+    position: relative;
+    font-family: lfooter;
+    font-size: 20px;
+    margin-left: 3em;
+}
+.titulofoo{
+    font-family: lfooter;
+    font-size: 25px;
+    font-weight: bold;
+}
+.t1{
+    position: relative;
+    margin-top: -8.5em;
+    margin-left: 28em;
+}
+.contactos img{
+    position: relative;
+    width: 2%;
+    margin-left: 37em;
+}
+.contactos p{
+    position: relative;
+    font-family: lfooter;
+    font-size: 17px;
+    margin-left: 39em;
+}
+.mapatext p{
+    margin-top: -2em;
+}
+.telimg img{
+    margin-top: 2em;
+}
+.teltext p{
+    margin-top: -2em;
+}
+.whatimg img{
+    margin-top: 2em;
+}
+.whattext p{
+    margin-top: -2em;
+}
+.correoimg img{
+    margin-top: 2em;
+}
+.correotext1 p{
+    margin-top: -2.5em;
+}
+.instaimg img{
+    margin-top: 1.5em;
+}
+.instatext p{
+    margin-top: -1.5em;
+}
+.t2{
+    margin-top: -11em;
+    margin-left: 45em;
+}
+.contador{
+    position: relative;
+    margin-left: 73em;
+}
+.copy{
+    margin-top: 15em;
+}
 /*--------------------------------------- CELULAR VERTICAL ------------------------------------------------*/
-@media only screen and (max-width: 420px) {
+@media screen and (max-width: 420px) {
     .rectan {
         box-shadow: 5px 5px 2.5px #51829C; 
     }
@@ -87,78 +159,47 @@
         width: 300px;
         height: auto;
     }
+    .cuerbody p{
+        font-size: 18px;
+        margin-left: -3.5em;
+        margin-right: -3.5em;
+    }
+    /*----FOOTER----*/
     footer{
-        background-color: #93b2d2;
-        color: #000000;
+        width: 100%;
+    }
+    .logoimg img{
+        width: 30%;
+        margin-left: 9em;
+        margin-top: 2em;
+    }
+    .logotext{
         text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 100px;;
-        font-family: lfooter;
+        font-size: 18px;
+        margin-left: 0.5em;
     }
-    .filafoo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        background-color: #93b2d2;
-    }
-    .columnafoo {
-        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
-        text-align: center; /* Alinear el contenido en el centro */
-        margin-bottom: 4em; /* Espacio entre columnas */
-        background-color: #93b2d2;
-        
-    }
-
-    .logoimg img {
-        width: 50px;
-    }
-
-    .logotext {
-        font-size: 10px;
-    }
-
-    .titulofoo {
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .contactos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contactos img {
-        width: 30px;
-        margin-bottom: 0.3em;
-    }
-
-    .teltext, .whattext, .instatext {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.5em;
-    }
-    .correotext1, .correotext2 {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.4em;
-    }
-    .mapatext  {
-        font-size: 16px;
-        margin-bottom: 0.3em; 
-        margin-left: -4em;
-        margin-top: -0.6em;
-    }
-   
-    .instatext {
-        margin-bottom: -4.5em;
-    }
-
-    .contador img {
-        width: 200px;
+    .t1{
+        margin-left: 6em;
         margin-top: 1em;
-        text-align:center;
+        margin-bottom: 1em;
+    }
+    .contactos img{
+        margin-left: 4.5em;
+        width: 6%;
+    }
+    .contactos p{
+        margin-left: 8em;
+        font-size: 15px;
+    }
+    .t2{
+        margin-left: 4.5em;
+        margin-top: 1em;
+    }
+    .contador{
+        margin-left: 10em;
+    }
+    .copy{
+        margin-top: 1em;
     }
 }
 @media (max-width:750px) {
@@ -390,80 +431,6 @@
     .sec4 img:hover{
         transform: scale(1.1);
     }
-    footer{
-        background-color: #93b2d2;
-        color: #000000;
-        text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 100px;;
-        font-family: lfooter;
-    }
-    .filafoo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        background-color: #93b2d2;
-    }
-    .columnafoo {
-        width: 100%; 
-        text-align: center; 
-        margin-bottom: 4em; 
-        background-color: #93b2d2;
-        
-    }
-
-    .logoimg img {
-        width: 50px;
-    }
-
-    .logotext {
-        font-size: 10px;
-    }
-
-    .titulofoo {
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .contactos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contactos img {
-        width: 30px;
-        margin-bottom: 0.3em;
-    }
-
-    .teltext, .whattext, .instatext {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.5em;
-    }
-    .correotext1, .correotext2 {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.4em;
-    }
-    .mapatext  {
-        font-size: 16px;
-        margin-bottom: 0.3em; 
-    
-        margin-top: -0.6em;
-    }
-   
-    .instatext {
-        margin-bottom: -4.5em;
-    }
-
-    .contador img {
-        width: 200px;
-        margin-top: 1em;
-        text-align:center;
-    }
-  
 } 
 /*------------------------------------------- TABLET ----------------------------------------------------*/
 @media (min-width:751px) and (max-width:1279px) {  
@@ -724,78 +691,40 @@
     .sec4 img:hover{
         transform: scale(1.1);
     }
+     /*----FOOTER----*/
     footer{
-        background-color: #93b2d2;
-        color: #000000;
+        width: 100%;
+    }
+    .logoimg img{
+        margin-left: 8em;
+        width: 15%;
+    }
+    .logotext{
+        width: 40%;
         text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 100px;;
-        font-family: lfooter;
+        margin-left: 1.5em;
     }
-    .filafoo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        background-color: #93b2d2;
+    .t1{
+        margin-left: 20em;
+        margin-top: -10em;
+        margin-bottom: 1em;
     }
-    .columnafoo {
-        width: 100%; 
-        text-align: center; 
-        margin-bottom: 4em; 
-        background-color: #93b2d2;
-        
+    .contactos img{
+        width: 3.5%;
+        margin-left: 25em;
     }
-
-    .logoimg img {
-        width: 50px;
+    .contactos p{
+        margin-left: 27em;
     }
-
-    .logotext {
-        font-size: 10px;
-    }
-
-    .titulofoo {
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .contactos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contactos img {
-        width: 30px;
-        margin-bottom: 0.3em;
-    }
-
-    .teltext, .whattext, .instatext {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.5em;
-    }
-    .correotext1, .correotext2 {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.4em;
-    }
-    .mapatext  {
-        font-size: 16px;
-        margin-bottom: 0.3em; 
-    
-        margin-top: -0.6em;
-    }
-   
-    .instatext {
-        margin-bottom: -4.5em;
-    }
-
-    .contador img {
-        width: 200px;
+    .t2{
+        margin-left: 12em;
         margin-top: 1em;
-        text-align:center;
+    }
+    .contador{
+        margin-left: 21em;
+    }
+    .copy{
+        margin-top: 1em;
     }
 }
 /*----------------------------------- Computadora -------------------------------------------------------*/ 
@@ -1226,113 +1155,4 @@ body{
 /* Ajustes para el texto dentro de los rectángulos */
 .txtdire, .txtvice, .txtsec, .txtprose, .txtpre1, .txtpre2 {
     margin: 0;
-}
-/*-------------------------------------------------------footer--------------------------------------------------------*/
-
-footer{
-    background-color: #93b2d2;
-    color: #000000;
-    text-align: center;
-    bottom:-1em;
-    position: relative;
-    height: 22em;
-    padding-bottom: -10em;
-    font-family: lfooter;
-}
-.columnafoo{
-    float:left;
-    width: 33%;
-    padding-right: 1px;
-}
-.filafoo::after{
-    content:" ";
-    clear: both;
-    display: table;   
-    margin-top: 2em;
-}
-.logoimg img{
-    position: relative;
-    top: 5em;
-    width: 100px;
-}
-.logotext{
-    position: relative;
-    top: 90px;
-    font-size: 20px;
-}
-.titulofoo{
-    position: relative;
-    top: 40px;
-    font-size: 25px;
-    font-weight: bold;
-}
-.contactos img{
-    width: 30px;
-}
-.mapaimg{
-    position: relative;
-    top: 45px;
-    right: 130px;
-}
-.mapatext{
-    position: relative;
-    top: 20px;
-    right: -20px;
-}
-.telimg{
-    position: relative;
-    top: 40px;
-    right: 130px;
-}
-.teltext{
-    position: relative;
-    top: 10px;
-    right: 50px;
-}
-.whatimg{
-    position: relative;
-    top: 30px;
-    right: 130px;
-}
-.whattext{
-    position: relative;
-    top: 2px;
-    right: 30px;
-}
-.correoimg{
-    position: relative;
-    top: 20px;
-    right: 130px;
-}
-.correotext1{
-    position: relative;
-    top: -18px;
-    right: -8px;
-}
-.correotext2{
-    position: relative;
-    top: -18px;
-    right: -2px;
-}
-.instaimg{
-    position: relative;
-    top: -5px;
-    right: 130px;
-}
-.instatext{
-    position: relative;
-    top: -33px;
-    right: 55px;
-}
-.contador{
-    position: relative;
-    top: 90px;
-}
-.copy{
-    position: relative;
-    bottom: 10px;
-}
-.copytext{
-    position: relative;
-    bottom: 5px;
 }
