@@ -107,8 +107,11 @@ header .nav {
 
 h2 {
     font-size: 5em;
-    font-family: Vintage;
-    
+    font-family: lbody;
+    font-weight: bold;
+    font-style: italic;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 mark {
     background-color: #8494ee;
@@ -143,7 +146,9 @@ li {
     padding: 1em;
     font-size: 3em;
     text-align: center;
-    font-family:Vintage;
+    font-family: lbody;
+    font-weight: bold;
+    font-style: italic;
 }
 
 a.volerarriba {
@@ -176,7 +181,82 @@ a.descargarpdf {
     text-decoration: underline;
     color: #000;
 }
-
+/*----FOOTER----*/
+footer{
+    background-color: #93b2d2;
+    color: #000000;
+}
+.logoimg img{
+    position: relative;
+    width: 8%;
+    margin-left: 10em;
+    margin-top: 4em;
+}
+.logotext{
+    position: relative;
+    font-family: lfooter;
+    font-size: 20px;
+    margin-left: 3em;
+}
+.titulofoo{
+    font-family: lfooter;
+    font-size: 25px;
+    font-weight: bold;
+}
+.t1{
+    position: relative;
+    margin-top: -8.5em;
+    margin-left: 28em;
+}
+.contactos img{
+    position: relative;
+    width: 2%;
+    margin-left: 37em;
+}
+.contactos p{
+    position: relative;
+    font-family: lfooter;
+    font-size: 17px;
+    margin-left: 39em;
+}
+.mapatext p{
+    margin-top: -2em;
+}
+.telimg img{
+    margin-top: 2em;
+}
+.teltext p{
+    margin-top: -2em;
+}
+.whatimg img{
+    margin-top: 2em;
+}
+.whattext p{
+    margin-top: -2em;
+}
+.correoimg img{
+    margin-top: 2em;
+}
+.correotext1 p{
+    margin-top: -2.5em;
+}
+.instaimg img{
+    margin-top: 1.5em;
+}
+.instatext p{
+    margin-top: -1.5em;
+}
+.t2{
+    margin-top: -11em;
+    margin-left: 45em;
+}
+.contador{
+    position: relative;
+    margin-left: 73em;
+}
+.copy{
+    margin-top: 15em;
+}
 /*-----COMPUTADORA-----*/
 @media (min-width:1300px)  { 
     header{
@@ -239,87 +319,6 @@ a.descargarpdf {
        }
     body {
         overflow-x: hidden;
-    }
-    footer{
-        background-color: #93b2d2;
-        color: #000000;
-        text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 100px;;
-        font-family: lfooter;
-    }
-    .filafoo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centrar horizontalmente */
-        background-color: #93b2d2;
-        font-family: lfooter;
-    }
-    .columnafoo {
-        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
-        text-align: center; /* Alinear el contenido en el centro */
-        margin-bottom: 4em; /* Espacio entre columnas */
-        background-color: #93b2d2;
-        font-family: lfooter;
-        
-    }
-
-    .logoimg img {
-        width: 50px;
-    }
-
-    .FOOTER {
-        font-size: 20px;
-        text-align: center;
-        font-family: lfooter;
-    }
-
-    .titulofoo {
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .contactos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contactos img {
-        width: 30px;
-        margin-bottom: 0.3em;
-    }
-
-    .teltext, .whattext, .instatext {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.5em;
-        font-family: lfooter;
-    }
-    .correotext1, .correotext2 {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.4em;
-        font-family: lfooter;
-    }
-    .mapatext  {
-        font-size: 16px;
-        margin-bottom: 0.3em; 
-        margin-left: 0.4em;
-        margin-top: -0.6em;
-        font-family: lfooter;
-    }
-   
-    .instatext {
-        margin-bottom: -4.5em;
-        font-family: lfooter;
-    }
-
-    .contador img {
-        width: 200px;
-        margin-top: 1em;
-        text-align:center;
     }
     .subtitulo {
         font-size: 2.6em;
@@ -431,198 +430,9 @@ a.descargarpdf {
     font-size: 2em;
     text-align: center;
     font-family:Vintage;
-}
-
-    footer{
-        background-color: #93b2d2;
-        color: #000000;
-        text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 100px;;
-        font-family: lfooter;
     }
-    .filafoo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; /* Centrar horizontalmente */
-        background-color: #93b2d2;
-        font-family: lfooter;
-    }
-    .columnafoo {
-        width: 100%; /* Cada columna ocupa el 100% del ancho disponible */
-        text-align: center; /* Alinear el contenido en el centro */
-        margin-bottom: 4em; /* Espacio entre columnas */
-        background-color: #93b2d2;
-        font-family: lfooter;
-        
-    }
-
-    .logoimg img {
-        width: 50px;
-    }
-
-    .FOOTER {
-        font-size: 20px;
-        text-align: center;
-        font-family: lfooter;
-    }
-
-    .titulofoo {
-        font-size: 15px;
-        font-weight: bold;
-    }
-
-    .contactos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contactos img {
-        width: 30px;
-        margin-bottom: 0.3em;
-    }
-
-    .teltext, .whattext, .instatext {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.5em;
-        font-family: lfooter;
-    }
-    .correotext1, .correotext2 {
-        font-size: 16px;
-        margin-bottom: 0.3em;  
-        margin-top:  -0.4em;
-        font-family: lfooter;
-    }
-    .mapatext  {
-        font-size: 16px;
-        margin-bottom: 0.3em; 
-        margin-left: -4em;
-        margin-top: -0.6em;
-        font-family: lfooter;
-    }
-   
-    .instatext {
-        margin-bottom: -4.5em;
-        font-family: lfooter;
-    }
-
-    .contador img {
-        width: 200px;
-        margin-top: 1em;
-        text-align:center;
-    }
-    
 }
 @media (min-width:751px) and (max-width:1279px) {  
 }
-footer{
-    background-color: #93b2d2;
-    color: #000000;
-    text-align: center;
-    bottom:-1em;
-    position: relative;
-    height: 22em;
-    padding-bottom: -10em;
-    font-family: lfooter;
-}
-.columnafoo{
-    float:left;
-    width: 33%;
-    padding-right: 1px;
-}
-.filafoo::after{
-    content:" ";
-    clear: both;
-    display: table;   
-    margin-top: 2em;
-}
-.logoimg img{
-    position: relative;
-    top: 5em;
-    width: 100px;
-}
-.logotext{
-    position: relative;
-    top: 90px;
-    font-size: 20px;
-}
-.titulofoo{
-    position: relative;
-    top: 40px;
-    font-size: 25px;
-    font-weight: bold;
-}
-.contactos img{
-    width: 30px;
-}
-.mapaimg{
-    position: relative;
-    top: 45px;
-    right: 130px;
-}
-.mapatext{
-    position: relative;
-    top: 20px;
-    right: -20px;
-}
-.telimg{
-    position: relative;
-    top: 40px;
-    right: 130px;
-}
-.teltext{
-    position: relative;
-    top: 10px;
-    right: 50px;
-}
-.whatimg{
-    position: relative;
-    top: 30px;
-    right: 130px;
-}
-.whattext{
-    position: relative;
-    top: 2px;
-    right: 30px;
-}
-.correoimg{
-    position: relative;
-    top: 20px;
-    right: 130px;
-}
-.correotext1{
-    position: relative;
-    top: -18px;
-    right: -8px;
-}
-.correotext2{
-    position: relative;
-    top: -18px;
-    right: -2px;
-}
-.instaimg{
-    position: relative;
-    top: -5px;
-    right: 130px;
-}
-.instatext{
-    position: relative;
-    top: -33px;
-    right: 55px;
-}
-.contador{
-    position: relative;
-    top: 90px;
-}
-.copy{
-    position: relative;
-    bottom: 10px;
-}
-.copytext{
-    position: relative;
-    bottom: 5px;
-}
+
 
