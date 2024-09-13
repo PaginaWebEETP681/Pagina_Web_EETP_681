@@ -22,6 +22,7 @@
 }
 .regresar img{
     width: 40px;
+    z-index:1000;
     }
     .regresar{
         background-color: transparent;
@@ -33,11 +34,13 @@
         cursor: pointer;
         top: 88vh;
         height: 10vh;
+        z-index:1000;
     }
     .visible{
         opacity: 1;
         transform: translateX(0);
         border: none;
+          z-index:1000;
     }
 /*---------espacios que ocupa la imagen------------------*/
 
