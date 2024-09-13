@@ -985,6 +985,21 @@ footer{
         width: 500px; 
         height: auto; 
     }
+    /*----FOOTER----*/
+    .contador{
+        margin-left: 73em;
+        margin-top: 2em;
+        width: 10%;
+    } 
+    footer{
+        width: 100%;
+    }
+    .t2{
+        margin-top: -10em;
+    }
+    .copy{
+        margin-top: 12em;
+    }
 }   
 /* menu de navegacion*/
 
@@ -1155,4 +1170,36 @@ body{
 /* Ajustes para el texto dentro de los rectángulos */
 .txtdire, .txtvice, .txtsec, .txtprose, .txtpre1, .txtpre2 {
     margin: 0;
+}
+@media  screen and (min-width:1920px) {
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        margin-left: 18em;
+    }
+    .logotext{
+        margin-left: 10em;
+    }
+    .t1{
+        margin-left: 35em;
+    }
+    .contactos img{
+        margin-left: 47em;
+    }
+    .contactos p{
+        margin-left: 50em;
+    }
+    .t2{
+        margin-left: 58em;
+        margin-top: -12.5em;
+    }
+    .contador{
+        margin-left: 93.5em;
+        margin-top: 3em;
+    }
+    .copy{
+        margin-top: 15em;
+    }
 }
