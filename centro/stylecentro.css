@@ -136,46 +136,56 @@ button.prev:hover, button.next:hover {
 }
 
 /* destacados */
-#destacados {
+#destacados{
     padding: 0px 50px;
     display: flex;
     align-items: center;
-    justify-content: center; /* Centra el contenido */
-    flex-wrap: wrap; /* Permite que las tarjetas se ajusten a nuevas líneas si es necesario */
 }
-
-#destacados .destacados-a {
+#destacados div{
     padding: 20px 20px;
     background-color: #161F30;
     border-radius: 30px;
-    margin: 15px;
+    margin: 15px 15px;
+}
+.destacados-a{
     display: flex;
     flex-direction: column;
+    width: 70%;
     align-items: center;
-    width: 300px; /* Tamaño fijo para uniformidad */
 }
-
-.destacados-a img {
+.destacados-a img{
     width: 85%;
-    border-radius: 20px; /* Opción para redondear los bordes de las imágenes */
 }
+.destacados-a a{
+    width: 30%;
+    justify-content: center;
+    text-align: center;
+}
+#destacados div h4{
+    color: white;
+    font-size: 20px;
+    margin: 15px 0px;
+}
+#destacados div p{
+    color: white;
+    font-size: 18px;
 
-.boton-saber-mas {
+}
+.boton-saber-mas{
     display: inline-block;
     text-decoration: none;
     color: white;
     padding: 10px 30px;
-    border: 3px solid #146e39;
+    border: 3px solid #84B026;
     border-radius: 30px;
     margin-top: 15px;
-    background-color: #146e39;
+    background-color: #84B026;
     transition: all 0.4s;
 }
-
-.boton-saber-mas:hover {
-    border: 3px solid #146e39;
+.boton-saber-mas:hover{
+    border: 3px solid #84B026;
     background-color: #161F30;
-    color: #146e39;
+    color: #84B026;
 }
 
 .autoridades {
@@ -281,7 +291,25 @@ footer {
     border-top: 2px solid #CCCCCC; /* Grosor y color de la línea */
     opacity: 0.5; /* Transparencia opcional */
 }
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #161F30; 
+    color: white; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    cursor: pointer;
+    font-size: 24px; 
+    display: none; 
+    transition: opacity 0.3s ease;
+}
 
+.scroll-to-top:hover {
+    background-color: #84B026; 
+}
 
 @media(max-width: 750px) {
     .mostrar-menu, .esconder-menu {

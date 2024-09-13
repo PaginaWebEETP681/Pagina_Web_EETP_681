@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylecentro.css">
     <link rel="icon" href="Imagenes centro/logo-escuela.png" type="image/png">
-
     <title>CE-EETP N° 681</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -17,12 +16,12 @@
         <input type="checkbox" id="check">
         <label for="check" class="mostrar-menu">&#8801;</label>
         <nav class="menu">
-            <a href="https://paginawebeetp681.github.io/Pagina_Web_EETP_681/"><i class='bx bx-arrow-from-right'></i></a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Novedades</a>
-            <a href="#">Autoridades</a>
-            <a href="#">Blog</a>
-            <a href="#">Contacto</a>
+            <a href="index.html"><i class='bx bx-arrow-from-right'></i></a>
+            <a href="#about-us">Sobre nosotros</a>
+            <a href="#novedades">Novedades</a>
+            <a href="#autoridad">Autoridades</a>
+            <a href="#blog">Blog</a>
+            <a href="#contacto">Contacto</a>
             <label for="check" class="esconder-menu">&#215;</label>
         </nav>
     </header>
@@ -41,7 +40,7 @@
         <button class="prev">&#10094;</button>
         <button class="next">&#10095;</button>
     </div>
-    <section class="about-us">
+    <section class="about-us" id="about-us">
         <h2>Sobre Nosotros</h2>
         <p>
             El Centro de Estudiantes es un órgano presente en la escuela u otros establecimientos educativos, que representa a los estudiantes. Se trata de una organización conformada por alumnos y alumnas que buscan defender nuestros derechos y promover una educación más integral.
@@ -51,7 +50,7 @@
         <div class="divider"></div>
     </div>
     
-    <section class="novedades">
+    <section class="novedades" id="novedades">
         <h2>Novedades</h2>
         <p>Entérate de las últimas noticias y eventos que estamos organizando para nuestra comunidad.</p>
         <section id="destacados">
@@ -73,7 +72,7 @@
         <div class="divider"></div>
     </div>
     
-    <section class="autoridades">
+    <section class="autoridades" id="autoridad">
         <h2>Autoridades</h2>
         <div class="autoridades-list">
             <div class="autoridad">
@@ -93,8 +92,17 @@
     <div class="divider-container">
         <div class="divider"></div>
     </div>
-    
-    <section class="contacto">
+    <section class="about-us" id="blog">
+        <h2>Nuestro Presidente</h2>
+        <p>
+            
+¡Hola a todos! Soy Maximiliano Emanuel Gamboni, presidente del Centro de Estudiantes de la EETP 681 y actual abanderado de nuestra escuela. Mi compromiso siempre ha sido representar a mis compañeros con responsabilidad, escuchando sus inquietudes y trabajando para mejorar nuestra comunidad educativa. A lo largo de este año, hemos logrado grandes avances gracias a la participación de cada uno de ustedes, y mi objetivo es seguir impulsando la voz de los estudiantes, promoviendo la unidad y creando más oportunidades de participación. Estoy siempre dispuesto a escuchar y acompañar a cada uno de ustedes para construir juntos un futuro mejor.
+        </p>
+    </section>
+    <div class="divider-container">
+        <div class="divider"></div>
+    </div>
+    <section class="contacto" id="contacto">
         <h2>Contacto</h2>
         <div class="info-contacto">
             <p>Dirección: San José 2002, Humboldt, Santa Fe</p>
@@ -102,12 +110,16 @@
             <p>Instagram de la Escuela: <a href="https://www.instagram.com/eetp681" target="_blank">@eetp681</a></p>
         </div>
     </section>
+    <a href="#" id="scrollToTop" class="scroll-to-top">
+        <i class='bx bxs-up-arrow' ></i>
+    </a>
     <footer>
         <div class="footer-content">
             <img src="logo-escuela.png" alt="Logo de la Escuela" class="footer-logo">
             <p class="footer-text">EETP N°681 "Mercedes Á. de Segura"</p>
         </div>
     </footer>
-    <script src="index.js"></script>
+    <script src="centro.js"></script>
+
 </body>
 </html>
