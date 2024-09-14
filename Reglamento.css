@@ -20,10 +20,6 @@
     font-family: lfooter;
     src: url(imagenfooter/Belleza-Regular.ttf);
 }
-@font-face {
-    font-family: Vintage;
-    src: url(galeria/VintageRough.otf);
-}
 .regresar img{
     width: 40px;
     }
@@ -107,7 +103,7 @@ header .nav {
 
 h2 {
     font-size: 5em;
-    font-family: lbody;
+    font-family: body;
     font-weight: bold;
     font-style: italic;
     margin-left: 2em;
@@ -146,7 +142,7 @@ li {
     padding: 1em;
     font-size: 3em;
     text-align: center;
-    font-family: lbody;
+    font-family: body;
     font-weight: bold;
     font-style: italic;
 }
@@ -189,14 +185,14 @@ footer{
 .logoimg img{
     position: relative;
     width: 8%;
-    margin-left: 10em;
-    margin-top: 4em;
+    margin-left: 14em;
+    margin-top: 6em;
 }
-.logotext{
+.logotext p{
     position: relative;
     font-family: lfooter;
     font-size: 20px;
-    margin-left: 3em;
+    margin-left: 6em;
 }
 .titulofoo{
     font-family: lfooter;
@@ -205,7 +201,7 @@ footer{
 }
 .t1{
     position: relative;
-    margin-top: -8.5em;
+    margin-top: -11em;
     margin-left: 28em;
 }
 .contactos img{
@@ -247,18 +243,58 @@ footer{
     margin-top: -1.5em;
 }
 .t2{
-    margin-top: -11em;
+    margin-top: -14em;
     margin-left: 45em;
 }
 .contador{
     position: relative;
-    margin-left: 73em;
+    margin-left: 72em;
+    margin-top: 2em;
+}
+.foolegal{
+    background-color: #6a849e;
 }
 .copy{
-    margin-top: 15em;
+    margin-top: 16em;
+}
+/*-----PANTALLA GRANDE-----*/
+@media  screen and (min-width:1920px) {
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        margin-left: 19em;
+    }
+    .logotext p{
+        margin-left: 4.5em;
+        font-size: 30px;
+    }
+    .t1{
+        margin-left: 37em;
+        margin-top: -13em;
+    }
+    .contactos img{
+        margin-left: 49em;
+    }
+    .contactos p{
+        margin-left: 51em;
+    }
+    .t2{
+        margin-left: 58em;
+        margin-top: -15.5em;
+    }
+    .contador{
+        margin-left: 91em;
+        margin-top: 3em;
+    }
+    .copy{
+        margin-top: 17em;
+    }
 }
 /*-----COMPUTADORA-----*/
-@media (min-width:1300px)  { 
+@media screen and (min-width:1300px) and (max-width:1500px) { 
+    /*----HEADER----*/
     header{
         background-color: #2b2d9c;
         width: 100%;
@@ -276,49 +312,62 @@ footer{
         font-family: chau;
         color: #FFFFFF;
     }
-    
+    /*----BODY----*/
+    .TExTO h2{
+        font-size: 60px;
+    }
+    .subtituloFIN{
+        font-size: 30px;
+    }
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        margin-left: 12em;
+    }
+    .logotext p{
+        margin-left: 4em;
+    }
+    .t1{
+        margin-left: 24.5em;
+    }
+    .contactos img{
+        margin-left: 32em;
+    }
+    .contactos p{
+        margin-left: 34em;
+    }
+    .t2{
+        margin-top: -13.2em;
+        margin-left: 40em;
+    }
+    .contador{
+        margin-left: 64em;
+        margin-top: 2em;
+        width: 10%;
+    } 
+    .copy{
+        margin-top: 15em;
+    }
 }
 
 /*-----TABLET-----*/
 
 @media (min-width:421px) and (max-width:1299px){
-    header{
-        background-color: #2b2d9c;
-        width: 100%;
-        height: 100px;;
-     
+    /*----HEADER----*/
+    .titulo h1{
+        font-size: 70px;
     }
     .loesc img{
-        display: flex;
-        position: absolute;
         width: 4em;
-        top: 0.5em;
+        margin-top: 0.2em;
+        margin-left: 1em;
     }
-    .titulo{
-        padding-top: 8.5px;
-        font-size: 35px;
-        font-family: chau;
-        color: #FFFFFF;
-        text-align: center;
-    }
-    .nav{
-        background-color: rgba(41, 88, 125);
-        font-size: 8px;
-        text-align: center;
-        padding: 0.5em;
-        font-family: chau;
-        transition: all 0.2s ease;
-        margin: 0; 
-        position: absolute; 
-        width: 100%; 
-    }
-  
-    h2 {
-        font-size: 4em;
-        margin-top: 1em;
-       }
-    body {
-        overflow-x: hidden;
+    /*----BODY----*/
+    .TExTO h2 {
+        font-size: 20px;
+        margin-top: 2.5em;
     }
     .subtitulo {
         font-size: 2.6em;
@@ -326,14 +375,54 @@ footer{
         font-family:  body;
         font-style:inherit;
         color: #6676cc;
-    
     }
+    .derechos li{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+        /*----FOOTER----*/
+        footer{
+            width: 100%;
+        }
+        .logoimg img{
+            width: 30%;
+            margin-left: 9em;
+            margin-top: 2em;
+        }
+        .logotext{
+            text-align: center;
+            font-size: 18px;
+            margin-left: 0.5em;
+        }
+        .t1{
+            margin-left: 6em;
+            margin-top: 1em;
+            margin-bottom: 1em;
+        }
+        .contactos img{
+            margin-left: 4.5em;
+            width: 6%;
+        }
+        .contactos p{
+            margin-left: 8em;
+            font-size: 15px;
+        }
+        .t2{
+            margin-left: 4.5em;
+            margin-top: 1em;
+        }
+        .contador{
+            margin-left: 10em;
+        }
+        .copy{
+            margin-top: 1em;
+        }
 }
 
 /*-----CELULAR----------------------*/
 
 @media (max-width:420px) and (orientation:portrait) {
-    header{
+   /* header{
         background-color: #2b2d9c;
         width: 100%;
         height: 100px;;
@@ -394,7 +483,7 @@ footer{
         font-family:chau;
         margin: 0 14px;
         font-size: 9px;
-    }
+    }*/
     .subtitulo {
         font-size: 2.2em;
         text-align: center;
