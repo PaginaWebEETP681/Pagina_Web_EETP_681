@@ -39,6 +39,90 @@
     border: none;
 }
 
+/*----FOOTER----*/
+footer{
+    background-color: #93b2d2;
+    color: #000000;
+}
+.logoimg img{
+    position: relative;
+    width: 8%;
+    margin-left: 5em;
+    margin-top: 1.5em;
+}
+.logotext{
+    position: relative;
+    font-family: lfooter;
+    font-size: 20px;
+    margin-left: 6.5em;
+}
+.titulofoo{
+    font-family: lfooter;
+    font-size: 25px;
+    font-weight: bold;
+}
+.t1{
+    position: relative;
+    margin-top: -9em;
+    margin-left: 28em;
+}
+.contactos img{
+    position: relative;
+    width: 2%;
+    margin-left: 12.5em;
+}
+.contactos p{
+    position: relative;
+    font-family: lfooter;
+    font-size: 17px;
+    margin-left: 39em;
+}
+.mapatext p{
+    margin-top: -2em;
+}
+.telimg img{
+    margin-top: 0.5em;
+}
+.teltext p{
+    margin-top: -2em;
+}
+.whatimg img{
+    margin-top: 0.5em;
+}
+.whattext p{
+    margin-top: -2em;
+}
+.correoimg img{
+    margin-top: 0.5em;
+}
+.correotext1 p{
+    margin-top: -2.7em;
+}
+.instaimg img{
+    margin-top: 0.3em;
+}
+.instatext p{
+    margin-top: -2em;
+}
+.t2{
+    margin-top: -11em;
+    margin-left: 45em;
+}
+.contador{
+    position: relative;
+    margin-left: 58em;
+    font-size: 20px;
+    margin-top: 1em;
+    font-family: lfooter;
+}
+.foolegal{
+    background-color: #6a849e;
+    font-size: 15px;
+    font-family: lfooter;
+}
+.copy{
+    margin-top: 15em;
+}
 
 /*---------espacios que ocupa la imagen------------------*/
 
@@ -51,7 +135,40 @@
         grid-row: span 2 ;
     }
 }
-
+/*-------------------COMPUTADORA GRANDE-------------------*/
+@media  screen and (min-width:1920px) {
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        margin-left: 6em;
+    }
+    .logotext{
+        margin-left: 10em;
+    }
+    .t1{
+        margin-left: 35em;
+        margin-top: -10em;
+    }
+    .contactos img{
+        margin-left: 16em;
+    }
+    .contactos p{
+        margin-left: 50em;
+    }
+    .t2{
+        margin-left: 58em;
+        margin-top: -12.5em;
+    }
+    .contador{
+        margin-left: 74em;
+        margin-top: 2em;
+    }
+    .copy{
+        margin-top: 16em;
+    }
+}
 /*-----------------------COMPUTADORA---------------------*/
 
 @media (min-width:1300px) {
@@ -248,122 +365,37 @@
         padding: 0.4em;
        
     }
-    footer{
-        background-color: #93b2d3;
-        color: #000000;
-        text-align: center;
-        margin-bottom: 0;
-        position: relative;
-        width: 100%;
-        font-family: lfooter;
-    }
-    .columnafoo{
-        float:left;
-        width: 33%;
-        padding-right: 1px;
-    }
-   
-    .filafoo::after{
-        content:" ";
-        clear: both;
-        display: table;   
-        margin-top: 2em;
-    }
-    .logoimg img{
-        position: relative;
-        top: 2em;
-        width: 100px;
-        margin-bottom: 3em;
-        margin-top: -3em;
+    /*----FOOTER----*/
+    .logoimg{
+        margin-left: -1em;
     }
     .logotext{
-        position: relative;
-        top: 90px;
-        font-size: 20px;
+        margin-left: 4em;
     }
-    .titulofoo{
-        position: relative;
-        top: 40px;
-        font-size: 25px;
-        font-weight: bold;
+    .t1{
+        margin-left: 24em;
     }
     .contactos img{
-        width: 30px;
-        margin: 0;
+        margin-left: 10.5em;
     }
     .contactos p{
-        font-size: 15px;
+        margin-left: 33em;
     }
-    .mapaimg{
-        position: relative;
-        top: 0.7em;
-        right: 130px;
+    footer{
+        width: 100%;
     }
-    .mapatext{
-        position: relative;
-        top: -0.01em;
-        right: -20px;
-    }
-    .telimg{
-        position: relative;
-        top: 0.15em;
-        right: 130px;
-    }
-    .teltext{
-        position: relative;
-        top: -0.6em;
-        right: 45px;
-    }
-    .whatimg{
-        position: relative;
-        top: -0.4em;
-        right: 130px;
-    }
-    .whattext{
-        position: relative;
-        top: -1.15em;
-        right: 30px;
-    }
-    .correoimg{
-        position: relative;
-        top: -0.9em;
-        right: 130px;
-    }
-    .correotext1{
-        position: relative;
-        top: -1.8em;
-        right: -8px;
-    }
-    .correotext2{
-        position: relative;
-        top: -1.8em;
-        right: -2px;
-    }
-    .instaimg{
-        position: relative;
-        top: -1.7em;
-        right: 130px;
-    }
-    .instatext{
-        position: relative;
-        top: -2.4em;
-        right: 51px;
+    .t2{
+        margin-top: -10em;
+        margin-left: 40em;
     }
     .contador{
-        position: relative;
-        top: 90px;
-    }
+        margin-left: 51.5em;
+        margin-top: 1em;
+        width: 10%;
+    } 
     .copy{
-        position: relative;
-        top: -5em;
-        font-size: 15px;
+        margin-top: 13em;
     }
-    .copytext{
-        position: relative;
-        top: -4em;
-        font-size: 15px;
-    }
-
 }
 
 /*-------------------TABLET-------------------------*/
@@ -555,105 +587,43 @@
         padding: 0.4em;
        
     }
-
+    /*----FOOTER----*/
     footer{
-        background-color: #93b2d2;
-        color: #000000;
+        width: 100%;
+    }
+    .logoimg img{
+        width: 30%;
+        margin-left: 3em;
+        margin-top: 0.5em;
+    }
+    .logotext{
         text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 20px;;
-        font-family: lfooter;
+        font-size: 15px;
+        margin-left: 0.5em;
     }
-    .filafoo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        background-color: #93b2d2;
-    }
-
-    .columnafoo {
-        width: 100%; 
-        text-align: center; 
-        margin-bottom: 4em; 
-        background-color: #93b2d2;
-        
-    }
-
-    .logoimg img {
-        width: 80px; /* Reduce el tamaño del logo para pantallas pequeñas */
-        margin-bottom: 3.1em;
-        margin-top: -4.3em;
-    }
-
-    .logotext {
-        font-size: 16px;
+    .t1{
+        margin-left: 6em;
+        margin-top: 1em;
         margin-bottom: 1em;
     }
-
-    .titulofoo {
+    .contactos img{
+        margin-left: 1.5em;
+        width: 6%;
+    }
+    .contactos p{
+        margin-left: 8em;
         font-size: 15px;
-        font-weight: bold;
-        margin-top: -4.5em;
     }
-
-    .contactos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contactos img {
-        width: 30px;
-        margin-bottom: 0.3em; /* Espacio entre los iconos de contacto */
-    }
-
-    .teltext, .whattext,  .instatext {
-        font-size: 16px;
-        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
-        margin-top: -1.2em;
-
-    }
-    .mapatext {
-        font-size: 16px;
-        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
-        margin-top: -1.6em;
-        margin-left: -3em;
-    }
-    
-    .correotext1 {
-        font-size: 16px;
-        margin-bottom: 0.3em; 
-        margin-top: -1.3em;
-    }
-    .correotext2 {
-        font-size: 16px;
-        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
-        
-    }
-
-    .instatext {
-        margin-bottom: -4.5em;
-    }
-   
-    .contador img {
-        width: 200px;
+    .t2{
+        margin-left: 4.5em;
         margin-top: 1em;
-        text-align:center;
+    }
+    .contador{
+        margin-left: 7em;
     }
     .copy{
-        margin-top: -2em;
-        position: relative;
-        bottom: 10px;
-        font-size: 19px;
+        margin-top: 1em;
     }
-    .copytext{
-        position: relative;
-        bottom: 5px;
-        font-size: 19px;
-    }
-    
-
 }
 /*-------------------CELULAR----------------------*/
 
@@ -852,101 +822,42 @@
         font-size: x-large;
       
     }
+    /*----FOOTER----*/
     footer{
-        background-color: #93b2d2;
-        color: #000000;
+        width: 100%;
+    }
+    .logoimg img{
+        width: 30%;
+        margin-left: 3em;
+        margin-top: 0.5em;
+    }
+    .logotext{
         text-align: center;
-        bottom:-1em;
-        position: relative;
-        height: 100px;;
-        font-family: lfooter;
+        font-size: 15px;
+        margin-left: 0.5em;
     }
-    .filafoo {
-        display: flex;
-        flex-direction: column;
-        align-items: center; 
-        background-color: #93b2d2;
-    }
-
-    .columnafoo {
-        width: 100%; 
-        text-align: center; 
-        margin-bottom: 4em; 
-        background-color: #93b2d2;
-        
-    }
-
-    .logoimg img {
-        width: 80px; /* Reduce el tamaño del logo para pantallas pequeñas */
-        margin-bottom: 3.1em;
-        margin-top: -4.3em;
-    }
-
-    .logotext {
-        font-size: 16px;
+    .t1{
+        margin-left: 6em;
+        margin-top: 1em;
         margin-bottom: 1em;
     }
-
-    .titulofoo {
+    .contactos img{
+        margin-left: 1.5em;
+        width: 6%;
+    }
+    .contactos p{
+        margin-left: 8em;
         font-size: 15px;
-        font-weight: bold;
-        margin-top: -4.5em;
     }
-
-    .contactos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .contactos img {
-        width: 30px;
-        margin-bottom: 0.3em; /* Espacio entre los iconos de contacto */
-    }
-
-    .teltext, .whattext,  .instatext {
-        font-size: 16px;
-        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
-        margin-top: -1.2em;
-
-    }
-    .mapatext {
-        font-size: 16px;
-        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
-        margin-top: -1.6em;
-        margin-left: -3em;
-    }
-    
-    .correotext1 {
-        font-size: 16px;
-        margin-bottom: 0.3em; 
-        margin-top: -1.3em;
-    }
-    .correotext2 {
-        font-size: 16px;
-        margin-bottom: 0.3em; /* Espacio entre textos de contacto */
-        
-    }
-
-    .instatext {
-        margin-bottom: -4.5em;
-    }
-   
-    .contador img {
-        width: 200px;
+    .t2{
+        margin-left: 4.5em;
         margin-top: 1em;
-        text-align:center;
+    }
+    .contador{
+        margin-left: 7em;
     }
     .copy{
-        margin-top: -2em;
-        position: relative;
-        bottom: 10px;
-        font-size: 19px;
-    }
-    .copytext{
-        position: relative;
-        bottom: 5px;
-        font-size: 19px;
+        margin-top: 1em;
     }
 }
 
@@ -985,124 +896,6 @@ body{
     font-size: 3rem;
     overflow-x: hidden;
 }
- 
-footer{
-    background-color: #93b2d2;
-    color: #000000;
-    text-align: center;
-    bottom:-1em;
-    position: relative;
-    height: 10em;
-    padding-bottom: -10em;
-    font-family: lfooter;
-}
-.columnafoo{
-    float:left;
-    width: 33%;
-    padding-right: 1px;
-}
-.filafoo::after{
-    content:" ";
-    clear: both;
-    display: table;   
-    margin-top: 2em;
-}
-.logoimg img{
-    position: relative;
-    top: 5em;
-    width: 100px;
-}
-.logotext{
-    position: relative;
-    top: 90px;
-    font-size: 20px;
-}
-.titulofoo{
-    position: relative;
-    top: 40px;
-    font-size: 25px;
-    font-weight: bold;
-}
-.contactos img{
-    width: 30px;
-}
-.mapaimg{
-    position: relative;
-    top: 45px;
-    right: 130px;
-}
-.mapatext{
-    position: relative;
-    top: 20px;
-    right: -20px;
-}
-.telimg{
-    position: relative;
-    top: 40px;
-    right: 130px;
-}
-.teltext{
-    position: relative;
-    top: 10px;
-    right: 50px;
-}
-.whatimg{
-    position: relative;
-    top: 30px;
-    right: 130px;
-}
-.whattext{
-    position: relative;
-    top: 2px;
-    right: 30px;
-}
-.correoimg{
-    position: relative;
-    top: 20px;
-    right: 130px;
-}
-.correotext1{
-    position: relative;
-    top: -18px;
-    right: -8px;
-}
-.correotext2{
-    position: relative;
-    top: -18px;
-    right: -2px;
-}
-.instaimg{
-    position: relative;
-    top: -5px;
-    right: 130px;
-}
-.instatext{
-    position: relative;
-    top: -33px;
-    right: 55px;
-}
-.contador{
-    position: relative;
-    top: 90px;
-}
-.copy{
-    position: relative;
-    bottom: 10px;
-}
-.copytext{
-    position: relative;
-    bottom: 5px;
-}
 
-
-@font-face{
-    font-family: letra;
-    src: url("imagenes/Buried\ Hopper.ttf");
-}
-
-@font-face {
-    font-family: chulo;
-    src: url(Vogue.ttf);
-}
 
 
