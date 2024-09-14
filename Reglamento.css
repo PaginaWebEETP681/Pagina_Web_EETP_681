@@ -366,11 +366,13 @@ footer{
     }
     /*----BODY----*/
     .TExTO h2 {
-        font-size: 20px;
-        margin-top: 2.5em;
+        font-size: 35px;
+        margin-top: 1.5em;
+        margin-left: 0.6em;
+        margin-right: 0.6em;
     }
     .subtitulo {
-        font-size: 2.6em;
+        font-size: 2em;
         text-align: center;
         font-family:  body;
         font-style:inherit;
@@ -380,49 +382,84 @@ footer{
         margin-left: 0.6em;
         margin-right: 0.6em;
     }
-        /*----FOOTER----*/
-        footer{
-            width: 100%;
-        }
-        .logoimg img{
-            width: 30%;
-            margin-left: 9em;
-            margin-top: 2em;
-        }
-        .logotext{
-            text-align: center;
-            font-size: 18px;
-            margin-left: 0.5em;
-        }
-        .t1{
-            margin-left: 6em;
-            margin-top: 1em;
-            margin-bottom: 1em;
-        }
-        .contactos img{
-            margin-left: 4.5em;
-            width: 6%;
-        }
-        .contactos p{
-            margin-left: 8em;
-            font-size: 15px;
-        }
-        .t2{
-            margin-left: 4.5em;
-            margin-top: 1em;
-        }
-        .contador{
-            margin-left: 10em;
-        }
-        .copy{
-            margin-top: 1em;
-        }
+    .deberes li{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .organizacion li{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .uniforme p{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .celular p{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .sancion p{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .sancion li{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .import p{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .subtituloFIN{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+        font-size: 25px;
+    }
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        width: 30%;
+        margin-left: 9em;
+        margin-top: 2em;
+    }
+    .logotext p{
+        text-align: center;
+        font-size: 18px;
+        margin-left: 4em;
+    }
+    .t1{
+        margin-left: 6em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .contactos img{
+        margin-left: 4.5em;
+        width: 6%;
+    }
+    .contactos p{
+        margin-left: 8em;
+        font-size: 15px;
+    }
+    .t2{
+        margin-left: 4em;
+        margin-top: 1em;
+    }
+    .contador{
+        margin-left: 10em;
+        margin-top: 0.5em;
+    }
+    .copy{
+        margin-top: 1em;
+    }
 }
 
 /*-----CELULAR----------------------*/
 
 @media (max-width:420px) and (orientation:portrait) {
-   /* header{
+    /*----HEADER----*/
+    header{
         background-color: #2b2d9c;
         width: 100%;
         height: 100px;;
@@ -451,7 +488,6 @@ footer{
         position: absolute; 
         width: 100%; 
     }
-    
     header .nav {
         background-color: rgba(41, 88, 125);
         font-size: 10px;
@@ -483,45 +519,134 @@ footer{
         font-family:chau;
         margin: 0 14px;
         font-size: 9px;
-    }*/
+    }
+    /*----BODY----*/
+    .TExTO h2 {
+        font-size: 35px;
+        margin-top: 0.5em;
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
     .subtitulo {
-        font-size: 2.2em;
+        font-size: 2em;
         text-align: center;
         font-family:  body;
         font-style:inherit;
         color: #6676cc;
-    
     }
-
-    body {
-        overflow-x: hidden;
-
+    .derechos li{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
     }
-    p{
-        padding-bottom: 0.5em;
-        text-align:initial;
-        font-size: larger;
-        font-family: body;
-        margin-left: 55px;
-        margin-right: 55px;
+    .deberes li{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
     }
-   li {
-    text-align:initial;
-    margin-left: 55px;
-    margin-right: 55px;
-    font-size: larger;
-   }
-   h2 {
-    font-size: 3em;
-   }
-   .subtituloFIN {
-    padding: 1em;
-    font-size: 2em;
-    text-align: center;
-    font-family:Vintage;
+    .organizacion li{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .uniforme p{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .celular p{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .sancion p{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .sancion li{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .import p{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+    }
+    .subtituloFIN{
+        margin-left: 0.6em;
+        margin-right: 0.6em;
+        font-size: 25px;
+    }    
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        width: 30%;
+        margin-left: 9em;
+        margin-top: 2em;
+    }
+    .logotext p{
+        text-align: center;
+        font-size: 18px;
+        margin-left: 4em;
+    }
+    .t1{
+        margin-left: 6em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .contactos img{
+        margin-left: 4.5em;
+        width: 6%;
+    }
+    .contactos p{
+        margin-left: 8em;
+        font-size: 15px;
+    }
+    .t2{
+        margin-left: 4em;
+        margin-top: 1em;
+    }
+    .contador{
+        margin-left: 10em;
+        margin-top: 0.5em;
+    }
+    .copy{
+        margin-top: 1em;
     }
 }
 @media (min-width:751px) and (max-width:1279px) {  
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        margin-left: 8em;
+        width: 15%;
+        margin-top: 5em;
+    }
+    .logotext p{
+        width: 40%;
+        text-align: center;
+        margin-left: 1.5em;
+    }
+    .t1{
+        margin-left: 20em;
+        margin-top: -10em;
+        margin-bottom: 1em;
+    }
+    .contactos img{
+        width: 3.5%;
+        margin-left: 25em;
+    }
+    .contactos p{
+        margin-left: 30em;
+    }
+    .t2{
+        margin-left: 11em;
+        margin-top: 1em;
+    }
+    .contador{
+        margin-left: 20em;
+    }
+    .copy{
+        margin-top: 1em;
+    }
 }
 
 
