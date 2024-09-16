@@ -20,28 +20,8 @@
     font-size: 40px;
     justify-content: center;
 }
-.regresar img{
-    width: 40px;
-    z-index:1000;
-    }
-    .regresar{
-        background-color: transparent;
-        position: fixed;
-        right: 20px;
-        opacity: 0;
-        transform: translateX(120px);
-        transition: all .25s;
-        cursor: pointer;
-        top: 88vh;
-        height: 10vh;
-        z-index:1000;
-    }
-    .visible{
-        opacity: 1;
-        transform: translateX(0);
-        border: none;
-          z-index:1000;
-    }
+
+
 /*---------espacios que ocupa la imagen------------------*/
 
 @media (min-width:900px){
@@ -61,21 +41,15 @@
     header{
         background-color: #2b2d9c;
         width: 100%;
-        height: 210px;
-        position: fixed;
 
-    }
-    body {
-        margin: 0;
-        padding-top: 210px; /* Espacio igual a la altura del header para evitar que tape el contenido */
-        font-family: lbody;
     }
     @font-face{
         font-family:titulo;
         src: url(galeria/Buried\ Hopper.ttf);
     }
     .titulo{
-        padding-top: 1em;
+        margin-top: -35px;
+        padding-top: 0.3em;
         font-size: 60px;
         font-family: titulo;
         color: #FFFFFF;
@@ -226,15 +200,13 @@
         height: 10vh;
         background-color: transparent;
         border: none;
-        position: fixed;
         border:0;
         display: block;
         z-index: 100;
-        top: 0.5em;
+        padding-top: -10em;
     }
     
     .buttonn img{
-        top: 0.5em;
         transition-duration: 0.5;
         height: 8em;
         border: 0;
@@ -244,12 +216,9 @@
         background-color: transparent;
         background-repeat: no-repeat;
         object-fit: fill;
-        position: fixed; 
-        margin-top: 0.5;
         display: block;
        
     }
-  
 }
 
 /*-------------------TABLET-------------------------*/
@@ -259,21 +228,19 @@
     header{
         background-color: #2b2d9c;
         width: 100%;
-        position: fixed;
     }
     @font-face{
         font-family:titulo;
         src: url(galeria/Buried\ Hopper.ttf);
     }
-    body {
-        padding-top: 100px;
-    }
     .titulo{
+        margin-top: -35px;
         padding-top: 0.3em;
         font-size: 40px;
         font-family: titulo;
         color: #FFFFFF;
         text-align: center;
+
     }
 
     .grid-item.expanded,
@@ -322,7 +289,6 @@
         height: 10vh;
         background-color: transparent;
         border: none;
-        position: fixed;
         border:0;
         display: block;
     }
@@ -332,11 +298,10 @@
         border: 0;
         margin: 0.5;
         cursor: pointer;
-        width: 4.5em;     
+        width: 5em;     
         background-color: transparent;
         background-repeat: no-repeat;
         object-fit: fill;
-        position: fixed; 
         margin-top: 0.5;
         display: block;
     }
@@ -446,6 +411,7 @@
         src: url(galeria/Buried\ Hopper.ttf);
     }
     .titulo{
+        margin-top: -35px;
         padding-top: 0.3em;
         font-size: 20px;
         font-family: titulo;
@@ -497,23 +463,21 @@
         height: 10vh;
         background-color: transparent;
         border: none;
-        position: fixed;
         border:0;
         display: block;
     }
     
     .buttonn img{
         transition-duration: 0.5;
-        height: 3em;
+        height: 4.4em;
         border: 0;
         margin: 0.5;
-        cursor: pointer;
-        width: 3em;     
+        cursor:pointer;
+        width: 4.4em;     
         background-color: transparent;
         background-repeat: no-repeat;
         object-fit: fill;
-        position: fixed; 
-        margin-top: 0.5;
+        margin-top: -3em;
         display: block;
     }
 
