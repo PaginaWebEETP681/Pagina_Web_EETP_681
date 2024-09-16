@@ -240,7 +240,7 @@
         background-repeat: no-repeat;
         object-fit: fill;
         display: block;
-       
+        margin-left: 25px;
     }
 }
 
@@ -328,6 +328,7 @@
         object-fit: fill;
         margin-top: 0.5;
         display: block;
+        margin-left: 25px;
     }
 
     .años {
@@ -504,6 +505,7 @@
         object-fit: fill;
         margin-top: -3em;
         display: block;
+        margin-left: 25px;
     }
 
     .años {
@@ -622,6 +624,7 @@
     margin-top: -1em;
     margin-bottom: 1.8em;
     display: block;
+    margin-left: 25px;
 }
 
 .button:hover {
