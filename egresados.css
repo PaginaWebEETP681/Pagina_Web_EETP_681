@@ -20,7 +20,29 @@
     font-size: 40px;
     justify-content: center;
 }
+.regresar img {
+    width: 40px;
+    border: none; 
+}
 
+.regresar {
+    background-color: transparent;
+    position: fixed;
+    right: 20px;
+    opacity: 0;
+    transform: translateX(120px);
+    transition: all .25s;
+    cursor: pointer;
+    z-index: 100;
+    top: 88vh;
+    height: 10vh;
+}
+
+.visible {
+    opacity: 1;
+    transform: translateX(0);
+    border: none;
+}
 
 /*---------espacios que ocupa la imagen------------------*/
 
