@@ -16,6 +16,7 @@
     font-family: lbody;
     src: url(imagenfooter/Repo-Medium.otf);
 }
+/*----BOTON--REGRESAR----*/
 .regresar img{
     width: 40px;
 }
@@ -181,7 +182,7 @@ footer{
 .copy{
     margin-top: 15em;
 }
-/*-------------computadoras-------------*/
+/*------------------------------------computadoras---------------------------------------------*/
 /*------------------------------------------------------------------------------*/
 /*..................................DE 1900px...................................*/
 /*------------------------------------------------------------------------------*/
@@ -291,16 +292,7 @@ footer{
 }
 /*----------------------------------------------------------- Computadora/Netbook del gobierno -----------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023px){
-    /*----header----*/
-    header{
-        background-color: #2b2d9c;
-        width: 100%;
-    }
-    .nav{
-        font-size: 20px;
-        text-align: center;
-        position: relative;
-    }
+    /*----HEADER----*/
     .loesc img{
         display: flex;
         position: absolute;
@@ -313,48 +305,7 @@ footer{
         font-family: lheader;
         color: #FFFFFF;
     }
-    header .nav{
-        background-color: rgba(41, 88, 125);
-        padding: 15px;
-        font-family: lheader;
-        transition: all 0.2s ease;
-    }
-
-    .nav a{
-        text-decoration: none;
-        color: #FFF;
-    }
-    .nav a:hover{
-        background-color:  #2a6a7a;
-        padding: 5px;
-    }
-    .nav ul{
-        list-style-type: none;
-    }
-    .nav li{
-        display: inline;
-        height: 15px;
-    }
-    /*----body----*/
-    .columnabody{
-    float: left;
-    width: 50%;
-    padding-right: 1px;
-    }
-    .filabodi::after{
-        content: " ";
-        clear: both;
-        display: table;   
-        margin-top: 20em;
-    }
-    .text{
-        text-align: center;
-        font-size: 25px;
-        background-color: #2a6a7a;
-        color: #FFF;
-        margin: 1em;
-        font-family: lbody;
-    }
+    /*----BODY----*/
     .img img{
         width: 85%;
         height: 17em;
@@ -399,15 +350,6 @@ footer{
 /*------------------------------------------------------------------ Tablet ------------------------------------------------------------------*/
 @media screen and (min-width:500px) and (max-width:767px){
     /*----HEADER----*/
-    header{
-        background-color: #2b2d9c;
-        width: 100%;
-    }
-    .nav{
-        font-size: 20px;
-        text-align: center;
-        position: relative;
-    }
     .loesc img{
         display: flex;
         position: absolute;
@@ -420,43 +362,9 @@ footer{
         font-family: lheader;
         color: #FFFFFF;
     }
-    header .nav{
-        background-color: rgba(41, 88, 125);
-        padding: 15px;
-        font-family: lheader;
-        transition: all 0.2s ease;
-    }
-    
-    .nav a{
-        text-decoration: none;
-        color: #FFF;
-    }
-    .nav a:hover{
-        background-color:  #2a6a7a;
-        padding: 5px;
-    }
-    .nav ul{
-        list-style-type: none;
-    }
-    .nav li{
-        display: inline;
-        height: 15px;
-    }
     /*----BODY----*/
-    body{
-        position: relative;
-        left: 0em;
-    }
     .columnabody{
         width: 100%;
-    }
-    .text{
-        text-align: center;
-        font-size: 25px;
-        background-color: #2a6a7a;
-        color: #FFF;
-        margin: 1em;
-        font-family: lbody;
     }
     .img img{
         width: 80%;
@@ -502,15 +410,6 @@ footer{
 /*------------------------------------------------------ Celular ----------------------------------------------------------------------------*/
 @media screen and (max-width:420px) and (orientation: portrait){
     /*----HEADER----*/
-    header{
-        background-color: #2b2d9c;
-        width: 100%;
-    }
-    .nav{
-        font-size: 20px;
-        text-align: center;
-        position: relative;
-    }
     .loesc img{
         display: flex;
         position: absolute;
@@ -523,42 +422,9 @@ footer{
         font-family: lheader;
         color: #FFFFFF;
     }
-    header .nav{
-        background-color: rgba(41, 88, 125);
-        padding: 15px;
-        font-family: lheader;
-        transition: all 0.2s ease;
-    }
-    .nav a{
-        text-decoration: none;
-        color: #FFF;
-    }
-    .nav a:hover{
-        background-color:  #2a6a7a;
-        padding: 5px;
-    }
-    .nav ul{
-        list-style-type: none;
-    }
-    .nav li{
-        display: inline;
-        height: 15px;
-    }
     /*----BODY----*/
-    body{
-        position: relative;
-        left: 0em;
-    }
     .columnabody{
         width: 100%;
-    }
-    .text{
-        text-align: center;
-        font-size: 25px;
-        background-color: #2a6a7a;
-        color: #FFF;
-        margin: 1em;
-        font-family: lbody;
     }
     .img img{
         width: 90%;
