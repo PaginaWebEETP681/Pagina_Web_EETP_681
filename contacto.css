@@ -33,6 +33,14 @@ header{
     font-family: lheader;
     color: #FFFFFF;
 }
+.inicio{
+    color: #fff;
+    position: relative;
+    display: flex;
+    top: -9.2em;
+    margin-left: 3.9em;
+    font-family: lheader;
+}
 /*----BODY----*/
 body {
     width: 100%;
@@ -327,6 +335,10 @@ footer{
 /*............................DE 1023px A 768px.................................*/
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023px){
+    /*-----HEADER---*/
+    .inicio{
+        margin-left: -1px;
+    }
     /*----BODY----*/
     .contimg{
         margin-left: 7em;
