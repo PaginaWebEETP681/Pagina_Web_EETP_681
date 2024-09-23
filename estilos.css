@@ -50,14 +50,14 @@ footer{
 .logoimg img{
     position: relative;
     width: 8%;
-    margin-left: 10em;
+    margin-left: 13.55em;
     margin-top: 4em;
 }
 .logotext{
     position: relative;
     font-family: lfooter;
     font-size: 20px;
-    margin-left: 3em;
+    margin-left: 6em;
 }
 .titulofoo{
     font-family: lfooter;
@@ -111,9 +111,10 @@ footer{
     margin-top: -11em;
     margin-left: 45em;
 }
-.contador{
+.contador a{
     position: relative;
-    margin-left: 73em;
+    display: flex;
+    margin-left: -0.5em;
 }
 .foolegal{
     background-color: #6a849e;
