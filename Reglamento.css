@@ -22,22 +22,22 @@
 }
 .regresar img{
     width: 40px;
-    }
-    .regresar{
-        background-color: transparent;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        opacity: 0;
-        transform: translateX(120px);
-        transition: all .25s;
-        cursor: pointer;
-        z-index: 100;
-    }
-    .visible{
-        opacity: 1;
-        transform: translateX(0);
-    }
+}
+.regresar{
+    background-color: transparent;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    transform: translateX(120px);
+    transition: all .25s;
+    cursor: pointer;
+    z-index: 100;
+}
+.visible{
+    opacity: 1;
+    transform: translateX(0);
+}
 /*-----------------Estilos Generales-------------------------*/
 header{
     background-color: #2b2d9c;
@@ -194,7 +194,7 @@ footer{
     font-size: 20px;
     margin-left: 6em;
 }
-.titulofoo{
+.titulofoo p{
     font-family: lfooter;
     font-size: 25px;
     font-weight: bold;
@@ -243,12 +243,12 @@ footer{
     margin-top: -1.5em;
 }
 .t2{
-    margin-top: -14em;
+    margin-top: -13.5em;
     margin-left: 45em;
 }
 .contador{
     position: relative;
-    margin-left: 72em;
+    margin-left: 73em;
     margin-top: 2em;
 }
 .foolegal{

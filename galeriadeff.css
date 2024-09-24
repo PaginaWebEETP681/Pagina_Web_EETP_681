@@ -12,8 +12,8 @@
     src: url(imagenfooter/Montserrat-Regular.ttf);
 }
 @font-face {
-    font-family: chau;
-    src: url(imagenfooter/Buried\ hopper.tff);
+    font-family: lheader;
+    src: url(imagenes/Buried\ Hopper.ttf);
 }
 .regresar img {
     width: 40px;
@@ -145,7 +145,8 @@ footer{
 }
 .contador{
     position: relative;
-    margin-left: 58em;
+    display: flex;
+    margin-left: 10em;
     font-size: 20px;
     margin-top: 1em;
     font-family: lfooter;
@@ -172,7 +173,7 @@ footer{
 }
 /*-------------------COMPUTADORA GRANDE-------------------*/
 @media  screen and (min-width:1920px) {
-         header{
+        header{
             background-color: #2b2d9c;
             width: 100%;
          
@@ -183,14 +184,10 @@ footer{
             margin: 0;
             font-family: lbody;
         }
-        @font-face{
-            font-family:titulo;
-            src: url(galeria/Buried\ Hopper.ttf);
-        }
         .titulo{
             margin-top: -30px;
             font-size: 60px;
-            font-family: titulo;
+            font-family: lheader;
             color: #FFFFFF;
             text-align: center;
         }
@@ -409,14 +406,10 @@ footer{
             margin: 0;
             font-family: lbody;
         }
-        @font-face{
-            font-family:titulo;
-            src: url(galeria/Buried\ Hopper.ttf);
-        }
         .titulo{
             margin-top: -30px;
             font-size: 60px;
-            font-family: titulo;
+            font-family: lheader;
             color: #FFFFFF;
             text-align: center;
         }
@@ -625,14 +618,10 @@ footer{
             margin: 0;
             font-family: lbody;
         }
-        @font-face{
-            font-family:titulo;
-            src: url(galeria/Buried\ Hopper.ttf);
-        }
         .titulo{
             margin-top: -30px;
             font-size: 60px;
-            font-family: titulo;
+            font-family: lheader;
             color: #FFFFFF;
             text-align: center;
         }
@@ -844,28 +833,23 @@ footer{
 /*-------------------TABLET-------------------------*/
 
 @media (min-width:421px) and (max-width:1023px){
-
     header{
         background-color: #2b2d9c;
         width: 100%;
-     
-    }
-    @font-face{
-        font-family:titulo;
-        src: url(galeria/Buried\ Hopper.ttf);
     }
     .titulo{
         margin-top: -20px;
         font-size: 40px;
-        font-family: titulo;
+        font-family: lheader;
         color: #FFFFFF;
         text-align: center;
     }
     .loesc img{
         display: flex;
-        position: absolute;
+        position: relative;
         width: 4em;
-        top: 0.5em;
+        margin-top: 0.5em;
+        margin-left: 0.5em;
     }
     .grid-item.expanded,
     .grid-item-wide.expanded {
@@ -879,7 +863,6 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     }
-
     .overlay {
         position: fixed;
         top: 0;
@@ -891,8 +874,7 @@ footer{
         justify-content: center;
         align-items: center;
         z-index: 1000;
-    }
-    
+    } 
     .overlay-content {
         position: relative;
         width: 100%;
@@ -901,13 +883,11 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    
     .overlay-content img {
         max-width: 100%;
         max-height: 100%;
         border: 5px solid white;
     }
-
     .buttonn{
         width: 6%;
         height: 10vh;
@@ -916,7 +896,6 @@ footer{
         border:0;
         display: block;
     }
-    
     .buttonn img{
         margin-top: 23px;
         transition-duration: 0.5;
@@ -931,7 +910,6 @@ footer{
         display: block;
         margin-left: 25px;
     }
-
     .años {
         display: flex;
         margin-top: 0.8em;
@@ -945,8 +923,6 @@ footer{
         transition: all 0.5s ease ;
         font-family: lbody;
     }
-    
-
     .subtitulos {
         display: flex;
         margin-top: 0.8em;
@@ -959,7 +935,6 @@ footer{
         font-family: lbody;
        
     }
-
     .grid-item{
         display: flex;
         align-items: center;
@@ -973,12 +948,10 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .grid-item:hover {
         filter: opacity(0.9);
         transform: scale(1.02);
-       }
-
+    }
     .grid-item-wide{
         display: flex;
         align-items: center;
@@ -992,12 +965,10 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .grid-item-wide:hover {
         filter: opacity(0.9);
         transform: scale(1.02);
-       }
-
+    }
     .grid-item-tall{
         display: flex;
         align-items: center;
@@ -1011,12 +982,10 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .grid-item-tall:hover {
         filter: opacity(0.9);
         transform: scale(1.02);
-       }
-
+    }
     .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(auto, 1fr)); /*tamaño de las imagenes*/ /*fr medida que ocupa el espacio que sobra*/ /*auto-fit es para que las imagenes si son pocas llenen todo el espacio*/
@@ -1029,8 +998,7 @@ footer{
         display: flex;
         justify-content: center; 
         align-items: center;
-        padding: 0.4em;
-       
+        padding: 0.4em;  
     }
     /*----FOOTER----*/
     footer{
@@ -1071,24 +1039,17 @@ footer{
     }
 }
 /*-------------------CELULAR----------------------*/
-
 @media only screen and (max-width: 420px) {
 
     header{
         background-color: #2b2d9c;
         width: 100%;
-       
-       
-    }
-    @font-face{
-        font-family:titulo;
-        src: url(galeria/Buried\ Hopper.ttf);
     }
     .titulo{
         margin-top: -35px ;
         padding-top: 0.3em;
         font-size: 30px;
-        font-family: titulo;
+        font-family: lheader;
         color: #FFFFFF;
         text-align: center;
     }
@@ -1104,7 +1065,6 @@ footer{
     background-position: center;
     background-repeat: no-repeat;
     }
-
     .overlay {
         position: fixed;
         top: 0;
@@ -1117,7 +1077,6 @@ footer{
         align-items: center;
         z-index: 1000;
     }
-    
     .overlay-content {
         position: relative;
         width: 100%;
@@ -1126,7 +1085,6 @@ footer{
         justify-content: center;
         align-items: center;
     }
-    
     .overlay-content img {
         max-width: 100%;
         max-height: 100%;
@@ -1140,7 +1098,6 @@ footer{
         border:0;
         display: block;
     }
-    
     .buttonn img{
         margin-top: 23px;
         transition-duration: 0.5;
@@ -1156,7 +1113,6 @@ footer{
         display: block;
         margin-left: 25px;
     }
-
     .años {
         display: flex;
         margin-top: 0.8em;
@@ -1170,8 +1126,6 @@ footer{
         transition: all 0.5s ease ;
         text-align: center;
     }
-
-
     .subtitulos {
         display: flex;
         margin-top: 0.8em;
@@ -1183,8 +1137,7 @@ footer{
         font-family: lbody;
         text-align: center;
        
-    }
-       
+    }  
     .grid-item{
         display: flex;
         align-items: center;
@@ -1197,13 +1150,11 @@ footer{
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
-    }
-       
+    }   
     .grid-item:hover {
         filter: opacity(0.9);
         transform: scale(1.02);
-       }
-
+    }
     .grid-item-wide{
         display: flex;
         align-items: center;
@@ -1217,12 +1168,10 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .grid-item-wide:hover {
         filter: opacity(0.9);
         transform: scale(1.02);
-       }
-
+    }
     .grid-item-tall{
         display: flex;
         align-items: center;
@@ -1236,12 +1185,10 @@ footer{
         background-position: center;
         background-repeat: no-repeat;
     }
-
     .grid-item-tall:hover {
         filter: opacity(0.9);
         transform: scale(1.02);
-       }
-
+    }
     .grid-container {
         display: grid;
         grid-template-columns: repeat (auto-fill, minmax(260px, 1fr)); /*tamaño de las imagenes*/ /*fr medida que ocupa el espacio que sobra*/ /*auto-fit es para que las imagenes si son pocas llenen todo el espacio*/
@@ -1255,7 +1202,6 @@ footer{
         justify-content: center; 
         align-items: center;
         padding: 0.4em;
-       
     }
     a.VOLVER {
         color: #ffffff; 
@@ -1268,7 +1214,6 @@ footer{
         border: 2px solid #000;
         text-align: center;
         font-size: x-large;
-      
     }
     /*----FOOTER----*/
     footer{
