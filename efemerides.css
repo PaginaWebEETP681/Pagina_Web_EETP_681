@@ -131,14 +131,14 @@ footer{
 .logoimg img{
     position: relative;
     width: 8%;
-    margin-left: 10em;
+    margin-left: 14em;
     margin-top: 4em;
 }
 .logotext{
     position: relative;
     font-family: lfooter;
     font-size: 20px;
-    margin-left: 3em;
+    margin-left: 6em;
 }
 .titulofoo{
     font-family: lfooter;
@@ -194,13 +194,14 @@ footer{
 }
 .contador{
     position: relative;
-    margin-left: 73em;
+    margin-left: 72.5em;
+    margin-top: 2em;
 }
 .foolegal{
     background-color: #6a849e;
 }
 .copy{
-    margin-top: 15em;
+    margin-top: 14em;
 }
 @media only screen and (max-width: 420px) {
 
