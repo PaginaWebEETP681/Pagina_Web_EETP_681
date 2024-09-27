@@ -199,6 +199,11 @@ footer{
 /*..................................DE 1900px...................................*/
 /*------------------------------------------------------------------------------*/
 @media  screen and (min-width:1920px) {
+    /*----HEADER----*/
+    .inicio{
+        margin-top: 2em;
+        margin-left: 5.2em;
+    }
     /*----BODY----*/
     .img img{
         height: 30em;
@@ -236,6 +241,11 @@ footer{
 /*.............................DE 1500px A 1366px...............................*/
 /*------------------------------------------------------------------------------*/
 @media  screen and (min-width:1366px) and (max-width:1500px) {
+    /*----HEADER----*/
+    .inicio{
+        margin-left: 3.9em;
+        margin-top: -0.5em;
+    }
     /*----BODY----*/
     .img img{
         height: 24em;
@@ -261,6 +271,10 @@ footer{
 /*.............................DE 1365px A 1024px...............................*/
 /*------------------------------------------------------------------------------*/
 @media  screen and (min-width:1024px) and (max-width:1365px) {
+    /*----HEADER----*/
+    .inicio{
+        margin-left: 4.3em;
+    }
     /*----BODY----*/
     .img img{
         height: 20em;
@@ -304,6 +318,7 @@ footer{
 }
 /*----------------------------------------------------------- Computadora/Netbook del gobierno -----------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023px){
+    
     /*----HEADER----*/
     .loesc img{
         display: flex;
