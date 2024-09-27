@@ -35,6 +35,15 @@
     opacity: 1;
     transform: translateX(0);
 }
+.inicio{
+    color: #fff;
+    position: relative;
+    display: flex;
+    top: -8.8em;
+    margin-left: 4.2em;
+    font-family: lheader;
+}
+
 /*----HEADER----*/
 header{
     background-color: #2b2d9c;
@@ -77,14 +86,6 @@ header .nav{
 .nav li{
     display: inline;
     height: 15px;
-}
-.inicio{
-    color: #fff;
-    position: relative;
-    display: flex;
-    top: -8.8em;
-    margin-left: 4.2em;
-    font-family: lheader;
 }
 
 /*----BODY----*/
