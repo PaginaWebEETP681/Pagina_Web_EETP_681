@@ -177,17 +177,17 @@ footer{
         margin-top: -0.8em;
         margin-left: 3.6em;
     }
-    /*----BODY----*/
-    body {
-        margin: 0;
-        font-family: lbody;
-    }
     .titulo{
         margin-top: -30px;
         font-size: 60px;
         font-family: lheader;
         color: #FFFFFF;
         text-align: center;
+    }
+    /*----BODY----*/
+    body {
+        margin: 0;
+        font-family: lbody;
     }
     .grid-item.expanded,
     .grid-item-wide.expanded {
@@ -352,7 +352,7 @@ footer{
         margin-top: 16em;
     }
 }
-@media screen and (min-width:1366px) and (max-width:1550px) {
+@media screen and (min-width:1366px) and (max-width:1900px) {
     /*----HEADER----*/
     header{
         background-color: #2b2d9c;
