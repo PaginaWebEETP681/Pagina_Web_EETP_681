@@ -35,14 +35,6 @@
     opacity: 1;
     transform: translateX(0);
 }
-.inicio{
-    color: #fff;
-    position: relative;
-    display: flex;
-    top: -8.8em;
-    margin-left: 4.2em;
-    font-family: lheader;
-}
 
 /*----HEADER----*/
 header{
@@ -60,6 +52,14 @@ header{
     width: 7em;
     top: 0.5em;
     margin-left: 1.5em;
+}
+.inicio{
+    color: #fff;
+    position: relative;
+    display: flex;
+    top: -8.8em;
+    margin-left: 4.2em;
+    font-family: lheader;
 }
 .titulo{
     padding-top: 1em;
