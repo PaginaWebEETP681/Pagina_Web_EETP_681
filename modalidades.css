@@ -35,7 +35,6 @@
     opacity: 1;
     transform: translateX(0);
 }
-
 /*----HEADER----*/
 header{
     background-color: #2b2d9c;
@@ -51,15 +50,6 @@ header{
     position: absolute;
     width: 7em;
     top: 0.5em;
-    margin-left: 1.5em;
-}
-.inicio{
-    color: #fff;
-    position: relative;
-    display: flex;
-    top: -8.8em;
-    margin-left: 4.2em;
-    font-family: lheader;
 }
 .titulo{
     padding-top: 1em;
@@ -88,7 +78,6 @@ header .nav{
     display: inline;
     height: 15px;
 }
-
 /*----BODY----*/
 .columnabody{
     float: left;
@@ -199,11 +188,6 @@ footer{
 /*..................................DE 1900px...................................*/
 /*------------------------------------------------------------------------------*/
 @media  screen and (min-width:1920px) {
-    /*----HEADER----*/
-    .inicio{
-        margin-top: 2em;
-        margin-left: 5.2em;
-    }
     /*----BODY----*/
     .img img{
         height: 30em;
@@ -241,11 +225,6 @@ footer{
 /*.............................DE 1500px A 1366px...............................*/
 /*------------------------------------------------------------------------------*/
 @media  screen and (min-width:1366px) and (max-width:1500px) {
-    /*----HEADER----*/
-    .inicio{
-        margin-left: 3.9em;
-        margin-top: -0.5em;
-    }
     /*----BODY----*/
     .img img{
         height: 24em;
@@ -271,13 +250,6 @@ footer{
 /*.............................DE 1365px A 1024px...............................*/
 /*------------------------------------------------------------------------------*/
 @media  screen and (min-width:1024px) and (max-width:1365px) {
-    /*----HEADER----*/
-    .loesc img{
-        width: 12%;
-    }
-    .inicio{
-        margin-left: 4.3em;
-    }
     /*----BODY----*/
     .img img{
         height: 20em;
@@ -321,7 +293,6 @@ footer{
 }
 /*----------------------------------------------------------- Computadora/Netbook del gobierno -----------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023px){
-    
     /*----HEADER----*/
     .loesc img{
         display: flex;
@@ -334,12 +305,6 @@ footer{
         font-size: 60px;
         font-family: lheader;
         color: #FFFFFF;
-    }
-    .inicio{
-        margin-top: -1.9em;
-        position: relative;
-        display: flex;
-        margin-left: 3.5em;
     }
     /*----BODY----*/
     .img img{
@@ -398,12 +363,6 @@ footer{
         font-family: lheader;
         color: #FFFFFF;
     }
-    .inicio{
-        font-size: 13px;
-        margin-top: -1.8em;
-        margin-left: 3.8em;
-        position: relative;
-        display: flex;
     /*----BODY----*/
     .columnabody{
         width: 100%;
@@ -463,11 +422,6 @@ footer{
         font-size: 40px;
         font-family: lheader;
         color: #FFFFFF;
-    }
-    .inicio{
-        font-size: 10px;
-        margin-left: -3em;
-        margin-top: -0.5em;
     }
     /*----BODY----*/
     .columnabody{
