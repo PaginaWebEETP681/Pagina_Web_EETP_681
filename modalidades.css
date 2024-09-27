@@ -379,7 +379,7 @@ footer{
     }
 }
 /*------------------------------------------------------------------ Tablet ------------------------------------------------------------------*/
-@media screen and (min-width:450px) and (max-width:767px){
+@media screen and (min-width:500px) and (max-width:767px){
     /*----HEADER----*/
     .inicio{
         font-size: 13px;
@@ -444,11 +444,11 @@ footer{
     }
 }
 /*------------------------------------------------------ Celular ----------------------------------------------------------------------------*/
-@media screen and (max-width:449px) and (orientation: portrait){
+@media screen and (max-width:420px) and (orientation: portrait){
     /*----HEADER----*/
     .loesc img{
         width: 4em;
-        margin-top: -25em;
+        margin-top: -13em;
         margin-left: 1em;
     }
     .inicio p{
@@ -458,7 +458,7 @@ footer{
     }
     .titulo{
         padding-top: 1em;
-        font-size: 30px;
+        font-size: 40px;
         font-family: lheader;
         color: #FFFFFF;
     }
