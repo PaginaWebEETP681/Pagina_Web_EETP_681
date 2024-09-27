@@ -336,10 +336,10 @@ footer{
         color: #FFFFFF;
     }
     .inicio{
-        margin-top: -1.8em;
+        margin-top: -1.9em;
         position: relative;
         display: flex;
-        margin-left: 3.4em;
+        margin-left: 3.5em;
     }
     /*----BODY----*/
     .img img{
@@ -398,10 +398,12 @@ footer{
         font-family: lheader;
         color: #FFFFFF;
     }
-    .loesc img{
-        width: 15%;
-        margin-top: -13em;
-    }
+    .inicio{
+        font-size: 13px;
+        margin-top: -1.8em;
+        margin-left: 3.8em;
+        position: relative;
+        display: flex;
     /*----BODY----*/
     .columnabody{
         width: 100%;
@@ -462,7 +464,7 @@ footer{
         font-family: lheader;
         color: #FFFFFF;
     }
-    .inicio p{
+    .inicio{
         font-size: 10px;
         margin-left: -3em;
         margin-top: -0.5em;
