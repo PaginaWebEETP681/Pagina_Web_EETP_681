@@ -78,6 +78,15 @@ header .nav{
     display: inline;
     height: 15px;
 }
+.inicio{
+    color: #fff;
+    position: relative;
+    display: flex;
+    top: -8.8em;
+    margin-left: 4.2em;
+    font-family: lheader;
+}
+
 /*----BODY----*/
 .columnabody{
     float: left;
