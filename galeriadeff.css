@@ -32,6 +32,9 @@ header{
     color: #fff;
     position: relative;
     display: flex;
+    left: 1em;
+    bottom: 2em;
+    padding-top: 1.3em;
     margin-top: 2em;
     margin-left: -4.7em;
     font-family: lheader;
