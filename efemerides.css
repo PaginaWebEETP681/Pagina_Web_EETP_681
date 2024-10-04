@@ -446,3 +446,23 @@ footer{
         margin-top: 3em;
     }
 }
+@media (min-width:1366px) and (max-width:1500px){ 
+     /*----FOOTER----*/
+    .contador{
+        margin-left: 73em;
+        margin-top: 2em;
+        width: 10%;
+    } 
+    footer{
+        width: 100%;
+    }
+    .t2{
+        margin-top: -11em;
+    }
+    .contador{
+        margin-left: 72.5em;
+    }
+    .copy{
+        margin-top: 14em;
+    }
+}
