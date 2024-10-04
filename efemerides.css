@@ -292,7 +292,7 @@ footer{
         text-align: center;
     }
     .t1{
-        margin-left: 18em;
+        margin-left: 18.5em;
         margin-bottom: 1em;
     }
     .contactos img{
@@ -308,7 +308,9 @@ footer{
         margin-bottom: 1em;
     }
     .contador{
-        margin-left: 50.5em;
+        margin-left: 52.5em;
+        margin-top: 1em;
+        width: 10%;
     }
     .copy{
         margin-top: 14.5em;
