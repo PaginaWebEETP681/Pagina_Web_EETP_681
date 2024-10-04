@@ -436,7 +436,7 @@ footer{
         transform: scale(1.1);
     }
 } 
-/*------------------------------------------- TABLET ----------------------------------------------------*/
+/*---------------------------- TABLET ---------------------------*/
 @media (min-width:751px) and (max-width:1279px) {  
     .nav ul {
         list-style: none;
@@ -731,7 +731,7 @@ footer{
         margin-top: 1em;
     }
 }
-/*----------------------------------- Computadora -------------------------------------------------------*/ 
+/*--------------- Computadora --------------------*/ 
 @media (min-width:1280px) {  
     .nav ul {
         list-style: none;
@@ -1006,9 +1006,6 @@ footer{
     }
 }   
 /* menu de navegacion*/
-
-
-
 
 .block-scroll {
     overflow: hidden;

@@ -194,7 +194,7 @@ footer{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+    }
  
 
     .años {
@@ -552,7 +552,7 @@ footer{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+    }
  
 
     .años {
@@ -634,9 +634,9 @@ footer{
 
     .grid-item-tall:hover {
         transform: scale(1.02);
-       }
+    }
 
-       .grid-container {
+    .grid-container {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
         grid-auto-rows: minmax(600px, auto);
@@ -839,7 +839,7 @@ footer{
     .grid-item-wide:hover {
         filter: opacity(0.9);
         transform: scale(1.02);
-       }
+     }
 
     .grid-item-tall{
         display: flex;
@@ -858,7 +858,7 @@ footer{
     .grid-item-tall:hover {
         filter: opacity(0.9);
         transform: scale(1.02);
-       }
+    }
 
     .grid-container {
         display: grid;
@@ -931,15 +931,15 @@ footer{
     /*----BODY----*/
     .grid-item.expanded,
     .grid-item-wide.expanded {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) scale(2); /* Ajusta la escala según sea necesario */
-    z-index: 1000;
-    height: auto; /* Mantiene la relación de aspecto */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) scale(2); /* Ajusta la escala según sea necesario */
+        z-index: 1000;
+        height: auto; /* Mantiene la relación de aspecto */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
     }
 
     .overlay {
