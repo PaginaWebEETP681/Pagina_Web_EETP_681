@@ -435,6 +435,7 @@ footer{
     }
     .inicio{
         margin-left: 0.1em;
+        margin-top: 1.5em;
     }
     .TExTO h2{
         font-size: 60px;
@@ -539,10 +540,160 @@ footer{
 /*.............................DE 767px A 500px..................................*/
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:500px) and (max-width:767px) {
+    /*----HEADER----*/
+    .titulo{
+        font-size: 35px;
+    }
+    .loesc img{
+        width: 11.5%;
+        margin-top: -6.5em;
+    }
+    .inicio{
+        margin-top: -0.2em;
+        position: relative;
+        display: flex;
+        margin-left: 0.1em;
+        font-size: 10px;
+    }
+    /*----BODY----*/
+    .TExTO{
+        font-size: 6px;
+        margin-top: 9em;
+    }
+    .TExTO li{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .TExTO p{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .subtituloFIN p{
+        font-size: 30px;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        width: 30%;
+        margin-left: 11em;
+        margin-top: 2em;
+    }
+    .logotext{
+        font-size: 25px;
+        text-align: center;
+        margin-left: -5em;
+    }
+    .t1{
+        margin-left: 7.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .contactos img{
+        margin-left: 7em;
+        width: 5%;
+    }
+    .contactos p{
+        margin-left: 9em;
+    }
+    .t2{
+        margin-left: 6em;
+        margin-top: 1em;
+    }
+    .contador{
+        margin-left: 12em;
+    }
+    .copy{
+        margin-top: 1em;
+    }
 }
 /*------------------------------------------------------------------------------*/
 /*............................DE 499px A 320px.................................*/
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:320px) and (max-width:499px) {
-
+    /*----HEADER----*/
+    .titulo{
+        font-size: 25px;
+    }
+    .loesc img{
+        width: 11.5%;
+        margin-top: -5em;
+        margin-left: 0.5em;
+    }
+    .inicio{
+        margin-top: 0.8em;
+        position: relative;
+        display: flex;
+        margin-left: -1.6em;
+        font-size: 9px;
+    }
+    .nav li{
+        font-size: 15px;
+    }
+    /*----BODY----*/
+    .TExTO{
+        font-size: 6.5px;
+        margin-top: 8em;
+    }
+    .TExTO li{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .TExTO p{
+        margin-left: 1.5em;
+        margin-right: 1.5em;
+    }
+    .subtitulo{
+        font-size: 30px;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .subtituloFIN p{
+        font-size: 30px;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+    }
+    /*----FOOTER----*/
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        width: 30%;
+        margin-left: 8.5em;
+        margin-top: 2em;
+    }
+    .logotext p{
+        text-align: center;
+        font-size: 15px;
+        margin-left: -0.8em;
+    }
+    .t1{
+        margin-left: 5.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .contactos img{
+        margin-left: 4.5em;
+        width: 6%;
+    }
+    .contactos p{
+        margin-left: 8em;
+        font-size: 15px;
+    }
+    .t2{
+        margin-left: 4.5em;
+        margin-top: 1em;
+    }
+    .contador{
+        margin-left: 9.5em;
+    }
+    .copy{
+        margin-top: 1em;
+    }
 }
