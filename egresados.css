@@ -32,7 +32,7 @@ header{
     position: relative;
     display: flex;
     margin-top: -2.3em;
-    margin-left: 0.1em;
+    margin-left: -0.25em;
     font-family: lheader;
     font-size: 20px;
 }
