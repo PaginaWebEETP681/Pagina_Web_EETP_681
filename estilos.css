@@ -47,7 +47,6 @@
 .modal {
     display: none; 
     position: fixed; 
-    z-index: 1; 
     left: 0;
     top: 0;
     width: 100%;
@@ -55,6 +54,8 @@
     background-color: rgba(0, 0, 0, 0.5); 
     text-align: center;
     font-size: larger;
+    z-index: 2000;
+    padding-top: 50%;
 }
 
 #TITULOINS {
@@ -71,6 +72,8 @@
     width: 80%;
     max-width: 600px; /* Tamaño máximo del modal */
 }
+
+/* La X */
 .close {
     color: #aaa;
     float: right;
@@ -84,6 +87,8 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+/* Botón para descargar PDF */
 .download-btn {
     display: block; 
     margin: 10px auto; 
@@ -222,9 +227,11 @@ footer{
     }
     .modal {
         padding-top: 50%;
+        position: fixed; 
         text-align: center;
         font-size: medium;
-        z-index: 1;
+        z-index: 2000;
+
     }
     
     #TITULOINS {
@@ -235,6 +242,7 @@ footer{
         width: 75%; 
         padding: 10px; 
         font-size: large;
+        z-index: 2000;
     }
 
     .download-btn {
@@ -287,7 +295,7 @@ footer{
 }
 @media (max-width:750px) {
     .filadire {
-        justify-content: center; /* Centra los rectángulos en pantallas pequeñas */
+        justify-content: center; 
     }
     .rectan {
         width: 100%; 
@@ -562,9 +570,12 @@ footer{
 
   
     .modal {
-        padding-top: 10%;
+        position: fixed; 
         text-align: center;
         font-size: medium;
+        z-index: 2000;
+        padding-top: 25%;
+        
     }
 
   
@@ -578,8 +589,8 @@ footer{
         width: 80%; 
         padding: 15px; 
         font-size: medium;
+        
     }
-
 
     .download-btn {
         width: 80%; 
@@ -587,13 +598,13 @@ footer{
         font-size: medium; 
     }
 
-   
+
     .cuerbody p {
         font-size: 16px; 
         margin-left: -2em;
         margin-right: -2em;
+        overflow-x: hidden;
     }
-
 
     footer{
         width: 100%;
@@ -761,6 +772,24 @@ footer{
         display:flex; 
         padding: 0 50px 0 30px;
     }  
+    .modal {
+        text-align: center;
+        font-size: larger;
+        z-index: 2000;
+        position: fixed;
+        padding-top: 140px
+    }
+    
+    .modal-content {
+        background-color: #fff;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 600px; 
+    }
+  
+
     /*CARRUSEL*/
     .slider-box { 
         width: 100%;
