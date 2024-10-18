@@ -29,7 +29,7 @@
                     </ul>
                 </li>    
 
-                <li><a href="paginaencontruccion.html">INSCRIPCIONES</a></li>
+                <li><a href="#" id="inscripciones-link">INSCRIPCIONES</a></li>
                 
                 <li><a href="#">ALUMNOS</a>
                     <ul>
@@ -54,26 +54,28 @@
     </header>
 
 <body>
+    <div id="modal-inscripciones" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="TITULOINS">INSCRIPCIÓN VIRTUAL DEL 4 AL 8 DE NOVIEMBRE </p>
+            <p>Presentar documentación en la escuela del 11 al 13 de noviembre, documentación requerida.</p>
+            <a class="download-btn" href="imginicio/DOCUMENTACIÓN PARA INSCRIPCIÓN.pdf" download>Descargar PDF</a>
+        </div>
+    </div>
+
+
+
     <!--VENTANA EMERGENTE-->
-        <script>
+       <!-- <script>
             window.onload = function() {
                 // Obtén la referencia al elemento de la ventana emergente
                 var popup = document.getElementById("popup-container");
                 // Abre la ventana emergente automáticamente
                 popup.style.display = "block";
-        };
+        };--> 
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="historia.js"></script>
-            <!--<div id="popup-container" class="full-layer">
-                <div id="popup-content">
-                    <div class="img1">
-                        <img src="imginicio/ATENCION.png">
-                    </div>
-                </div>
-                <div id="popup-overlay" class="full-layer"></div>
-            </div>
-            <script src="imginicio/indexpop.js"></script>-->
         <div class="slider-box"> 
             <ul> 
                 <li> <img src="imginicio/6.jpg" alt=""> </li>

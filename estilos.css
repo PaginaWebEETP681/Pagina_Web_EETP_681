@@ -42,6 +42,67 @@
         opacity: 1;
         transform: translateX(0);
     }
+
+    /*MODAL INSCRIPCIONES*/
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    text-align: center;
+    font-size: larger;
+}
+
+#TITULOINS {
+    font-size: larger;
+    font-weight:bold;
+}
+
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px; /* Tamaño máximo del modal */
+}
+
+/* La X */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Botón para descargar PDF */
+.download-btn {
+    display: block; 
+    margin: 10px auto; 
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center; 
+    width: 200px; 
+}
+.download-btn:hover {
+    background-color: #0056b3;
+}
+
     /*----FOOTER----*/
 footer{
     background-color: #93b2d2;
@@ -163,6 +224,28 @@ footer{
         width: 300px;
         height: auto;
     }
+    .modal {
+        padding-top: 50%;
+        text-align: center;
+        font-size: medium;
+        z-index: 1;
+    }
+    
+    #TITULOINS {
+        font-size: large;
+        font-weight:bold;
+    }
+    .modal-content {
+        width: 75%; /* Ajusta el ancho del modal a 95% en pantallas pequeñas */
+        padding: 10px; /* Reduce el padding si es necesario */
+        font-size: large;
+    }
+
+    .download-btn {
+        padding: 10px; /* Ajusta el padding del botón para pantallas pequeñas */
+    }
+    
+
     .cuerbody p{
         font-size: 18px;
         margin-left: -3.5em;
@@ -436,6 +519,122 @@ footer{
         transform: scale(1.1);
     }
 } 
+@media (min-width:421px) and (max-width:750px) {  
+    .rectan {
+        width: 100%;
+        max-width: 400px; 
+        box-shadow: 5px 5px 2.5px #51829C;
+    }
+    
+    #popup-container {
+        display: block; 
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1000;
+    }
+    
+    #popup-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        width: 80%; 
+        max-width: 600px; 
+        z-index: 1001;
+    }
+
+    #popup-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        z-index: 1000;
+    }
+
+
+    #popup-content .img1 img {
+        max-width: 100%; 
+        height: auto;
+    }
+
+  
+    .modal {
+        padding-top: 10%;
+        text-align: center;
+        font-size: medium;
+    }
+
+  
+    #TITULOINS {
+        font-size: 1em; 
+        font-weight: bold;
+    }
+
+
+    .modal-content {
+        width: 80%; 
+        padding: 15px; 
+        font-size: medium;
+    }
+
+    /* Botón descargar */
+    .download-btn {
+        width: 80%; 
+        padding: 12px; /* Ajuste de padding para mejor visualización */
+        font-size: medium; /* Tamaño de fuente más grande */
+    }
+
+    /* Estilos para cuerpo de texto */
+    .cuerbody p {
+        font-size: 16px; /* Ajuste de tamaño de fuente */
+        margin-left: -2em;
+        margin-right: -2em;
+    }
+
+    /* Estilos del footer */
+    footer{
+        width: 100%;
+    }
+    .logoimg img{
+        width: 30%;
+        margin-left: 11em;
+    }
+    .logotext{
+        font-size: 25px;
+        text-align: center;
+        margin-left: 0.5em;
+    }
+    .t1{
+        margin-left: 7.5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .contactos img{
+        margin-left: 7em;
+        width: 5%;
+    }
+    .contactos p{
+        margin-left: 9em;
+    }
+    .t2{
+        margin-left: 6em;
+        margin-top: 1em;
+    }
+    .contador{
+        margin-left: 12em;
+    }
+    .copy{
+        margin-top: 1em;
+    }
+}
+
 /*---------------------------- TABLET ---------------------------*/
 @media (min-width:751px) and (max-width:1279px) {  
     .nav ul {
