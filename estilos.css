@@ -71,8 +71,6 @@
     width: 80%;
     max-width: 600px; /* Tamaño máximo del modal */
 }
-
-/* La X */
 .close {
     color: #aaa;
     float: right;
@@ -86,8 +84,6 @@
     text-decoration: none;
     cursor: pointer;
 }
-
-/* Botón para descargar PDF */
 .download-btn {
     display: block; 
     margin: 10px auto; 
@@ -236,13 +232,13 @@ footer{
         font-weight:bold;
     }
     .modal-content {
-        width: 75%; /* Ajusta el ancho del modal a 95% en pantallas pequeñas */
-        padding: 10px; /* Reduce el padding si es necesario */
+        width: 75%; 
+        padding: 10px; 
         font-size: large;
     }
 
     .download-btn {
-        padding: 10px; /* Ajusta el padding del botón para pantallas pequeñas */
+        padding: 10px; 
     }
     
 
@@ -584,21 +580,21 @@ footer{
         font-size: medium;
     }
 
-    /* Botón descargar */
+
     .download-btn {
         width: 80%; 
-        padding: 12px; /* Ajuste de padding para mejor visualización */
-        font-size: medium; /* Tamaño de fuente más grande */
+        padding: 12px; 
+        font-size: medium; 
     }
 
-    /* Estilos para cuerpo de texto */
+   
     .cuerbody p {
-        font-size: 16px; /* Ajuste de tamaño de fuente */
+        font-size: 16px; 
         margin-left: -2em;
         margin-right: -2em;
     }
 
-    /* Estilos del footer */
+
     footer{
         width: 100%;
     }
