@@ -13,12 +13,3 @@ $(document).ready(function(){
 
     })
 });
-
-document.getElementById("inscripciones-link").addEventListener("click", function(event) {
-    event.preventDefault(); // Evita que el enlace realice su acción predeterminada
-    document.getElementById("modal-inscripciones").style.display = "block";
-});
-
-document.querySelector(".close").addEventListener("click", function() {
-    document.getElementById("modal-inscripciones").style.display = "none";
-});

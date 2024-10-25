@@ -114,6 +114,7 @@ h3:hover{
     z-index: -1;
     margin-left: 5em;
     height: 25em;
+    bottom: -1.3em;
 }
 .wrap-texto{
     width: 25%;
@@ -121,20 +122,9 @@ h3:hover{
     font-family: lbody;
     margin-left: 8em;
     margin-top: -8em;
-}
-.wrap:hover {
-    opacity: 0.8;
-    color:#000000;
-}
-.wrap-texto:hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
-    overflow:hidden;
-    transition: 0.6s;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-weight: bold;
+    bottom: -8.9em;
     position: relative;
-    display: flex;
+    padding-bottom: 1em;
 }
 /*IMAGEN EDIFICIO ACTUAL*/
 .eetp img{
@@ -153,19 +143,11 @@ h3:hover{
     font-family: lbody;
     margin-left: 39em;
     margin-top: -8em;
+    bottom: -8em;
+    position: relative;
+    padding-bottom: 1em;
 }
-.eetp:hover {
-    opacity: 0.8;
-    color:#000000;
-}
-.eetp-texto:hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
-    overflow:hidden;
-    transition: 0.6s;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-weight: bold;
-}
+
 /*IMAGEN LOGO VIEJO*/
 .logoviejo img{
     position: relative;
@@ -183,26 +165,17 @@ h3:hover{
     font-family: lbody;
     margin-left: 8em;
     margin-top: -8em;
+    bottom: -8em;
+    position: relative;
 }
-.logoviejo:hover {
-    opacity: 0.8;
-    color:#000000;
-}
-.logoviejo-texto:hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
-    overflow:hidden;
-    transition: 0.6s;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-weight: bold;
-}
+
 /*IMAGEN LOGO NUEVO*/
 .logonuevo img{
     position: relative;
     display: flex;
-    width: 35%;
+    width: 40%;
     border-radius: 2em;
-    margin-left: 54em;
+    margin-left: 51em;
     margin-top: -15em;
     height: 25em;
     z-index: -1;
@@ -211,21 +184,12 @@ h3:hover{
     width: 25%;
     font-size: 1.5em;
     font-family: lbody;
-    margin-left: 39em;
+    margin-left: 38.2em;
     margin-top: -8em;
+    bottom: -8.1em;
+    position: relative;
 }
-.logonuevo:hover {
-    opacity: 0.8;
-    color:#000000;
-}
-.logonuevo-texto:hover{
-    -webkit-transform:scale(1.3);transform:scale(1.3);
-    overflow:hidden;
-    transition: 0.6s;
-    background-color: #000000;
-    color: #FFFFFF;
-    font-weight: bold;
-}
+
 /*VIDEO ESCUELA*/
 .videoescuela video{
     margin-top: 5em;
@@ -587,6 +551,8 @@ footer{
     .wrap-texto{
         margin-top: -7em;
         margin-left: 5em;
+        bottom: -8em;
+        left: 1em;
     }
     .eetp img{
         margin-left: 35em;
@@ -595,10 +561,14 @@ footer{
         height: 20em;
         display: flex;
         position: relative;
+        bottom: 0.5em;
+        left: 2.5em;
     }
     .eetp-texto{
         margin-top: -7em;
         margin-left: 26em;
+        left: 2.7em;
+        bottom: -6.8em;
     }
     .logoviejo img{
         margin-left: 3em;
@@ -611,6 +581,8 @@ footer{
     .logoviejo-texto{
         margin-top: -7em;
         margin-left: 5em;
+        bottom: -7.1em;
+        left: 1em;
     }
     .logonuevo img{
         margin-left: 34em;
@@ -619,10 +591,14 @@ footer{
         height: 20em;
         position: relative;
         display: flex;
+        bottom: 0.5em;
+        left: 3em;
     }
     .logonuevo-texto{
         margin-top: -7em;
         margin-left: 26em;
+        left: 2.7em;
+        bottom: -6.9em;
     }
     .videoescuela {
         margin-left: -8em;
@@ -732,33 +708,42 @@ footer{
         margin-left: 10em;
         width: 60%;
         height: 20em;
+        margin-bottom: 1em;
     }
     .wrap-texto{
         width: 35%;
         margin-left: 11em;
         margin-top: -7em;
+        bottom: -7.3em;
+        left: -0.4em;
     }
     .eetp img{
         margin-top: 10em;
         margin-left: 10em;
         width: 60%;
         height: 20em;
+        
     }
     .eetp-texto{
         margin-left: 11em;
         margin-top: -7em;
         width: 35%;
+        bottom: -7.1em;
+        left: -0.4em;
     }
     .logoviejo img{
         margin-left: 10em;
         width: 60%;
         height: 20em;
         margin-top: 9.8em;
+        margin-bottom: 0.8em;
     }
     .logoviejo-texto{
         margin-left: 11em;
         margin-top: -7em;
         width: 35%;
+        bottom: -6.4em;
+        left: -0.4em;
     }
     .logonuevo img{
         margin-top: 8em;
@@ -770,6 +755,9 @@ footer{
         margin-left: 11em;
         margin-top: -7em;
         width: 35%;
+        width: 35%;
+        bottom: -6.4em;
+        left: -0.4em;
     }
     .videoescuela video {
         margin-left: 8em;
@@ -868,11 +856,13 @@ footer{
         margin-left: 3.5em;
         width: 80%;
         height: 18em;
+        margin-bottom: 1em;
     }
     .wrap-texto{
         width: 50%;
         margin-left: 5.5em;
         margin-top: -7em;
+        bottom: -7.2em;
     }
     .eetp img{
         margin-top: 10em;
@@ -884,17 +874,20 @@ footer{
         margin-left: 5.5em;
         margin-top: -7em;
         width: 50%;
+        bottom: -7em;
     }
     .logoviejo img{
         margin-left: 3.5em;
         width: 80%;
         height: 18em;
         margin-top: 9.8em;
+        margin-bottom: 0.7em;
     }
     .logoviejo-texto{
         margin-left: 5.5em;
         margin-top: -7em;
         width: 50%;
+        bottom: -6.5em;
     }
     .logonuevo img{
         margin-top: 8em;
@@ -906,6 +899,7 @@ footer{
         margin-left: 5.5em;
         margin-top: -7em;
         width: 50%;
+        bottom: -6em;
     }
     .videoescuela video{
         margin-left: 2em;
@@ -1024,6 +1018,8 @@ footer{
         margin-left: 2.6em;
         margin-top: -5.5em;
         font-size: 1.3em;
+        bottom: -6.6em;
+        left: 0.5em;
     }
     .eetp img{
         margin-top: 9em;
@@ -1036,18 +1032,22 @@ footer{
         margin-top: -5.5em;
         width: 65%;
         font-size: 1.3em;
+        bottom: -5.6em;
+        left: 0.5em;
     }
     .logoviejo img{
         margin-left: 1em;
         width: 90%;
         height: 13em;
-        margin-top: 9em;
+        margin-top: 7.4em;
     }
     .logoviejo-texto{
         margin-left: 2.6em;
         margin-top: -5.5em;
         width: 65%;
         font-size: 1.3em;
+        bottom: -5.6em;
+        left: 0.5em;
     }
     .logonuevo img{
         margin-top: 7em;
@@ -1060,6 +1060,8 @@ footer{
         margin-top: -8.5em;
         width: 65%;
         font-size: 1.3em;
+        bottom: -7.6em;
+        left: -0.5em;
     }
     .videoescuela video{
         margin-left: 1em;
