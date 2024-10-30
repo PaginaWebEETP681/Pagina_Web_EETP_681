@@ -260,15 +260,17 @@ footer{
     .header label img{ 
         display: initial;    
         position: relative;
-        left: 22em;  
+        left: 21em;  
         margin-top: -1em;
+        overflow: hidden;
+        right: 0;
     }
     .header{
         padding: 5px 5.7%; 
         left: 0;
         position: absolute;
         z-index: 10000;
-        width: 100%;
+        width: 88.7%;
     }
     .header .nav{
         position: absolute;
@@ -643,7 +645,7 @@ footer{
         left: 0;
         position: absolute;
         z-index: 10000;
-        width: 100%;
+        width: 88.7%;
     }
     .header .nav{
         position: absolute;
