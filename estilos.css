@@ -260,9 +260,8 @@ footer{
     .header label img{ 
         display: initial;    
         position: relative;
-        left: 17em;  
+        left: 18em;  
         margin-top: -1em;
-        overflow: hidden;
     }
     .header{
         padding: 5px 5.7%;
