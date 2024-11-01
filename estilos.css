@@ -367,7 +367,7 @@ footer{
         position: fixed; 
         text-align: center;
         font-size: medium;
-        z-index: 2000;
+        z-index: 11000;
     }
     #TITULOINS {
         font-size: large;
@@ -377,7 +377,7 @@ footer{
         width: 75%; 
         padding: 10px; 
         font-size: large;
-        z-index: 2000;
+        z-index: 11000;
     }
     .download-btn {
         padding: 10px; 
@@ -737,7 +737,7 @@ footer{
         position: fixed; 
         text-align: center;
         font-size: medium;
-        z-index: 2000;
+        z-index: 11000;
         padding-top: 25%;
     }
     #TITULOINS {
