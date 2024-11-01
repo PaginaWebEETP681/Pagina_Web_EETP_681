@@ -35,16 +35,18 @@
     transform: translateX(0);
 }
 /*-----------------Estilos Generales-------------------------*/
+/*----HEADER----*/
 header{
     background-color: #2b2d9c;
     width: 100%;
+    height: 18em;
 }
 .loesc img{
     display: flex;
     position: absolute;
     width: 8%;
-    margin-top: -11.5em;
-    margin-left: 1.5em;
+    margin-top: -11.4em;
+    margin-left: 1.7em;
 }
 .titulo{
     padding-top: 1em;
@@ -57,53 +59,40 @@ header{
     position: relative;
     display: flex;
     top: -4.3em;
-    margin-left: 4.2em;
+    margin-left: 4.5em;
     font-family: lheader;
 }
 .nav{
-    background-color: rgba(41, 88, 125);
-    font-size: 10px;
+    font-size: 20px;
     text-align: center;
-    padding: 0.5em;
-    font-family: lheader;
-    transition: all 0.2s ease;
-    margin: 0; 
-    position: absolute; 
-    width: 100%; 
+    position: relative; 
 }
 
 header .nav {
-    margin-top: 10px;
     background-color: rgba(41, 88, 125);
-    font-size: 10px;
-    text-align: center;
     font-family: lheader;
     transition: all 0.2s ease;
-    margin: 0;
-    padding: 0; 
+    padding: 14px; 
+    margin-top: 3.3em;
 }
 .nav a{
     text-decoration: none;
     color: #FFF;
-    font-family: lheader;
 }
 .nav a:hover{
     background-color:  #2a6a7a;
     padding: 5px;
-    font-family: lheader;
 }
 .nav ul{
     list-style-type: none;
-    font-family: lheader;
-    padding: 10px;
 }
 .nav li{
     display: inline;
-    height: 15px;
+    height: 14px;
     font-family: lheader;
-    margin: 0 15px;
+    margin: 0 0px;
 }
-
+/*----BODY----*/
 h2 {
     font-size: 5em;
     font-family: lbody;
@@ -111,6 +100,7 @@ h2 {
     font-style: italic;
     margin-left: 2em;
     margin-right: 2em;
+    margin-top: 0.3em;
 }
 mark {
     background-color: #8494ee;
@@ -313,6 +303,9 @@ footer{
         margin-top: 2em;
         margin-left: 5.2em;
     }
+    header{
+        height: 20em;
+    }
     /*----FOOTER----*/
     footer{
         width: 100%;
@@ -352,7 +345,7 @@ footer{
     header{
         background-color: #2b2d9c;
         width: 100%;
-        height: 250px;;
+        height: 20em;;
     }
     .loesc img{
         display: flex;
@@ -429,17 +422,20 @@ footer{
         object-fit: fill;
         z-index: -1;
         width: 100%;
+        height: 21em;
     }
     .loesc img{
         width: 12%;
     }
     .inicio{
-        margin-left: 0.1em;
-        margin-top: 1.5em;
+        margin-top: 0.5em;
     }
     .TExTO h2{
         font-size: 60px;
         margin-top: 0.5em;
+    }
+    header .nav{
+        margin-top: 3.3em;
     }
     /*----FOOTER----*/
     footer{
@@ -482,18 +478,15 @@ footer{
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:768px) and (max-width:1023px){
     /*----HEADER----*/
-    .titulo{
-        font-size: 45px;
-    }
     .loesc img{
         width: 12%;
-        margin-top: -8.5em;
+        margin-top: -11.5em;
     }
     .inicio{
-        margin-top: 1.8em;
+        margin-top: -1.4em;
         position: relative;
         display: flex;
-        margin-left: -0.8em;
+        margin-left: -0.9em;
     }
     /*----BODY----*/
     .TExTO{
@@ -541,24 +534,24 @@ footer{
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:500px) and (max-width:767px) {
     /*----HEADER----*/
-    .titulo{
-        font-size: 35px;
+    .titulo h1{
+        font-size: 70px;
     }
     .loesc img{
-        width: 11.5%;
-        margin-top: -6.5em;
+        width: 15%;
+        margin-top: -8em;
+        margin-left: 1em;
     }
     .inicio{
-        margin-top: -0.2em;
+        margin-top: -1em;
         position: relative;
         display: flex;
-        margin-left: 0.1em;
         font-size: 10px;
     }
     /*----BODY----*/
     .TExTO{
         font-size: 6px;
-        margin-top: 9em;
+        margin-top: -1em;
     }
     .TExTO li{
         margin-left: 1.5em;
@@ -618,23 +611,29 @@ footer{
 /*------------------------------------------------------------------------------*/
 @media screen and (min-width:320px) and (max-width:499px) {
     /*----HEADER----*/
-    .titulo{
-        font-size: 25px;
+    .titulo h1{
+        font-size: 65px;
     }
     .loesc img{
-        width: 11.5%;
-        margin-top: -5em;
+        width: 4em;
+        margin-top: -8em;
         margin-left: 0.5em;
     }
     .inicio{
-        margin-top: 0.8em;
+        margin-top: -2.5em;
         position: relative;
         display: flex;
-        margin-left: -1.6em;
+        margin-left: -1em;
         font-size: 9px;
     }
     .nav li{
         font-size: 15px;
+    }
+    header{
+        height: 15em;
+    }
+    header .nav{
+        margin-top: 4.5em;
     }
     /*----BODY----*/
     .TExTO{
