@@ -37,7 +37,7 @@
 header{
     font-family: lheader; 
     background-color: #2b2d9c;
-    height: 15em;
+    height: 16em;
     display: flex;
    
 }
@@ -52,10 +52,10 @@ header{
     color: #fff;
     position: relative;
     display: flex;
-    top: 6em;
-    margin-left: 2.5em;
+    top: 7.5em;
+    margin-left: 3.5em;
     font-family: lheader;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .titulo{
