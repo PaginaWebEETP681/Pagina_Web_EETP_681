@@ -52,8 +52,8 @@ header{
     color: #fff;
     position: relative;
     display: flex;
-    top: 7.5em;
-    margin-left: 3.5em;
+    top: 8.5em;
+    margin-left: 3.7em;
     font-family: lheader;
     font-size: 16px;
 }
@@ -209,23 +209,22 @@ footer{
 
     header {
         height: 16em;
-        text-align: center;
     }
 
     .loesc img {
-        width: 15%;
+        width: 4em;
         top: -.5em;
     }
 
-    .titulo {
-        font-size: 35px;
+    .titulo h1 {
+        font-size: 70px;
         font-family: lheader;
         color: #FFFFFF;
-        margin-top: 1.6em;
+        margin-left: -0.8em;
     }
     .inicio p{
-        margin-top: -5em;
-        margin-left: -2em;
+        margin-top: -6em;
+        margin-left: -2.1em;
         font-size: 10px;
     }
     /*----FOOTER----*/
@@ -267,6 +266,16 @@ footer{
     }
 }
 @media  screen and (min-width:1024px) and (max-width:1365px) {
+    /*----HEADER----*/
+    .titulo h1{
+        margin-left: -1em;
+    }
+    .loesc img{
+        width: 12%;
+    }
+    .inicio{
+        margin-left: 3.8em;
+    }
     /*----FOOTER----*/
     footer{
         width: 100%;
@@ -306,6 +315,19 @@ footer{
     }
 }
 @media screen and (min-width:768px) and (max-width:1023px){
+    /*----HEADER----*/
+    .titulo h1{
+        margin-left: -0.7em;
+    }
+    .loesc img{
+        width: 12%;
+    }
+    .inicio{
+        margin-top: -1.8em;
+        position: relative;
+        display: flex;
+        margin-left: 2.9em;
+    }
     /*----FOOTER----*/
     footer{
         width: 100%;
@@ -355,16 +377,16 @@ footer{
         top: .2em;
         left: .5em;
     }
-    .titulo{  
-        margin-top: 1.8em ;
-        margin-left: 3em;
-        font-size: 35px;
+    .titulo h1{  
+        margin-left: -1em;
+        font-size: 70px;
         font-family: lheader;
         color: #FFFFFF;
     }
     .inicio p{
-        margin-top: -1em;
-        font-size: 13px;
+        margin-top: -5.3em;
+        font-size: 10px;
+        margin-left: -1.2em;
     }
     /*----FOOTER----*/
     footer{
@@ -405,7 +427,12 @@ footer{
     }
 }
 @media  screen and (min-width:1920px) {
-        /*----FOOTER----*/
+    /*----HEADER----*/
+    .inicio{
+        margin-top: 2em;
+        margin-left: 4.8em;
+    }
+    /*----FOOTER----*/
     footer{
         width: 100%;
     }
@@ -434,7 +461,12 @@ footer{
     }
 }
 @media (min-width:1366px) and (max-width:1500px){ 
-     /*----FOOTER----*/
+    /*----HEADER----*/
+    .inicio{
+        margin-left: 3.4em;
+        margin-top: -0.5em;
+    }
+    /*----FOOTER----*/
     .contador{
         margin-left: 73em;
         margin-top: 2em;
