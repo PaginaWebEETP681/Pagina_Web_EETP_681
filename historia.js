@@ -1,3 +1,17 @@
+//Modal inicial
+window.onload = function () {
+    const modal = document.getElementById("autoModal");
+    const modalContent = document.querySelector(".auto-modal-content");
+
+    // Cerrar modal al hacer clic fuera del contenido
+    window.addEventListener("click", function (event) {
+        if (event.target === modal) {
+            modal.style.display = "none";
+        }
+    });
+};
+
+//Volver arriba
 $(document).ready(function(){
     var regresar = $("#irArriba");
     $(window).scroll(function () {
@@ -31,3 +45,4 @@ $(window).on("click", function(event) {
         modal.css("display", "none");
     }
 });
+
