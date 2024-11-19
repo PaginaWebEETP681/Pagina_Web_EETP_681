@@ -823,9 +823,6 @@ footer{
         height: auto;
     } 
 }
-
-    
-
 /*---------------------------- TABLET ---------------------------*/
 @media (min-width:751px) and (max-width:1279px) {  
     /*----HEADER----*/
