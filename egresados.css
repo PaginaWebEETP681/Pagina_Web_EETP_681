@@ -27,13 +27,14 @@ header{
     color: #FFFFFF;
     text-align: center;
 }
-.inicio p{
+.inicio{
     color: #fff;
     position: relative;
     display: flex;
-    margin-top: -3.2em;
+    margin-top: 0.7em;
     margin-left: 0.3em;
     font-family: lheader;
+    font-size: 16px;
 }
 .loesc img{
     display: flex;
@@ -334,8 +335,8 @@ footer{
         margin-top: 1em;
     }
     .inicio p{
-        margin-top: -3.8em;
-        margin-left: 3.4em;
+        margin-top: -4.5em;
+        margin-left: 3em;
     }
     /*----BODY----*/
     .grid-item.expanded,
